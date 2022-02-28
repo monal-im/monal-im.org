@@ -1,0 +1,316 @@
+baseURL: "" # We will enter the FULL_URL after the site is published. So it's empty now
+title: Monal
+paginate: 5
+theme: hugo-PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+minify:
+    disableXML: false
+    minifyOutput: true
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        profileMode:
+            enabled: true # needs to be explicitly set
+            title: "Monal IM"
+            subtitle: "IOS and MacOS Chat"
+            imageUrl: "/favicons/ms-icon-310x310.png" # optional
+            imageTitle: "<title of image as alt>" # optional
+            imageWidth: 120 # custom size
+            imageHeight: 120 # custom size
+            buttons:
+                - name: IOS Beta
+                  url: ""
+                - name: Home
+                  url: /home/
+                - name: MacOS Beta
+                  url: ""
+        menu:
+            main:
+                - identifier: Home
+                  name: Home
+                  url: /home/
+                  weight: 1
+                - identifier: Features
+                  name: Features
+                  url: /under-construction/
+                  weight: 2
+                - identifier: Downloads
+                  name: Downloads
+                  url: /under-construction/
+                  weight: 3
+                - identifier: Support
+                  name: "Support"
+                  url: /under-construction/
+                  weight: 4
+                - identifier: Donate
+                  name: "Donate"
+                  url: /under-construction/
+                  weight: 5
+                - identifier: Privacy
+                  name: "Privacy"
+                  url: /under-construction/
+                  weight: 6
+                - identifier: Blog
+                  name: Blog
+                  url: /post/
+                  weight: 7
+                - identifier: Archive
+                  name: Archive
+                  url: /archives/
+                  weight: 8
+                - identifier: Search
+                  name: "Search \U0001f50d"
+                  url: /search/
+                  weight: 9
+
+    de:
+        languageName: ":de:"
+        languageAltTitle: Deutsch
+        weight: 2
+        profileMode:
+            enabled: true # needs to be explicitly set
+            title: "Monal IM"
+            subtitle: "IOS und MacOS Chatten"
+            imageUrl: "/favicons/ms-icon-310x310.png" # optional
+            imageTitle: "<title of image as alt>" # optional
+            imageWidth: 120 # custom size
+            imageHeight: 120 # custom size
+            buttons:
+                - name: IOS Beta
+                  url: ""
+                - name: Startseite
+                  url: /de/home/
+                - name: MacOS Beta
+                  url: ""
+
+        menu:
+            main:
+                - identifier: Startseite
+                  name: Startseite
+                  url: /de/home/
+                  weight: 1
+                - identifier: Funktion
+                  name: Funktion
+                  url: /de/under-construction/
+                  weight: 2
+                - identifier: Downloads
+                  name: Downloads
+                  url: /de/under-construction/
+                  weight: 3
+                - identifier: Hilfe
+                  name: "Hilfe"
+                  url: /de/under-construction/
+                  weight: 4
+                - identifier: Spende
+                  name: "Spende"
+                  url: /de/under-construction/
+                  weight: 5
+                - identifier: Datenschutz
+                  name: "Datenschutz"
+                  url: /de/under-construction/
+                  weight: 6
+                - identifier: Blog
+                  name: Blog
+                  url: /de/post/
+                  weight: 7
+                - identifier: Archiv
+                  name: Archiv
+                  url: /de/archives/
+                  weight: 8
+                - identifier: Suche
+                  name: "Suche \U0001f50d"
+                  url: /de/search/
+                  weight: 9
+
+    tr:
+        languageName: ":tr:"
+        languageAltTitle: Turkish
+        weight: 3
+        profileMode:
+            enabled: true # needs to be explicitly set
+            title: "Monal IM"
+            subtitle: "IOS ve MacOS'da Chat"
+            imageUrl: "/favicons/ms-icon-310x310.png" # optional
+            imageTitle: "<title of image as alt>" # optional
+            imageWidth: 120 # custom size
+            imageHeight: 120 # custom size
+            buttons:
+                - name: IOS Beta
+                  url: ""
+                - name: Anasayfa
+                  url: /tr/home/
+                - name: MacOS Beta
+                  url: ""
+
+        menu:
+            main:
+                - identifier: Anasayfa
+                  name: Anasayfa
+                  url: /tr/home/
+                  weight: 1
+                - identifier: Özellikler
+                  name: Özellikler
+                  url: /tr/under-construction/
+                  weight: 2
+                - identifier: İndirmeler
+                  name: İndirmeler
+                  url: /tr/under-construction/
+                  weight: 3
+                - identifier: Destek
+                  name: "Destek"
+                  url: /tr/under-construction/
+                  weight: 4
+                - identifier: Bağış
+                  name: "Bağış"
+                  url: /tr/under-construction/
+                  weight: 5
+                - identifier: Gizlilik
+                  name: "Gizlilik"
+                  url: /tr/under-construction/
+                  weight: 6
+                - identifier: Blog
+                  name: Blog
+                  url: /tr/post/
+                  weight: 7
+                - identifier: Arşiv
+                  name: "Arşiv"
+                  url: /tr/archives/
+                  weight: 8
+                - identifier: Ara
+                  name: "Ara \U0001f50d"
+                  url: /tr/search/
+                  weight: 9
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Monal IM - https://github.com/monal-im/monal-im.org"
+    author: Monal
+    # author: ["Me", "You"] # multiple authors
+
+    defaultTheme: auto
+    DateFormat: "January 2, 2006"
+    disableThemeToggle: false
+    ShowShareButtons: true
+    ShowReadingTime: true
+    disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowToc: true
+    comments: false
+    images: ["papermod-cover.png"]
+    disableScrollToTop: false
+    rss: true
+    hidemeta: false
+    hideSummary: false
+    tocopen: false
+
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/monal-im/monal-im.org"
+        - name: buymeacoffee
+          url: ""
+        - name: cv
+          url: ""
+        - name: dev
+          url: ""
+        - name: email
+          url: "info@monal-im.org"
+        - name: gitlab
+          url: ""
+        - name: liberapay
+          url: "https://liberapay.com/tmolitor"
+        - name: mastodon
+          url: "https://fosstodon.org/@Monal"
+        - name: rss
+          url: "/index.xml" # When site published
+        - name: youtube
+          url: ""
+        - name: other
+          url: ""
+        - name: telegram
+          url: ""
+
+    editPost:
+        URL: "https://github.com/monal-im/monal-im.org/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    assets:
+        disableHLJS: true # to disable highlight.js
+        disableFingerprinting: true
+        favicon: "/favicons/favicon.ico"
+        favicon16x16: "/favicons/favicon-16x16.png"
+        favicon32x32: "/favicons/favicon-32x32.png"
+        favicon96x96: "/favicons/favicon-96x96.png"
+        manifest: "/favicons/manifest.json"
+        browserconfig: "/favicons/browserconfig.xml"
+        android_icon: "/favicons/android-icon-144x144.png"
+        ms_icon: "/favicons/ms-icon-310x310.png"
+        apple_touch_icon: "/favicons/apple-icon-144x144.png"
+        safari_pinned_tab: "/favicons/apple-icon-precomposed.png"
+
+    cover:
+        hidden: false # hide everywhere but not in structured data
+        hiddenInList: false # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    #fuseOpts:
+    #    isCaseSensitive: false
+    #    shouldSort: true
+    #    location: 0
+    #    distance: 1000
+    #    threshold: 0.4
+    #    minMatchCharLength: 0
+    #    keys: ["title", "permalink", "summary", "content"]
+
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
