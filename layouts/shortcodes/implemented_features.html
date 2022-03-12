@@ -1,0 +1,20 @@
+{{ with resources.GetRemote "https://raw.githubusercontent.com/monal-im/Monal/develop/monal.doap" | transform.Unmarshal }}
+<table>
+    <thead>
+        <tr>
+            <th>XEP</th>
+            <th>Status</th>
+            <th>Since</th>
+        </tr>
+    </thead>
+    {{ range .Project.implements }}
+        {{ if and (isset .SupportedXep "note") (ne .SupportedXep.status "wontfix") (ne .SupportedXep.status "planned") }}
+            <tr>
+                <td>{{ .SupportedXep.note }}</td>
+                <td>{{ .SupportedXep.status }}</td>
+                <td>{{ .SupportedXep.since }}</td>
+            <tr>
+        {{ end }}
+    {{ end}}
+</table>
+{{ end }}
