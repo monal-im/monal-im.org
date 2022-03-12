@@ -19,14 +19,9 @@ searchHidden: true
 ShowReadingTime: true
 ShowBreadCrumbs: false
 ShowPostNavLinks: false
-cover:
-    image: "" # image path/url
-    alt: "" # alt text
-    caption: "Hemen indirin !" # display caption under cover
-    relative: true # when using page bundles set this to true
-    hidden: false # only hide on current single page
 ---
-[XMPP](https://monal.im/welcome-to-xmpp/)'ye girmek için bundan daha iyi bir zaman olmamıştı. Monal hızlı, arkadaş canlısı ve ücretsizdir. [iOS](https://itunes.apple.com/us/app/monal-free-xmpp-chat/id317711500?mt=8) veya [Mac](https://apps.apple. com/app/id1499227291?mt=12), giriş yapın veya kaydolun ve dakikalar içinde sohbet etmeye hazırsınız. Diğer uygulamaların yaptığı gibi görünür ve çalışır, bu nedenle "XMPP'yi öğrenmeye", hatta ne olduğuyla ilgilenmeye bile gerek yoktur. Messenger, WhatsApp veya iMessage kullandıysanız bunu kullanabilirsiniz.
+[XMPP](https://monal.im/welcome-to-xmpp/)'ye girmek için bundan daha iyi bir zaman olmamıştı. Monal hızlı, arkadaş canlısı ve ücretsizdir.
+[iOS](https://itunes.apple.com/us/app/monal-free-xmpp-chat/id317711500?mt=8) veya [Mac](https://apps.apple. com/app/id1499227291?mt=12), giriş yapın veya kaydolun ve dakikalar içinde sohbet etmeye hazırsınız. Diğer uygulamaların yaptığı gibi görünür ve çalışır, bu nedenle "XMPP'yi öğrenmeye", hatta ne olduğuyla ilgilenmeye bile gerek yoktur. Messenger, WhatsApp veya iMessage kullandıysanız bunu kullanabilirsiniz.
 
 ||||
 | -------------- | -------------------- | -------------------- |
@@ -41,7 +36,8 @@ iOS ve Mac için tasarlandı
 | -------------- | -------------------- | -------------------- |
 ![](/images/aG9tZS01.png) |![](/images/aG9tZS02.png) |
 
-Duyurusu yapılır yapılmaz yeni teknolojiler eklenecek şekilde güncellenmektedir. Manzara, Portre, bölünmüş görünüm, yan yana, push bildirimleri, karanlık mod, Airdrop listesi uzayıp gidiyor ve büyümeye devam ediyor.
+Duyurusu yapılır yapılmaz yeni teknolojiler eklenecek şekilde güncellenmektedir.
+Manzara, Portre, bölünmüş görünüm, yan yana, push bildirimleri, karanlık mod, Airdrop listesi uzayıp gidiyor ve büyümeye devam ediyor.
 
 Siz ürün değilsiniz.
 --------------------------
@@ -51,7 +47,8 @@ Monal ücretsiz ve reklamsızdır ancak ürün siz değilsiniz. Bu uygulama biz 
 Teknik detaylar
 -----------------
 
-Buraya kadar okuduysanız, muhtemelen bu uygulamayı neyin harekete geçirdiğini bilmek istersiniz. Monal, BSD lisansı ile ücretsiz ve açık kaynak kodludur. [Bizi GitHub'da çatallayın!](https://github.com/anurodhp/Monal) Ayrıca [desteklenen XEP'lerin](https://monal.im/supported-xeps/) listesini de bulabilirsiniz.
+Buraya kadar okuduysanız, muhtemelen bu uygulamayı neyin harekete geçirdiğini bilmek istersiniz. Monal, BSD lisansı ile ücretsiz ve açık kaynak kodludur.
+[Bizi GitHub'da çatallayın!](https://github.com/anurodhp/Monal) Ayrıca [desteklenen XEP'lerin](https://monal.im/supported-xeps/) listesini de bulabilirsiniz.
 
 ![](/images/aG9tZS03.png#center)
 
