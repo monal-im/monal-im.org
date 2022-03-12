@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://monal-im.github.io/monal-im.org/sitemap.xml
