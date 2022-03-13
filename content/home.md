@@ -1,24 +1,9 @@
 ---
 title: "Monal-IM. Privacy like it's 1999"
 date: 2022-03-07
-#weight: 2
-# aliases: ["/first"]
+
 tags: []
 author: "Monal"
-# author: ["Me", "You"] # multiple authors
-showToc: false
-TocOpen: false
-draft: false
-hidemeta: true
-comments: false
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: true
-ShowReadingTime: true
-ShowBreadCrumbs: false
-ShowPostNavLinks: false
 ---
 
 There has never been a better time to get into [XMPP](https://monal.im/welcome-to-xmpp/).
@@ -27,7 +12,7 @@ It looks and works the way other apps do, so there is no need to â€œlearn XMPPâ€
 
 ||||
 | -------------- | -------------------- | -------------------- |
-| ![](/images/aG9tZS0y.png)   |![](/images/aG9tZS0z.png) | ![](/images/aG9tZS00.png)
+| {{< imgFromBaseUrl "images/aG9tZS0y.png" >}}   |{{< imgFromBaseUrl "images/aG9tZS0z.png" >}} | {{< imgFromBaseUrl "images/aG9tZS00.png" >}}
 
 Designed for iOS and Mac
 ------------------------
@@ -36,9 +21,9 @@ Things look and work the way you expect. iOS, iPadOS or macOS, there is a versio
 
 ||||
 | -------------- | -------------------- | -------------------- |
-![](/images/aG9tZS01.png) |![](/images/aG9tZS02.png) |
+{{< imgFromBaseUrl "images/aG9tZS01.png" >}} |{{< imgFromBaseUrl "images/aG9tZS02.png" >}} |
 
-It is updated to add new technology as soon as it is announced. Landscape, Portrait, split view, side by side, push notifications, dark mode, Airdrop the list goes on and keeps growing.
+It is updated to add new technology as soon as it is announced. Landscape, Portrait, split view, side by side, push notifications, dark mode. The list goes on and keeps growing.
 
 You are not the product
 -----------------------
@@ -52,6 +37,6 @@ If you have made it this far, you probably want to know what makes this app tick
 [Find us on GitHub!](https://github.com/monal-im/Monal)
 You can also find a list of [supported XEPs]({{< relref "supportedXeps.md" >}}).
 
-![](/images/aG9tZS03.png#center)
+{{< centeredImgFromBaseUrl "images/aG9tZS03.png" >}}
 
 If you choose to use the feature, messages are end to end encrypted with [OMEMO](https://conversations.im/omemo/).

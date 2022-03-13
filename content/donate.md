@@ -4,19 +4,6 @@ date: 2022-03-12T09:16:22+01:00
 
 tags: []
 author: "Monal"
-showToc: false
-TocOpen: false
-draft: false
-hidemeta: true
-comments: false
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: false
-ShowPostNavLinks: false
 ---
 
 Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:

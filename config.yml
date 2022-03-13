@@ -18,13 +18,14 @@ languages:
     en:
         languageName: ":gb:"
         languageAltTitle: "English"
-        weight: 1
+        showInHeader: true
+        weight: 0
         profileMode:
             enabled: true # needs to be explicitly set
             title: "Monal IM"
             subtitle: "iOS and macOS XMPP Chat-Client"
-            imageUrl: "/favicons/ms-icon-310x310.png" # optional
-            imageTitle: "<title of image as alt>" # optional
+            imageUrl: "favicons/ms-icon-310x310.png" # optional
+            imageTitle: "Monal App Icon" # optional
             imageWidth: 120 # custom size
             imageHeight: 120 # custom size
             buttons:
@@ -74,19 +75,19 @@ languages:
     de:
         languageName: ":de:"
         languageAltTitle: Deutsch
-        weight: 2
+        weight: 1
         profileMode:
             enabled: true # needs to be explicitly set
             title: "Monal IM"
             subtitle: "IOS und MacOS Chatten"
-            imageUrl: "/favicons/ms-icon-310x310.png" # optional
-            imageTitle: "<title of image as alt>" # optional
+            imageUrl: "favicons/ms-icon-310x310.png" # optional
+            imageTitle: "Monal App Icon" # optional
             imageWidth: 120 # custom size
             imageHeight: 120 # custom size
             buttons:
-                - name: "Monal iOS Herunterladen"
+                - name: "Monal für iOS Herunterladen"
                   url: "https://apps.apple.com/app/id317711500"
-                - name: "Monal macOS Herunterladen"
+                - name: "Monal für macOS Herunterladen"
                   url: "https://apps.apple.com/app/id1499227291"
 
         menu:
@@ -115,6 +116,9 @@ languages:
                   name: "Datenschutz"
                   url: ../privacy/
                   weight: 6
+                - identifier: Blog
+                  name: "Blog"
+                  url: ../post/
                   weight: 7
                 - identifier: Archiv
                   name: Archiv
@@ -122,6 +126,63 @@ languages:
                   weight: 8
                 - identifier: Suche
                   name: "Suche \U0001f50d"
+                  url: ../search/
+                  weight: 9
+
+    tr:
+        languageName: ":tr:"
+        languageAltTitle: Turkish
+        weight: 3
+        profileMode:
+            enabled: true # needs to be explicitly set
+            title: "Monal IM"
+            subtitle: "IOS ve MacOS'da Chat"
+            imageUrl: "favicons/ms-icon-310x310.png" # optional
+            imageTitle: "" # optional
+            imageWidth: 120 # custom size
+            imageHeight: 120 # custom size
+            buttons:
+                - name: Monal iOS
+                  url: "https://apps.apple.com/app/id317711500"
+                - name: Monal macOS
+                  url: "https://apps.apple.com/app/id1499227291"
+
+        menu:
+            main:
+                - identifier: Anasayfa
+                  name: Anasayfa
+                  url: ../
+                  weight: 1
+                - identifier: Özellikler
+                  name: Özellikler
+                  url: ../features/
+                  weight: 2
+                - identifier: İndirmeler
+                  name: İndirmeler
+                  url: ../install
+                  weight: 3
+                - identifier: Destek
+                  name: "Destek"
+                  url: ../support
+                  weight: 4
+                - identifier: Bağış
+                  name: "Bağış"
+                  url: ../donate
+                  weight: 5
+                - identifier: Gizlilik
+                  name: "Gizlilik"
+                  url: ../privacy
+                  weight: 6
+                - identifier: Blog
+                  name: Blog
+                  url: ../post/
+                  weight: 7
+                - identifier: Arşiv
+                  name: "Arşiv"
+                  url: ../archives/
+                  weight: 8
+                - identifier: Ara
+                  name: "Ara \U0001f50d"
                   url: ../search/
                   weight: 9
 
@@ -137,18 +198,24 @@ params:
     author: "Monal IM"
     # author: ["Me", "You"] # multiple authors
 
+
+    tocopen: false
+    ShowToc: false
+    comments: false
+    hidemeta: false
+    searchHidden: false
+
     defaultTheme: auto
     DateFormat: "02.01.2006"
     disableThemeToggle: false
-    ShowShareButtons: true
+    ShowShareButtons: false
     ShowReadingTime: true
     disableSpecial1stPost: true
     displayFullLangName: true
-    ShowPostNavLinks: true
+    ShowPostNavLinks: false
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
-    ShowToc: true
-    comments: false
+  
     images: ["papermod-cover.png"]
     disableScrollToTop: false
     rss: true
@@ -156,22 +223,17 @@ params:
     hideSummary: false
     tocopen: false
 
-    ShareButtons:
-      - twitter
-      - reddit
-
-
     socialIcons:
         - name: github
           url: "https://github.com/monal-im/monal"
         - name: email
-          url: "info@monal-im.org"
+          url: "mailto:info@monal-im.org"
         - name: liberapay
           url: "https://liberapay.com/tmolitor"
         - name: mastodon
           url: "https://fosstodon.org/@Monal"
         - name: rss
-          url: "/index.xml" # When site published
+          url: "index.xml" # When site published
         #- name: other
         #  url: ""
 
@@ -183,16 +245,16 @@ params:
     assets:
         disableHLJS: true # to disable highlight.js
         disableFingerprinting: true
-        favicon: "/favicons/favicon.ico"
-        favicon16x16: "/favicons/favicon-16x16.png"
-        favicon32x32: "/favicons/favicon-32x32.png"
-        favicon96x96: "/favicons/favicon-96x96.png"
-        manifest: "/favicons/manifest.json"
-        browserconfig: "/favicons/browserconfig.xml"
-        android_icon: "/favicons/android-icon-144x144.png"
-        ms_icon: "/favicons/ms-icon-310x310.png"
-        apple_touch_icon: "/favicons/apple-icon-144x144.png"
-        safari_pinned_tab: "/favicons/apple-icon-precomposed.png"
+        favicon: "favicons/favicon.ico"
+        favicon16x16: "favicons/favicon-16x16.png"
+        favicon32x32: "favicons/favicon-32x32.png"
+        favicon96x96: "favicons/favicon-96x96.png"
+        manifest: "favicons/manifest.json"
+        browserconfig: "favicons/browserconfig.xml"
+        android_icon: "favicons/android-icon-144x144.png"
+        ms_icon: "favicons/ms-icon-310x310.png"
+        apple_touch_icon: "favicons/apple-icon-144x144.png"
+        safari_pinned_tab: "favicons/apple-icon-precomposed.png"
 
     cover:
         hidden: false # hide everywhere but not in structured data

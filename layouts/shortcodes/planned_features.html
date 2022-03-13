@@ -9,7 +9,11 @@
     {{ range .Project.implements }}
         {{ if and (isset .SupportedXep "note") (eq .SupportedXep.status "planned") }}
             <tr>
-                <td>{{ .SupportedXep.note }}</td>
+                <td>
+                    <a href="{{ index .SupportedXep.xep "-resource" }}">
+                        {{ .SupportedXep.note }}
+                    </a>
+                </td>
                 <td>{{ .SupportedXep.status }}</td>
             <tr>
         {{ end }}

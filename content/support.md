@@ -4,19 +4,6 @@ date: 2022-03-12T10:01:54+01:00
 
 tags: []
 author: "Monal"
-showToc: false
-TocOpen: false
-draft: false
-hidemeta: true
-comments: false
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: false
-ShowPostNavLinks: false
 ---
 
 * Monal MUC: monal@chat.yax.im

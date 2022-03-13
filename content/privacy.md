@@ -1,24 +1,9 @@
 ---
 title: "Pricacy"
 date: 2022-03-12T08:08:57+01:00
-draft: false
 
 tags: []
 author: "Monal"
-showToc: false
-TocOpen: false
-draft: false
-hidemeta: true
-comments: false
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: false
-ShowPostNavLinks: false
-
 ---
 
 

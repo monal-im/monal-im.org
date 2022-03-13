@@ -1,8 +1,7 @@
 ---
 title: "Monal Gelişime İlişkin Gelişmeler"
 date: 2022-03-07
-#weight: 2
-# aliases: ["/first"]
+
 tags: []
 author: "Monal"
 ---
