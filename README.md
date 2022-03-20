@@ -6,6 +6,6 @@
 
 ## Local rendering
  * git clone this repository
- * ´git submodule update --init --remote´
- * ´hugo server´
+ * `git submodule update --init --remote`
+ * `hugo server`
  * Open the shown link
