@@ -56,18 +56,22 @@ languages:
                   name: "Privacy"
                   url: /privacy/
                   weight: 5
+                - identifier: About
+                  name: "About"
+                  url: /about/
+                  weight: 6
                 - identifier: Blog
                   name: Blog
                   url: /post/
-                  weight: 6
+                  weight: 7
                 - identifier: Archive
                   name: Archive
                   url: /archives/
-                  weight: 7
+                  weight: 8
                 - identifier: Search
                   name: "Search \U0001f50d"
                   url: /search/
-                  weight: 8
+                  weight: 9
 
     de:
         languageName: ":de:"
@@ -108,6 +112,10 @@ languages:
                 - identifier: Datenschutz
                   name: "Datenschutz"
                   url: ../privacy/
+                  weight: 5
+                - identifier: Impressum
+                  name: "Impressum"
+                  url: ../about/
                   weight: 5
                 - identifier: Blog
                   name: "Blog"
