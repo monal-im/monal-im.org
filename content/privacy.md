@@ -1,5 +1,5 @@
 ---
-title: "Pricacy"
+title: "Privacy"
 date: 2022-03-12T08:08:57+01:00
 
 tags: []
