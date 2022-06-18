@@ -6,9 +6,9 @@ tags: []
 author: "Monal"
 ---
 
-There has never been a better time to get into [XMPP](https://monal.im/welcome-to-xmpp/).
-Monal is fast friendly and free. Just download the app for [iOS](https://itunes.apple.com/us/app/monal-free-xmpp-chat/id317711500?mt=8) or [Mac](https://apps.apple.com/app/id1499227291?mt=12), login or register and you are ready to chat in minutes.
-It looks and works the way other apps do, so there is no need to “learn XMPP” or even care what it is. If you have used Messenger, WhatsApp or iMessage you can use this.
+Monal aims to become the "go-to client" in the XMPP envirnoment for the Apple technology environment with a rich feature set and beyond while at the same time being design as a truly privacy and secruity respecting chat client. The overall outcome of Monal will be an open source and privacy friendly instant messaging client providing people the ability to use such an application instead of closed instant messaging clients by big tech companies like Facebook or Google.
+
+Monal is a XMPP instant messaging client for MacOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android. XMPP in general is an open and standardized protocol for real time communication. Anyone can host their own server and communicate freely with each other, just like with email and just like email the used addresses are of the form "user@domain.tld". The user can use different apps and services, such as Monal, from a single but also multiple accounts. This serves a decentral and sovereign infrastructure and digital communication on the internet but also offers many potential for innovation. The chat client for iOS and MacOS involves implementing various XEP standards (XMPP extension protocols, adding modern functionality to the XMPP-core and XMPP-im RFCs, see [XMPP Extensions](https://xmpp.org/extensions/)). 
 
 ||||
 | -------------- | -------------------- | -------------------- |
@@ -23,20 +23,10 @@ Things look and work the way you expect. iOS, iPadOS or macOS, there is a versio
 | -------------- | -------------------- | -------------------- |
 {{< imgFromBaseUrl "images/aG9tZS01.png" >}} |{{< imgFromBaseUrl "images/aG9tZS02.png" >}} |
 
-It is updated to add new technology as soon as it is announced. Landscape, Portrait, split view, side by side, push notifications, dark mode. The list goes on and keeps growing.
 
-You are not the product
------------------------
+Monal aims to being developed under a open-source license (BSD license) that severs the user, while not selling or tracking information for external parties (nor for anyone else). This app exists because it is key to ensure usability on all platforms and within the XMPP network with all its positives aspects when it comes to decentral communication and infrastructure.
 
-Monal is free and ad free but you are not the product. This app exists because we want it to and it is free because chat networks are only as good as the number of people who use it.
-
-Technical details
------------------
-
-If you have made it this far, you probably want to know what makes this app tick. Monal is free and open source with a BSD license.
-[Find us on GitHub!](https://github.com/monal-im/Monal)
+[Find the development on GitHub!](https://github.com/monal-im/Monal)
 You can also find a list of [supported XEPs]({{< relref "supportedXeps.md" >}}).
 
 {{< centeredImgFromBaseUrl "images/aG9tZS03.png" >}}
-
-If you choose to use the feature, messages are end to end encrypted with [OMEMO](https://conversations.im/omemo/).
