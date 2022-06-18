@@ -8,7 +8,7 @@ author: "Monal"
 
 * Monal MUC: monal@chat.yax.im
 * Github Tickets: https://github.com/monal-im/Monal/issues
-* Email: info@monal-im.org
+* Email: info[at]monal[minus]im[dot]org
 
 # Security Policy
 
@@ -18,7 +18,7 @@ author: "Monal"
 
 It is highly appreciated to report a vulnerability to the Monal developers. We ask you for disclosure until it has been fixed. This prevents abuse and exploitation in the current published releases.
 
-Please report issues directly to info@monal-im.org.
+Please report issues directly to info[at]monal[minus]im[dot]org.
 
 Please try to report 
 - in detail what you are concerned about
