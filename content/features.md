@@ -11,7 +11,7 @@ The Monal apps has a core focus: User-friendly chat experience within the XMPP n
   * Decentral and federated chat standard [XMPP](https://xmpp.org/)
   * Private and group messaging
   * Privacy-respecting push notifications
-  * Encrypted private and group chats (state of the art encryption (OMEMO))
+  * Encrypted private and group chats (state of the art encryption ([OMEMO](https://conversations.im/omemo/)))
   * Message history
   * Free selection of your XMPP account provider
   * Voice messaging
