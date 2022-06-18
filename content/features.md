@@ -23,7 +23,3 @@ The Monal apps has a core focus: User-friendly chat experience within the XMPP n
 Planned features:
 
   *   Audio and Video calls
-
-Monal is a XMPP instant messaging client for MacOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android. XMPP in general is an open and standardized protocol for real time communication. Anyone can host their own server and communicate freely with each other, just like with email and just like email the used addresses are of the form "user@domain.tld". The user can use different apps and services, such as Monal, from a single but also multiple accounts. This serves a decentral and sovereign infrastructure and digital communication on the internet but also offers many potential for innovation. Developing such a "go-to client" for iOS and MacOS involves implementing various XEP standards (XMPP extension protocols, adding modern functionality to the XMPP-core and XMPP-im RFCs, see [XMPP Extensions](https://xmpp.org/extensions/)). 
-
-The overall outcome of Monal will be an open source and privacy friendly instant messaging client providing people the ability to use such an application instead of closed instant messaging clients by big tech companies like Facebook or Google. A good client within the Apple technology environment also serves the whole network of XMPP.
