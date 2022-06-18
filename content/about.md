@@ -1,9 +1,7 @@
 ---
 title: "About"
-date: 2022-04-24T08:1:00+01:00
 
 tags: []
-author: "Monal"
 ---
 
 Monal originates in 2002 as fork of the SwornIM app. Until 2019 it has been developed by Anu Pokharel. Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide. From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup. Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.
