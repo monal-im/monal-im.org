@@ -8,7 +8,7 @@ author: "Monal"
 
 Monal originates in 2002 as fork of the SwornIM app. Until 2019 it has been developed by Anu Pokharel. Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide. From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup. Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.
 
-Monal Team
+## Monal Team
 
 **Thilo Moltor** - Since 2015 he is contributing to Monal IM, when he also started to help out with the Gajim XMPP Client written in Python. Shortly after this, in early 2016 I started to take over maintenance for several Prosody modules as well as developing newones (i.e. mod_smacks, mod_cloud_notify, mod_csi_battery_saver). Later on, in 2017 Thilo started to implement basic push support in Monal IM along with the required push-app-server. Significantly core contribution to Monal continued since early 2020. Namely:
 - Re-implementation of connection management and integration of new XML parser
@@ -21,6 +21,13 @@ Monal Team
 
 And of course many people from the XMPP Community! Many thanks for your support in the recent years!
 If you read this and want to support go to this page!
+
+## Publications
+
+- ##TODO XEP development
+- ##TODO TALKS
+
+## Imprint
 
 Thilo Molitor</br>
 Vogelsbergstr. 18</br>
