@@ -3,7 +3,7 @@ title: "Features"
 tags: []
 ---
 
-The Monal apps has a core focus: User-friendly chat experience within the XMPP network but at the same time offering the best privacy and data minimalistic and secure approach as possible. To ensure this the maintainers set a standard to their code, security measures and software architecture. But of course, the app covers the following common chat features:
+The Monal app currently covers the following chat features::
 
   * Decentral and federated chat standard [XMPP](https://xmpp.org/)
   * Private and group messaging
@@ -19,4 +19,5 @@ The Monal apps has a core focus: User-friendly chat experience within the XMPP n
 
 Planned features:
 
-  *   Audio and Video calls
+  * Audio and Video calls
+  * User-interface overhaul
