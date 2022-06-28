@@ -6,7 +6,6 @@ tags: []
 author: "Monal"
 ---
 
-Monal aims to become the "go-to client" in the XMPP envirnoment for the Apple technology environment with a rich feature set and beyond while at the same time being design as a truly privacy and secruity respecting chat client. The overall outcome of Monal will be an open source and privacy friendly instant messaging client providing people the ability to use such an application instead of closed instant messaging clients by big tech companies like Facebook or Google.
 
 Monal is a XMPP instant messaging client for MacOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android. XMPP in general is an open and standardized protocol for real time communication. Anyone can host their own server and communicate freely with each other, just like with email and just like email the used addresses are of the form "user@domain.tld". The user can use different apps and services, such as Monal, from a single but also multiple accounts. This serves a decentral and sovereign infrastructure and digital communication on the internet but also offers many potential for innovation. The chat client for iOS and MacOS involves implementing various XEP standards (XMPP extension protocols, adding modern functionality to the XMPP-core and XMPP-im RFCs, see [XMPP Extensions](https://xmpp.org/extensions/)). 
 
