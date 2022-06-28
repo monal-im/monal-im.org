@@ -12,7 +12,7 @@ author: "Monal"
 
 # Security Policy
 
-*From [SECURTIY.md](https://github.com/monal-im/Monal/blob/develop/SECURITY.md).*
+*From [SECURITY.md](https://github.com/monal-im/Monal/blob/develop/SECURITY.md).*
 
 ## Reporting a Vulnerability
 
