@@ -3,10 +3,11 @@ title: "About"
 tags: []
 ---
 
-Monal originates in 2002 as fork of the SwornIM app.
+Monal originates in 2002 as fork of the SworIM app.
 Until 2019 it has been developed by Anu Pokharel.
 Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide.
-From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup. Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.
+From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup.
+Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.
 
 ## Monal Team
 
@@ -20,10 +21,6 @@ Namely:
 - New XMPP parser completely eliminating some classes of (security relevant) bugs
 - A generalized PEP ([XEP-0163](https://xmpp.org/extensions/xep-0163.html)) framework which is needed as foundation for the mentioned Bookmark Storage ([XEP-0048](https://xmpp.org/extensions/xep-0048.html)) and PEP Native Bookmarks ([XEP-0402](https://xmpp.org/extensions/xep-0402.html))
 - See commitment after 2021 in the [release notes](https://github.com/monal-im/Monal/releases).
-
-**Friedrich Altheide** - Since 2020 Friedrich stated with a first contribution to improve the geo-location functionality in MonalIM.
-The interest in the project continued and support towards a re-design of the client, especially when it comes to security and privacy aspects, have been co-developed with Thilo.
-Furthermore, the entire encryption (OMEMO) implementation has been upgraded.
 
 And of course many people from the XMPP Community!
 Many thanks for your support in the recent years!
