@@ -1,7 +1,23 @@
 ---
 title: "Features"
-date: 2022-03-12T10:19:25+01:00
-
 tags: []
-author: "Monal"
 ---
+
+The Monal app currently covers the following chat features::
+
+  * Decentral and federated chat standard [XMPP](https://xmpp.org/)
+  * Private and group messaging
+  * Privacy-respecting push notifications
+  * Encrypted private and group chats (state of the art encryption ([OMEMO](https://conversations.im/omemo/)))
+  * Message history
+  * Free selection of your XMPP account provider
+  * Voice messaging
+  * Message archiving
+  * Upload of files, videos and images (HTTP Upload)
+  * Many settings and a design to offer privacy settings in the app to the need of the user
+  * A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our [DOAP file](https://github.com/monal-im/Monal/blob/develop/monal.doap).
+
+Planned features:
+
+  * Audio and Video calls
+  * User-interface overhaul
