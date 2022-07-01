@@ -6,8 +6,8 @@ tags: []
 author: "Monal"
 ---
 
-## Implemented Features
+## Implemented XEPs
 {{< implemented_features >}}
 
-## Planned Features
+## Planned XEPs
 {{< planned_features >}}
