@@ -5,8 +5,8 @@ date: 2022-03-07
 tags: []
 author: "Monal"
 ---
-[XMPP](https://monal.im/welcome-to-xmpp/)'ye girmek için bundan daha iyi bir zaman olmamıştı. Monal hızlı, arkadaş canlısı ve ücretsizdir.
-[iOS](https://itunes.apple.com/us/app/monal-free-xmpp-chat/id317711500?mt=8) veya [Mac](https://apps.apple. com/app/id1499227291?mt=12), giriş yapın veya kaydolun ve dakikalar içinde sohbet etmeye hazırsınız. Diğer uygulamaların yaptığı gibi görünür ve çalışır, bu nedenle "XMPP'yi öğrenmeye", hatta ne olduğuyla ilgilenmeye bile gerek yoktur. Messenger, WhatsApp veya iMessage kullandıysanız bunu kullanabilirsiniz.
+XMPP'ye girmek için bundan daha iyi bir zaman olmamıştı. Monal hızlı, arkadaş canlısı ve ücretsizdir.
+[iOS](https://apps.apple.com/app/id317711500) veya [Mac](https://apps.apple.com/app/id1637078500), giriş yapın veya kaydolun ve dakikalar içinde sohbet etmeye hazırsınız. Diğer uygulamaların yaptığı gibi görünür ve çalışır, bu nedenle "XMPP'yi öğrenmeye", hatta ne olduğuyla ilgilenmeye bile gerek yoktur. Messenger, WhatsApp veya iMessage kullandıysanız bunu kullanabilirsiniz.
 
 ||||
 | -------------- | -------------------- | -------------------- |
