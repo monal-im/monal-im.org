@@ -32,7 +32,7 @@ languages:
                 - name: "Get Monal iOS"
                   url: "https://apps.apple.com/app/id317711500"
                 - name: "Get Monal macOS"
-                  url: "https://apps.apple.com/app/id1499227291"
+                  url: "https://apps.apple.com/app/id1637078500"
             indexPostContentFile: "/content/home.md"
         menu:
             main:
@@ -90,7 +90,7 @@ languages:
                 - name: "Monal für iOS Herunterladen"
                   url: "https://apps.apple.com/app/id317711500"
                 - name: "Monal für macOS Herunterladen"
-                  url: "https://apps.apple.com/app/id1499227291"
+                  url: "https://apps.apple.com/app/id1637078500"
         menu:
             main:
                 - identifier: Funktion
@@ -146,7 +146,7 @@ languages:
                 - name: Monal iOS
                   url: "https://apps.apple.com/app/id317711500"
                 - name: Monal macOS
-                  url: "https://apps.apple.com/app/id1499227291"
+                  url: "https://apps.apple.com/app/id1637078500"
         menu:
             main:
                 - identifier: Özellikler
