@@ -39,10 +39,14 @@ languages:
                 - identifier: Install
                   name: Install
                   url: /install/
-                  weight: 2
+                  weight: 1
                 - identifier: Support
                   name: "Support"
                   url: /support/
+                  weight: 2
+                - identifier: Blog
+                  name: Blog
+                  url: /post/
                   weight: 3
                 - identifier: Privacy
                   name: "Privacy"
@@ -52,14 +56,10 @@ languages:
                   name: "About"
                   url: /about/
                   weight: 6
-                - identifier: Blog
-                  name: Blog
-                  url: /post/
-                  weight: 7
-                - identifier: Archive
-                  name: Archive
-                  url: /archives/
-                  weight: 8
+                #- identifier: Archive
+                #  name: Archive
+                #  url: /archives/
+                #  weight: 8
                 - identifier: Search
                   name: "Search \U0001f50d"
                   url: /search/
@@ -85,13 +85,17 @@ languages:
                   url: "https://apps.apple.com/app/id1637078500"
         menu:
             main:
-                - identifier: Downloads
-                  name: Downloads
+                - identifier: Download
+                  name: Download
                   url: ../install/
-                  weight: 2
-                - identifier: Hilfe
-                  name: "Hilfe"
+                  weight: 1
+                - identifier: Support
+                  name: "Support"
                   url: ../support/
+                  weight: 2
+                - identifier: Blog
+                  name: "Blog"
+                  url: ../post/
                   weight: 3
                 - identifier: Datenschutz
                   name: "Datenschutz"
@@ -101,14 +105,10 @@ languages:
                   name: "Impressum"
                   url: ../about/
                   weight: 5
-                - identifier: Blog
-                  name: "Blog"
-                  url: ../post/
-                  weight: 6
-                - identifier: Archiv
-                  name: Archiv
-                  url: ../archives/
-                  weight: 7
+                #- identifier: Archiv
+                #  name: Archiv
+                #  url: ../archives/
+                #  weight: 7
                 - identifier: Suche
                   name: "Suche \U0001f50d"
                   url: ../search/
@@ -136,23 +136,23 @@ languages:
                 - identifier: İndirmeler
                   name: İndirmeler
                   url: ../install
-                  weight: 2
+                  weight: 1
                 - identifier: Destek
                   name: "Destek"
                   url: ../support
+                  weight: 2
+                - identifier: Blog
+                  name: Blog
+                  url: ../post/
                   weight: 3
                 - identifier: Gizlilik
                   name: "Gizlilik"
                   url: ../privacy
                   weight: 5
-                - identifier: Blog
-                  name: Blog
-                  url: ../post/
-                  weight: 6
-                - identifier: Arşiv
-                  name: "Arşiv"
-                  url: ../archives/
-                  weight: 7
+                #- identifier: Arşiv
+                #  name: "Arşiv"
+                #  url: ../archives/
+                #  weight: 7
                 - identifier: Ara
                   name: "Ara \U0001f50d"
                   url: ../search/
