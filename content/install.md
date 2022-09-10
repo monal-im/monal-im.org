@@ -12,4 +12,3 @@ author: "Monal"
 | Beta   | [Testflight](https://testflight.apple.com/join/lLLlgHpB) | [Testflight](https://testflight.apple.com/join/tGH2m5vf) | brew install --cask monal                   |
 | Alpha  | upon request to [info@monal-im.org](mailto:info@monal-im.org)              |                                                          | brew tap monal-im/homebrew-monal-alpha<br>brew install --cask monal-alpha |
 
-## Release cycle
