@@ -48,10 +48,6 @@ languages:
                   name: "Support"
                   url: /support/
                   weight: 3
-                - identifier: Donate
-                  name: "Donate"
-                  url: /donate/
-                  weight: 4
                 - identifier: Privacy
                   name: "Privacy"
                   url: /privacy/
@@ -105,10 +101,6 @@ languages:
                   name: "Hilfe"
                   url: ../support/
                   weight: 3
-                - identifier: Spende
-                  name: "Spende"
-                  url: ../donate/
-                  weight: 4
                 - identifier: Datenschutz
                   name: "Datenschutz"
                   url: ../privacy/
@@ -161,10 +153,6 @@ languages:
                   name: "Destek"
                   url: ../support
                   weight: 3
-                - identifier: Bağış
-                  name: "Bağış"
-                  url: ../donate
-                  weight: 4
                 - identifier: Gizlilik
                   name: "Gizlilik"
                   url: ../privacy
