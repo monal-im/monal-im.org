@@ -33,7 +33,7 @@ Teknik detaylar
 -----------------
 
 Buraya kadar okuduysanız, muhtemelen bu uygulamayı neyin harekete geçirdiğini bilmek istersiniz. Monal, BSD lisansı ile ücretsiz ve açık kaynak kodludur.
-[Bizi GitHub'da çatallayın!](https://github.com/monal-im/monal) Ayrıca [desteklenen XEP'lerin]({{< relref path="features.md"lang="en" >}}) listesini de bulabilirsiniz.
+[Bizi GitHub'da çatallayın!](https://github.com/monal-im/monal) Ayrıca [desteklenen XEP'lerin]({{< relref path="install.md"lang="en" >}}) listesini de bulabilirsiniz.
 
  {{< centeredImgFromBaseUrl "images/aG9tZS03.png" >}}
 
