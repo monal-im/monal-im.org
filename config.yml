@@ -36,10 +36,6 @@ languages:
             indexPostContentFile: "/content/home.md"
         menu:
             main:
-                - identifier: Features
-                  name: Features
-                  url: /features/
-                  weight: 1
                 - identifier: Install
                   name: Install
                   url: /install/
@@ -89,10 +85,6 @@ languages:
                   url: "https://apps.apple.com/app/id1637078500"
         menu:
             main:
-                - identifier: Funktion
-                  name: Funktion
-                  url: ../features/
-                  weight: 1
                 - identifier: Downloads
                   name: Downloads
                   url: ../install/
@@ -141,10 +133,6 @@ languages:
                   url: "https://apps.apple.com/app/id1637078500"
         menu:
             main:
-                - identifier: Özellikler
-                  name: Özellikler
-                  url: ../features/
-                  weight: 1
                 - identifier: İndirmeler
                   name: İndirmeler
                   url: ../install
