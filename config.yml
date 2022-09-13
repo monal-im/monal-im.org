@@ -170,7 +170,7 @@ params:
     author: "Monal IM"
     # author: ["Me", "You"] # multiple authors
 
-
+    ShowRssButtonInSectionTermList: true
     tocopen: false
     ShowToc: false
     comments: false
