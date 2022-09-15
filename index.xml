@@ -1,18 +1,2209 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/</link><description>Recent content on Monal</description><image><url>https://monal-im.github.io/monal-im.org/papermod-cover.png</url><link>https://monal-im.github.io/monal-im.org/papermod-cover.png</link></image><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 11 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/index.xml" rel="self" type="application/rss+xml"/><item><title>NLNet Funding</title><link>https://monal-im.github.io/monal-im.org/post/00003-nlnet-funding/</link><pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00003-nlnet-funding/</guid><description>We are pleased to announce that we got funding by the EU’s NGI Assure via the NLnet Foundation to work on some important features in Monal.
 In short this consists of the following tasks (in no special order).
-1. Implement more privacy-friendly push server The current push appserver (https://github.com/tmolitor-stud-tu/mod_push_appserver) saves more data than strictly needed to perform its task, let’s change that. On top of that, a possible HA-setup and load balancing should be strived for.</description></item><item><title>Monal IM - project moved</title><link>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</link><pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</guid><description>We recently started to migrate the App from Anu Pokharel‘s Apple account to Thilo Molitor‘s Apple account.
+1. Implement more privacy-friendly push server The current push appserver (https://github.com/tmolitor-stud-tu/mod_push_appserver) saves more data than strictly needed to perform its task, let’s change that. On top of that, a possible HA-setup and load balancing should be strived for.</description><content:encoded><![CDATA[<p>We are pleased to announce that we got funding by the EU’s <a href="https://nlnet.nl/assure/">NGI Assure via the NLnet Foundation</a> to work on some important features in Monal.</p>
+<p>In short this consists of the following tasks (in no special order).</p>
+<h3 id="1-implement-more-privacy-friendly-push-server">1. Implement more privacy-friendly push server</h3>
+<p>The current push appserver (<a href="https://github.com/tmolitor-stud-tu/mod_push_appserver">https://github.com/tmolitor-stud-tu/mod_push_appserver</a>) saves more data than strictly needed to perform its task, let’s change that. On top of that, a possible HA-setup and load balancing should be strived for.</p>
+<h3 id="2-implement-basic-audio-calls-using-webrtc">2. Implement basic Audio calls using WebRTC</h3>
+<p>Include WebRTC library into our codebase and wire it up to allow for simple audio calls not involving XMPP (maybe send SDP data through a Monal specific non-standardized XMPP stanza to make this work without hardcoded ip and port).</p>
+<p>This is to test Audio Calls in the field first before wiring them up using correct XMPP XEPs.</p>
+<h3 id="3-implement-all-xeps-needed-for-audio-calls">3. Implement all XEPs needed for Audio Calls</h3>
+<p>To make Audio Calls for XMPP work, we need proper XMPP integration. This wires up the stuff implemented in (2) into the XMPP layer by implementing the proper XEPs listed below. This will add support for 1:1 audio calls to Conversations, Dino and many more XMPP clients.</p>
+<h3 id="4-implement-video-calls-using-webrtc">4. Implement Video calls using WebRTC</h3>
+<p>On top of the work done in (2) and (3) we want to implement Video Call support as well. This will add support for 1:1 video calls to Conversations, Dino, and more.</p>
+<h3 id="5-security-quickscan">5. Security quickscan</h3>
+<p>We want a security quickscan performed by Radically Open Security and implement mitigations for problems found by them.</p>
+<h3 id="6-implement-muc-ui-management-addremovepromote-users-etc">6. Implement MUC UI management (add/remove/promote users etc.)</h3>
+<p>While Monal supports MUCs (multi user chats) in its flavours “channel” and “group”, the app is still lacking proper support for creating and managing group-type MUCs. We will implement that missing piece in this task.</p>
+<h3 id="7-port-addcontact-ui-to-swiftui">7. Port addContact UI to SwiftUI</h3>
+<p>The existing UI to add a contact or show pending contact requests is not user-friendly. We will therefore port it to SwiftUI. Once contacts can be added using the new UI, a UI for creating MUCs will be added. Monal will then support the creation of new private MUCs. Additionally, the existing functionality to scan contact QR-Codes and open contact links from other apps / iOS camera will be refactored. After the refactoring the user can preview the action and select an appropriate account before adding the contact.</p>
+<h3 id="8-add-sasl-mechanism-upgrade-capability-to-xep-0388">8. Add SASL mechanism upgrade capability to XEP-0388</h3>
+<p>XEP-0388 (“Extensible SASL Profile”) modernizes the old XMPP SASL profile defined in RFC 6120 and reduces round-trips. But neither the old SASL profile nor the new one (dubbed SASL2) solve the problem of SASL mechanism upgrades. A server that saves the hashed password for SCRAM-SHA-1 authentication has no way of upgrading to SCRAM-SHA-256. It does not know the cleartext password to calculate the hash to store itself and no way to ask the client for it. We want to take the opportunity and update the SASL2 XEP before it gets widely deployed to provide a way for a smooth upgrade path that allows the servers to store multiple hashes and get new hashes provided by clients that support the new algorithm without the need of ever knowing the cleartext password.</p>
+<h3 id="9-implement-sasl2-in-monal-including-scram-sha1-sha256-and-sha512">9. Implement SASL2 in Monal (including SCRAM SHA1, SHA256 and SHA512)</h3>
+<p>Implement the updated SASL2 XEP and the accompanying XEP-0440 (“SASL Channel-Binding Type Capability”) in Monal which serves as foundation for the implementation of XEP-0397 (“Instant Stream Resumption”).</p>
+<h3 id="10-write-new-xep-for-downgrade-protection-of-channel-binding-types-and-sasl-mechanisms-and-implement-it">10. Write new XEP for downgrade protection of channel-binding types and SASL mechanisms and implement it</h3>
+<p>A Man-In-The-Middle capable of impersonating the XMPP server on the TLS level can use SASL Mechanism Stripping and/or strip channel-binding types to downgrade the security. Adding an optional SCRAM attribute containing the hash of all server-advertised SASL mechanisms and channel-binding types as seen by the client will enable the server to check if any downgrade took place and to abort the authentication, if so. Because the SCRAM attribute will be part of the mutual authentication between client and server, a MITM will not be able to forge it as long as SCRAM is used at all.</p>
+]]></content:encoded></item><item><title>Monal IM - project moved</title><link>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</link><pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</guid><description>We recently started to migrate the App from Anu Pokharel‘s Apple account to Thilo Molitor‘s Apple account.
 As part of this transition we also deployed some new push servers to not let an old retired developer pay for the infrastructure needed for Monal.
-Coming along with this transition from the old developer team to the new one is our new clean website at https://monal-im.org/. From now on, the old blog at https://monal.</description></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/supportedxeps/</guid><description>Implemented XEPs XEP Status Since XEP-0004: Data Forms partial 4.9 XEP-0030: Service Discovery complete 4.6 XEP-0045: Multi-User Chat partial 5.0 XEP-0048: Bookmarks complete 5.0 XEP-0054: vcard-temp (implemented only for MUC profiles) complete XEP-0059: Result Set Management. Used by other XEPs. complete 4.8 XEP-0060: Publish-Subscribe partial 4.9 XEP-0066: Out of Band Data partial 4.9 XEP-0077: In-Band Registration partial XEP-0084: User Avatar complete 4.9 XEP-0085: Chat State Notifications complete 4.7 XEP-0092: Software Version complete XEP-0115: Entity Capabilities complete 4.</description></item><item><title>Support</title><link>https://monal-im.github.io/monal-im.org/support/</link><pubDate>Sat, 12 Mar 2022 10:01:54 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/support/</guid><description>Monal MUC: monal@chat.yax.im Github Tickets: https://github.com/monal-im/Monal/issues Email: info[at]monal[minus]im[dot]org. Donate Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:</description></item><item><title>Install</title><link>https://monal-im.github.io/monal-im.org/install/</link><pubDate>Sat, 12 Mar 2022 08:09:44 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/install/</guid><description>iOS macOS macOS (homebrew) Stable App Store App Store Beta Testflight Testflight brew install &amp;ndash;cask monal Alpha upon request to info@monal-im.org brew tap monal-im/homebrew-monal-alpha
+Coming along with this transition from the old developer team to the new one is our new clean website at https://monal-im.org/. From now on, the old blog at https://monal.</description><content:encoded><![CDATA[<p>We recently started to migrate the App from Anu Pokharel‘s Apple account to Thilo Molitor‘s Apple account.</p>
+<p>As part of this transition we also deployed some new push servers to not let an old retired developer pay for the infrastructure needed for Monal.</p>
+<p>Coming along with this transition from the old developer team to the new one is our new clean website at <a href="https://monal-im.org/">https://monal-im.org/</a>. From now on, the old blog at <a href="https://monal.im/">https://monal.im/</a> will not be used for Monal anymore.</p>
+<p>Many thanks to all users, contributors and followers so far.</p>
+<p>Special thanks goes to Anu. Without him and his passion, Monal would not have been possible. He developed and maintained Monal for more than 10 years, always ensuring compatibility with the latest iOS releases.</p>
+<p>When I (Thilo) gradually took over development, I was able to build upon an app with a decent codebase rather than writing my own app from scratch. That made it possible to improve Monal further while already being used by thousands of people. I can not stress enough how thankful I was and still am for all the work Anu put into the development of Monal.
+Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and macOS!</p>
+<p>Thilo, Friedrich, Anu</p>
+]]></content:encoded></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/supportedxeps/</guid><description>Implemented XEPs XEP Status Since XEP-0004: Data Forms partial 4.9 XEP-0030: Service Discovery complete 4.6 XEP-0045: Multi-User Chat partial 5.0 XEP-0048: Bookmarks complete 5.0 XEP-0054: vcard-temp (implemented only for MUC profiles) complete XEP-0059: Result Set Management. Used by other XEPs. complete 4.8 XEP-0060: Publish-Subscribe partial 4.9 XEP-0066: Out of Band Data partial 4.9 XEP-0077: In-Band Registration partial XEP-0084: User Avatar complete 4.9 XEP-0085: Chat State Notifications complete 4.7 XEP-0092: Software Version complete XEP-0115: Entity Capabilities complete 4.</description><content:encoded><![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>XEP</th>
+            <th>Status</th>
+            <th>Since</th>
+        </tr>
+    </thead>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0004.html">
+                        XEP-0004: Data Forms
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0030.html">
+                        XEP-0030: Service Discovery
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0045.html">
+                        XEP-0045: Multi-User Chat
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0048.html">
+                        XEP-0048: Bookmarks
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0054.html">
+                        XEP-0054: vcard-temp (implemented only for MUC profiles)
+                    </a>
+                </td>
+                <td>complete</td>
+                <td></td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0059.html">
+                        XEP-0059: Result Set Management. Used by other XEPs.
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0060.html">
+                        XEP-0060: Publish-Subscribe
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0066.html">
+                        XEP-0066: Out of Band Data
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0077.html">
+                        XEP-0077: In-Band Registration
+                    </a>
+                </td>
+                <td>partial</td>
+                <td></td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0084.html">
+                        XEP-0084: User Avatar
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0085.html">
+                        XEP-0085: Chat State Notifications
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0092.html">
+                        XEP-0092: Software Version
+                    </a>
+                </td>
+                <td>complete</td>
+                <td></td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0115.html">
+                        XEP-0115: Entity Capabilities
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0153.html">
+                        XEP-0153: vCard-Based Avatars (implemented only for MUC profiles)
+                    </a>
+                </td>
+                <td>complete</td>
+                <td></td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0162.html">
+                        XEP-0162: Best Practices for Roster and Subscription Management
+                    </a>
+                </td>
+                <td>complete</td>
+                <td></td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0163.html">
+                        XEP-0163: Personal Eventing Protocol
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0172.html">
+                        XEP-0172: User Nickname
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0184.html">
+                        XEP-0184: Message Receipts
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0191.html">
+                        XEP-0191: Blocking Command
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0198.html">
+                        XEP-0198: Stream Management
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0199.html">
+                        XEP-0199: XMPP Ping
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0223.html">
+                        XEP-0223: Persistent Storage of Private Data via PubSub
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0237.html">
+                        XEP-0237: Roster Versioning
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0245.html">
+                        XEP-0245: The /me Command
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0249.html">
+                        XEP-0249: Direct MUC Invitations
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0280.html">
+                        XEP-0280: Message Carbons
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.5</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0286.html">
+                        XEP-0286: Mobile Considerations on LTE Networks
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0305.html">
+                        XEP-0305: XMPP Quickstart
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.1.1</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0308.html">
+                        XEP-0308: Last Message Correction
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0313.html">
+                        XEP-0313: Message Archive Management
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0319.html">
+                        XEP-0319: Last User Interaction in Presence
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0333.html">
+                        XEP-0333: Chat Markers (received markers won&#39;t ever be implemented, use XEP-0184 instead)
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0352.html">
+                        XEP-0352: Client State Indication
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0357.html">
+                        XEP-0357: Push Notifications
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0359.html">
+                        XEP-0359: Unique and Stable Stanza IDs
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0363.html">
+                        XEP-0363: HTTP File Upload
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0368.html">
+                        XEP-0368: SRV records for XMPP over TLS
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0379.html">
+                        XEP-0379: Pre-Authenticated Roster Subscription
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0380.html">
+                        XEP-0380: Explicit Message Encryption
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.1</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0384.html">
+                        XEP-0384: OMEMO Encryption
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0392.html">
+                        XEP-0392: Consistent Color Generation
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.1</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0398.html">
+                        XEP-0398: User Avatar to vCard-Based Avatars Conversion
+                    </a>
+                </td>
+                <td>complete</td>
+                <td></td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0410.html">
+                        XEP-0410: MUC Self-Ping (Schrödinger&#39;s Chat)
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0423.html">
+                        XEP-0423 XMPP Compliance Suites 2020
+                    </a>
+                </td>
+                <td>partial</td>
+                <td></td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0441.html">
+                        XEP-0441: Message Archive Management Preferences
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0445.html">
+                        XEP-0445: Pre-Authenticated In-Band Registration
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.2</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0454.html">
+                        XEP-0454: OMEMO Media sharing
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+</table>
+
+<h2 id="planned-xeps">Planned XEPs</h2>
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>XEP</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0158.html">
+                        XEP-0158: CAPTCHA Forms
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0215.html">
+                        XEP-0215: External Service Discovery
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0353.html">
+                        XEP-0353: Jingle Message Initiation
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0369.html">
+                        XEP-0369: Mediated Information eXchange (MIX)
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0374.html">
+                        XEP-0374: OpenPGP for XMPP Instant Messaging
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0402.html">
+                        XEP-0402: PEP Native Bookmarks
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0420.html">
+                        XEP-0420: Stanza Content Encryption
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</table>
+
+]]></content:encoded></item><item><title>Support</title><link>https://monal-im.github.io/monal-im.org/support/</link><pubDate>Sat, 12 Mar 2022 10:01:54 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/support/</guid><description>Monal MUC: monal@chat.yax.im Github Tickets: https://github.com/monal-im/Monal/issues Email: info[at]monal[minus]im[dot]org. Donate Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:</description><content:encoded><![CDATA[<ul>
+<li>Monal MUC: <a href="xmpp:monal@chat.yax.im?join">monal@chat.yax.im</a></li>
+<li>Github Tickets: <a href="https://github.com/monal-im/Monal/issues">https://github.com/monal-im/Monal/issues</a></li>
+<li>Email: info[at]monal[minus]im[dot]org.</li>
+</ul>
+<h2 id="donate">Donate</h2>
+<p>Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:</p>
+<ul>
+<li>Donate via <a href="https://github.com/sponsors/tmolitor-stud-tu">GitHub Sponsors</a></li>
+<li>Donate via <a href="https://liberapay.com/tmolitor">Libera Pay</a></li>
+<li>EU citizens can donate via SEPA, too. Just contact Thilo Molitor via mail to <a href="mailto:thilo@monal-im.org">thilo@monal-im.org</a> to get his IBAN.</li>
+</ul>
+<p>Here you can read about further <a href="https://github.com/monal-im/Monal/issues/363">support of the development</a>!</p>
+<p>Find general information in the <a href="https://github.com/monal-im/Monal/wiki">Monal Wiki</a>.</p>
+<h2 id="translations">Translations</h2>
+<p>We host and manage translations via <a href="https://hosted.weblate.org/engage/monal/">Weblate</a>.
+Feel free to translate Monal to your language!</p>
+<h2 id="reporting-a-vulnerability">Reporting a Vulnerability</h2>
+<p>It is highly appreciated reporting a vulnerability to the Monal developers.
+We ask you for disclosure until it has been fixed.
+This prevents abuse and exploitation in the current published releases.
+Please report issues directly to info[at]monal[minus]im[dot]org.</p>
+<p>Please try to report</p>
+<ul>
+<li>in detail what you are concerned about</li>
+<li>if applicable, how to reproduce</li>
+<li>your contact details, if the sending email is not enough.
+That way we can ask questions back to you.</li>
+</ul>
+<p>You are also invited to make a recommendation on how to fix a potential security vulnerability.</p>
+<p>Once a vulnerability has been announced and indicated we try our very best to provide a fix as soon as possible, at its best within days. However, dependent on the potential issue it can take longer if many code sections need to be changed.</p>
+<p>Please be reminded that this is a non-commercial software project.</p>
+<p>Thank you for considering reporting a security vulnerability.
+This improves the quality of the app significantly.</p>
+]]></content:encoded></item><item><title>Install</title><link>https://monal-im.github.io/monal-im.org/install/</link><pubDate>Sat, 12 Mar 2022 08:09:44 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/install/</guid><description>iOS macOS macOS (homebrew) Stable App Store App Store Beta Testflight Testflight brew install &amp;ndash;cask monal Alpha upon request to info@monal-im.org brew tap monal-im/homebrew-monal-alpha
 brew install &amp;ndash;cask monal-alpha Features Monal currently covers the following chat features:
-Decentralised and federated chat standard XMPP Private and group messaging Privacy-respecting push notifications Encrypted private and group chats (state-of-the-art encryption (OMEMO)) Message history Free selection of your XMPP account provider Voice messaging Message archiving Upload of files, videos and images (HTTP Upload) Many settings and a design to offer privacy settings in the app to the need of the user A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our DOAP file.</description></item><item><title>Privacy</title><link>https://monal-im.github.io/monal-im.org/privacy/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacy/</guid><description>Monal-im.org (Website) A user’s IP address will be logged in the HTTP server logs. All server logs are purged every two weeks and there isn’t any way for us to associate this information with any particular individual.
+Decentralised and federated chat standard XMPP Private and group messaging Privacy-respecting push notifications Encrypted private and group chats (state-of-the-art encryption (OMEMO)) Message history Free selection of your XMPP account provider Voice messaging Message archiving Upload of files, videos and images (HTTP Upload) Many settings and a design to offer privacy settings in the app to the need of the user A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our DOAP file.</description><content:encoded><![CDATA[<table>
+<thead>
+<tr>
+<th></th>
+<th>iOS</th>
+<th>macOS</th>
+<th>macOS (homebrew)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stable</td>
+<td><a href="https://apps.apple.com/app/id317711500">App Store</a></td>
+<td><a href="https://apps.apple.com/app/id1637078500">App Store</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Beta</td>
+<td><a href="https://testflight.apple.com/join/lLLlgHpB">Testflight</a></td>
+<td><a href="https://testflight.apple.com/join/tGH2m5vf">Testflight</a></td>
+<td>brew install &ndash;cask monal</td>
+</tr>
+<tr>
+<td>Alpha</td>
+<td>upon request to <a href="mailto:info@monal-im.org">info@monal-im.org</a></td>
+<td></td>
+<td>brew tap monal-im/homebrew-monal-alpha<br>brew install &ndash;cask monal-alpha</td>
+</tr>
+</tbody>
+</table>
+<h1 id="features">Features</h1>
+<p>Monal currently covers the following chat features:</p>
+<ul>
+<li>Decentralised and federated chat standard <a href="https://xmpp.org/">XMPP</a></li>
+<li>Private and group messaging</li>
+<li>Privacy-respecting push notifications</li>
+<li>Encrypted private and group chats (state-of-the-art encryption (<a href="https://conversations.im/omemo/">OMEMO</a>))</li>
+<li>Message history</li>
+<li>Free selection of your XMPP account provider</li>
+<li>Voice messaging</li>
+<li>Message archiving</li>
+<li>Upload of files, videos and images (HTTP Upload)</li>
+<li>Many settings and a design to offer privacy settings in the app to the need of the user</li>
+<li>A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our <a href="https://github.com/monal-im/Monal/blob/develop/monal.doap">DOAP file</a>.</li>
+</ul>
+<h2 id="planned-features">Planned features:</h2>
+<ul>
+<li>Audio and Video calls</li>
+<li>User-interface overhaul</li>
+</ul>
+<h2 id="implemented-xeps">Implemented XEPs</h2>
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>XEP</th>
+            <th>Status</th>
+            <th>Since</th>
+        </tr>
+    </thead>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0004.html">
+                        XEP-0004: Data Forms
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0030.html">
+                        XEP-0030: Service Discovery
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0045.html">
+                        XEP-0045: Multi-User Chat
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0048.html">
+                        XEP-0048: Bookmarks
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0054.html">
+                        XEP-0054: vcard-temp (implemented only for MUC profiles)
+                    </a>
+                </td>
+                <td>complete</td>
+                <td></td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0059.html">
+                        XEP-0059: Result Set Management. Used by other XEPs.
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0060.html">
+                        XEP-0060: Publish-Subscribe
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0066.html">
+                        XEP-0066: Out of Band Data
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0077.html">
+                        XEP-0077: In-Band Registration
+                    </a>
+                </td>
+                <td>partial</td>
+                <td></td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0084.html">
+                        XEP-0084: User Avatar
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0085.html">
+                        XEP-0085: Chat State Notifications
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0092.html">
+                        XEP-0092: Software Version
+                    </a>
+                </td>
+                <td>complete</td>
+                <td></td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0115.html">
+                        XEP-0115: Entity Capabilities
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0153.html">
+                        XEP-0153: vCard-Based Avatars (implemented only for MUC profiles)
+                    </a>
+                </td>
+                <td>complete</td>
+                <td></td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0162.html">
+                        XEP-0162: Best Practices for Roster and Subscription Management
+                    </a>
+                </td>
+                <td>complete</td>
+                <td></td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0163.html">
+                        XEP-0163: Personal Eventing Protocol
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0172.html">
+                        XEP-0172: User Nickname
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0184.html">
+                        XEP-0184: Message Receipts
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0191.html">
+                        XEP-0191: Blocking Command
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0198.html">
+                        XEP-0198: Stream Management
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0199.html">
+                        XEP-0199: XMPP Ping
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0223.html">
+                        XEP-0223: Persistent Storage of Private Data via PubSub
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0237.html">
+                        XEP-0237: Roster Versioning
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0245.html">
+                        XEP-0245: The /me Command
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0249.html">
+                        XEP-0249: Direct MUC Invitations
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0280.html">
+                        XEP-0280: Message Carbons
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.5</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0286.html">
+                        XEP-0286: Mobile Considerations on LTE Networks
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0305.html">
+                        XEP-0305: XMPP Quickstart
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.1.1</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0308.html">
+                        XEP-0308: Last Message Correction
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0313.html">
+                        XEP-0313: Message Archive Management
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0319.html">
+                        XEP-0319: Last User Interaction in Presence
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0333.html">
+                        XEP-0333: Chat Markers (received markers won&#39;t ever be implemented, use XEP-0184 instead)
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0352.html">
+                        XEP-0352: Client State Indication
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0357.html">
+                        XEP-0357: Push Notifications
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0359.html">
+                        XEP-0359: Unique and Stable Stanza IDs
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0363.html">
+                        XEP-0363: HTTP File Upload
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0368.html">
+                        XEP-0368: SRV records for XMPP over TLS
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0379.html">
+                        XEP-0379: Pre-Authenticated Roster Subscription
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0380.html">
+                        XEP-0380: Explicit Message Encryption
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.1</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0384.html">
+                        XEP-0384: OMEMO Encryption
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0392.html">
+                        XEP-0392: Consistent Color Generation
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.1</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0398.html">
+                        XEP-0398: User Avatar to vCard-Based Avatars Conversion
+                    </a>
+                </td>
+                <td>complete</td>
+                <td></td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0410.html">
+                        XEP-0410: MUC Self-Ping (Schrödinger&#39;s Chat)
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0423.html">
+                        XEP-0423 XMPP Compliance Suites 2020
+                    </a>
+                </td>
+                <td>partial</td>
+                <td></td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0441.html">
+                        XEP-0441: Message Archive Management Preferences
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0445.html">
+                        XEP-0445: Pre-Authenticated In-Band Registration
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.2</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0454.html">
+                        XEP-0454: OMEMO Media sharing
+                    </a>
+                </td>
+                <td>partial</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+</table>
+
+<h2 id="planned-xeps">Planned XEPs</h2>
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>XEP</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0158.html">
+                        XEP-0158: CAPTCHA Forms
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0215.html">
+                        XEP-0215: External Service Discovery
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0353.html">
+                        XEP-0353: Jingle Message Initiation
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0369.html">
+                        XEP-0369: Mediated Information eXchange (MIX)
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0374.html">
+                        XEP-0374: OpenPGP for XMPP Instant Messaging
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0402.html">
+                        XEP-0402: PEP Native Bookmarks
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0420.html">
+                        XEP-0420: Stanza Content Encryption
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</table>
+
+]]></content:encoded></item><item><title>Privacy</title><link>https://monal-im.github.io/monal-im.org/privacy/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacy/</guid><description>Monal-im.org (Website) A user’s IP address will be logged in the HTTP server logs. All server logs are purged every two weeks and there isn’t any way for us to associate this information with any particular individual.
 Monal (App) With Monal 5.2.0 we introduce an even more privacy-friendly push system. Please check your Monal version before continuing reading.
 How to find out your Monal version
-Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal (App ≥ 5.</description></item><item><title>Insights Into Monal Development</title><link>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</guid><description>TLDR:
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal (App ≥ 5.</description><content:encoded><![CDATA[<h1 id="monal-imorg-website">Monal-im.org (Website)</h1>
+<p>A user’s IP address will be logged in the HTTP server logs.
+All server logs are purged every two weeks and there isn’t any way for us to associate this information with any particular individual.</p>
+<h1 id="monal-app">Monal (App)</h1>
+<p>With Monal 5.2.0 we introduce an even more privacy-friendly push system.
+Please check your Monal version before continuing reading.</p>
+<p><strong>How to find out your Monal version</strong></p>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Scroll down to the last entry &ldquo;version&rdquo;</li>
+</ol>
+</blockquote>
+<h2 id="monal-app--520">Monal (App ≥ 5.2.0)</h2>
+<p>App Resources are very limited on iOS and macOS.
+Monal for example can only run a limited time in the background after a user either locked the screen or switched the app.
+Hence, apps can not simply keep a connection to your xmpp server open 24/7 to inform you about new messages.
+To overcome these limitations your XMPP-Server can can request our push server to send push messages to Apple.
+With these push messages we can request Apple to wake up the app on your phone.
+Once it is woken up it has about 30 seconds to connect to your XMPP server, fetch all new messages and show a push notification for these new messages.</p>
+<h3 id="how-push-works">How push works</h3>
+<p>Every time that Monal logins at your XMPP servers, it requests your server to inform us once your received an XMPP message while Monal was closed.
+We therefore requests a Monal specific push token from Apple.
+Using this Monal specific push token our push server can send push messages via Apples push system to wake up the app on your device.</p>
+<p>Once push messages are enabled for your Monal instance on your XMPP servers, your XMPP servers will open a encrypted server to server (s2s) connection to one of our push servers.
+Using this s2s connection your XMPP servers will then request our push servers to wake up Monal every time that new messages should be processed.
+To wake up your instance your XMPP servers send us:</p>
+<ul>
+<li>your unique Monal specific push token that was generated by Apple</li>
+<li>the domain of the XMPP server that you are using.</li>
+</ul>
+<h3 id="push">Push</h3>
+<ul>
+<li>We <strong>never</strong> see your messages.</li>
+<li>We <strong>do not</strong> know who you are chatting with.</li>
+<li>We could <strong>only</strong> ever track what XMPP domains a push token is/was using.</li>
+<li>We <strong>can not</strong> identify a user.</li>
+</ul>
+<h4 id="push-servers">Push-Servers</h4>
+<p>We provide two independent push server regions at the moment: Europe and US.
+By default, each device will choose our Europe based push region unless the device local is set to the US.</p>
+<h4 id="how-to-change-the-push-region">How to change the push region</h4>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Open the Notifications menu</li>
+<li>Scroll down</li>
+<li>Select a region</li>
+</ol>
+</blockquote>
+<h4 id="push-server-regions">Push server regions</h4>
+<p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Hostname</th>
+<th>Notice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Europe</td>
+<td>eu.prod.push.monal-im.org</td>
+<td></td>
+</tr>
+<tr>
+<td>US</td>
+<td>us.prod.push.monal-im.org</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="push-server-locations">Push server locations</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Region</th>
+<th>Hoster</th>
+<th>Location</th>
+<th>Notice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s1.eu.prod.push.monal-im.org</td>
+<td>Europe</td>
+<td>Hetzner</td>
+<td>Finland</td>
+<td></td>
+</tr>
+<tr>
+<td>s2.eu.prod.push.monal-im.org</td>
+<td>Europe</td>
+<td>PHP-Friends</td>
+<td>Germany</td>
+<td></td>
+</tr>
+<tr>
+<td>s1.us.prod.push.monal-im.org</td>
+<td>US</td>
+<td>Fosshost</td>
+<td>US</td>
+<td>IPv4 only</td>
+</tr>
+<tr>
+<td>s2.us.prod.push.monal-im.org</td>
+<td>US</td>
+<td>Fosshost</td>
+<td>US</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="crash-reports-and-app-usage">Crash reports and app usage</h3>
+<p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
+This is opt-in only and controlled by iOS and macOS global settings.
+If a user decides not to send any data to developers, no crash logs are sent to Monal developers.</p>
+<h3 id="logs">Logs</h3>
+<p>Your local device will contain a log file with all sent and received raw XMPP messages as well as debug logs.
+It does contain sensitive personal data!
+This file will never be transferred to us, except if you explicitly (manually) send it to us (e.g. via mail).</p>
+<h3 id="gdpr-subject-access-requests-sar">GDPR Subject Access Requests (SAR)</h3>
+<p>European GDPR allows users to request a copy of all data retained about them. Starting with Monal 5.2.0 we no longer see your JIDs (<a href="mailto:username@domain.tld">username@domain.tld</a>) in our push servers.
+We therefore are not able to send you retained data related to your JID.
+We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided device ID.
+If you have questions regarding GDPR, please send us a mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
+<h2 id="monal-app--520-1">Monal (App &lt; 5.2.0)</h2>
+<p>Monal for iOS and macOS will register for APNS push notifications via a server to server (s2s) connection from your XMPP server to our push server.
+Your XMPP JID alongside with a push identifier and secret token from Apple, that is only valid for this app, will be saved and logged in the push-server logs.
+We do not intend to track you.
+All server logs are purged every two weeks.
+Our logs allow us to see the following details:</p>
+<ul>
+<li>Your JID (including your server’s hostname)</li>
+<li>Time when you register for push notifications</li>
+<li>Your apple push node and push token that was generated for Monal by Apple</li>
+<li>Time when your XMPP server triggered a push notification to your Monal device</li>
+</ul>
+<p>To fulfill its duty, our push server has to hold some information associated with an Apple push token, until Apple marks the token a deleted, which usually means you have uninstalled the app (Info: Apple confirms if a token is still valid on every push).
+In detail these information consists of:</p>
+<ul>
+<li>The Apple push token</li>
+<li>The timestamp of the last push error</li>
+<li>The timestamp of the last successful push</li>
+<li>The timestamp of the registration of your device with Monal’s push-server</li>
+<li>The timestamp when the registration was renewed</li>
+<li>A random UUID identifying your device</li>
+<li>A random secret used by your XMPP server to authenticate a push</li>
+</ul>
+<h4 id="push-server-locations-1">Push server locations</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Hoster</th>
+<th>Location</th>
+<th>Notice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ios13push.monal.im</td>
+<td>AWS</td>
+<td>US</td>
+<td>Provided by Anurodh Pokharel<br>IPv4 only</td>
+</tr>
+<tr>
+<td>push.monal.im</td>
+<td>AWS</td>
+<td>US</td>
+<td>Provided by Anurodh Pokharel<br>IPv4 only<br>iOS 12 only</td>
+</tr>
+</tbody>
+</table>
+<h3 id="crash-reports-and-app-usage-1">Crash reports and app usage</h3>
+<p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
+This is opt-in only and controlled by iOS and macOS global settings.
+If a user decides not to send any data to developers, no crash logs are sent to Monal developers.</p>
+<h3 id="logs-1">Logs</h3>
+<p>Your local device will contain a log file with all sent and received raw XMPP messages as well as debug logs.
+It does contain sensitive personal data! This file will never be transferred to us, except if you explicitly (manually) send it to us (e.g. via mail).</p>
+<h3 id="gdpr-subject-access-requests-sar-1">GDPR Subject Access Requests (SAR)</h3>
+<p>European GDPR allows users to request a copy of all data retained about them.
+Please send GDPR requests to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.
+As by GDPR we need to validate your JID before answering to your inquiry.
+Therefore, we will provide you a JID you must send a confirmation to, before we can answer your request and send you all retained data related to your JID.</p>
+]]></content:encoded></item><item><title>Insights Into Monal Development</title><link>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</guid><description>TLDR:
 Info: Monal will stop support for iOS 12, iOS 13 and macOS Catalina!
 We are searching for a SwiftUI developer.
 We need a new simplified website.
 With better continuous funding, our push servers will move from the US to Europe.
 We have a new support mail: info@monal-im.org
-Two years ago we decided to rewrite the Monal app almost entirely and improve it gradually in the process, instead of creating another XMPP Client for iOS and macOS.</description></item><item><title>Monal-IM. Privacy like it's 1999</title><link>https://monal-im.github.io/monal-im.org/home/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/home/</guid><description>Monal is a XMPP instant messaging client for MacOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android. XMPP in general is an open and standardized protocol for real time communication. Anyone can host their own server and communicate freely with each other, just like with email and just like email the used addresses are of the form &amp;ldquo;user@domain.</description></item><item><title>About</title><link>https://monal-im.github.io/monal-im.org/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/about/</guid><description>Imprint Thilo Molitor Vogelsbergstr. 18 68642 Bürstadt Germany
+Two years ago we decided to rewrite the Monal app almost entirely and improve it gradually in the process, instead of creating another XMPP Client for iOS and macOS.</description><content:encoded><![CDATA[<blockquote>
+<p>TLDR:</p>
+<p><em>Info: Monal will stop support for iOS 12, iOS 13 and macOS Catalina!<br>
+We are searching for a SwiftUI developer.<br>
+We need a new simplified website.<br>
+With better continuous funding, our push servers will move from the US to Europe.<br>
+We have a new support mail: info@monal-im.org</em></p>
+</blockquote>
+<p>Two years ago we decided to rewrite the Monal app almost entirely and improve it gradually in the process, instead of creating another XMPP Client for iOS and macOS. We successfully managed to transform Monal from an app that had flaws and issues with many functions to a level that promotes a user-friendly experience with working features such as push notification, group chat, and partially end-to-end encryption support (OMEMO). If you are selecting an XMPP client for Apple systems we think that Monal is a great choice nowadays. We have been investing more than a thousand hours and worked hard to overcome all the flaws, the legacy app had. We invite you to give the recent beta a try!</p>
+<p>The development of Monal has not yet finished though, and many more features are hopefully to come. But due to our time constraints, it sometimes takes a bit longer than we and the community would like. We are at most two developers at the moment using our spare time to maintain Monal and develop new features. As we are developing Monal in our spare time without decent funding, it is sometimes hard to prioritize specific features. Please give this circumstance some credits.</p>
+<h3 id="what-should-monal-look-like-in-the-future">What should Monal look like in the future?</h3>
+<p>To give you a bit of insight knowledge of our plans we tried to summarize the most important tasks.</p>
+<h4 id="interface-swiftui">Interface (SwiftUI)</h4>
+<p>In the future Monal should be easy to use. Therefore, the interface requires a proper rework and while we are at it, it should be ported to SwiftUI. While we are still improving in designing with SwiftUI, we would be glad if there is a SwiftUI &amp; Open Source enthusiast who would like to help us with this.<br>
+With this transition we would like to improve the accessibility of the app as well. If you like to support an open source project, and you would like to be part of our SwiftUI journey please contact us.</p>
+<p>Task:</p>
+<ul>
+<li>Add new MUC creation and management UI</li>
+<li>Port the chat view</li>
+<li>Finish contact Details
+<ul>
+<li>List group chat (MUC) participants</li>
+<li>Display OMEMO encryption fingerprints for verification</li>
+</ul>
+</li>
+<li>Port our settings</li>
+<li>Port all other remaining views</li>
+</ul>
+<p>Qualifications:</p>
+<ul>
+<li>General knowledge around SwiftUI (iOS and Catalyst)</li>
+<li>Interest in improving a (XMPP) chat client</li>
+<li>Optional, but preferred: Some experience with XMPP (e.g. some weeks, or maybe months of usage of Monal or any other “modern” XMPP client)</li>
+<li>Optional: Experience in designing inclusive / accessible UI</li>
+</ul>
+<h4 id="website">Website</h4>
+<p>We need a modern (simplified) Hugo based website that is easier to understand, similar to Conversations, Dino or Gajim.</p>
+<p>If you have some spare time, and you are a skilled in creating websites with Hugo please contact us.</p>
+<p>Requirements:</p>
+<ul>
+<li>Simple design nothing too fancy</li>
+<li>Privacy by design → No analytics, no external CSS, jss, … usage</li>
+</ul>
+<h4 id="omemo-encryption-in-group-chat-muc">OMEMO Encryption in Group Chat (MUC)</h4>
+<p>We started to integrate OMEMO for group chats (MUC) into our alpha build. The receiving and sending sides are already implemented, but there are a few more steps until we can release it into the beta.</p>
+<h4 id="switching-to-our-new-domain-monal-imorg">Switching to our new Domain monal-im.org</h4>
+<p>In late 2021 we decided that we would like to have a domain with <a href="https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions">DNSSEC</a> as our current top level domain does not support it. This domain will mainly be used for our push servers and mail servers in the future. From now on you will be able to reach us via <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
+<h4 id="build-server">Build server</h4>
+<p>Thanks to ~20 generous donors, we were able to buy a new build server that will be used to build our alpha, beta and stable releases. Furthermore, Thilo is now finally able to debug code with a proper debugger connected to his phone.</p>
+<h4 id="redundant-push-servers">Redundant Push Servers</h4>
+<p>We are currently using an AWS US instance for our push server that is not redundant and failed in 2021 more frequently than we liked it to. For that reason we started an internal project to auto-deploy our push server with Ansible and looked into ways for running a redundant push server setup. The first tests look promising so far, but a few more things need to be sorted out before we can switch over to our new setup.</p>
+<p>Before we can switch to the new push server setup, we need a stable funding each month. We estimate that renting a VM in Germany and one at a different hoster in Finland would cost us between 16€ to 32€ each month. Without a stable funding we might not be able to afford this new setup and our push servers would stay in the US.</p>
+<p>Thanks to our generous build server donors, we have a few bucks left that will be used as a ~5 month buffer in case of fluctuant push server funding</p>
+<h4 id="privacy-improved-push-servers">Privacy improved push servers</h4>
+<p>With our current push implementation our so-called “app servers” see your JID (username + server), a unique but otherwise opaque device id and an opaque token generated by apple, as well as your interaction times (when you register for push notifications, timestamps when your XMPP server triggers a push notification device).<br>
+If you use multiple accounts on one device, the unique device id is shared across all accounts. We don’t think that this is ideal, as we know all jid’s a user is using.<br>
+In the future we want to try to reduce our knowledge by hiding your username from our app servers. If our idea works, we would only see that a device is registered on one or more domains and the timestamps that a push message was triggered from each domain that is used.</p>
+<h4 id="audio-and-video-calls">Audio and Video Calls</h4>
+<p>Many clients such as Conversations and Dino support audio and video calls, so Monal should be next 🙂</p>
+<h4 id="end-of-life-ios-12-ios-13-and-macos-catalina-will-not-be-supported-anymore">End-of-life: iOS 12, iOS 13 and macOS Catalina will not be supported anymore</h4>
+<p>Our user group on iOS 12, iOS 13 as well as macOS Catalina has decreased in last years while the resources needed to maintain these old platforms increased. We therefore decided to focus on newer iOS versions and drop the old ones. The next stable release will only be supported on iOS 14 and higher and macOS Big Sur and higher. We are still unsure how long we will support iOS 14, as most of the devices also support iOS15.</p>
+<h2 id="donations-and-support">Donations and Support</h2>
+<p>Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers need to keep up service costs and development in the future! Please consider giving a bit back for the hard work which has been conducted. Currently, there are three ways to financially support the Monal development:</p>
+<ul>
+<li>Donate via <a href="https://github.com/sponsors/tmolitor-stud-tu">GitHub Sponsors</a></li>
+<li>Donate via <a href="https://liberapay.com/tmolitor">Libera Pay</a></li>
+<li>EU citizens can donate via SEPA, too. Just contact Thilo Molitor via mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a> to get his IBAN.</li>
+</ul>
+<p>Here you can read about further <a href="https://github.com/monal-im/Monal/issues/363">support of the development</a>! Find general information in the <a href="https://github.com/monal-im/Monal/wiki">Monal Wiki</a>.</p>
+<h4 id="translations">Translations</h4>
+<p>We host and manage translations via <a href="https://hosted.weblate.org/engage/monal/">Weblate</a>.</p>
+<h4 id="many-thanks">Many thanks!</h4>
+<p>Of course, thank you very much to everyone who supported us in the past two years! 🙂</p>
+<p>You can follow us via <a href="https://fosstodon.org/@Monal">Mastodon</a>.</p>
+]]></content:encoded></item><item><title>Monal-IM. Privacy like it's 1999</title><link>https://monal-im.github.io/monal-im.org/home/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/home/</guid><description>Monal is a XMPP instant messaging client for MacOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android. XMPP in general is an open and standardized protocol for real time communication. Anyone can host their own server and communicate freely with each other, just like with email and just like email the used addresses are of the form &amp;ldquo;user@domain.</description><content:encoded><![CDATA[<p>Monal is a XMPP instant messaging client for MacOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android.
+XMPP in general is an open and standardized protocol for real time communication.
+Anyone can host their own server and communicate freely with each other, just like with email and just like email the used addresses are of the form &ldquo;<a href="mailto:user@domain.tld">user@domain.tld</a>&rdquo;.
+The user can use different apps and services, such as Monal, from a single but also multiple accounts.
+This serves a decentral and sovereign infrastructure and digital communication on the internet but also offers many potential for innovation.
+The chat client for iOS and MacOS involves implementing various XEP standards (XMPP extension protocols, adding modern functionality to the XMPP-core and XMPP-im RFCs, see <a href="https://xmpp.org/extensions/">XMPP Extensions</a>).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://monal-im.github.io/monal-im.org/images/aG9tZS0y.png" alt=""></td>
+<td><img src="https://monal-im.github.io/monal-im.org/images/aG9tZS0z.png" alt=""></td>
+<td><img src="https://monal-im.github.io/monal-im.org/images/aG9tZS00.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<h2 id="designed-for-ios-and-mac">Designed for iOS and Mac</h2>
+<p>Things look and work the way you expect. iOS, iPadOS or macOS, there is a version of Monal for you.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://monal-im.github.io/monal-im.org/images/aG9tZS01.png" alt=""></td>
+<td><img src="https://monal-im.github.io/monal-im.org/images/aG9tZS02.png" alt=""></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Monal aims to being developed under a open-source license (BSD license) that severs the user, while not selling or tracking information for external parties (nor for anyone else).
+This app exists because it is key to ensure usability on all platforms and within the XMPP network with all its positives aspects when it comes to decentral communication and infrastructure.</p>
+<p><a href="https://github.com/monal-im/Monal">Find the development on GitHub!</a></p>
+<center>
+    <img src="https://monal-im.github.io/monal-im.org/images/aG9tZS03.png" alt="">
+</center>
+]]></content:encoded></item><item><title>About</title><link>https://monal-im.github.io/monal-im.org/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/about/</guid><description>Imprint Thilo Molitor Vogelsbergstr. 18 68642 Bürstadt Germany
 eMail: info[at]monal[minus]im[dot]org
-About Monal originates in 2002 as fork of the SworIM app. Until 2019 it has been developed by Anu Pokharel. Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide. From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup. Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.</description></item></channel></rss>
+About Monal originates in 2002 as fork of the SworIM app. Until 2019 it has been developed by Anu Pokharel. Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide. From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup. Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.</description><content:encoded><![CDATA[<h1 id="imprint">Imprint</h1>
+<p>Thilo Molitor</br>
+Vogelsbergstr. 18</br>
+68642 Bürstadt</br>
+Germany</p>
+<p>eMail: info[at]monal[minus]im[dot]org</p>
+<h1 id="about">About</h1>
+<p>Monal originates in 2002 as fork of the SworIM app.
+Until 2019 it has been developed by Anu Pokharel.
+Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide.
+From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup.
+Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.</p>
+<h2 id="monal-team">Monal Team</h2>
+<p><strong>Thilo Moltor</strong> - Since 2015 he is contributing to Monal IM, when he also started to help out with the Gajim XMPP Client written in Python.
+Shortly after this, in early 2016 I started to take over maintenance for several Prosody modules as well as developing newones (i.e. <em>mod_smacks</em>, <em>mod_cloud_notify</em>, <em>mod_csi_battery_saver</em>).
+Later on, in 2017 Thilo started to implement basic push support in Monal IM along with the required push-app-server.
+Significantly core contribution to Monal continued since early 2020.</p>
+<ul>
+<li>Re-implementation of connection management and integration of new XML parser</li>
+<li>Modern push notifications</li>
+<li>New XMPP parser completely eliminating some classes of (security relevant) bugs</li>
+<li>A generalized PEP (<a href="https://xmpp.org/extensions/xep-0163.html">XEP-0163</a>) framework which is needed as foundation for the mentioned Bookmark Storage (<a href="https://xmpp.org/extensions/xep-0048.html">XEP-0048</a>) and PEP Native Bookmarks (<a href="https://xmpp.org/extensions/xep-0402.html">XEP-0402</a>)</li>
+<li>See commitment after 2021 in the <a href="https://github.com/monal-im/Monal/releases">release notes</a>.</li>
+</ul>
+<p>And of course many people from the XMPP Community!
+Many thanks for your support in the recent years!
+If you read this and want to support go to this page!</p>
+<h2 id="publications">Publications</h2>
+<h3 id="talks">Talks</h3>
+<ul>
+<li>Molitor, Thilo. <strong>Monal development recap 2019 - 2021 and open discussion</strong> <em>Berlin XMPP Meetup</em>, 13th October 2021, <a href="https://xmpp-meetup.in-berlin.de/talks/monal-2021.mp4">Weblink</a></li>
+<li>Molitor, Thilo; Altheide, Friedrich. <strong>Modern XMPP - A story based on Monal</strong> <em>Berlin XMPP Meetup</em>, 13th April 2022, <a href="https://xmpp-meetup.in-berlin.de/talks/monal-2022.mp4">Weblink</a>, <a href="https://xmpp-meetup.in-berlin.de/talks/monal-and-push.pdf">Slides</a></li>
+</ul>
+<h3 id="xep-publications">XEP publications</h3>
+<ul>
+<li>XEP-0353: Jingle Message Initiation</br>
+Authors: Philipp Hancke, Peter Saint-Andre, Thilo Molitor
+<blockquote>
+<p>This specification provides a way for the initiator of a Jingle session to propose sending an invitation in an XMPP message stanza, thus taking advantage of message delivery semantics instead of sending IQ stanzas to all of the responder&rsquo;s online resources or choosing a particular online resource.</p>
+</blockquote>
+</li>
+</ul>
+]]></content:encoded></item></channel></rss>

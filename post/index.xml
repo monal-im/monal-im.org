@@ -1,11 +1,116 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Monal</title><link>https://monal-im.github.io/monal-im.org/post/</link><description>Recent content in Posts on Monal</description><image><url>https://monal-im.github.io/monal-im.org/papermod-cover.png</url><link>https://monal-im.github.io/monal-im.org/papermod-cover.png</link></image><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 11 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/post/index.xml" rel="self" type="application/rss+xml"/><item><title>NLNet Funding</title><link>https://monal-im.github.io/monal-im.org/post/00003-nlnet-funding/</link><pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00003-nlnet-funding/</guid><description>We are pleased to announce that we got funding by the EU’s NGI Assure via the NLnet Foundation to work on some important features in Monal.
 In short this consists of the following tasks (in no special order).
-1. Implement more privacy-friendly push server The current push appserver (https://github.com/tmolitor-stud-tu/mod_push_appserver) saves more data than strictly needed to perform its task, let’s change that. On top of that, a possible HA-setup and load balancing should be strived for.</description></item><item><title>Monal IM - project moved</title><link>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</link><pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</guid><description>We recently started to migrate the App from Anu Pokharel‘s Apple account to Thilo Molitor‘s Apple account.
+1. Implement more privacy-friendly push server The current push appserver (https://github.com/tmolitor-stud-tu/mod_push_appserver) saves more data than strictly needed to perform its task, let’s change that. On top of that, a possible HA-setup and load balancing should be strived for.</description><content:encoded><![CDATA[<p>We are pleased to announce that we got funding by the EU’s <a href="https://nlnet.nl/assure/">NGI Assure via the NLnet Foundation</a> to work on some important features in Monal.</p>
+<p>In short this consists of the following tasks (in no special order).</p>
+<h3 id="1-implement-more-privacy-friendly-push-server">1. Implement more privacy-friendly push server</h3>
+<p>The current push appserver (<a href="https://github.com/tmolitor-stud-tu/mod_push_appserver">https://github.com/tmolitor-stud-tu/mod_push_appserver</a>) saves more data than strictly needed to perform its task, let’s change that. On top of that, a possible HA-setup and load balancing should be strived for.</p>
+<h3 id="2-implement-basic-audio-calls-using-webrtc">2. Implement basic Audio calls using WebRTC</h3>
+<p>Include WebRTC library into our codebase and wire it up to allow for simple audio calls not involving XMPP (maybe send SDP data through a Monal specific non-standardized XMPP stanza to make this work without hardcoded ip and port).</p>
+<p>This is to test Audio Calls in the field first before wiring them up using correct XMPP XEPs.</p>
+<h3 id="3-implement-all-xeps-needed-for-audio-calls">3. Implement all XEPs needed for Audio Calls</h3>
+<p>To make Audio Calls for XMPP work, we need proper XMPP integration. This wires up the stuff implemented in (2) into the XMPP layer by implementing the proper XEPs listed below. This will add support for 1:1 audio calls to Conversations, Dino and many more XMPP clients.</p>
+<h3 id="4-implement-video-calls-using-webrtc">4. Implement Video calls using WebRTC</h3>
+<p>On top of the work done in (2) and (3) we want to implement Video Call support as well. This will add support for 1:1 video calls to Conversations, Dino, and more.</p>
+<h3 id="5-security-quickscan">5. Security quickscan</h3>
+<p>We want a security quickscan performed by Radically Open Security and implement mitigations for problems found by them.</p>
+<h3 id="6-implement-muc-ui-management-addremovepromote-users-etc">6. Implement MUC UI management (add/remove/promote users etc.)</h3>
+<p>While Monal supports MUCs (multi user chats) in its flavours “channel” and “group”, the app is still lacking proper support for creating and managing group-type MUCs. We will implement that missing piece in this task.</p>
+<h3 id="7-port-addcontact-ui-to-swiftui">7. Port addContact UI to SwiftUI</h3>
+<p>The existing UI to add a contact or show pending contact requests is not user-friendly. We will therefore port it to SwiftUI. Once contacts can be added using the new UI, a UI for creating MUCs will be added. Monal will then support the creation of new private MUCs. Additionally, the existing functionality to scan contact QR-Codes and open contact links from other apps / iOS camera will be refactored. After the refactoring the user can preview the action and select an appropriate account before adding the contact.</p>
+<h3 id="8-add-sasl-mechanism-upgrade-capability-to-xep-0388">8. Add SASL mechanism upgrade capability to XEP-0388</h3>
+<p>XEP-0388 (“Extensible SASL Profile”) modernizes the old XMPP SASL profile defined in RFC 6120 and reduces round-trips. But neither the old SASL profile nor the new one (dubbed SASL2) solve the problem of SASL mechanism upgrades. A server that saves the hashed password for SCRAM-SHA-1 authentication has no way of upgrading to SCRAM-SHA-256. It does not know the cleartext password to calculate the hash to store itself and no way to ask the client for it. We want to take the opportunity and update the SASL2 XEP before it gets widely deployed to provide a way for a smooth upgrade path that allows the servers to store multiple hashes and get new hashes provided by clients that support the new algorithm without the need of ever knowing the cleartext password.</p>
+<h3 id="9-implement-sasl2-in-monal-including-scram-sha1-sha256-and-sha512">9. Implement SASL2 in Monal (including SCRAM SHA1, SHA256 and SHA512)</h3>
+<p>Implement the updated SASL2 XEP and the accompanying XEP-0440 (“SASL Channel-Binding Type Capability”) in Monal which serves as foundation for the implementation of XEP-0397 (“Instant Stream Resumption”).</p>
+<h3 id="10-write-new-xep-for-downgrade-protection-of-channel-binding-types-and-sasl-mechanisms-and-implement-it">10. Write new XEP for downgrade protection of channel-binding types and SASL mechanisms and implement it</h3>
+<p>A Man-In-The-Middle capable of impersonating the XMPP server on the TLS level can use SASL Mechanism Stripping and/or strip channel-binding types to downgrade the security. Adding an optional SCRAM attribute containing the hash of all server-advertised SASL mechanisms and channel-binding types as seen by the client will enable the server to check if any downgrade took place and to abort the authentication, if so. Because the SCRAM attribute will be part of the mutual authentication between client and server, a MITM will not be able to forge it as long as SCRAM is used at all.</p>
+]]></content:encoded></item><item><title>Monal IM - project moved</title><link>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</link><pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</guid><description>We recently started to migrate the App from Anu Pokharel‘s Apple account to Thilo Molitor‘s Apple account.
 As part of this transition we also deployed some new push servers to not let an old retired developer pay for the infrastructure needed for Monal.
-Coming along with this transition from the old developer team to the new one is our new clean website at https://monal-im.org/. From now on, the old blog at https://monal.</description></item><item><title>Insights Into Monal Development</title><link>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</guid><description>TLDR:
+Coming along with this transition from the old developer team to the new one is our new clean website at https://monal-im.org/. From now on, the old blog at https://monal.</description><content:encoded><![CDATA[<p>We recently started to migrate the App from Anu Pokharel‘s Apple account to Thilo Molitor‘s Apple account.</p>
+<p>As part of this transition we also deployed some new push servers to not let an old retired developer pay for the infrastructure needed for Monal.</p>
+<p>Coming along with this transition from the old developer team to the new one is our new clean website at <a href="https://monal-im.org/">https://monal-im.org/</a>. From now on, the old blog at <a href="https://monal.im/">https://monal.im/</a> will not be used for Monal anymore.</p>
+<p>Many thanks to all users, contributors and followers so far.</p>
+<p>Special thanks goes to Anu. Without him and his passion, Monal would not have been possible. He developed and maintained Monal for more than 10 years, always ensuring compatibility with the latest iOS releases.</p>
+<p>When I (Thilo) gradually took over development, I was able to build upon an app with a decent codebase rather than writing my own app from scratch. That made it possible to improve Monal further while already being used by thousands of people. I can not stress enough how thankful I was and still am for all the work Anu put into the development of Monal.
+Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and macOS!</p>
+<p>Thilo, Friedrich, Anu</p>
+]]></content:encoded></item><item><title>Insights Into Monal Development</title><link>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</guid><description>TLDR:
 Info: Monal will stop support for iOS 12, iOS 13 and macOS Catalina!
 We are searching for a SwiftUI developer.
 We need a new simplified website.
 With better continuous funding, our push servers will move from the US to Europe.
 We have a new support mail: info@monal-im.org
-Two years ago we decided to rewrite the Monal app almost entirely and improve it gradually in the process, instead of creating another XMPP Client for iOS and macOS.</description></item></channel></rss>
+Two years ago we decided to rewrite the Monal app almost entirely and improve it gradually in the process, instead of creating another XMPP Client for iOS and macOS.</description><content:encoded><![CDATA[<blockquote>
+<p>TLDR:</p>
+<p><em>Info: Monal will stop support for iOS 12, iOS 13 and macOS Catalina!<br>
+We are searching for a SwiftUI developer.<br>
+We need a new simplified website.<br>
+With better continuous funding, our push servers will move from the US to Europe.<br>
+We have a new support mail: info@monal-im.org</em></p>
+</blockquote>
+<p>Two years ago we decided to rewrite the Monal app almost entirely and improve it gradually in the process, instead of creating another XMPP Client for iOS and macOS. We successfully managed to transform Monal from an app that had flaws and issues with many functions to a level that promotes a user-friendly experience with working features such as push notification, group chat, and partially end-to-end encryption support (OMEMO). If you are selecting an XMPP client for Apple systems we think that Monal is a great choice nowadays. We have been investing more than a thousand hours and worked hard to overcome all the flaws, the legacy app had. We invite you to give the recent beta a try!</p>
+<p>The development of Monal has not yet finished though, and many more features are hopefully to come. But due to our time constraints, it sometimes takes a bit longer than we and the community would like. We are at most two developers at the moment using our spare time to maintain Monal and develop new features. As we are developing Monal in our spare time without decent funding, it is sometimes hard to prioritize specific features. Please give this circumstance some credits.</p>
+<h3 id="what-should-monal-look-like-in-the-future">What should Monal look like in the future?</h3>
+<p>To give you a bit of insight knowledge of our plans we tried to summarize the most important tasks.</p>
+<h4 id="interface-swiftui">Interface (SwiftUI)</h4>
+<p>In the future Monal should be easy to use. Therefore, the interface requires a proper rework and while we are at it, it should be ported to SwiftUI. While we are still improving in designing with SwiftUI, we would be glad if there is a SwiftUI &amp; Open Source enthusiast who would like to help us with this.<br>
+With this transition we would like to improve the accessibility of the app as well. If you like to support an open source project, and you would like to be part of our SwiftUI journey please contact us.</p>
+<p>Task:</p>
+<ul>
+<li>Add new MUC creation and management UI</li>
+<li>Port the chat view</li>
+<li>Finish contact Details
+<ul>
+<li>List group chat (MUC) participants</li>
+<li>Display OMEMO encryption fingerprints for verification</li>
+</ul>
+</li>
+<li>Port our settings</li>
+<li>Port all other remaining views</li>
+</ul>
+<p>Qualifications:</p>
+<ul>
+<li>General knowledge around SwiftUI (iOS and Catalyst)</li>
+<li>Interest in improving a (XMPP) chat client</li>
+<li>Optional, but preferred: Some experience with XMPP (e.g. some weeks, or maybe months of usage of Monal or any other “modern” XMPP client)</li>
+<li>Optional: Experience in designing inclusive / accessible UI</li>
+</ul>
+<h4 id="website">Website</h4>
+<p>We need a modern (simplified) Hugo based website that is easier to understand, similar to Conversations, Dino or Gajim.</p>
+<p>If you have some spare time, and you are a skilled in creating websites with Hugo please contact us.</p>
+<p>Requirements:</p>
+<ul>
+<li>Simple design nothing too fancy</li>
+<li>Privacy by design → No analytics, no external CSS, jss, … usage</li>
+</ul>
+<h4 id="omemo-encryption-in-group-chat-muc">OMEMO Encryption in Group Chat (MUC)</h4>
+<p>We started to integrate OMEMO for group chats (MUC) into our alpha build. The receiving and sending sides are already implemented, but there are a few more steps until we can release it into the beta.</p>
+<h4 id="switching-to-our-new-domain-monal-imorg">Switching to our new Domain monal-im.org</h4>
+<p>In late 2021 we decided that we would like to have a domain with <a href="https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions">DNSSEC</a> as our current top level domain does not support it. This domain will mainly be used for our push servers and mail servers in the future. From now on you will be able to reach us via <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
+<h4 id="build-server">Build server</h4>
+<p>Thanks to ~20 generous donors, we were able to buy a new build server that will be used to build our alpha, beta and stable releases. Furthermore, Thilo is now finally able to debug code with a proper debugger connected to his phone.</p>
+<h4 id="redundant-push-servers">Redundant Push Servers</h4>
+<p>We are currently using an AWS US instance for our push server that is not redundant and failed in 2021 more frequently than we liked it to. For that reason we started an internal project to auto-deploy our push server with Ansible and looked into ways for running a redundant push server setup. The first tests look promising so far, but a few more things need to be sorted out before we can switch over to our new setup.</p>
+<p>Before we can switch to the new push server setup, we need a stable funding each month. We estimate that renting a VM in Germany and one at a different hoster in Finland would cost us between 16€ to 32€ each month. Without a stable funding we might not be able to afford this new setup and our push servers would stay in the US.</p>
+<p>Thanks to our generous build server donors, we have a few bucks left that will be used as a ~5 month buffer in case of fluctuant push server funding</p>
+<h4 id="privacy-improved-push-servers">Privacy improved push servers</h4>
+<p>With our current push implementation our so-called “app servers” see your JID (username + server), a unique but otherwise opaque device id and an opaque token generated by apple, as well as your interaction times (when you register for push notifications, timestamps when your XMPP server triggers a push notification device).<br>
+If you use multiple accounts on one device, the unique device id is shared across all accounts. We don’t think that this is ideal, as we know all jid’s a user is using.<br>
+In the future we want to try to reduce our knowledge by hiding your username from our app servers. If our idea works, we would only see that a device is registered on one or more domains and the timestamps that a push message was triggered from each domain that is used.</p>
+<h4 id="audio-and-video-calls">Audio and Video Calls</h4>
+<p>Many clients such as Conversations and Dino support audio and video calls, so Monal should be next 🙂</p>
+<h4 id="end-of-life-ios-12-ios-13-and-macos-catalina-will-not-be-supported-anymore">End-of-life: iOS 12, iOS 13 and macOS Catalina will not be supported anymore</h4>
+<p>Our user group on iOS 12, iOS 13 as well as macOS Catalina has decreased in last years while the resources needed to maintain these old platforms increased. We therefore decided to focus on newer iOS versions and drop the old ones. The next stable release will only be supported on iOS 14 and higher and macOS Big Sur and higher. We are still unsure how long we will support iOS 14, as most of the devices also support iOS15.</p>
+<h2 id="donations-and-support">Donations and Support</h2>
+<p>Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers need to keep up service costs and development in the future! Please consider giving a bit back for the hard work which has been conducted. Currently, there are three ways to financially support the Monal development:</p>
+<ul>
+<li>Donate via <a href="https://github.com/sponsors/tmolitor-stud-tu">GitHub Sponsors</a></li>
+<li>Donate via <a href="https://liberapay.com/tmolitor">Libera Pay</a></li>
+<li>EU citizens can donate via SEPA, too. Just contact Thilo Molitor via mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a> to get his IBAN.</li>
+</ul>
+<p>Here you can read about further <a href="https://github.com/monal-im/Monal/issues/363">support of the development</a>! Find general information in the <a href="https://github.com/monal-im/Monal/wiki">Monal Wiki</a>.</p>
+<h4 id="translations">Translations</h4>
+<p>We host and manage translations via <a href="https://hosted.weblate.org/engage/monal/">Weblate</a>.</p>
+<h4 id="many-thanks">Many thanks!</h4>
+<p>Of course, thank you very much to everyone who supported us in the past two years! 🙂</p>
+<p>You can follow us via <a href="https://fosstodon.org/@Monal">Mastodon</a>.</p>
+]]></content:encoded></item></channel></rss>
