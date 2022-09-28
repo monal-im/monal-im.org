@@ -17,7 +17,7 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 
 ||||
 | -------------- | -------------------- | -------------------- |
-| {{< imgFromBaseUrl "images/aG9tZS0y.png" >}}   |{{< imgFromBaseUrl "images/aG9tZS0z.png" >}} | {{< imgFromBaseUrl "images/aG9tZS00.png" >}}
+| {{< imgFromBaseUrl src="images/aG9tZS0y.png" >}}   |{{< imgFromBaseUrl src="images/aG9tZS0z.png" >}} | {{< imgFromBaseUrl src="images/aG9tZS00.png" >}}
 
 Designed for iOS and Mac
 ------------------------
@@ -26,7 +26,7 @@ Things look and work the way you expect. iOS, iPadOS or macOS, there is a versio
 
 ||||
 | -------------- | -------------------- | -------------------- |
-{{< imgFromBaseUrl "images/aG9tZS01.png" >}} |{{< imgFromBaseUrl "images/aG9tZS02.png" >}} |
+{{< imgFromBaseUrl src="images/aG9tZS01.png" >}} |{{< imgFromBaseUrl src="images/aG9tZS02.png" >}} |
 
 
 Monal aims to being developed under a open-source license (BSD license) that severs the user, while not selling or tracking information for external parties (nor for anyone else).
@@ -34,4 +34,4 @@ This app exists because it is key to ensure usability on all platforms and withi
 
 [Find the development on GitHub!](https://github.com/monal-im/Monal)
 
-{{< centeredImgFromBaseUrl "images/aG9tZS03.png" >}}
+{{< centeredImgFromBaseUrl src="images/aG9tZS03.png" >}}
