@@ -1,14 +1,41 @@
-baseURL: "" # We will enter the FULL_URL after the site is published. So it's empty now
+baseURL: ""
 title: Monal
 paginate: 5
 theme: hugo-PaperMod
 
-enableInlineShortcodes: true
-enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
-enableEmoji: true
+params:
+    env: production
+    description: "Monal IM - https://github.com/monal-im/monal"
+    author: "Monal IM"
+    # author: ["Me", "You"] # multiple authors
+
+    ShowFullTextinRSS: true
+    ShowRssButtonInSectionTermList: true
+    tocopen: false
+    ShowToc: false
+    comments: false
+    hidemeta: false
+    searchHidden: false
+
+    defaultTheme: auto
+    DateFormat: "02.01.2006"
+    disableThemeToggle: false
+    ShowShareButtons: false
+    ShowReadingTime: true
+    disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    disableScrollToTop: false
+    rss: true
+    hideSummary: false
+    enableInlineShortcodes: true
+    enableRobotsTXT: true
+    buildDrafts: false
+    buildFuture: false
+    buildExpired: false
+    enableEmoji: true
 
 minify:
     disableXML: false
@@ -21,13 +48,13 @@ languages:
         showInHeader: true
         weight: 0
         profileMode:
-            enabled: true # needs to be explicitly set
+            enabled: true
             title: "Monal IM"
             subtitle: "iOS and macOS XMPP Chat-Client"
-            imageUrl: "favicons/ms-icon-310x310.png" # optional
-            imageTitle: "Monal App Icon" # optional
-            imageWidth: 120 # custom size
-            imageHeight: 120 # custom size
+            imageUrl: "favicons/logo.png"
+            imageTitle: "Monal App Icon"
+            imageWidth: 120
+            imageHeight: 120
             buttons:
                 - name: "Get Monal iOS"
                   url: "https://apps.apple.com/app/id317711500"
@@ -71,13 +98,13 @@ languages:
         showInHeader: false
         weight: 1
         profileMode:
-            enabled: true # needs to be explicitly set
+            enabled: true
             title: "Monal IM"
             subtitle: "IOS und MacOS Chatten"
-            imageUrl: "favicons/ms-icon-310x310.png" # optional
-            imageTitle: "Monal App Icon" # optional
-            imageWidth: 120 # custom size
-            imageHeight: 120 # custom size
+            imageUrl: "favicons/logo.png"
+            imageTitle: "Monal App Icon"
+            imageWidth: 120
+            imageHeight: 120
             buttons:
                 - name: "Monal für iOS Herunterladen"
                   url: "https://apps.apple.com/app/id317711500"
@@ -114,87 +141,11 @@ languages:
                   url: ../search/
                   weight: 8
 
-    tr:
-        languageName: ":tr:"
-        languageAltTitle: Turkish
-        weight: 3
-        profileMode:
-            enabled: true # needs to be explicitly set
-            title: "Monal IM"
-            subtitle: "IOS ve MacOS'da Chat"
-            imageUrl: "favicons/ms-icon-310x310.png" # optional
-            imageTitle: "" # optional
-            imageWidth: 120 # custom size
-            imageHeight: 120 # custom size
-            buttons:
-                - name: Monal iOS
-                  url: "https://apps.apple.com/app/id317711500"
-                - name: Monal macOS
-                  url: "https://apps.apple.com/app/id1637078500"
-        menu:
-            main:
-                - identifier: İndirmeler
-                  name: İndirmeler
-                  url: ../install
-                  weight: 1
-                - identifier: Destek
-                  name: "Destek"
-                  url: ../support
-                  weight: 2
-                - identifier: Blog
-                  name: Blog
-                  url: ../post/
-                  weight: 3
-                - identifier: Gizlilik
-                  name: "Gizlilik"
-                  url: ../privacy
-                  weight: 5
-                #- identifier: Arşiv
-                #  name: "Arşiv"
-                #  url: ../archives/
-                #  weight: 7
-                - identifier: Ara
-                  name: "Ara \U0001f50d"
-                  url: ../search/
-                  weight: 8
-
 outputs:
     home:
         - HTML
         - RSS
         - JSON
-
-params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Monal IM - https://github.com/monal-im/monal"
-    author: "Monal IM"
-    # author: ["Me", "You"] # multiple authors
-
-    ShowFullTextinRSS: true
-    ShowRssButtonInSectionTermList: true
-    tocopen: false
-    ShowToc: false
-    comments: false
-    hidemeta: false
-    searchHidden: false
-
-    defaultTheme: auto
-    DateFormat: "02.01.2006"
-    disableThemeToggle: false
-    ShowShareButtons: false
-    ShowReadingTime: true
-    disableSpecial1stPost: true
-    displayFullLangName: true
-    ShowPostNavLinks: false
-    ShowBreadCrumbs: false
-    ShowCodeCopyButtons: true
-  
-    images: ["papermod-cover.png"]
-    disableScrollToTop: false
-    rss: true
-    hidemeta: false
-    hideSummary: false
-    tocopen: false
 
     socialIcons:
         - name: github
@@ -206,42 +157,23 @@ params:
         - name: mastodon
           url: "https://fosstodon.org/@Monal"
         - name: rss
-          url: "index.xml" # When site published
+          url: "index.xml"
         #- name: other
         #  url: ""
 
     editPost:
         URL: "https://github.com/monal-im/monal-im.org/tree/master/content"
-        Text: "Suggest Changes" # edit text
-        appendFilePath: true # to append file path to Edit link
+        Text: "Suggest Changes"
+        appendFilePath: true
 
     assets:
-        disableHLJS: true # to disable highlight.js
-        disableFingerprinting: true
-        favicon: "favicons/favicon.ico"
-        favicon16x16: "favicons/favicon-16x16.png"
-        favicon32x32: "favicons/favicon-32x32.png"
-        favicon96x96: "favicons/favicon-96x96.png"
-        manifest: "favicons/manifest.json"
-        browserconfig: "favicons/browserconfig.xml"
-        android_icon: "favicons/android-icon-144x144.png"
-        ms_icon: "favicons/ms-icon-310x310.png"
-        apple_touch_icon: "favicons/apple-icon-144x144.png"
-        safari_pinned_tab: "favicons/apple-icon-precomposed.png"
+        disableHLJS: true
+        disableFingerprinting: false
 
     cover:
-        hidden: false # hide everywhere but not in structured data
-        hiddenInList: false # hide on list pages and home
-        hiddenInSingle: true # hide on single page
-
-    #fuseOpts:
-    #    isCaseSensitive: false
-    #    shouldSort: true
-    #    location: 0
-    #    distance: 1000
-    #    threshold: 0.4
-    #    minMatchCharLength: 0
-    #    keys: ["title", "permalink", "summary", "content"]
+        hidden: false
+        hiddenInList: false
+        hiddenInSingle: true
 
 taxonomies:
     category: categories
