@@ -80,69 +80,69 @@ Because there are multiple different kinds of channel-binding to TLS possible, t
 <p>Second, the server can only advertise those methods it has hashes for in its database. That means it needs to know the username before advertising which methods it supports. This requires a change in the protocol flow for mechanism negotiation, which is not codified in the SASL RFC and can be changed via XEP. A good candidate would be <a href="https://xmpp.org/extensions/xep-0388.html">XEP-0388: Extensible SASL Profile</a> (also dubbed SASL2) which is not yet in <code>Final</code> state and thus can be adjusted to our needs.</p>
 <p>Let&rsquo;s assume a SASL2 protocol flow by advertising support for this protocol, but not simultaneously advertising which SASL methods the server supports. The client would then first send the desired username it wants to authenticate for, and the server would respond with a list of supported SASL mechanisms for exactly this user. The username is of course not safe from a MITM attacker, but it will be included in the SCRAM authentication flow and the server will fail the authentication if that user differs from the one given earlier.</p>
 <p>An example protocol flow using a modified SASL2 might look as follows (resembling more or less a normal SCRAM flow):</p>
-<pre tabindex="0"><code>&lt;!--
-  Server sends stream features indicating support for SASL2.
---&gt;
-&lt;stream:features&gt;
-  &lt;authentication xmlns=&#39;urn:xmpp:sasl:1&#39;/&gt;
-&lt;/stream:features&gt;
-
-&lt;!--
-  Client intiates authentication by sending the base64 encoded username it wishes to authenticate for.
---&gt;
-&lt;request xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  &lt;user&gt;dXNlcg==&lt;/user&gt;
-&lt;/request&gt;
-
-&lt;!--
-  Server sends the list of supported mechanisms for this user.
-  The sorted list will be &#39;SCRAM-SHA-1&lt;SCRAM-SHA-1_TLS-EXPORTER&lt;SCRAM-SHA-256&lt;SCRAM-SHA-256_TLS-EXPORTER&#39;,
-  the corresponding base64 encoded SHA-1 hash (SHA-1 will be used because negotiated below) is: &#39;U3vZANxXbl1pMOMBAFPnTb5YXWk=&#39;
---&gt;
-&lt;mechanisms xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  &lt;mechanism&gt;SCRAM-SHA-1&lt;/mechanism&gt;
-  &lt;mechanism&gt;SCRAM-SHA-1_TLS-EXPORTER&lt;/mechanism&gt;
-  &lt;mechanism&gt;SCRAM-SHA-256&lt;/mechanism&gt;
-  &lt;mechanism&gt;SCRAM-SHA-256_TLS-EXPORTER&lt;/mechanism&gt;
-&lt;/mechanisms&gt;
-
-&lt;!--
-  Client sends the selected mechanism alogside the initial-response data.
---&gt;
-&lt;authenticate xmlns=&#39;urn:xmpp:sasl:1&#39; mechanism=&#39;SCRAM-SHA-1_TLS-EXPORTER&#39;&gt;
-  &lt;!-- Base64 of: &#39;p=tls-exporter,,n=user,r=12C4CD5C-E38E-4A98-8F6D-15C38F51CCC6,d=U3vZANxXbl1pMOMBAFPnTb5YXWk=&#39; --&gt;
-  &lt;initial-response&gt;cD10bHMtZXhwb3J0ZXIsLG49dXNlcixyPTEyQzRDRDVDLUUzOEUtNEE5OC04RjZELTE1QzM4RjUxQ0NDNixkPVUzdlpBTnhYYmwxcE1PTUJBRlBuVGI1WVhXaz0=&lt;/initial-response&gt;
-&lt;/authenticate&gt;
-
-&lt;!--
-  SCRAM-SHA-1 challenge issued by the server.
-  Base64 of: &#39;r=12C4CD5C-E38E-4A98-8F6D-15C38F51CCC6a09117a6-ac50-4f2f-93f1-93799c2bddf6,s=QSXCR+Q6sek8bf92,i=4096&#39;
---&gt;
-&lt;challenge xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  cj0xMkM0Q0Q1Qy1FMzhFLTRBOTgtOEY2RC0xNUMzOEY1MUNDQzZhMDkxMTdhNi1hYzUwLTRmMmYtOTNmMS05Mzc5OWMyYmRkZjYscz1RU1hDUitRNnNlazhiZjkyLGk9NDA5Ng==
-&lt;/challenge&gt;
-
-&lt;!--
-  The client responds with the base64 encoded client-final-message (password: &#39;pencil&#39;).
-  Base64 of: &#39;c=cD10bHMtZXhwb3J0ZXIsLMcoQvOdBDePd4OswlmAWV3dg1a1Wh1tYPTBwVid10VU,r=12C4CD5C-E38E-4A98-8F6D-15C38F51CCC6a09117a6-ac50-4f2f-93f1-93799c2bddf6,p=icrRuoQBB0htw5+K/6RNEDJ0Q4Y=&#39;
-  The c-attribute contains the GS2-header and channel-binding data blob (32 bytes).
---&gt;
-&lt;response xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  Yz1jRDEwYkhNdFpYaHdiM0owWlhJc0xNY29Rdk9kQkRlUGQ0T3N3bG1BV1YzZGcxYTFXaDF0WVBUQndWaWQxMFZVLHI9MTJDNENENUMtRTM4RS00QTk4LThGNkQtMTVDMzhGNTFDQ0M2YTA5MTE3YTYtYWM1MC00ZjJmLTkzZjEtOTM3OTljMmJkZGY2LHA9aWNyUnVvUUJCMGh0dzUrSy82Uk5FREowUTRZPQ==
-&lt;/response&gt;
-
-&lt;!--
-  This completes, so the Server sends a success containing the base64 encoded server signature.
-  A SASL2 success always includes the authorization identifier.
---&gt;
-&lt;success xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  &lt;authorization-identifier&gt;user@example.org&lt;/authorization-identifier&gt;
-  &lt;!-- Base64 of: &#39;v=Ax+ZEP5hf90z8+KnakwspK9mEhk=&#39; --&gt;
-  &lt;additional-data&gt;
-    dj1BeCtaRVA1aGY5MHo4K0tuYWt3c3BLOW1FaGs9
-  &lt;/additional-data&gt;
-&lt;/success&gt;
-</code></pre><h2 id="restoring-protocol-agility-for-sasl-methods-part-2">Restoring protocol agility for SASL methods part #2</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Server sends stream features indicating support for SASL2.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;stream:features&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;authentication</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/stream:features&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Client intiates authentication by sending the base64 encoded username it wishes to authenticate for.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;request</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;user&gt;</span>dXNlcg==<span style="color:#f92672">&lt;/user&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/request&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Server sends the list of supported mechanisms for this user.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  The sorted list will be &#39;SCRAM-SHA-1&lt;SCRAM-SHA-1_TLS-EXPORTER&lt;SCRAM-SHA-256&lt;SCRAM-SHA-256_TLS-EXPORTER&#39;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  the corresponding base64 encoded SHA-1 hash (SHA-1 will be used because negotiated below) is: &#39;U3vZANxXbl1pMOMBAFPnTb5YXWk=&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;mechanisms</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;mechanism&gt;</span>SCRAM-SHA-1<span style="color:#f92672">&lt;/mechanism&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;mechanism&gt;</span>SCRAM-SHA-1_TLS-EXPORTER<span style="color:#f92672">&lt;/mechanism&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;mechanism&gt;</span>SCRAM-SHA-256<span style="color:#f92672">&lt;/mechanism&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;mechanism&gt;</span>SCRAM-SHA-256_TLS-EXPORTER<span style="color:#f92672">&lt;/mechanism&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/mechanisms&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Client sends the selected mechanism alogside the initial-response data.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;authenticate</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span> <span style="color:#a6e22e">mechanism=</span><span style="color:#e6db74">&#39;SCRAM-SHA-1_TLS-EXPORTER&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- Base64 of: &#39;p=tls-exporter,,n=user,r=12C4CD5C-E38E-4A98-8F6D-15C38F51CCC6,d=U3vZANxXbl1pMOMBAFPnTb5YXWk=&#39; --&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;initial-response&gt;</span>cD10bHMtZXhwb3J0ZXIsLG49dXNlcixyPTEyQzRDRDVDLUUzOEUtNEE5OC04RjZELTE1QzM4RjUxQ0NDNixkPVUzdlpBTnhYYmwxcE1PTUJBRlBuVGI1WVhXaz0=<span style="color:#f92672">&lt;/initial-response&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/authenticate&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  SCRAM-SHA-1 challenge issued by the server.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Base64 of: &#39;r=12C4CD5C-E38E-4A98-8F6D-15C38F51CCC6a09117a6-ac50-4f2f-93f1-93799c2bddf6,s=QSXCR+Q6sek8bf92,i=4096&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;challenge</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  cj0xMkM0Q0Q1Qy1FMzhFLTRBOTgtOEY2RC0xNUMzOEY1MUNDQzZhMDkxMTdhNi1hYzUwLTRmMmYtOTNmMS05Mzc5OWMyYmRkZjYscz1RU1hDUitRNnNlazhiZjkyLGk9NDA5Ng==
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/challenge&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  The client responds with the base64 encoded client-final-message (password: &#39;pencil&#39;).
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Base64 of: &#39;c=cD10bHMtZXhwb3J0ZXIsLMcoQvOdBDePd4OswlmAWV3dg1a1Wh1tYPTBwVid10VU,r=12C4CD5C-E38E-4A98-8F6D-15C38F51CCC6a09117a6-ac50-4f2f-93f1-93799c2bddf6,p=icrRuoQBB0htw5+K/6RNEDJ0Q4Y=&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  The c-attribute contains the GS2-header and channel-binding data blob (32 bytes).
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;response</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  Yz1jRDEwYkhNdFpYaHdiM0owWlhJc0xNY29Rdk9kQkRlUGQ0T3N3bG1BV1YzZGcxYTFXaDF0WVBUQndWaWQxMFZVLHI9MTJDNENENUMtRTM4RS00QTk4LThGNkQtMTVDMzhGNTFDQ0M2YTA5MTE3YTYtYWM1MC00ZjJmLTkzZjEtOTM3OTljMmJkZGY2LHA9aWNyUnVvUUJCMGh0dzUrSy82Uk5FREowUTRZPQ==
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/response&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  This completes, so the Server sends a success containing the base64 encoded server signature.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  A SASL2 success always includes the authorization identifier.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;success</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;authorization-identifier&gt;</span>user@example.org<span style="color:#f92672">&lt;/authorization-identifier&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- Base64 of: &#39;v=Ax+ZEP5hf90z8+KnakwspK9mEhk=&#39; --&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;additional-data&gt;</span>
+</span></span><span style="display:flex;"><span>    dj1BeCtaRVA1aGY5MHo4K0tuYWt3c3BLOW1FaGs9
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/additional-data&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/success&gt;</span>
+</span></span></code></pre></div><h2 id="restoring-protocol-agility-for-sasl-methods-part-2">Restoring protocol agility for SASL methods part #2</h2>
 <p>Activating a new SASL (SCRAM) method and saving new hashes for these methods for already known users on the server is a bit trickier. To solve this, the server offers new SASL mechanisms indicating that he allows for hash upgrades, if he doesn&rsquo;t have all required hashes in its database yet. The ordering of these new upgrade mechanisms should use a stable sorting algorithm. First sorting by perceived strength of the algorithm updated to, then by the percieved strength of the algorithm used for authentication (e.g. use the highest strength for authentication and upgrade to the highest strength possible with this authentication).</p>
 <p>For reference, the SCRAM flow as stated in <a href="https://www.rfc-editor.org/rfc/rfc5802#section-3">RFC 5802 section 3</a> is as follows, with HMAC() and HASH() corresponding to the hash method used to authenticate (e.g. SHA-256 for SCRAM-SHA-256):</p>
 <pre tabindex="0"><code>SaltedPassword  := Hi(Normalize(password), salt, i)
@@ -157,99 +157,99 @@ ServerKey       := HMAC(SaltedPassword, &#34;Server Key&#34;)
 ServerSignature := HMAC(ServerKey, AuthMessage)
 </code></pre><p>The <code>SaltedPassword</code> is the hash saved in the database on the server alongside the <code>salt</code>. Using additional SASL2 tasks we can now require the client to perform an additional task which consists of sending the <code>SaltedPassword</code> for the hash algorithm to upgrade to. The server just provides the required salt (that must be a new random value not equal to the one used for the old hash) and iteration count. By providing the salted hash <em>after</em> the successful completion of our SCRAM authentication, server and client can be sure to talk to the right one and when channel-binding is used, both can be sure no MITM is involved that could intercept the new <code>SaltedPassword</code>. I strongly suggest to only support password upgrades if channel-binding is used.</p>
 <p>An example protocol flow using a modified SASL2 might look as follows (resembling more or less the SCRAM flow used in part #1 above and adding a second task for the desired hash upgrade):</p>
-<pre tabindex="0"><code>&lt;!--
-  Server sends stream features indicating support for SASL2.
---&gt;
-&lt;stream:features&gt;
-  &lt;authentication xmlns=&#39;urn:xmpp:sasl:1&#39;/&gt;
-&lt;/stream:features&gt;
-
-&lt;!--
-  Client intiates authentication by sending the base64 encoded username it wishes to authenticate for.
---&gt;
-&lt;request xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  &lt;user&gt;dXNlcg==&lt;/user&gt;
-&lt;/request&gt;
-
-&lt;!--
-  Server sends the list of supported mechanisms for this user.
-  The sorted list will be &#39;SCRAM-SHA-1_TLS-EXPORTER&lt;SCRAM-SHA-256_TLS-EXPORTER&lt;UPGRADE-SCRAM-SHA-256_SCRAM-SHA-1&lt;UPGRADE-SCRAM-SHA-256_SCRAM-SHA-1_TLS-EXPORTER&#39;,
-  the corresponding base64 encoded SHA-1 hash (SHA-1 will be used because negotiated below) is: &#39;nKFUXQ7h9IL3eo17pKygmacnEsk=&#39;
---&gt;
-&lt;mechanisms xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  &lt;mechanism&gt;SCRAM-SHA-1&lt;/mechanism&gt;
-  &lt;mechanism&gt;SCRAM-SHA-1_TLS-EXPORTER&lt;/mechanism&gt;
-  &lt;mechanism&gt;UPGRADE-SCRAM-SHA-256_SCRAM-SHA-1&lt;/mechanism&gt;
-  &lt;mechanism&gt;UPGRADE-SCRAM-SHA-256_SCRAM-SHA-1_TLS-EXPORTER&lt;/mechanism&gt;
-&lt;/mechanisms&gt;
-
-&lt;!--
-  Client sends the selected mechanism alogside the initial-response data.
---&gt;
-&lt;authenticate xmlns=&#39;urn:xmpp:sasl:1&#39; mechanism=&#39;SCRAM-SHA-1_TLS-EXPORTER&#39;&gt;
-  &lt;!-- Base64 of: &#39;p=tls-exporter,,n=user,r=12C4CD5C-E38E-4A98-8F6D-15C38F51CCC6,d=nKFUXQ7h9IL3eo17pKygmacnEsk=&#39; --&gt;
-  &lt;initial-response&gt;cD10bHMtZXhwb3J0ZXIsLG49dXNlcixyPTEyQzRDRDVDLUUzOEUtNEE5OC04RjZELTE1QzM4RjUxQ0NDNixkPVUzdlpBTnhYYmwxcE1PTUJBRlBuVGI1WVhXaz0=&lt;/initial-response&gt;
-&lt;/authenticate&gt;
-
-&lt;!--
-  SCRAM-SHA-1 challenge issued by the server.
-  Base64 of: &#39;r=12C4CD5C-E38E-4A98-8F6D-15C38F51CCC6a09117a6-ac50-4f2f-93f1-93799c2bddf6,s=QSXCR+Q6sek8bf92,i=4096&#39;
---&gt;
-&lt;challenge xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  cj0xMkM0Q0Q1Qy1FMzhFLTRBOTgtOEY2RC0xNUMzOEY1MUNDQzZhMDkxMTdhNi1hYzUwLTRmMmYtOTNmMS05Mzc5OWMyYmRkZjYscz1RU1hDUitRNnNlazhiZjkyLGk9NDA5Ng==
-&lt;/challenge&gt;
-
-&lt;!--
-  The client responds with the base64 encoded client-final-message (password: &#39;pencil&#39;).
-  Base64 of: &#39;c=cD10bHMtZXhwb3J0ZXIsLMcoQvOdBDePd4OswlmAWV3dg1a1Wh1tYPTBwVid10VU,r=12C4CD5C-E38E-4A98-8F6D-15C38F51CCC6a09117a6-ac50-4f2f-93f1-93799c2bddf6,p=UApo7xo6Pa9J+Vaejfz/dG7BomU=&#39;
-  The c-attribute contains the GS2-header and channel-binding data blob (32 bytes).
---&gt;
-&lt;response xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  Yz1jRDEwYkhNdFpYaHdiM0owWlhJc0xNY29Rdk9kQkRlUGQ0T3N3bG1BV1YzZGcxYTFXaDF0WVBUQndWaWQxMFZVLHI9MTJDNENENUMtRTM4RS00QTk4LThGNkQtMTVDMzhGNTFDQ0M2YTA5MTE3YTYtYWM1MC00ZjJmLTkzZjEtOTM3OTljMmJkZGY2LHA9VUFwbzd4bzZQYTlKK1ZhZWpmei9kRzdCb21VPQ==
-&lt;/response&gt;
-
-&lt;!--
-  This completes, so the Server sends a continue containing the base64 encoded server signature and the upgrade task to perform.
---&gt;
-&lt;continue xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  &lt;authorization-identifier&gt;user@example.org&lt;/authorization-identifier&gt;
-  &lt;!-- Base64 of: &#39;msVHs/BzIOHDqXeVH7EmmDu9id8=&#39; --&gt;
-  &lt;additional-data&gt;
-    dj1tc1ZIcy9CeklPSERxWGVWSDdFbW1EdTlpZDg9
-  &lt;/additional-data&gt;
-  &lt;tasks&gt;
-    &lt;task&gt;UPGRADE-SCRAM-SHA-256&lt;/task&gt;
-  &lt;/tasks&gt;
-&lt;/continue&gt;
-
-&lt;!--
-  The client provides the SaltedPassword hash for SCRAM-SHA-256
---&gt;
-&lt;next xmlns=&#39;urn:xmpp:sasl:1&#39; task=&#39;UPGRADE-SCRAM-SHA-256&#39;/&gt;
-
-&lt;!--
-  The server sends the required salt and iteration count encoded as base64 encoded SASL attributes.
-  Base64 of: &#39;s=A_SXCRXQ6sek8bf_Z,i=4096&#39;
---&gt;
-&lt;challenge xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  cz1BX1NYQ1JYUTZzZWs4YmZfWixpPTQwOTY=
-&lt;/challenge&gt;
-
-&lt;!--
-  The client responds with the base64 encoded SaltedPassword.
---&gt;
-&lt;response xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  BzOnw3Pc5H4bOLlPZ/8JAy6wnTpH05aH21KW2+Xfpaw=
-&lt;/response&gt;
-
-&lt;!--
-  Finally, the server sends a success after adding the salted SHA-256 hash to it&#39;s database.
-  A SASL2 success always includes the authorization identifier.
---&gt;
-&lt;success xmlns=&#39;urn:xmpp:sasl:1&#39;&gt;
-  &lt;authorization-identifier&gt;user@example.org&lt;/authorization-identifier&gt;
-&lt;/success&gt;
-</code></pre><p>If the server needs to upgrade to multiple new SCRAM algorithms, he can do so one at a time on every new authentication. This is no &ldquo;do everything once&rdquo; anyways, because not every client might support every upgrade possible.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Server sends stream features indicating support for SASL2.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;stream:features&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;authentication</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/stream:features&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Client intiates authentication by sending the base64 encoded username it wishes to authenticate for.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;request</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;user&gt;</span>dXNlcg==<span style="color:#f92672">&lt;/user&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/request&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Server sends the list of supported mechanisms for this user.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  The sorted list will be &#39;SCRAM-SHA-1_TLS-EXPORTER&lt;SCRAM-SHA-256_TLS-EXPORTER&lt;UPGRADE-SCRAM-SHA-256_SCRAM-SHA-1&lt;UPGRADE-SCRAM-SHA-256_SCRAM-SHA-1_TLS-EXPORTER&#39;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  the corresponding base64 encoded SHA-1 hash (SHA-1 will be used because negotiated below) is: &#39;nKFUXQ7h9IL3eo17pKygmacnEsk=&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;mechanisms</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;mechanism&gt;</span>SCRAM-SHA-1<span style="color:#f92672">&lt;/mechanism&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;mechanism&gt;</span>SCRAM-SHA-1_TLS-EXPORTER<span style="color:#f92672">&lt;/mechanism&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;mechanism&gt;</span>UPGRADE-SCRAM-SHA-256_SCRAM-SHA-1<span style="color:#f92672">&lt;/mechanism&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;mechanism&gt;</span>UPGRADE-SCRAM-SHA-256_SCRAM-SHA-1_TLS-EXPORTER<span style="color:#f92672">&lt;/mechanism&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/mechanisms&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Client sends the selected mechanism alogside the initial-response data.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;authenticate</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span> <span style="color:#a6e22e">mechanism=</span><span style="color:#e6db74">&#39;SCRAM-SHA-1_TLS-EXPORTER&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- Base64 of: &#39;p=tls-exporter,,n=user,r=12C4CD5C-E38E-4A98-8F6D-15C38F51CCC6,d=nKFUXQ7h9IL3eo17pKygmacnEsk=&#39; --&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;initial-response&gt;</span>cD10bHMtZXhwb3J0ZXIsLG49dXNlcixyPTEyQzRDRDVDLUUzOEUtNEE5OC04RjZELTE1QzM4RjUxQ0NDNixkPVUzdlpBTnhYYmwxcE1PTUJBRlBuVGI1WVhXaz0=<span style="color:#f92672">&lt;/initial-response&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/authenticate&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  SCRAM-SHA-1 challenge issued by the server.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Base64 of: &#39;r=12C4CD5C-E38E-4A98-8F6D-15C38F51CCC6a09117a6-ac50-4f2f-93f1-93799c2bddf6,s=QSXCR+Q6sek8bf92,i=4096&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;challenge</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  cj0xMkM0Q0Q1Qy1FMzhFLTRBOTgtOEY2RC0xNUMzOEY1MUNDQzZhMDkxMTdhNi1hYzUwLTRmMmYtOTNmMS05Mzc5OWMyYmRkZjYscz1RU1hDUitRNnNlazhiZjkyLGk9NDA5Ng==
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/challenge&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  The client responds with the base64 encoded client-final-message (password: &#39;pencil&#39;).
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Base64 of: &#39;c=cD10bHMtZXhwb3J0ZXIsLMcoQvOdBDePd4OswlmAWV3dg1a1Wh1tYPTBwVid10VU,r=12C4CD5C-E38E-4A98-8F6D-15C38F51CCC6a09117a6-ac50-4f2f-93f1-93799c2bddf6,p=UApo7xo6Pa9J+Vaejfz/dG7BomU=&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  The c-attribute contains the GS2-header and channel-binding data blob (32 bytes).
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;response</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  Yz1jRDEwYkhNdFpYaHdiM0owWlhJc0xNY29Rdk9kQkRlUGQ0T3N3bG1BV1YzZGcxYTFXaDF0WVBUQndWaWQxMFZVLHI9MTJDNENENUMtRTM4RS00QTk4LThGNkQtMTVDMzhGNTFDQ0M2YTA5MTE3YTYtYWM1MC00ZjJmLTkzZjEtOTM3OTljMmJkZGY2LHA9VUFwbzd4bzZQYTlKK1ZhZWpmei9kRzdCb21VPQ==
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/response&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  This completes, so the Server sends a continue containing the base64 encoded server signature and the upgrade task to perform.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;continue</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;authorization-identifier&gt;</span>user@example.org<span style="color:#f92672">&lt;/authorization-identifier&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- Base64 of: &#39;msVHs/BzIOHDqXeVH7EmmDu9id8=&#39; --&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;additional-data&gt;</span>
+</span></span><span style="display:flex;"><span>    dj1tc1ZIcy9CeklPSERxWGVWSDdFbW1EdTlpZDg9
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/additional-data&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;tasks&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;task&gt;</span>UPGRADE-SCRAM-SHA-256<span style="color:#f92672">&lt;/task&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/tasks&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/continue&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  The client provides the SaltedPassword hash for SCRAM-SHA-256
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;next</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span> <span style="color:#a6e22e">task=</span><span style="color:#e6db74">&#39;UPGRADE-SCRAM-SHA-256&#39;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  The server sends the required salt and iteration count encoded as base64 encoded SASL attributes.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Base64 of: &#39;s=A_SXCRXQ6sek8bf_Z,i=4096&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;challenge</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  cz1BX1NYQ1JYUTZzZWs4YmZfWixpPTQwOTY=
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/challenge&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  The client responds with the base64 encoded SaltedPassword.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;response</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  BzOnw3Pc5H4bOLlPZ/8JAy6wnTpH05aH21KW2+Xfpaw=
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/response&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Finally, the server sends a success after adding the salted SHA-256 hash to it&#39;s database.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  A SASL2 success always includes the authorization identifier.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;success</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:sasl:1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;authorization-identifier&gt;</span>user@example.org<span style="color:#f92672">&lt;/authorization-identifier&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/success&gt;</span>
+</span></span></code></pre></div><p>If the server needs to upgrade to multiple new SCRAM algorithms, he can do so one at a time on every new authentication. This is no &ldquo;do everything once&rdquo; anyways, because not every client might support every upgrade possible.</p>
 <h1 id="conclusion">Conclusion</h1>
 <p>To conclude this, we now identified several improvements to regain the properties listed in the beginning. These improvements can mainly be achieved by updating the SASL2 XEP (<a href="https://xmpp.org/extensions/xep-0388.html">XEP-0388: Extensible SASL Profile</a>). The downgrade prevention (the additional SCRAM attribute <code>d</code>) should possibly be published as RFC, but a XEP could suffice, too.</p>
 <p>Feel free to comment on anything in here. I&rsquo;m always open to feedback and improvements. Just contact me at <a href="mailto:thilo@monal-im.org">thilo@monal-im.org</a>.</p>
