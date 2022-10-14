@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/</link><description>Recent content on Monal</description><image><url>https://monal-im.github.io/monal-im.org/papermod-cover.png</url><link>https://monal-im.github.io/monal-im.org/papermod-cover.png</link></image><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/index.xml" rel="self" type="application/rss+xml"/><item><title>On the state of SASL in XMPP</title><link>https://monal-im.github.io/monal-im.org/post/00004-sasl/</link><pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00004-sasl/</guid><description>SASL (Simple Authentication and Security Layer) as used in XMPP is broken. In this blog post I&amp;rsquo;ll try to explain why and propose some fixes.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/</link><description>Recent content on Monal</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/index.xml" rel="self" type="application/rss+xml"/><item><title>On the state of SASL in XMPP</title><link>https://monal-im.github.io/monal-im.org/post/00004-sasl/</link><pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00004-sasl/</guid><description>SASL (Simple Authentication and Security Layer) as used in XMPP is broken. In this blog post I&amp;rsquo;ll try to explain why and propose some fixes.
 Update: Since I originally wrote this blog post, I&amp;rsquo;ve had the ability to discuss several of my solutions with Dave (the original author of XEP-0388 dubbed SASL2) and MattJ (one of the authors of the prosody xmpp server) and others. Most, if not all of my issues are now addressed in a bunch of updates to existing XEPs as well as new XEPs:</description><content:encoded><![CDATA[<p>SASL (Simple Authentication and Security Layer) <a href="https://xmpp.org/rfcs/rfc6120.html#sasl">as used in XMPP</a> is broken. In this blog post I&rsquo;ll try to explain why and propose some fixes.</p>
 <p><strong>Update:</strong> Since I originally wrote this blog post, I&rsquo;ve had the ability to discuss several of my solutions with Dave (the original author of XEP-0388 dubbed SASL2) and MattJ (one of the authors of the prosody xmpp server) and others.
 Most, if not all of my issues are now addressed in a bunch of updates to existing XEPs as well as new XEPs:</p>
@@ -2443,9 +2443,222 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 </thead>
 <tbody>
 <tr>
-<td><img src="https://monal-im.github.io/monal-im.org/images/aG9tZS0y.png" alt=""></td>
-<td><img src="https://monal-im.github.io/monal-im.org/images/aG9tZS0z.png" alt=""></td>
-<td><img src="https://monal-im.github.io/monal-im.org/images/aG9tZS00.png" alt=""></td>
+<td>
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<figure>
+  <div class="img-box">
+    <img
+      srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_240x0_resize_q50_h2_box_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_300x0_resize_q50_h2_box_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_360x0_resize_q50_h2_box_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_375x0_resize_q50_h2_box_3.webp 375w"
+      sizes="(max-width: 200px) 240px 300px 360px 420px,
+      (max-width: 400px) 200px 240px 300px 360px 420px 480px 600px 768px 800px,
+      (max-width: 600px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px,
+      (max-width: 800px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
+      (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
+      200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
+
+      src="https://monal-im.github.io/monal-im.org/images/aG9tZS0y.png" alt="" title=""/>
+  </div>
+  <figcaption></figcaption>
+</figure>
+</td>
+<td>
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<figure>
+  <div class="img-box">
+    <img
+      srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_240x0_resize_q50_h2_box_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_300x0_resize_q50_h2_box_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_360x0_resize_q50_h2_box_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_375x0_resize_q50_h2_box_3.webp 375w"
+      sizes="(max-width: 200px) 240px 300px 360px 420px,
+      (max-width: 400px) 200px 240px 300px 360px 420px 480px 600px 768px 800px,
+      (max-width: 600px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px,
+      (max-width: 800px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
+      (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
+      200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
+
+      src="https://monal-im.github.io/monal-im.org/images/aG9tZS0z.png" alt="" title=""/>
+  </div>
+  <figcaption></figcaption>
+</figure>
+</td>
+<td>
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<figure>
+  <div class="img-box">
+    <img
+      srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_240x0_resize_q50_h2_box_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_300x0_resize_q50_h2_box_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_360x0_resize_q50_h2_box_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_375x0_resize_q50_h2_box_3.webp 375w"
+      sizes="(max-width: 200px) 240px 300px 360px 420px,
+      (max-width: 400px) 200px 240px 300px 360px 420px 480px 600px 768px 800px,
+      (max-width: 600px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px,
+      (max-width: 800px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
+      (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
+      200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
+
+      src="https://monal-im.github.io/monal-im.org/images/aG9tZS00.png" alt="" title=""/>
+  </div>
+  <figcaption></figcaption>
+</figure>
+</td>
 </tr>
 </tbody>
 </table>
@@ -2461,8 +2674,162 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 </thead>
 <tbody>
 <tr>
-<td><img src="https://monal-im.github.io/monal-im.org/images/aG9tZS01.png" alt=""></td>
-<td><img src="https://monal-im.github.io/monal-im.org/images/aG9tZS02.png" alt=""></td>
+<td>
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<figure>
+  <div class="img-box">
+    <img
+      srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_240x0_resize_q50_h2_box_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_300x0_resize_q50_h2_box_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_360x0_resize_q50_h2_box_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_375x0_resize_q50_h2_box_3.webp 375w"
+      sizes="(max-width: 200px) 240px 300px 360px 420px,
+      (max-width: 400px) 200px 240px 300px 360px 420px 480px 600px 768px 800px,
+      (max-width: 600px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px,
+      (max-width: 800px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
+      (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
+      200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
+
+      src="https://monal-im.github.io/monal-im.org/images/aG9tZS01.png" alt="" title=""/>
+  </div>
+  <figcaption></figcaption>
+</figure>
+</td>
+<td>
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<figure>
+  <div class="img-box">
+    <img
+      srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_240x0_resize_q50_h2_box_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_300x0_resize_q50_h2_box_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_360x0_resize_q50_h2_box_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_420x0_resize_q50_h2_box_3.webp 420w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_480x0_resize_q50_h2_box_3.webp 480w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_600x0_resize_q50_h2_box_3.webp 600w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_640x0_resize_q50_h2_box_3.webp 640w"
+      sizes="(max-width: 200px) 240px 300px 360px 420px,
+      (max-width: 400px) 200px 240px 300px 360px 420px 480px 600px 768px 800px,
+      (max-width: 600px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px,
+      (max-width: 800px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
+      (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
+      200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
+
+      src="https://monal-im.github.io/monal-im.org/images/aG9tZS02.png" alt="" title=""/>
+  </div>
+  <figcaption></figcaption>
+</figure>
+</td>
 <td></td>
 </tr>
 </tbody>
@@ -2470,9 +2837,84 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 <p>Monal aims to being developed under a open-source license (BSD license) that severs the user, while not selling or tracking information for external parties (nor for anyone else).
 This app exists because it is key to ensure usability on all platforms and within the XMPP network with all its positives aspects when it comes to decentral communication and infrastructure.</p>
 <p><a href="https://github.com/monal-im/Monal">Find the development on GitHub!</a></p>
-<center>
-    <img src="https://monal-im.github.io/monal-im.org/images/aG9tZS03.png" alt="">
-</center>
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<figure>
+  <div class="img-box">
+    <center>
+    <img
+      srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_240x0_resize_q50_h2_box_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_300x0_resize_q50_h2_box_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_360x0_resize_q50_h2_box_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_420x0_resize_q50_h2_box_3.webp 420w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_470x0_resize_q50_h2_box_3.webp 470w"
+      sizes="(max-width: 200px) 240px 300px 360px 420px,
+      (max-width: 400px) 200px 240px 300px 360px 420px 480px 600px 768px 800px,
+      (max-width: 600px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px,
+      (max-width: 800px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
+      (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
+      200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
+
+      src="https://monal-im.github.io/monal-im.org/images/aG9tZS03.png" alt="" title=""/>
+      </center>
+  </div>
+  <figcaption></figcaption>
+</figure>
+
 ]]></content:encoded></item><item><title>About</title><link>https://monal-im.github.io/monal-im.org/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/about/</guid><description>Imprint Thilo Molitor Vogelsbergstr. 18 68642 Bürstadt Germany
 eMail: info[at]monal[minus]im[dot]org
 About Monal originates in 2002 as fork of the SworIM app. Until 2019 it has been developed by Anu Pokharel. Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide. From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup. Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.</description><content:encoded><![CDATA[<h1 id="imprint">Imprint</h1>
