@@ -60,7 +60,6 @@ languages:
     en:
         languageName: ":gb:"
         languageAltTitle: "English"
-        showInHeader: true
         weight: 0
         profileMode:
             enabled: true
@@ -114,7 +113,6 @@ languages:
     de:
         languageName: ":de:"
         languageAltTitle: Deutsch
-        showInHeader: false
         weight: 1
         profileMode:
             enabled: true
