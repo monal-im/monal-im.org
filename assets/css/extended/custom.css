@@ -1,0 +1,17 @@
+.post-content p {
+    text-align: justify !important;
+}
+
+.entry-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 25% !important;
+}
+
+.buttons {
+    flex-wrap: wrap;
+    max-width: 650px !important;
+    margin: 0 auto;
+}

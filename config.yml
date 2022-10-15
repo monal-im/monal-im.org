@@ -37,6 +37,21 @@ params:
     buildExpired: false
     enableEmoji: true
 
+    socialIcons:
+        - name: github
+          url: "https://github.com/monal-im/monal"
+        - name: email
+          url: "mailto:info@monal-im.org"
+        - name: liberapay
+          url: "https://liberapay.com/tmolitor"
+        - name: mastodon
+          url: "https://fosstodon.org/@Monal"
+        - name: rss
+          url: "index.xml"
+        #- name: other
+        #  url: ""
+
+
 minify:
     disableXML: false
     minifyOutput: true
@@ -78,10 +93,14 @@ languages:
                 - identifier: Privacy
                   name: "Privacy"
                   url: /privacy/
-                  weight: 5
+                  weight: 4
                 - identifier: About
                   name: "About"
                   url: /about/
+                  weight: 5
+                - identifier: FAQ
+                  name: "FAQ"
+                  url: https://github.com/monal-im/Monal/wiki/FAQ---Frequently-Asked-Questions
                   weight: 6
                 #- identifier: Archive
                 #  name: Archive
@@ -127,11 +146,15 @@ languages:
                 - identifier: Datenschutz
                   name: "Datenschutz"
                   url: ../privacy/
-                  weight: 5
+                  weight: 4
                 - identifier: Impressum
                   name: "Impressum"
                   url: ../about/
                   weight: 5
+                - identifier: FAQ
+                  name: "FAQ"
+                  url: https://github.com/monal-im/Monal/wiki/FAQ---Frequently-Asked-Questions
+                  weight: 6
                 #- identifier: Archiv
                 #  name: Archiv
                 #  url: ../archives/
@@ -147,22 +170,8 @@ outputs:
         - RSS
         - JSON
 
-    socialIcons:
-        - name: github
-          url: "https://github.com/monal-im/monal"
-        - name: email
-          url: "mailto:info@monal-im.org"
-        - name: liberapay
-          url: "https://liberapay.com/tmolitor"
-        - name: mastodon
-          url: "https://fosstodon.org/@Monal"
-        - name: rss
-          url: "index.xml"
-        #- name: other
-        #  url: ""
-
     editPost:
-        URL: "https://github.com/monal-im/monal-im.org/tree/master/content"
+        URL: "https://github.com/monal-im/monal-im.org/tree/staging/content"
         Text: "Suggest Changes"
         appendFilePath: true
 
