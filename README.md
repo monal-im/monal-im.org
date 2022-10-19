@@ -9,3 +9,6 @@
  * `git submodule update --init --remote`
  * `hugo server`
  * Open the shown link
+
+## Rendering of staging branch
+https://monal-im.github.io/monal-im.org/
