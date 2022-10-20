@@ -8,8 +8,8 @@ author: "Monal"
 
 |        | iOS                                                      | macOS                                                    | macOS (homebrew)                            |
 |--------|----------------------------------------------------------|----------------------------------------------------------|---------------------------------------------|
-| Stable | [App Store](https://apps.apple.com/app/id317711500)      | [App Store](https://apps.apple.com/app/id1637078500)     |                                             |
-| Beta   | [Testflight](https://testflight.apple.com/join/lLLlgHpB) | [Testflight](https://testflight.apple.com/join/tGH2m5vf) | brew install --cask monal                   |
+| Stable | [App Store](https://apps.apple.com/app/id317711500)      | [App Store](https://apps.apple.com/app/id1637078500)     | brew install –cask monal                                            |
+| Beta   | [Testflight](https://testflight.apple.com/join/lLLlgHpB) | [Testflight](https://testflight.apple.com/join/tGH2m5vf) |    |
 | Alpha  | upon request to [info@monal-im.org](mailto:info@monal-im.org)              |                                                          | brew tap monal-im/homebrew-monal-alpha<br>brew install --cask monal-alpha |
 
 # Features
