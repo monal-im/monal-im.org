@@ -1178,8 +1178,8 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
     
 </table>
 
-]]></content:encoded></item><item><title>Support</title><link>https://monal-im.github.io/monal-im.org/support/</link><pubDate>Sat, 12 Mar 2022 10:01:54 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/support/</guid><description>Monal MUC: monal@chat.yax.im Github Tickets: https://github.com/monal-im/Monal/issues Email: info[at]monal[minus]im[dot]org. Donate Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:</description><content:encoded><![CDATA[<ul>
-<li>Monal MUC: <a href="xmpp:monal@chat.yax.im?join">monal@chat.yax.im</a></li>
+]]></content:encoded></item><item><title>Support</title><link>https://monal-im.github.io/monal-im.org/support/</link><pubDate>Sat, 12 Mar 2022 10:01:54 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/support/</guid><description>Monal Support Channel (XMPP MUC): monal@chat.yax.im Github Tickets: https://github.com/monal-im/Monal/issues Email: info[at]monal[minus]im[dot]org. Donate Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:</description><content:encoded><![CDATA[<ul>
+<li>Monal Support Channel (XMPP MUC): <a href="xmpp:monal@chat.yax.im?join">monal@chat.yax.im</a></li>
 <li>Github Tickets: <a href="https://github.com/monal-im/Monal/issues">https://github.com/monal-im/Monal/issues</a></li>
 <li>Email: info[at]monal[minus]im[dot]org.</li>
 </ul>
