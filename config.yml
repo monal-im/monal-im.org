@@ -60,7 +60,7 @@ languages:
     en:
         languageName: ":gb:"
         languageAltTitle: "English"
-        showInHeader: true
+        showInHeader: false
         weight: 0
         profileMode:
             enabled: true
