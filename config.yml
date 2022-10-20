@@ -105,11 +105,11 @@ languages:
                 #- identifier: Archive
                 #  name: Archive
                 #  url: /archives/
-                #  weight: 8
+                #  weight: 7
                 - identifier: Search
                   name: "Search \U0001f50d"
                   url: /search/
-                  weight: 9
+                  weight: 8
 
     de:
         languageName: ":de:"
@@ -131,25 +131,25 @@ languages:
                   url: "https://apps.apple.com/app/id1637078500"
         menu:
             main:
-                - identifier: Download
-                  name: Download
-                  url: ../install/
+                - identifier: Install
+                  name: Install
+                  url: /install/
                   weight: 1
                 - identifier: Support
                   name: "Support"
-                  url: ../support/
+                  url: /support/
                   weight: 2
                 - identifier: Blog
-                  name: "Blog"
-                  url: ../post/
+                  name: Blog
+                  url: /post/
                   weight: 3
-                - identifier: Datenschutz
-                  name: "Datenschutz"
-                  url: ../privacy/
+                - identifier: Privacy
+                  name: "Privacy"
+                  url: /privacy/
                   weight: 4
-                - identifier: Impressum
-                  name: "Impressum"
-                  url: ../about/
+                - identifier: About
+                  name: "About"
+                  url: /about/
                   weight: 5
                 - identifier: FAQ
                   name: "FAQ"
@@ -159,9 +159,9 @@ languages:
                 #  name: Archiv
                 #  url: ../archives/
                 #  weight: 7
-                - identifier: Suche
-                  name: "Suche \U0001f50d"
-                  url: ../search/
+                - identifier: Search
+                  name: "Search \U0001f50d"
+                  url: /search/
                   weight: 8
 
 outputs:
