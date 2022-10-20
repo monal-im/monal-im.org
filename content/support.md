@@ -6,7 +6,7 @@ tags: []
 author: "Monal"
 ---
 
-* Monal MUC: [monal@chat.yax.im](xmpp:monal@chat.yax.im?join)
+* Monal Support Channel (XMPP MUC): [monal@chat.yax.im](xmpp:monal@chat.yax.im?join)
 * Github Tickets: https://github.com/monal-im/Monal/issues
 * Email: info[at]monal[minus]im[dot]org.
 
