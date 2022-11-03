@@ -17,7 +17,7 @@ Monal currently covers the following chat features:
 * Decentralised and federated chat standard [XMPP](https://xmpp.org/)
 * Private and group messaging
 * Privacy-respecting push notifications
-* Encrypted private and group chats (state-of-the-art encryption ([OMEMO](https://conversations.im/omemo/)))
+* Encrypted private and group chats (state-of-the-art encryption ([OMEMO](https://conversations.im/omemo/))
 * Message history
 * Free selection of your XMPP account provider
 * Voice messaging

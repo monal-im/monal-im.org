@@ -10,6 +10,7 @@ author: "Monal"
 
 A user’s IP address will be logged in the HTTP server logs.
 All server logs are purged every two weeks and there isn’t any way for us to associate this information with any particular individual.
+Our website does not use or need any cookies. And of course it doesn't use any third party/external (JS-CSS-Font) dependencies. Our all contents are open source. You can easily access [source code](https://github.com/monal-im/monal-im.org) of the website.
 
 # Monal (App)
 
