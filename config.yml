@@ -61,6 +61,45 @@ params:
         #- name: other
         #  url: ""
 
+menu:
+    main:
+        - identifier: Install
+          name: Install
+          url: ../install/
+          weight: 1
+        - identifier: Support
+          name: "Support"
+          url: ../support/
+          weight: 2
+#        - identifer: Test
+#          name: "Dropdown-Test"
+#          parent: Support
+#          weight: 2
+          url: /
+        - identifier: Blog
+          name: Blog
+          url: ../post/
+          weight: 3
+        - identifier: Privacy
+          name: "Privacy"
+          url: ../privacy/
+          weight: 4
+        - identifier: About
+          name: "About"
+          url: ../about/
+          weight: 5
+        - identifier: FAQ
+          name: "FAQ"
+          url: https://github.com/monal-im/Monal/wiki/FAQ---Frequently-Asked-Questions
+          weight: 6
+        #- identifier: Archive
+        #  name: Archive
+        #  url: /archives/
+        #  weight: 7
+        - identifier: Search
+          name: "Search \U0001f50d"
+          url: ../search/
+          weight: 8
 
 minify:
     disableXML: false
@@ -86,40 +125,6 @@ languages:
                 - name: "Get Monal macOS"
                   url: "https://apps.apple.com/app/id1637078500"
             indexPostContentFile: "/content/home.md"
-        menu:
-            main:
-                - identifier: Install
-                  name: Install
-                  url: /install/
-                  weight: 1
-                - identifier: Support
-                  name: "Support"
-                  url: /support/
-                  weight: 2
-                - identifier: Blog
-                  name: Blog
-                  url: /post/
-                  weight: 3
-                - identifier: Privacy
-                  name: "Privacy"
-                  url: /privacy/
-                  weight: 4
-                - identifier: About
-                  name: "About"
-                  url: /about/
-                  weight: 5
-                - identifier: FAQ
-                  name: "FAQ"
-                  url: https://github.com/monal-im/Monal/wiki/FAQ---Frequently-Asked-Questions
-                  weight: 6
-                #- identifier: Archive
-                #  name: Archive
-                #  url: /archives/
-                #  weight: 7
-                - identifier: Search
-                  name: "Search \U0001f50d"
-                  url: /search/
-                  weight: 8
 
     de:
         languageName: ":de:"
@@ -139,40 +144,6 @@ languages:
                   url: "https://apps.apple.com/app/id317711500"
                 - name: "Monal für macOS Herunterladen"
                   url: "https://apps.apple.com/app/id1637078500"
-        menu:
-            main:
-                - identifier: Install
-                  name: Install
-                  url: "../install/"
-                  weight: 1
-                - identifier: Support
-                  name: "Support"
-                  url: "../support/"
-                  weight: 2
-                - identifier: Blog
-                  name: Blog
-                  url: "../post/"
-                  weight: 3
-                - identifier: Privacy
-                  name: "Privacy"
-                  url: "../privacy/"
-                  weight: 4
-                - identifier: About
-                  name: "About"
-                  url: /about/
-                  weight: 5
-                - identifier: FAQ
-                  name: "FAQ"
-                  url: https://github.com/monal-im/Monal/wiki/FAQ---Frequently-Asked-Questions
-                  weight: 6
-                #- identifier: Archiv
-                #  name: Archiv
-                #  url: ../archives/
-                #  weight: 7
-                - identifier: Search
-                  name: "Search \U0001f50d"
-                  url: "../search/"
-                  weight: 8
 
 outputs:
     home:

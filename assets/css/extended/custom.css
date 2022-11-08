@@ -10,8 +10,119 @@
     bottom: 25% !important;
 }
 
+.paginav .name {
+  display: none;
+}
+
+@media screen and (min-width: 540px) {
+  .paginav .name {
+    display: block;
+  }
+}
+
 .buttons {
-    flex-wrap: wrap;
-    max-width: 650px !important;
-    margin: 0 auto;
+    max-width: 650px;
+}
+
+@media screen and (max-width: 299px) {
+  #menu{
+    display: none;
+  }
+  .post-meta {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .buttons {
+    flex-wrap: nowrap;
+    max-width: 100%;
+    font-size: calc(6px + 2.5vw);
+  }
+  #menu {
+    --gap: calc(1.8vw);
+  }
+  #menu a {
+    font-weight: 500;
+    color: #282727;
+    text-shadow: 0px 0px 1px #000000;
+    font-size: calc(6px + 2vw);
+  }
+  .logo a {
+    color: #282727;
+    text-shadow: 0px 0px 1px #000000;
+  }
+  .nav {
+    justify-content: center;
+  }
+  .lang-switch {
+    display: none;
+  }
+  .post-content p, .post-content li, .post-content table, .entry-content, #text {
+    font-size: calc(6px + 2vw);
+    color: #171210;
+  }
+  .post-content h1, .post-title, .page-header h1 {
+    font-size: calc(5px + 4vw);
+    margin: calc(1.8vw);
+  }
+  .post-content h2, .entry-header h2 {
+    font-size: calc(14px + 2vw);
+    margin: calc(1.6vw);
+  }
+  .post-content h3 {
+    font-size: calc(14px + 2vw);
+    margin: calc(0.8vw);
+  }
+  #searchResults a,  #searchResults li {
+    font-size: calc(9px + 2vw);
+    margin: calc(1.1vw);
+  }
+  .post-meta {
+    font-size: calc(9px + 1.5vw);
+    flex-wrap: nowrap;
+  }
+  .top-link {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+  }
+  .profile_inner {
+    font-size: calc(8px + 2vw);
+  }
+  .profile_inner h1 {
+    font-size: calc(15px + 2vw);
+  }
+  .post-content table {
+    margin-bottom: calc(0.8vw);
+  }
+}
+
+.sub-menu {
+    position: absolute;
+    visibility: hidden;
+    list-style: none;
+    z-index: 10;
+    border-radius: var(--radius);
+    padding: 0 calc(1.6vw);
+    background-color: var(--code-bg);
+    border: 1px solid var(--tertiary);
+}
+
+.menu-item:hover .sub-menu {
+    visibility: visible;
+    display: block;
+}
+
+.sub-menu:hover {
+    visibility: visible;
+}
+
+.arrow-down {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid var(--primary);
+    position: relative;
+    top: 1em;
+    left: 6px;
 }
