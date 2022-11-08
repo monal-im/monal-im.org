@@ -33,6 +33,67 @@
   }
 }
 
+@media screen and (min-width: 430px) and (max-width: 620px) {
+  .lang-switch {
+    display: none;
+  }
+  #menu {
+    --gap: calc(3vw);
+  }
+  #menu a {
+    text-shadow: 0px 0px 1px #000000;
+    font-size: calc(6px + 2vw);
+  }
+  .logo a {
+    color: #282727;
+    text-shadow: 0px 0px 1px #000000;
+  }
+  .nav {
+    justify-content: center;
+  }
+  .lang-switch {
+    display: none;
+  }
+  .post-content p, .post-content li, .post-content table, .entry-content, #text {
+    font-size: calc(4px + 2.5vw);
+    color: #171210;
+  }
+  .post-content h1, .post-title, .page-header h1 {
+    font-size: calc(8px + 4vw);
+    margin: calc(2vw);
+  }
+  .post-content h2, .entry-header h2 {
+    font-size: calc(12px + 2.5vw);
+    margin: calc(1.8vw);
+  }
+  .post-content h3 {
+    font-size: calc(12px + 2.5vw);
+    margin: calc(1vw);
+  }
+  #searchResults a,  #searchResults li {
+    font-size: calc(7px + 2.25vw);
+    margin: calc(1.3vw);
+  }
+  .post-meta {
+    font-size: calc(5px + 2vw);
+    flex-wrap: nowrap;
+  }
+  .top-link {
+    width: 48px;
+    height: 48px;
+    padding: 12.5px;
+  }
+  .profile_inner {
+    font-size: calc(8px + 2.5vw);
+  }
+  .profile_inner h1 {
+    font-size: calc(15px + 2.5vw);
+  }
+  .post-content table {
+    margin-bottom: calc(1vw);
+  }
+}
+
 @media screen and (max-width: 430px) {
   .buttons {
     flex-wrap: nowrap;

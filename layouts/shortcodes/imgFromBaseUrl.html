@@ -28,7 +28,7 @@
       (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
       200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
 
-      src="{{ $img.RelPermalink | absURL | safeURL }}" loading="lazy" alt="{{ $alt | safeHTML }}" title="{{ $title | safeHTML }}"/>
+      src="{{ $img.RelPermalink | absURL | safeURL }}" loading="lazy" fetchpriority="low" alt="{{ $alt | safeHTML }}" title="{{ $title | safeHTML }}"/>
   </div>
   <figcaption>{{$alt | safeHTML }}</figcaption>
 </figure>

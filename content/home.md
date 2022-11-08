@@ -35,3 +35,5 @@ This app exists because it is key to ensure usability on all platforms and withi
 [Find the development on GitHub!](https://github.com/monal-im/Monal)
 
 {{< centeredImgFromBaseUrl src="images/aG9tZS03.png" >}}
+
+<link rel="prefetch" href="/install/" fetchpriority="lowest">
