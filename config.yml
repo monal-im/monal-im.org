@@ -71,11 +71,6 @@ menu:
           name: "Support"
           url: ../support/
           weight: 2
-#        - identifer: Test
-#          name: "Dropdown-Test"
-#          parent: Support
-#          weight: 2
-          url: /
         - identifier: Blog
           name: Blog
           url: ../post/
