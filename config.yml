@@ -3,6 +3,16 @@ title: Monal
 paginate: 5
 theme: hugo-PaperMod
 
+imaging:
+  resampleFilter: Linear
+  #resampleFilter: MitchellNetravali (Cubic filter for alternative)
+  hint: picture
+  exif:
+    disableDate: true
+    disableLatLong: true
+    excludeFields: ".*"
+    #includeFields: "" (To improve performance and decrease cache size, we need to set neither excludeFields nor includeFields)
+
 params:
     env: production
     description: "Monal IM - https://github.com/monal-im/monal"
@@ -55,23 +65,23 @@ menu:
     main:
         - identifier: Install
           name: Install
-          url: ../install/
+          url: /install/
           weight: 1
         - identifier: Support
           name: "Support"
-          url: ../support/
+          url: /support/
           weight: 2
         - identifier: Blog
           name: Blog
-          url: ../post/
+          url: /post/
           weight: 3
         - identifier: Privacy
           name: "Privacy"
-          url: ../privacy/
+          url: /privacy/
           weight: 4
         - identifier: About
           name: "About"
-          url: ../about/
+          url: /about/
           weight: 5
         - identifier: FAQ
           name: "FAQ"
@@ -83,7 +93,7 @@ menu:
         #  weight: 7
         - identifier: Search
           name: "Search \U0001f50d"
-          url: ../search/
+          url: /search/
           weight: 8
 
 minify:
