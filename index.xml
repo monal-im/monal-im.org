@@ -900,6 +900,18 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
             <tr>
                 <td>
+                    <a href="https://xmpp.org/extensions/xep-0424.html">
+                        XEP-0424: Message Retraction
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
                     <a href="https://xmpp.org/extensions/xep-0440.html">
                         XEP-0440: SASL Channel-Binding Type Capability
                     </a>
@@ -1164,6 +1176,8 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
                 </td>
                 <td>planned</td>
             <tr>
+        
+    
         
     
         
@@ -1877,6 +1891,18 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
             <tr>
                 <td>
+                    <a href="https://xmpp.org/extensions/xep-0424.html">
+                        XEP-0424: Message Retraction
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
                     <a href="https://xmpp.org/extensions/xep-0440.html">
                         XEP-0440: SASL Channel-Binding Type Capability
                     </a>
@@ -2141,6 +2167,8 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
                 </td>
                 <td>planned</td>
             <tr>
+        
+    
         
     
         
