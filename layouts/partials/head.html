@@ -69,14 +69,14 @@
 
 {{- if not site.Params.assets.disableFingerprinting }}
 {{- $stylesheet := $stylesheet | fingerprint }}
-<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style" fetchpriority="high">
 {{- else }}
-<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style" fetchpriority="highest">
 {{- end }}
 
 {{- /* Search */}}
 {{- if (eq .Layout `search`) -}}
-<link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
+<link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json" fetchpriority="low">
 {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
 {{- $fusejs := resources.Get "js/fuse.basic.min.js" }}
 {{- $license_js := resources.Get "js/license.js" }}
@@ -104,37 +104,33 @@
 
 {{- /* Favicons */}}
 {{- $favicon := resources.GetMatch "/favicons/logo.png" -}}
-<link rel="apple-touch-icon" sizes="57x57" href="{{ ($favicon.Resize "57x png q50").Permalink }}" />
-<link rel="apple-touch-icon" sizes="60x60" href="{{ ($favicon.Resize "60x png q50").Permalink }}" />
-<link rel="apple-touch-icon" sizes="72x72" href="{{ ($favicon.Resize "72x png q50").Permalink }}" />
-<link rel="apple-touch-icon" sizes="76x76" href="{{ ($favicon.Resize "76x png q50").Permalink }}" />
-<link rel="apple-touch-icon" sizes="114x114" href="{{ ($favicon.Resize "114x png q50").Permalink }}" />
-<link rel="apple-touch-icon" sizes="120x120" href="{{ ($favicon.Resize "120x png q50").Permalink }}" />
-<link rel="apple-touch-icon" sizes="144x144" href="{{ ($favicon.Resize "144x png q50").Permalink }}" />
-<link rel="apple-touch-icon" sizes="152x152" href="{{ ($favicon.Resize "152x png q50").Permalink }}" />
-<link rel="apple-touch-icon" sizes="180x180" href="{{ ($favicon.Resize "180x png q50").Permalink }}" />
-<link rel=icon type="image/x-icon" href=favicons/favicon.ico>
-<link rel="icon" type="image/png" sizes="16x16" href="{{ ($favicon.Resize "16x png q50").Permalink }}" />
-<link rel="icon" type="image/png" sizes="32x32" href="{{ ($favicon.Resize "32x png q50").Permalink }}" />
-<link rel="icon" type="image/png" sizes="96x96" href="{{ ($favicon.Resize "96x png q50").Permalink }}" />
-<link rel="icon" type="image/png" sizes="128x128" href="{{ ($favicon.Resize "128x png q50").Permalink }}" />
-<link rel="icon" type="image/png" sizes="196x196" href="{{ ($favicon.Resize "196x png q50").Permalink }}" />
-<link rel="mask-icon" color="red" href="favicons/safari-pinned-tab.svg" >
-<meta name="application-name" content="Monal-IM"/>
+<link rel="apple-touch-icon" sizes="57x57" href="{{ ($favicon.Resize "57x png q50").Permalink }}" fetchpriority="medium" />
+<link rel="apple-touch-icon" sizes="60x60" href="{{ ($favicon.Resize "60x png q50").Permalink }}" fetchpriority="medium" />
+<link rel="apple-touch-icon" sizes="72x72" href="{{ ($favicon.Resize "72x png q50").Permalink }}" fetchpriority="medium" />
+<link rel="apple-touch-icon" sizes="76x76" href="{{ ($favicon.Resize "76x png q50").Permalink }}" fetchpriority="medium" />
+<link rel="apple-touch-icon" sizes="114x114" href="{{ ($favicon.Resize "114x png q50").Permalink }}" fetchpriority="low" />
+<link rel="apple-touch-icon" sizes="120x120" href="{{ ($favicon.Resize "120x png q50").Permalink }}" fetchpriority="low" />
+<link rel="apple-touch-icon" sizes="144x144" href="{{ ($favicon.Resize "144x png q50").Permalink }}" fetchpriority="low" />
+<link rel="apple-touch-icon" sizes="152x152" href="{{ ($favicon.Resize "152x png q50").Permalink }}" fetchpriority="low" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ ($favicon.Resize "180x png q50").Permalink }}" fetchpriority="low" />
+<link rel=icon type="image/x-icon" href="{{ "favicons/favicon.ico" | absURL }}" fetchpriority="medium" />
+<link rel="icon" type="image/png" sizes="16x16" href="{{ ($favicon.Resize "16x png q50").Permalink }}" fetchpriority="medium" />
+<link rel="icon" type="image/png" sizes="32x32" href="{{ ($favicon.Resize "32x png q50").Permalink }}" fetchpriority="medium" />
+<link rel="icon" type="image/png" sizes="96x96" href="{{ ($favicon.Resize "96x png q50").Permalink }}" fetchpriority="low" />
+<link rel="icon" type="image/png" sizes="128x128" href="{{ ($favicon.Resize "128x png q50").Permalink }}" fetchpriority="low" />
+<link rel="icon" type="image/png" sizes="196x196" href="{{ ($favicon.Resize "196x png q50").Permalink }}" fetchpriority="low" />
+<link rel="mask-icon" color="red" href="favicons/safari-pinned-tab.svg" fetchpriority="low" />
+<meta name="application-name" content="Monal-IM" />
 <meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-square70x70logo" content="{{ ($favicon.Resize "70x png q50").Permalink }}" />
-<meta name="msapplication-TileImage" content="{{ ($favicon.Resize "144x png q50").Permalink }}" />
-<meta name="msapplication-square150x150logo" content="{{ ($favicon.Resize "150x png q50").Permalink }}" />
-<meta name="msapplication-square310x310logo" content="{{ ($favicon.Resize "310x png q50").Permalink }}" />
+<meta name="msapplication-square70x70logo" content="{{ ($favicon.Resize "70x png q50").Permalink }}"fetchpriority="medium" />
+<meta name="msapplication-TileImage" content="{{ ($favicon.Resize "144x png q50").Permalink }}" fetchpriority="low" />
+<meta name="msapplication-square150x150logo" content="{{ ($favicon.Resize "150x png q50").Permalink }}" fetchpriority="low" />
+<meta name="msapplication-square310x310logo" content="{{ ($favicon.Resize "310x png q50").Permalink }}" fetchpriority="low" />
 
 {{- /* RSS */}}
 {{ range .AlternativeOutputFormats -}}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}
-{{- range .AllTranslations -}}
-<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
-{{ end -}}
-
 <noscript>
     <style>
         #theme-toggle,

@@ -26,9 +26,9 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-          
+
       - name: Build site
-        run: hugo --minify --baseURL https://monal-im.github.io/monal-im.org/
+        run: hugo --minify --gc --baseURL https://monal-im.github.io/monal-im.org/
 
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3

@@ -161,4 +161,13 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Prefixes for test environment
+*test.md
+*-draft.md
+*assets/draft-*
+*images/draft-*
+*test.html
+*test.css
+*test/ 
+
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,vim,sublimetext,visualstudiocode,hugo
