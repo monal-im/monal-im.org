@@ -168,6 +168,7 @@ $RECYCLE.BIN/
 *images/draft-*
 *test.html
 *test.css
+*test.js
 *test/ 
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,vim,sublimetext,visualstudiocode,hugo
