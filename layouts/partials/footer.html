@@ -23,6 +23,5 @@
 
 {{- partial "extend_footer.html" . }}
 
-{{ $js := resources.Get "js/main.js" }}
-{{ $jsCustomMain:= $js | resources.ExecuteAsTemplate "/js/main.js" . }}
-<script type="text/javascript" src="{{ $jsCustomMain.Permalink }}"></script>
+{{ $jsminified := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint "sha256" }}
+<script type="text/javascript" src="{{ $jsminified.Permalink }}" integrity="{{ $jsminified.Data.Integrity }}"></script>
