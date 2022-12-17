@@ -1226,7 +1226,8 @@ That way we can ask questions back to you.</li>
 <p>Please be reminded that this is a non-commercial software project.</p>
 <p>Thank you for considering reporting a security vulnerability.
 This improves the quality of the app significantly.</p>
-]]></content:encoded></item><item><title>Install</title><link>https://monal-im.github.io/monal-im.org/install/</link><pubDate>Sat, 12 Mar 2022 08:09:44 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/install/</guid><description>iOS macOS macOS (homebrew) Stable App Store App Store brew install –cask monal Beta Testflight Testflight Alpha upon request to info@monal-im.org
+]]></content:encoded></item><item><title>Install</title><link>https://monal-im.github.io/monal-im.org/install/</link><pubDate>Sat, 12 Mar 2022 08:09:44 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/install/</guid><description>iOS macOS macOS (homebrew) Stable App Store App Store brew install –cask monal Beta Testflight Testflight brew tap homebrew/cask-versions
+brew install &amp;ndash;cask monal-beta Alpha upon request to info@monal-im.org
 Then download from our alpha download site brew tap monal-im/homebrew-monal-alpha
 brew install &amp;ndash;cask monal-alpha Features Monal currently covers the following chat features:
 Decentralised and federated chat standard XMPP Private and group messaging Privacy-respecting push notifications Encrypted private and group chats (state-of-the-art encryption (OMEMO) Message history Free selection of your XMPP account provider Voice messaging Message archiving Upload of files, videos and images (HTTP Upload) Many settings and a design to offer privacy settings in the app to the need of the user A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our DOAP file.</description><content:encoded><![CDATA[<table>
@@ -1249,7 +1250,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
 <td>Beta</td>
 <td><a href="https://testflight.apple.com/join/lLLlgHpB">Testflight</a></td>
 <td><a href="https://testflight.apple.com/join/tGH2m5vf">Testflight</a></td>
-<td></td>
+<td>brew tap homebrew/cask-versions<br>brew install &ndash;cask monal-beta</td>
 </tr>
 <tr>
 <td>Alpha</td>
