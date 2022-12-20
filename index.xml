@@ -2529,16 +2529,7 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img loading="lazy"
-      srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_375x0_resize_q50_h2_linear_3.webp 375w"
-      sizes="(max-width: 200px) 240px 300px 360px 420px,
-      (max-width: 400px) 200px 240px 300px 360px 420px 480px 600px 768px 800px,
-      (max-width: 600px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px,
-      (max-width: 800px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
-      (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
-      200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
-
-      src="https://monal-im.github.io/monal-im.org/images/aG9tZS0y.png" loading="lazy" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_375x0_resize_q50_h2_linear_3.webp 375w" style="max-width:375px;width:100%" src="https://monal-im.github.io/monal-im.org/images/aG9tZS0y.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2601,16 +2592,7 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img loading="lazy"
-      srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_375x0_resize_q50_h2_linear_3.webp 375w"
-      sizes="(max-width: 200px) 240px 300px 360px 420px,
-      (max-width: 400px) 200px 240px 300px 360px 420px 480px 600px 768px 800px,
-      (max-width: 600px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px,
-      (max-width: 800px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
-      (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
-      200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
-
-      src="https://monal-im.github.io/monal-im.org/images/aG9tZS0z.png" loading="lazy" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_375x0_resize_q50_h2_linear_3.webp 375w" style="max-width:375px;width:100%" src="https://monal-im.github.io/monal-im.org/images/aG9tZS0z.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2673,16 +2655,7 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img loading="lazy"
-      srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_375x0_resize_q50_h2_linear_3.webp 375w"
-      sizes="(max-width: 200px) 240px 300px 360px 420px,
-      (max-width: 400px) 200px 240px 300px 360px 420px 480px 600px 768px 800px,
-      (max-width: 600px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px,
-      (max-width: 800px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
-      (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
-      200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
-
-      src="https://monal-im.github.io/monal-im.org/images/aG9tZS00.png" loading="lazy" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_375x0_resize_q50_h2_linear_3.webp 375w" style="max-width:375px;width:100%" src="https://monal-im.github.io/monal-im.org/images/aG9tZS00.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2760,16 +2733,7 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img loading="lazy"
-      srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_375x0_resize_q50_h2_linear_3.webp 375w"
-      sizes="(max-width: 200px) 240px 300px 360px 420px,
-      (max-width: 400px) 200px 240px 300px 360px 420px 480px 600px 768px 800px,
-      (max-width: 600px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px,
-      (max-width: 800px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
-      (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
-      200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
-
-      src="https://monal-im.github.io/monal-im.org/images/aG9tZS01.png" loading="lazy" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_375x0_resize_q50_h2_linear_3.webp 375w" style="max-width:375px;width:100%" src="https://monal-im.github.io/monal-im.org/images/aG9tZS01.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2844,16 +2808,7 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img loading="lazy"
-      srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_640x0_resize_q50_h2_linear_3.webp 640w"
-      sizes="(max-width: 200px) 240px 300px 360px 420px,
-      (max-width: 400px) 200px 240px 300px 360px 420px 480px 600px 768px 800px,
-      (max-width: 600px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px,
-      (max-width: 800px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
-      (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
-      200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
-
-      src="https://monal-im.github.io/monal-im.org/images/aG9tZS02.png" loading="lazy" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_640x0_resize_q50_h2_linear_3.webp 640w" style="max-width:640px;width:100%" src="https://monal-im.github.io/monal-im.org/images/aG9tZS02.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2928,17 +2883,8 @@ This app exists because it is key to ensure usability on all platforms and withi
 <figure>
   <div class="img-box">
     <center>
-    <img loading="lazy"
-      srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_470x0_resize_q50_h2_linear_3.webp 470w"
-      sizes="(max-width: 200px) 240px 300px 360px 420px,
-      (max-width: 400px) 200px 240px 300px 360px 420px 480px 600px 768px 800px,
-      (max-width: 600px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px,
-      (max-width: 800px) 200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
-      (max-width: 1000px)200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px,
-      200px 240px 300px 360px 420px 480px 600px 768px 800px 960px 1024px 1080px 1200px 1366px 1440px 1920px 100vw"
-
-      src="https://monal-im.github.io/monal-im.org/images/aG9tZS03.png" loading="lazy" fetchpriority="low" alt="" title=""/>
-      </center>
+    <img srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_470x0_resize_q50_h2_linear_3.webp 470w" style="max-width:470px;width:100%" src="https://monal-im.github.io/monal-im.org/images/aG9tZS03.png" fetchpriority="low" alt="" title=""/>
+    </center>
   </div>
   <figcaption></figcaption>
 </figure>
