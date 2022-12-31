@@ -288,8 +288,7 @@ Coming along with this transition from the old developer team to the new one is 
 <p>When I (Thilo) gradually took over development, I was able to build upon an app with a decent codebase rather than writing my own app from scratch. That made it possible to improve Monal further while already being used by thousands of people. I can not stress enough how thankful I was and still am for all the work Anu put into the development of Monal.
 Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and macOS!</p>
 <p>Thilo, Friedrich, Anu</p>
-]]></content:encoded></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/supportedxeps/</guid><description>Implemented XEPs XEP Status Since XEP-0004: Data Forms partial 4.9 XEP-0030: Service Discovery complete 4.6 XEP-0045: Multi-User Chat partial 5.0 XEP-0048: Bookmarks complete 5.0 XEP-0054: vcard-temp (implemented only for MUC profiles) complete XEP-0059: Result Set Management. Used by other XEPs. complete 4.8 XEP-0060: Publish-Subscribe partial 4.9 XEP-0066: Out of Band Data partial 4.9 XEP-0077: In-Band Registration partial XEP-0084: User Avatar complete 4.9 XEP-0085: Chat State Notifications complete 4.7 XEP-0092: Software Version complete XEP-0115: Entity Capabilities complete 4.</description><content:encoded><![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
-
+]]></content:encoded></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/supportedxeps/</guid><description>Implemented XEPs XEP Status Since XEP-0004: Data Forms complete 4.9 XEP-0030: Service Discovery complete 4.6 XEP-0045: Multi-User Chat partial 5.0 XEP-0048: Bookmarks complete 5.0 XEP-0054: vcard-temp (implemented only for MUC profiles) complete XEP-0059: Result Set Management. Used by other XEPs. complete 4.8 XEP-0060: Publish-Subscribe partial 4.9 XEP-0066: Out of Band Data partial 4.9 XEP-0077: In-Band Registration partial XEP-0084: User Avatar complete 4.9 XEP-0085: Chat State Notifications complete 4.7 XEP-0092: Software Version complete XEP-0115: Entity Capabilities complete 4.</description><content:encoded><![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
 
 
 <table>
@@ -316,7 +315,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
                         XEP-0004: Data Forms
                     </a>
                 </td>
-                <td>partial</td>
+                <td>complete</td>
                 <td>4.9</td>
             <tr>
         
@@ -580,6 +579,16 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0215.html">
+                        XEP-0215: External Service Discovery
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
     
         
             <tr>
@@ -732,6 +741,16 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0353.html">
+                        XEP-0353: Jingle Message Initiation
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
     
         
             <tr>
@@ -833,7 +852,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
                     </a>
                 </td>
                 <td>complete</td>
-                <td>5.4</td>
+                <td>6.0</td>
             <tr>
         
     
@@ -867,6 +886,16 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
         
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0402.html">
+                        XEP-0402: PEP Native Bookmarks
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.4</td>
+            <tr>
         
     
         
@@ -917,7 +946,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
                     </a>
                 </td>
                 <td>complete</td>
-                <td>5.4</td>
+                <td>6.0</td>
             <tr>
         
     
@@ -960,7 +989,6 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
 </table>
 
 <h2 id="planned-xeps">Planned XEPs</h2>
-
 
 
 <table>
@@ -1049,15 +1077,6 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0215.html">
-                        XEP-0215: External Service Discovery
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
-        
     
         
     
@@ -1089,15 +1108,6 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0353.html">
-                        XEP-0353: Jingle Message Initiation
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
         
     
         
@@ -1139,28 +1149,28 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0402.html">
-                        XEP-0402: PEP Native Bookmarks
+                    <a href="https://xmpp.org/extensions/xep-0386.html">
+                        XEP-0386: Bind 2.0
                     </a>
                 </td>
                 <td>planned</td>
             <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
         
     
         
@@ -1283,7 +1293,6 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
 <h2 id="implemented-xeps">Implemented XEPs</h2>
 
 
-
 <table>
     <thead>
         <tr>
@@ -1308,7 +1317,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
                         XEP-0004: Data Forms
                     </a>
                 </td>
-                <td>partial</td>
+                <td>complete</td>
                 <td>4.9</td>
             <tr>
         
@@ -1572,6 +1581,16 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0215.html">
+                        XEP-0215: External Service Discovery
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
     
         
             <tr>
@@ -1724,6 +1743,16 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0353.html">
+                        XEP-0353: Jingle Message Initiation
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
     
         
             <tr>
@@ -1825,7 +1854,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
                     </a>
                 </td>
                 <td>complete</td>
-                <td>5.4</td>
+                <td>6.0</td>
             <tr>
         
     
@@ -1859,6 +1888,16 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
         
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0402.html">
+                        XEP-0402: PEP Native Bookmarks
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.4</td>
+            <tr>
         
     
         
@@ -1909,7 +1948,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
                     </a>
                 </td>
                 <td>complete</td>
-                <td>5.4</td>
+                <td>6.0</td>
             <tr>
         
     
@@ -1952,7 +1991,6 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
 </table>
 
 <h2 id="planned-xeps">Planned XEPs</h2>
-
 
 
 <table>
@@ -2041,15 +2079,6 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0215.html">
-                        XEP-0215: External Service Discovery
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
-        
     
         
     
@@ -2081,15 +2110,6 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0353.html">
-                        XEP-0353: Jingle Message Initiation
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
         
     
         
@@ -2131,28 +2151,28 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0402.html">
-                        XEP-0402: PEP Native Bookmarks
+                    <a href="https://xmpp.org/extensions/xep-0386.html">
+                        XEP-0386: Bind 2.0
                     </a>
                 </td>
                 <td>planned</td>
             <tr>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
         
     
         
