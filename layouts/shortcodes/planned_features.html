@@ -1,6 +1,5 @@
 {{ $url := "https://raw.githubusercontent.com/monal-im/Monal/develop/monal.doap" }}
-{{ $cacheKey := print $url (now.Format "2006-01-02 14:00") }}
-{{ with resources.GetRemote $url (dict "key" $cacheKey) | transform.Unmarshal }}
+{{ with resources.GetRemote $url | transform.Unmarshal }}
 <table>
     <thead>
         <tr>
