@@ -42,5 +42,5 @@ Later on, in 2017 Thilo started to implement basic push support in Monal IM alon
    Authors: Thilo Molitor
    > This specification provides a way to secure the SASL and SASL2 handshakes against method and channel-binding downgrades.
  * XEP-0388: Extensible SASL Profile
-   Authors: Dave CridlandThilo MolitorMatthew Wild
+   Authors: Dave Cridland, Thilo Molitor, Matthew Wild
    > This document describes a replacement for the SASL profile documented in RFC 6120 which allows for greater extensibility.
