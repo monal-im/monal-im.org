@@ -2925,11 +2925,10 @@ Since then Thilo Molitor took over the development and joined in 2020 with Fried
 From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup.
 Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.</p>
 <h2 id="monal-team">Monal Team</h2>
-<p><strong>Thilo Moltor</strong> - Since 2015 he is contributing to Monal IM, when he also started to help out with the Gajim XMPP Client written in Python.
-Shortly after this, in early 2016 he started to take over maintenance for several Prosody modules as well as developing newones (i.e. <em>mod_smacks</em>, <em>mod_cloud_notify</em>, <em>mod_csi_battery_saver</em>).
-Later on, in 2017 Thilo started to implement basic push support in Monal IM along with the required push-app-server.</p>
+<p><strong>Thilo Molitor</strong> - <a href="https://wiki.xmpp.org/web/User:TMolitor">About me on wiki.xmpp.org</a><br>
+<strong>Friedrich Altheide</strong></p>
 <h2 id="publications">Publications</h2>
-<h3 id="talks-and-others">Talks and others</h3>
+<h3 id="talks-and-other-documents">Talks and other documents</h3>
 <ul>
 <li>Molitor, Thilo. <strong>Monal development recap 2019 - 2021 and open discussion</strong> <em>Berlin XMPP Meetup</em>, 13th October 2021, <a href="https://xmpp-meetup.in-berlin.de/talks/monal-2021.mp4">Weblink</a></li>
 <li>Molitor, Thilo; Altheide, Friedrich. <strong>Modern XMPP - A story based on Monal</strong> <em>Berlin XMPP Meetup</em>, 13th April 2022, <a href="https://xmpp-meetup.in-berlin.de/talks/monal-2022.mp4">Weblink</a>, <a href="https://xmpp-meetup.in-berlin.de/talks/monal-and-push.pdf">Slides</a></li>
