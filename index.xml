@@ -2950,7 +2950,7 @@ Authors: Thilo Molitor
 </blockquote>
 </li>
 <li>XEP-0388: Extensible SASL Profile
-Authors: Dave CridlandThilo MolitorMatthew Wild
+Authors: Dave Cridland, Thilo Molitor, Matthew Wild
 <blockquote>
 <p>This document describes a replacement for the SASL profile documented in RFC 6120 which allows for greater extensibility.</p>
 </blockquote>
