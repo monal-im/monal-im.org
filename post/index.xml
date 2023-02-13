@@ -6,7 +6,7 @@ See <a href="https://wiki.xmpp.org/web/Push_notifications">over here</a> for all
 I also talked about that topic in my talk &ldquo;<em>Modern XMPP - A story based on Monal</em>&rdquo; linked <a href="/about">on the About page over here</a>.<br>
 For convenience I&rsquo;d like to summarize some parts of that wiki entry in this blog-post, too.</p>
 <p><strong>UPDATE:</strong> This post describes the way Monal implements push as well as the pitfalls of implementing it in another way. I tried to make this clearer in the text now.</p>
-<h1 id="push-on-ios">Push on iOS</h1>
+<h1 id="background-knowledge-push-on-ios">Background knowledge: Push on iOS</h1>
 <p>On iOS there are several push modes having different properties. All modes, except VoiIP pushes, have in common, that they only provide 30 seconds of background time.</p>
 <ul>
 <li><strong>VoIP pushes:</strong> MUST always make the device ring via Apple&rsquo;s CallKit framework. You can&rsquo;t use these pushes to silently retrieve messages or other XMPP stanzas in the background.</li>
@@ -34,12 +34,13 @@ When iOS grants the app it&rsquo;s 30 seconds background time because of the inc
 and display a notification to the user, if needed.</p>
 <p>Signal does exactly the same:  It uses push only to wake up the app and then fetches the messages using a dedicated network connection: <a href="https://github.com/signalapp/Signal-iOS/blob/main/SignalNSE/NotificationService.swift#L236">Example in Signal&rsquo;s code</a></p>
 <p><strong>This way Monal avoids all of the pitfalls depicted below!</strong></p>
-<h1 id="some-more-details-about-ios-push-and-xmpp">Some more details about iOS push and XMPP</h1>
+<h1 id="diving-deeper-some-more-details-about-ios-push-and-xmpp">Diving deeper: Some more details about iOS push and XMPP</h1>
 <p>The following explanations and thoughts are a bit more technical and require some understanding of the XMPP protocol and it&rsquo;s inner workings.</p>
 <h2 id="push-server-implementations-and-ios-time-limits">Push server implementations and iOS time limits</h2>
-<p>Pushes of all types (see above) can only wake up the iOS app for 30 seconds. In most cases that&rsquo;s more than enough to connect to the xmpp server and retrieve pending stanzas (if using the entitlement mentioned above and XEP-0198, it is even possible to get pushes for iq stanzas etc., thus behaving like being permanently connected while still sleeping most of the time because of CSI).
+<p>Pushes of all types (see above) can only wake up the iOS app for 30 seconds. But in most cases that&rsquo;s more than enough to connect to the xmpp server and retrieve pending stanzas (if using the entitlement mentioned above and XEP-0198, it is even possible to get pushes for iq stanzas etc., thus behaving like being permanently connected while still sleeping most of the time because of CSI).
 Even if the 30 seconds don&rsquo;t suffice, the client can disconnect and both, Prosody and eJabberd, will send another push if there are still unacked stanzas in the XEP-0198 queue. This will give the app another 30 seconds. Even longer catchups lasting for &gt; 5 minutes can be done completely in the background this way (observed in the wild with Monal stable).</p>
-<p>This means that even with the 30 second time limit in place, it usually is possible to do a longer lasting catchup completely in the background, effectively extending the time limit to several minutes.</p>
+<p>This means that even with the 30 second time limit in place, it usually is possible to do a longer lasting catchup completely in the background, effectively extending the time limit to several minutes.
+This obviously only holds, if you use the <code>com.apple.developer.usernotifications.filtering</code> entitlement and connect directly to the xmpp server and is hardly possible if you try to transport stanzas through the push sent through Apple (see below).</p>
 <h2 id="pitfalls-transporting-encrypted-xmpp-message-stanzas-through-push-out-of-band">Pitfalls: Transporting (encrypted) xmpp message stanzas through push (out of band)</h2>
 <p>When using the iOS push infrastructure provided by apple for transporting (encrypted) stanzas out of band, multiple things have to be considered. First of all, pushes can get lost. That frequently happens if the device was in flight mode while the push was sent.
 Second, xmpp is a streaming protocol, strongly relying on the ordering of stanza (even inter-type ordering like the ordering of message and iq stanzas for mam). The order of message stanza matters for other XEPs, too (for example message retraction or last message correction). Using the iOS push service which is loosing pushes or even only sending pushes for a particular type of stanza (message stanzas having a body for example) breaks this ordering of events that every XEP implicitly relies upon.
