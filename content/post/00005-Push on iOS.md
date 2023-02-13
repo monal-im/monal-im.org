@@ -11,6 +11,8 @@ See [over here](https://wiki.xmpp.org/web/Push_notifications) for all the techni
 I also talked about that topic in my talk "_Modern XMPP - A story based on Monal_" linked [on the About page over here](/about).  
 For convenience I'd like to summarize some parts of that wiki entry in this blog-post, too.
 
+**UPDATE:** This post describes the way Monal implements push as well as the pitfalls of implementing it in another way. I tried to make this clearer in the text now.
+
 # Push on iOS
 On iOS there are several push modes having different properties. All modes, except VoiIP pushes, have in common, that they only provide 30 seconds of background time.
 - **VoIP pushes:** MUST always make the device ring via Apple's CallKit framework. You can't use these pushes to silently retrieve messages or other XMPP stanzas in the background.
@@ -41,6 +43,8 @@ The following explanations and thoughts are a bit more technical and require som
 
 Pushes of all types (see above) can only wake up the iOS app for 30 seconds. In most cases that's more than enough to connect to the xmpp server and retrieve pending stanzas (if using the entitlement mentioned above and XEP-0198, it is even possible to get pushes for iq stanzas etc., thus behaving like being permanently connected while still sleeping most of the time because of CSI).
 Even if the 30 seconds don't suffice, the client can disconnect and both, Prosody and eJabberd, will send another push if there are still unacked stanzas in the XEP-0198 queue. This will give the app another 30 seconds. Even longer catchups lasting for > 5 minutes can be done completely in the background this way (observed in the wild with Monal stable).
+
+This means that even with the 30 second time limit in place, it usually is possible to do a longer lasting catchup completely in the background, effectively extending the time limit to several minutes.
 
 ## Pitfalls: Transporting (encrypted) xmpp message stanzas through push (out of band)
 
