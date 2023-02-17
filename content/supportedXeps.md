@@ -7,7 +7,9 @@ author: "Monal"
 ---
 
 ## Implemented XEPs
+
 {{< implemented_features >}}
 
 ## Planned XEPs
+
 {{< planned_features >}}
