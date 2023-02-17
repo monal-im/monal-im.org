@@ -2,7 +2,7 @@
 You can find our latest privacy policy for our website here: [Website Privacy Policy]({{< relref "Monal_Website" >}} "Website Privacy Policy")
 
 **Monal App**<br>
-Our privacy policy may differ between app versions. Please check that you read
+Our privacy policy may differ between app versions.
 Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
 **How to find out your Monal version**
 > 1. Open Monal
