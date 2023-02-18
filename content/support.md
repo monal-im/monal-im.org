@@ -11,11 +11,12 @@ author: "Monal"
 * Email: info[at]monal[minus]im[dot]org.
 
 ## Donate
+
 Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:
 
-- Donate via [GitHub Sponsors](https://github.com/sponsors/tmolitor-stud-tu)
-- Donate via [Libera Pay](https://liberapay.com/tmolitor)
-- EU citizens can donate via SEPA, too. Just contact Thilo Molitor via mail to thilo@monal-im.org to get his IBAN.
+* Donate via [GitHub Sponsors](https://github.com/sponsors/tmolitor-stud-tu)
+* Donate via [Libera Pay](https://liberapay.com/tmolitor)
+* EU citizens can donate via SEPA, too. Just contact Thilo Molitor via mail to thilo@monal-im.org to get his IBAN.
 
 Here you can read about further [support of the development](https://github.com/monal-im/Monal/issues/363)!
 
@@ -34,6 +35,7 @@ This prevents abuse and exploitation in the current published releases.
 Please report issues directly to info[at]monal[minus]im[dot]org.
 
 Please try to report
+
 * in detail what you are concerned about
 * if applicable, how to reproduce
 * your contact details, if the sending email is not enough.
