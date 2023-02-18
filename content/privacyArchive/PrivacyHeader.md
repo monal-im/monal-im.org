@@ -4,6 +4,7 @@ You can find our latest privacy policy for our website here: [Website Privacy Po
 **Monal App**<br>
 Our privacy policy may differ between app versions.
 Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
+
 **How to find out your Monal version**
 > 1. Open Monal
 > 2. Open up the settings menu in the upper left corner (gearwheel)
