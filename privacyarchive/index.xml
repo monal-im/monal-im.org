@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>PrivacyArchives on Monal</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/</link><description>Recent content in PrivacyArchives on Monal</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 10 Feb 2023 13:00:00 +0100</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/privacyarchive/index.xml" rel="self" type="application/rss+xml"/><item><title>Privacy Monal App ≥ 6.0.0</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_003/</link><pubDate>Fri, 10 Feb 2023 13:00:00 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_003/</guid><description>Monal Website
+You can find our latest privacy policy for our website here: Website Privacy Policy
+Monal App
+Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<blockquote>
+
+<p><strong>Monal Website</strong><br>
+You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
+<p><strong>Monal App</strong><br>
+Our privacy policy may differ between app versions.
+Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
+<strong>How to find out your Monal version</strong></p>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Scroll down to the last entry &ldquo;version&rdquo;</li>
+</ol>
+</blockquote>
+<p><strong>Monal App Privacy Policies</strong></p>
+<table>
+<thead>
+<tr>
+<th>Releases</th>
+<th>Privacy Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.0 and newer</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+</tr>
+<tr>
+<td>5.2.0 up to 5.4.x</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+</tr>
+<tr>
+<td>before 5.2.0</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+</tr>
+</tbody>
+</table>
+
+</blockquote>
+<h1 id="privacy-monal-app--600">Privacy Monal App ≥ 6.0.0</h1>
+<h2 id="tldr">TLDR</h2>
+<ul>
+<li>We <strong>never</strong> see your messages.</li>
+<li>We <strong>do not</strong> know who you are chatting with.</li>
+<li>We <strong>can not</strong> identify a user.</li>
+<li>We can see your XMPP domain and a Monal specific unique device id every time you should receive a push message</li>
+<li>We see your IP addresses if you are on a call and your XMPP server does not provide a STUN or TURN server.</li>
+<li>We may see your contacts IP address if you are using our TURN server.</li>
+</ul>
+<h2 id="structure">Structure</h2>
+<p>The App Monal may interact with Monal servers to support Push messages or if you are establishing a call with a contact but your XMPP Server does neither provide a STUN nor a TURN server.</p>
+<p>Our privacy details are structured as follows.
+First, we would like to give you a short introduction how Monal is handling push messages to ensure a pleasant user experience.
+We will then briefly explain VoIP calls and its privacy implications.
+Afterwards we like to inform you how we are using crash and usage reports, logs and GDPR Subject Access Requests (SAR).</p>
+<h2 id="push">Push</h2>
+<p>App Resources are very limited on iOS and macOS.
+Monal for example can only run a limited time in the background after a user either locked the screen or switched the app.
+Hence, apps cannot simply keep a connection to your XMPP server open 24/7 to inform you about new messages.
+To overcome these limitations your XMPP server can request our push server to send push messages to Apple.
+With these push messages we can request Apple to wake up the app on your phone.
+Once it is woken up it has about 30 seconds to connect to your XMPP server, fetch all new messages and show a push notification for these new messages.</p>
+<h3 id="how-push-works">How push works</h3>
+<p>Every time that Monal logins at your XMPP servers, it requests your server to inform us once you received an XMPP message while Monal was closed.
+We therefore request a Monal specific push token from Apple.
+Using this Monal specific push token our push server can send push messages via Apples push system to wake up the app on your device.</p>
+<p>Once push messages are enabled for your Monal instance on your XMPP servers, your XMPP servers will open a encrypted server to server (s2s) connection to one of our push servers.
+Using this s2s connection your XMPP servers will then request our push servers to wake up Monal every time that new messages should be processed.
+To wake up your instance your XMPP servers send us:</p>
+<ul>
+<li>Your unique Monal specific push token that was generated by Apple</li>
+<li>The domain of the XMPP server that you are using</li>
+</ul>
+<h3 id="push-1">Push</h3>
+<ul>
+<li>We <strong>never</strong> see your messages.</li>
+<li>We <strong>do not</strong> know who you are chatting with.</li>
+<li>We could <strong>only</strong> ever track what XMPP domains a push token is/was using.</li>
+<li>We <strong>can not</strong> identify a user.</li>
+</ul>
+<h4 id="push-servers">Push-Servers</h4>
+<p>We currently provide the following independent push server regions:</p>
+<ul>
+<li>Europe</li>
+<li>Alpha (based in Europe, only used for debugging with higher log levels, not for production use)</li>
+</ul>
+<p><strong>Note:</strong> Our previously used US push region was unfortunately shutdown.</p>
+<h4 id="how-to-change-the-push-region">How to change the push region</h4>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Open the Notifications menu</li>
+<li>Scroll down</li>
+<li>Select a region</li>
+</ol>
+</blockquote>
+<h4 id="push-server-regions">Push server regions</h4>
+<p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Hostname</th>
+<th>Notice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Europe</td>
+<td>eu.prod.push.monal-im.org</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="push-server-locations">Push server locations</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Region</th>
+<th>Hoster</th>
+<th>Location</th>
+<th>Notice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s1.eu.prod.push.monal-im.org</td>
+<td>Europe</td>
+<td>Hetzner</td>
+<td>Finland</td>
+<td></td>
+</tr>
+<tr>
+<td>s2.eu.prod.push.monal-im.org</td>
+<td>Europe</td>
+<td>PHP-Friends</td>
+<td>Germany</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="voip-stun--turn">VoIP (STUN / TURN)</h2>
+<p>With Monal 6.0 we introduced VoIP support.
+To establish the connection between your and the remote party (the remote contact) Monal utilizes STUN and TURN.
+In general STUN (Session Traversal Utilities for NAT) is used to allow a VoIP call even when you are behind firewalls.</p>
+<p>Calls established using only STUN will directly exchange packets (P2P) between you and your contact.
+Hence, your contact may see your IP address.
+If you do not want your contact to see your IP Address while being on a call, disable P2P connection in Monal&rsquo;s privacy settings.
+Once disabled Monal tries to establish the call using a TURN server.</p>
+<p><strong>Note:</strong> Not all XMPP server currently provide STUN and TURN server.
+If your XMPP server does not provide STUN and TURN servers, Monal may use our fallback servers.
+These fallback servers provide both STUN and TURN.
+You can disable Monal to use these fallback turn servers.
+Please note, that we may disable our fallback STUN and TURN servers at any time, if to many are using them.</p>
+<p>If you use our fallback servers we will see:</p>
+<ul>
+<li>Your IP Addresses</li>
+<li>The IPs of your contact or the IPs their TURN-Server</li>
+<li>How long the call is established</li>
+</ul>
+<h2 id="crash-reports-and-app-usage">Crash reports and app usage</h2>
+<p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
+This is opt-in only and controlled by iOS and macOS global settings.
+If a user decides not to send any data to developers, no crash logs are sent to Monal developers.</p>
+<h2 id="logs">Logs</h2>
+<p>Your local device will contain a log file with all sent and received raw XMPP messages as well as debug logs.
+It does contain sensitive personal data!
+This file will never be transferred to us, except if you explicitly (manually) send it to us (e.g., via mail).</p>
+<h2 id="gdpr-subject-access-requests-sar">GDPR Subject Access Requests (SAR)</h2>
+<p>European GDPR allows users to request a copy of all data retained about them. Starting with Monal 5.2.0 we no longer see your JIDs (<a href="mailto:username@domain.tld">username@domain.tld</a>) in our push servers.
+We therefore are not able to send you retained data related to your JID.
+We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided device ID.
+If you have questions regarding GDPR, please send us a mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
+]]></content:encoded></item><item><title>Privacy Monal App &lt; 5.2.0</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_001/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_001/</guid><description>Monal Website
+You can find our latest privacy policy for our website here: Website Privacy Policy
+Monal App
+Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<blockquote>
+
+<p><strong>Monal Website</strong><br>
+You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
+<p><strong>Monal App</strong><br>
+Our privacy policy may differ between app versions.
+Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
+<strong>How to find out your Monal version</strong></p>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Scroll down to the last entry &ldquo;version&rdquo;</li>
+</ol>
+</blockquote>
+<p><strong>Monal App Privacy Policies</strong></p>
+<table>
+<thead>
+<tr>
+<th>Releases</th>
+<th>Privacy Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.0 and newer</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+</tr>
+<tr>
+<td>5.2.0 up to 5.4.x</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+</tr>
+<tr>
+<td>before 5.2.0</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+</tr>
+</tbody>
+</table>
+
+</blockquote>
+<h1 id="privacy-monal-app--520">Privacy Monal App &lt; 5.2.0</h1>
+<p>Monal for iOS and macOS will register for APNS push notifications via a server to server (s2s) connection from your XMPP server to our push server.
+Your XMPP JID alongside with a push identifier and secret token from Apple, that is only valid for this app, will be saved and logged in the push-server logs.
+We do not intend to track you.
+All server logs are purged every two weeks.
+Our logs allow us to see the following details:</p>
+<ul>
+<li>Your JID (including your server’s hostname)</li>
+<li>Time when you register for push notifications</li>
+<li>Your apple push node and push token that was generated for Monal by Apple</li>
+<li>Time when your XMPP server triggered a push notification to your Monal device</li>
+</ul>
+<p>To fulfill its duty, our push server has to hold some information associated with an Apple push token, until Apple marks the token a deleted, which usually means you have uninstalled the app (Info: Apple confirms if a token is still valid on every push).
+In detail these information consists of:</p>
+<ul>
+<li>The Apple push token</li>
+<li>The timestamp of the last push error</li>
+<li>The timestamp of the last successful push</li>
+<li>The timestamp of the registration of your device with Monal’s push-server</li>
+<li>The timestamp when the registration was renewed</li>
+<li>A random UUID identifying your device</li>
+<li>A random secret used by your XMPP server to authenticate a push</li>
+</ul>
+<h4 id="push-server-locations">Push server locations</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Hoster</th>
+<th>Location</th>
+<th>Notice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ios13push.monal.im</td>
+<td>AWS</td>
+<td>US</td>
+<td>Provided by Anurodh Pokharel<br>IPv4 only</td>
+</tr>
+<tr>
+<td>push.monal.im</td>
+<td>AWS</td>
+<td>US</td>
+<td>Provided by Anurodh Pokharel<br>IPv4 only<br>iOS 12 only</td>
+</tr>
+</tbody>
+</table>
+<h3 id="crash-reports-and-app-usage">Crash reports and app usage</h3>
+<p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
+This is opt-in only and controlled by iOS and macOS global settings.
+If a user decides not to send any data to developers, no crash logs are sent to Monal developers.</p>
+<h3 id="logs">Logs</h3>
+<p>Your local device will contain a log file with all sent and received raw XMPP messages as well as debug logs.
+It does contain sensitive personal data! This file will never be transferred to us, except if you explicitly (manually) send it to us (e.g. via mail).</p>
+<h3 id="gdpr-subject-access-requests-sar">GDPR Subject Access Requests (SAR)</h3>
+<p>European GDPR allows users to request a copy of all data retained about them.
+Please send GDPR requests to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.
+As by GDPR we need to validate your JID before answering to your inquiry.
+Therefore, we will provide you a JID you must send a confirmation to, before we can answer your request and send you all retained data related to your JID.</p>
+]]></content:encoded></item><item><title>Privacy Monal App 5.2.0 - 5.4.x</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_002/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_002/</guid><description>Monal Website
+You can find our latest privacy policy for our website here: Website Privacy Policy
+Monal App
+Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<blockquote>
+
+<p><strong>Monal Website</strong><br>
+You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
+<p><strong>Monal App</strong><br>
+Our privacy policy may differ between app versions.
+Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
+<strong>How to find out your Monal version</strong></p>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Scroll down to the last entry &ldquo;version&rdquo;</li>
+</ol>
+</blockquote>
+<p><strong>Monal App Privacy Policies</strong></p>
+<table>
+<thead>
+<tr>
+<th>Releases</th>
+<th>Privacy Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.0 and newer</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+</tr>
+<tr>
+<td>5.2.0 up to 5.4.x</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+</tr>
+<tr>
+<td>before 5.2.0</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+</tr>
+</tbody>
+</table>
+
+</blockquote>
+<h1 id="privacy-monal-app-520---54x">Privacy Monal App 5.2.0 - 5.4.x</h1>
+<p>App Resources are very limited on iOS and macOS.
+Monal for example can only run a limited time in the background after a user either locked the screen or switched the app.
+Hence, apps can not simply keep a connection to your xmpp server open 24/7 to inform you about new messages.
+To overcome these limitations your XMPP-Server can can request our push server to send push messages to Apple.
+With these push messages we can request Apple to wake up the app on your phone.
+Once it is woken up it has about 30 seconds to connect to your XMPP server, fetch all new messages and show a push notification for these new messages.</p>
+<h2 id="how-push-works">How push works</h2>
+<p>Every time that Monal logins at your XMPP servers, it requests your server to inform us once your received an XMPP message while Monal was closed.
+We therefore requests a Monal specific push token from Apple.
+Using this Monal specific push token our push server can send push messages via Apples push system to wake up the app on your device.</p>
+<p>Once push messages are enabled for your Monal instance on your XMPP servers, your XMPP servers will open a encrypted server to server (s2s) connection to one of our push servers.
+Using this s2s connection your XMPP servers will then request our push servers to wake up Monal every time that new messages should be processed.
+To wake up your instance your XMPP servers send us:</p>
+<ul>
+<li>your unique Monal specific push token that was generated by Apple</li>
+<li>the domain of the XMPP server that you are using.</li>
+</ul>
+<h2 id="push">Push</h2>
+<ul>
+<li>We <strong>never</strong> see your messages.</li>
+<li>We <strong>do not</strong> know who you are chatting with.</li>
+<li>We could <strong>only</strong> ever track what XMPP domains a push token is/was using.</li>
+<li>We <strong>can not</strong> identify a user.</li>
+</ul>
+<h3 id="push-servers">Push-Servers</h3>
+<p>We provide two independent push server regions at the moment: Europe and US.
+By default, each device will choose our Europe based push region unless the device local is set to the US.</p>
+<h3 id="how-to-change-the-push-region">How to change the push region</h3>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Open the Notifications menu</li>
+<li>Scroll down</li>
+<li>Select a region</li>
+</ol>
+</blockquote>
+<h3 id="push-server-regions">Push server regions</h3>
+<p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Hostname</th>
+<th>Notice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Europe</td>
+<td>eu.prod.push.monal-im.org</td>
+<td></td>
+</tr>
+<tr>
+<td>US</td>
+<td>us.prod.push.monal-im.org</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="push-server-locations">Push server locations</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Region</th>
+<th>Hoster</th>
+<th>Location</th>
+<th>Notice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s1.eu.prod.push.monal-im.org</td>
+<td>Europe</td>
+<td>Hetzner</td>
+<td>Finland</td>
+<td></td>
+</tr>
+<tr>
+<td>s2.eu.prod.push.monal-im.org</td>
+<td>Europe</td>
+<td>PHP-Friends</td>
+<td>Germany</td>
+<td></td>
+</tr>
+<tr>
+<td>s1.us.prod.push.monal-im.org</td>
+<td>US</td>
+<td>Fosshost</td>
+<td>US</td>
+<td>IPv4 only</td>
+</tr>
+<tr>
+<td>s2.us.prod.push.monal-im.org</td>
+<td>US</td>
+<td>Fosshost</td>
+<td>US</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="crash-reports-and-app-usage">Crash reports and app usage</h2>
+<p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
+This is opt-in only and controlled by iOS and macOS global settings.
+If a user decides not to send any data to developers, no crash logs are sent to Monal developers.</p>
+<h2 id="logs">Logs</h2>
+<p>Your local device will contain a log file with all sent and received raw XMPP messages as well as debug logs.
+It does contain sensitive personal data!
+This file will never be transferred to us, except if you explicitly (manually) send it to us (e.g. via mail).</p>
+<h2 id="gdpr-subject-access-requests-sar">GDPR Subject Access Requests (SAR)</h2>
+<p>European GDPR allows users to request a copy of all data retained about them. Starting with Monal 5.2.0 we no longer see your JIDs (<a href="mailto:username@domain.tld">username@domain.tld</a>) in our push servers.
+We therefore are not able to send you retained data related to your JID.
+We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided device ID.
+If you have questions regarding GDPR, please send us a mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
+]]></content:encoded></item><item><title>Privacy Website</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_website/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_website/</guid><description>Monal Website
+You can find our latest privacy policy for our website here: Website Privacy Policy
+Monal App
+Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<blockquote>
+
+<p><strong>Monal Website</strong><br>
+You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
+<p><strong>Monal App</strong><br>
+Our privacy policy may differ between app versions.
+Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
+<strong>How to find out your Monal version</strong></p>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Scroll down to the last entry &ldquo;version&rdquo;</li>
+</ol>
+</blockquote>
+<p><strong>Monal App Privacy Policies</strong></p>
+<table>
+<thead>
+<tr>
+<th>Releases</th>
+<th>Privacy Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.0 and newer</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+</tr>
+<tr>
+<td>5.2.0 up to 5.4.x</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+</tr>
+<tr>
+<td>before 5.2.0</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+</tr>
+</tbody>
+</table>
+
+</blockquote>
+<h1 id="website-privacy">Website Privacy</h1>
+<p>A user’s IP address will be logged in the HTTP server logs.
+All server logs are purged every two weeks and there isn’t any way for us to associate this information with any particular individual.
+Our websites do not use or need any cookies. And of course it doesn&rsquo;t use any third party/external (JS-CSS-Font) dependencies.</p>
+]]></content:encoded></item><item><title/><link>https://monal-im.github.io/monal-im.org/privacyarchive/privacyheader/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/privacyheader/</guid><description>Monal Website
+You can find our latest privacy policy for our website here: Website Privacy Policy
+Monal App
+Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<p><strong>Monal Website</strong><br>
+You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
+<p><strong>Monal App</strong><br>
+Our privacy policy may differ between app versions.
+Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
+<strong>How to find out your Monal version</strong></p>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Scroll down to the last entry &ldquo;version&rdquo;</li>
+</ol>
+</blockquote>
+<p><strong>Monal App Privacy Policies</strong></p>
+<table>
+<thead>
+<tr>
+<th>Releases</th>
+<th>Privacy Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.0 and newer</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+</tr>
+<tr>
+<td>5.2.0 up to 5.4.x</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+</tr>
+<tr>
+<td>before 5.2.0</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded></item></channel></rss>

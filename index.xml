@@ -1,4 +1,184 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/</link><description>Recent content on Monal</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 04 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Push on iOS</title><link>https://monal-im.github.io/monal-im.org/post/00005-push-on-ios/</link><pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00005-push-on-ios/</guid><description>I recently wrote a summary about push on iOS in the xmpp.org wiki.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/</link><description>Recent content on Monal</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 10 Feb 2023 13:00:00 +0100</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Privacy Monal App ≥ 6.0.0</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_003/</link><pubDate>Fri, 10 Feb 2023 13:00:00 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_003/</guid><description>Monal Website
+You can find our latest privacy policy for our website here: Website Privacy Policy
+Monal App
+Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<blockquote>
+
+<p><strong>Monal Website</strong><br>
+You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
+<p><strong>Monal App</strong><br>
+Our privacy policy may differ between app versions.
+Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
+<strong>How to find out your Monal version</strong></p>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Scroll down to the last entry &ldquo;version&rdquo;</li>
+</ol>
+</blockquote>
+<p><strong>Monal App Privacy Policies</strong></p>
+<table>
+<thead>
+<tr>
+<th>Releases</th>
+<th>Privacy Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.0 and newer</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+</tr>
+<tr>
+<td>5.2.0 up to 5.4.x</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+</tr>
+<tr>
+<td>before 5.2.0</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+</tr>
+</tbody>
+</table>
+
+</blockquote>
+<h1 id="privacy-monal-app--600">Privacy Monal App ≥ 6.0.0</h1>
+<h2 id="tldr">TLDR</h2>
+<ul>
+<li>We <strong>never</strong> see your messages.</li>
+<li>We <strong>do not</strong> know who you are chatting with.</li>
+<li>We <strong>can not</strong> identify a user.</li>
+<li>We can see your XMPP domain and a Monal specific unique device id every time you should receive a push message</li>
+<li>We see your IP addresses if you are on a call and your XMPP server does not provide a STUN or TURN server.</li>
+<li>We may see your contacts IP address if you are using our TURN server.</li>
+</ul>
+<h2 id="structure">Structure</h2>
+<p>The App Monal may interact with Monal servers to support Push messages or if you are establishing a call with a contact but your XMPP Server does neither provide a STUN nor a TURN server.</p>
+<p>Our privacy details are structured as follows.
+First, we would like to give you a short introduction how Monal is handling push messages to ensure a pleasant user experience.
+We will then briefly explain VoIP calls and its privacy implications.
+Afterwards we like to inform you how we are using crash and usage reports, logs and GDPR Subject Access Requests (SAR).</p>
+<h2 id="push">Push</h2>
+<p>App Resources are very limited on iOS and macOS.
+Monal for example can only run a limited time in the background after a user either locked the screen or switched the app.
+Hence, apps cannot simply keep a connection to your XMPP server open 24/7 to inform you about new messages.
+To overcome these limitations your XMPP server can request our push server to send push messages to Apple.
+With these push messages we can request Apple to wake up the app on your phone.
+Once it is woken up it has about 30 seconds to connect to your XMPP server, fetch all new messages and show a push notification for these new messages.</p>
+<h3 id="how-push-works">How push works</h3>
+<p>Every time that Monal logins at your XMPP servers, it requests your server to inform us once you received an XMPP message while Monal was closed.
+We therefore request a Monal specific push token from Apple.
+Using this Monal specific push token our push server can send push messages via Apples push system to wake up the app on your device.</p>
+<p>Once push messages are enabled for your Monal instance on your XMPP servers, your XMPP servers will open a encrypted server to server (s2s) connection to one of our push servers.
+Using this s2s connection your XMPP servers will then request our push servers to wake up Monal every time that new messages should be processed.
+To wake up your instance your XMPP servers send us:</p>
+<ul>
+<li>Your unique Monal specific push token that was generated by Apple</li>
+<li>The domain of the XMPP server that you are using</li>
+</ul>
+<h3 id="push-1">Push</h3>
+<ul>
+<li>We <strong>never</strong> see your messages.</li>
+<li>We <strong>do not</strong> know who you are chatting with.</li>
+<li>We could <strong>only</strong> ever track what XMPP domains a push token is/was using.</li>
+<li>We <strong>can not</strong> identify a user.</li>
+</ul>
+<h4 id="push-servers">Push-Servers</h4>
+<p>We currently provide the following independent push server regions:</p>
+<ul>
+<li>Europe</li>
+<li>Alpha (based in Europe, only used for debugging with higher log levels, not for production use)</li>
+</ul>
+<p><strong>Note:</strong> Our previously used US push region was unfortunately shutdown.</p>
+<h4 id="how-to-change-the-push-region">How to change the push region</h4>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Open the Notifications menu</li>
+<li>Scroll down</li>
+<li>Select a region</li>
+</ol>
+</blockquote>
+<h4 id="push-server-regions">Push server regions</h4>
+<p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Hostname</th>
+<th>Notice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Europe</td>
+<td>eu.prod.push.monal-im.org</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="push-server-locations">Push server locations</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Region</th>
+<th>Hoster</th>
+<th>Location</th>
+<th>Notice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s1.eu.prod.push.monal-im.org</td>
+<td>Europe</td>
+<td>Hetzner</td>
+<td>Finland</td>
+<td></td>
+</tr>
+<tr>
+<td>s2.eu.prod.push.monal-im.org</td>
+<td>Europe</td>
+<td>PHP-Friends</td>
+<td>Germany</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="voip-stun--turn">VoIP (STUN / TURN)</h2>
+<p>With Monal 6.0 we introduced VoIP support.
+To establish the connection between your and the remote party (the remote contact) Monal utilizes STUN and TURN.
+In general STUN (Session Traversal Utilities for NAT) is used to allow a VoIP call even when you are behind firewalls.</p>
+<p>Calls established using only STUN will directly exchange packets (P2P) between you and your contact.
+Hence, your contact may see your IP address.
+If you do not want your contact to see your IP Address while being on a call, disable P2P connection in Monal&rsquo;s privacy settings.
+Once disabled Monal tries to establish the call using a TURN server.</p>
+<p><strong>Note:</strong> Not all XMPP server currently provide STUN and TURN server.
+If your XMPP server does not provide STUN and TURN servers, Monal may use our fallback servers.
+These fallback servers provide both STUN and TURN.
+You can disable Monal to use these fallback turn servers.
+Please note, that we may disable our fallback STUN and TURN servers at any time, if to many are using them.</p>
+<p>If you use our fallback servers we will see:</p>
+<ul>
+<li>Your IP Addresses</li>
+<li>The IPs of your contact or the IPs their TURN-Server</li>
+<li>How long the call is established</li>
+</ul>
+<h2 id="crash-reports-and-app-usage">Crash reports and app usage</h2>
+<p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
+This is opt-in only and controlled by iOS and macOS global settings.
+If a user decides not to send any data to developers, no crash logs are sent to Monal developers.</p>
+<h2 id="logs">Logs</h2>
+<p>Your local device will contain a log file with all sent and received raw XMPP messages as well as debug logs.
+It does contain sensitive personal data!
+This file will never be transferred to us, except if you explicitly (manually) send it to us (e.g., via mail).</p>
+<h2 id="gdpr-subject-access-requests-sar">GDPR Subject Access Requests (SAR)</h2>
+<p>European GDPR allows users to request a copy of all data retained about them. Starting with Monal 5.2.0 we no longer see your JIDs (<a href="mailto:username@domain.tld">username@domain.tld</a>) in our push servers.
+We therefore are not able to send you retained data related to your JID.
+We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided device ID.
+If you have questions regarding GDPR, please send us a mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
+]]></content:encoded></item><item><title>Push on iOS</title><link>https://monal-im.github.io/monal-im.org/post/00005-push-on-ios/</link><pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00005-push-on-ios/</guid><description>I recently wrote a summary about push on iOS in the xmpp.org wiki.
 See over here for all the technical details and links to the documentation. I also talked about that topic in my talk &amp;ldquo;Modern XMPP - A story based on Monal&amp;rdquo; linked on the About page over here.
 For convenience I&amp;rsquo;d like to summarize some parts of that wiki entry in this blog-post, too.
 UPDATE: This post describes the way Monal implements push as well as the pitfalls of implementing it in another way.</description><content:encoded><![CDATA[<p>I recently wrote a summary about push on iOS in the xmpp.org wiki.<br>
@@ -1338,7 +1518,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
 <li>Many settings and a design to offer privacy settings in the app to the need of the user</li>
 <li>A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our <a href="https://github.com/monal-im/Monal/blob/develop/monal.doap">DOAP file</a>.</li>
 </ul>
-<h2 id="planned-features">Planned features:</h2>
+<h2 id="planned-features">Planned features</h2>
 <ul>
 <li>Audio and Video calls</li>
 <li>User-interface overhaul</li>
@@ -2257,14 +2437,17 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
     
 </table>
 
-]]></content:encoded></item><item><title>Privacy</title><link>https://monal-im.github.io/monal-im.org/privacy/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacy/</guid><description>Monal-im.org (Website) A user’s IP address will be logged in the HTTP server logs. All server logs are purged every two weeks and there isn’t any way for us to associate this information with any particular individual. Our website does not use or need any cookies. And of course it doesn&amp;rsquo;t use any third party/external (JS-CSS-Font) dependencies. Our all contents are open source. You can easily access source code of the website.</description><content:encoded><![CDATA[<h1 id="monal-imorg-website">Monal-im.org (Website)</h1>
-<p>A user’s IP address will be logged in the HTTP server logs.
-All server logs are purged every two weeks and there isn’t any way for us to associate this information with any particular individual.
-Our website does not use or need any cookies. And of course it doesn&rsquo;t use any third party/external (JS-CSS-Font) dependencies. Our all contents are open source. You can easily access <a href="https://github.com/monal-im/monal-im.org">source code</a> of the website.</p>
-<h1 id="monal-app">Monal (App)</h1>
-<p>With Monal 5.2.0 we introduce an even more privacy-friendly push system.
-Please check your Monal version before continuing reading.</p>
-<p><strong>How to find out your Monal version</strong></p>
+]]></content:encoded></item><item><title>Privacy</title><link>https://monal-im.github.io/monal-im.org/privacy/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacy/</guid><description>Monal Website
+You can find our latest privacy policy for our website here: Website Privacy Policy
+Monal App
+Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[
+<p><strong>Monal Website</strong><br>
+You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
+<p><strong>Monal App</strong><br>
+Our privacy policy may differ between app versions.
+Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
+<strong>How to find out your Monal version</strong></p>
 <blockquote>
 <ol>
 <li>Open Monal</li>
@@ -2272,14 +2455,186 @@ Please check your Monal version before continuing reading.</p>
 <li>Scroll down to the last entry &ldquo;version&rdquo;</li>
 </ol>
 </blockquote>
-<h2 id="monal-app--520">Monal (App ≥ 5.2.0)</h2>
+<p><strong>Monal App Privacy Policies</strong></p>
+<table>
+<thead>
+<tr>
+<th>Releases</th>
+<th>Privacy Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.0 and newer</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+</tr>
+<tr>
+<td>5.2.0 up to 5.4.x</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+</tr>
+<tr>
+<td>before 5.2.0</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+</tr>
+</tbody>
+</table>
+
+]]></content:encoded></item><item><title>Privacy Monal App &lt; 5.2.0</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_001/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_001/</guid><description>Monal Website
+You can find our latest privacy policy for our website here: Website Privacy Policy
+Monal App
+Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<blockquote>
+
+<p><strong>Monal Website</strong><br>
+You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
+<p><strong>Monal App</strong><br>
+Our privacy policy may differ between app versions.
+Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
+<strong>How to find out your Monal version</strong></p>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Scroll down to the last entry &ldquo;version&rdquo;</li>
+</ol>
+</blockquote>
+<p><strong>Monal App Privacy Policies</strong></p>
+<table>
+<thead>
+<tr>
+<th>Releases</th>
+<th>Privacy Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.0 and newer</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+</tr>
+<tr>
+<td>5.2.0 up to 5.4.x</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+</tr>
+<tr>
+<td>before 5.2.0</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+</tr>
+</tbody>
+</table>
+
+</blockquote>
+<h1 id="privacy-monal-app--520">Privacy Monal App &lt; 5.2.0</h1>
+<p>Monal for iOS and macOS will register for APNS push notifications via a server to server (s2s) connection from your XMPP server to our push server.
+Your XMPP JID alongside with a push identifier and secret token from Apple, that is only valid for this app, will be saved and logged in the push-server logs.
+We do not intend to track you.
+All server logs are purged every two weeks.
+Our logs allow us to see the following details:</p>
+<ul>
+<li>Your JID (including your server’s hostname)</li>
+<li>Time when you register for push notifications</li>
+<li>Your apple push node and push token that was generated for Monal by Apple</li>
+<li>Time when your XMPP server triggered a push notification to your Monal device</li>
+</ul>
+<p>To fulfill its duty, our push server has to hold some information associated with an Apple push token, until Apple marks the token a deleted, which usually means you have uninstalled the app (Info: Apple confirms if a token is still valid on every push).
+In detail these information consists of:</p>
+<ul>
+<li>The Apple push token</li>
+<li>The timestamp of the last push error</li>
+<li>The timestamp of the last successful push</li>
+<li>The timestamp of the registration of your device with Monal’s push-server</li>
+<li>The timestamp when the registration was renewed</li>
+<li>A random UUID identifying your device</li>
+<li>A random secret used by your XMPP server to authenticate a push</li>
+</ul>
+<h4 id="push-server-locations">Push server locations</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Hoster</th>
+<th>Location</th>
+<th>Notice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ios13push.monal.im</td>
+<td>AWS</td>
+<td>US</td>
+<td>Provided by Anurodh Pokharel<br>IPv4 only</td>
+</tr>
+<tr>
+<td>push.monal.im</td>
+<td>AWS</td>
+<td>US</td>
+<td>Provided by Anurodh Pokharel<br>IPv4 only<br>iOS 12 only</td>
+</tr>
+</tbody>
+</table>
+<h3 id="crash-reports-and-app-usage">Crash reports and app usage</h3>
+<p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
+This is opt-in only and controlled by iOS and macOS global settings.
+If a user decides not to send any data to developers, no crash logs are sent to Monal developers.</p>
+<h3 id="logs">Logs</h3>
+<p>Your local device will contain a log file with all sent and received raw XMPP messages as well as debug logs.
+It does contain sensitive personal data! This file will never be transferred to us, except if you explicitly (manually) send it to us (e.g. via mail).</p>
+<h3 id="gdpr-subject-access-requests-sar">GDPR Subject Access Requests (SAR)</h3>
+<p>European GDPR allows users to request a copy of all data retained about them.
+Please send GDPR requests to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.
+As by GDPR we need to validate your JID before answering to your inquiry.
+Therefore, we will provide you a JID you must send a confirmation to, before we can answer your request and send you all retained data related to your JID.</p>
+]]></content:encoded></item><item><title>Privacy Monal App 5.2.0 - 5.4.x</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_002/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_002/</guid><description>Monal Website
+You can find our latest privacy policy for our website here: Website Privacy Policy
+Monal App
+Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<blockquote>
+
+<p><strong>Monal Website</strong><br>
+You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
+<p><strong>Monal App</strong><br>
+Our privacy policy may differ between app versions.
+Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
+<strong>How to find out your Monal version</strong></p>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Scroll down to the last entry &ldquo;version&rdquo;</li>
+</ol>
+</blockquote>
+<p><strong>Monal App Privacy Policies</strong></p>
+<table>
+<thead>
+<tr>
+<th>Releases</th>
+<th>Privacy Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.0 and newer</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+</tr>
+<tr>
+<td>5.2.0 up to 5.4.x</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+</tr>
+<tr>
+<td>before 5.2.0</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+</tr>
+</tbody>
+</table>
+
+</blockquote>
+<h1 id="privacy-monal-app-520---54x">Privacy Monal App 5.2.0 - 5.4.x</h1>
 <p>App Resources are very limited on iOS and macOS.
 Monal for example can only run a limited time in the background after a user either locked the screen or switched the app.
 Hence, apps can not simply keep a connection to your xmpp server open 24/7 to inform you about new messages.
 To overcome these limitations your XMPP-Server can can request our push server to send push messages to Apple.
 With these push messages we can request Apple to wake up the app on your phone.
 Once it is woken up it has about 30 seconds to connect to your XMPP server, fetch all new messages and show a push notification for these new messages.</p>
-<h3 id="how-push-works">How push works</h3>
+<h2 id="how-push-works">How push works</h2>
 <p>Every time that Monal logins at your XMPP servers, it requests your server to inform us once your received an XMPP message while Monal was closed.
 We therefore requests a Monal specific push token from Apple.
 Using this Monal specific push token our push server can send push messages via Apples push system to wake up the app on your device.</p>
@@ -2290,17 +2645,17 @@ To wake up your instance your XMPP servers send us:</p>
 <li>your unique Monal specific push token that was generated by Apple</li>
 <li>the domain of the XMPP server that you are using.</li>
 </ul>
-<h3 id="push">Push</h3>
+<h2 id="push">Push</h2>
 <ul>
 <li>We <strong>never</strong> see your messages.</li>
 <li>We <strong>do not</strong> know who you are chatting with.</li>
 <li>We could <strong>only</strong> ever track what XMPP domains a push token is/was using.</li>
 <li>We <strong>can not</strong> identify a user.</li>
 </ul>
-<h4 id="push-servers">Push-Servers</h4>
+<h3 id="push-servers">Push-Servers</h3>
 <p>We provide two independent push server regions at the moment: Europe and US.
 By default, each device will choose our Europe based push region unless the device local is set to the US.</p>
-<h4 id="how-to-change-the-push-region">How to change the push region</h4>
+<h3 id="how-to-change-the-push-region">How to change the push region</h3>
 <blockquote>
 <ol>
 <li>Open Monal</li>
@@ -2310,7 +2665,7 @@ By default, each device will choose our Europe based push region unless the devi
 <li>Select a region</li>
 </ol>
 </blockquote>
-<h4 id="push-server-regions">Push server regions</h4>
+<h3 id="push-server-regions">Push server regions</h3>
 <p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
 <table>
 <thead>
@@ -2333,7 +2688,7 @@ By default, each device will choose our Europe based push region unless the devi
 </tr>
 </tbody>
 </table>
-<h4 id="push-server-locations">Push server locations</h4>
+<h3 id="push-server-locations">Push server locations</h3>
 <table>
 <thead>
 <tr>
@@ -2375,79 +2730,67 @@ By default, each device will choose our Europe based push region unless the devi
 </tr>
 </tbody>
 </table>
-<h3 id="crash-reports-and-app-usage">Crash reports and app usage</h3>
+<h2 id="crash-reports-and-app-usage">Crash reports and app usage</h2>
 <p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
 This is opt-in only and controlled by iOS and macOS global settings.
 If a user decides not to send any data to developers, no crash logs are sent to Monal developers.</p>
-<h3 id="logs">Logs</h3>
+<h2 id="logs">Logs</h2>
 <p>Your local device will contain a log file with all sent and received raw XMPP messages as well as debug logs.
 It does contain sensitive personal data!
 This file will never be transferred to us, except if you explicitly (manually) send it to us (e.g. via mail).</p>
-<h3 id="gdpr-subject-access-requests-sar">GDPR Subject Access Requests (SAR)</h3>
+<h2 id="gdpr-subject-access-requests-sar">GDPR Subject Access Requests (SAR)</h2>
 <p>European GDPR allows users to request a copy of all data retained about them. Starting with Monal 5.2.0 we no longer see your JIDs (<a href="mailto:username@domain.tld">username@domain.tld</a>) in our push servers.
 We therefore are not able to send you retained data related to your JID.
 We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided device ID.
 If you have questions regarding GDPR, please send us a mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
-<h2 id="monal-app--520-1">Monal (App &lt; 5.2.0)</h2>
-<p>Monal for iOS and macOS will register for APNS push notifications via a server to server (s2s) connection from your XMPP server to our push server.
-Your XMPP JID alongside with a push identifier and secret token from Apple, that is only valid for this app, will be saved and logged in the push-server logs.
-We do not intend to track you.
-All server logs are purged every two weeks.
-Our logs allow us to see the following details:</p>
-<ul>
-<li>Your JID (including your server’s hostname)</li>
-<li>Time when you register for push notifications</li>
-<li>Your apple push node and push token that was generated for Monal by Apple</li>
-<li>Time when your XMPP server triggered a push notification to your Monal device</li>
-</ul>
-<p>To fulfill its duty, our push server has to hold some information associated with an Apple push token, until Apple marks the token a deleted, which usually means you have uninstalled the app (Info: Apple confirms if a token is still valid on every push).
-In detail these information consists of:</p>
-<ul>
-<li>The Apple push token</li>
-<li>The timestamp of the last push error</li>
-<li>The timestamp of the last successful push</li>
-<li>The timestamp of the registration of your device with Monal’s push-server</li>
-<li>The timestamp when the registration was renewed</li>
-<li>A random UUID identifying your device</li>
-<li>A random secret used by your XMPP server to authenticate a push</li>
-</ul>
-<h4 id="push-server-locations-1">Push server locations</h4>
+]]></content:encoded></item><item><title>Privacy Website</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_website/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_website/</guid><description>Monal Website
+You can find our latest privacy policy for our website here: Website Privacy Policy
+Monal App
+Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<blockquote>
+
+<p><strong>Monal Website</strong><br>
+You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
+<p><strong>Monal App</strong><br>
+Our privacy policy may differ between app versions.
+Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
+<strong>How to find out your Monal version</strong></p>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Scroll down to the last entry &ldquo;version&rdquo;</li>
+</ol>
+</blockquote>
+<p><strong>Monal App Privacy Policies</strong></p>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Hoster</th>
-<th>Location</th>
-<th>Notice</th>
+<th>Releases</th>
+<th>Privacy Policy</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>ios13push.monal.im</td>
-<td>AWS</td>
-<td>US</td>
-<td>Provided by Anurodh Pokharel<br>IPv4 only</td>
+<td>6.0 and newer</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
 </tr>
 <tr>
-<td>push.monal.im</td>
-<td>AWS</td>
-<td>US</td>
-<td>Provided by Anurodh Pokharel<br>IPv4 only<br>iOS 12 only</td>
+<td>5.2.0 up to 5.4.x</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+</tr>
+<tr>
+<td>before 5.2.0</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
 </tr>
 </tbody>
 </table>
-<h3 id="crash-reports-and-app-usage-1">Crash reports and app usage</h3>
-<p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
-This is opt-in only and controlled by iOS and macOS global settings.
-If a user decides not to send any data to developers, no crash logs are sent to Monal developers.</p>
-<h3 id="logs-1">Logs</h3>
-<p>Your local device will contain a log file with all sent and received raw XMPP messages as well as debug logs.
-It does contain sensitive personal data! This file will never be transferred to us, except if you explicitly (manually) send it to us (e.g. via mail).</p>
-<h3 id="gdpr-subject-access-requests-sar-1">GDPR Subject Access Requests (SAR)</h3>
-<p>European GDPR allows users to request a copy of all data retained about them.
-Please send GDPR requests to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.
-As by GDPR we need to validate your JID before answering to your inquiry.
-Therefore, we will provide you a JID you must send a confirmation to, before we can answer your request and send you all retained data related to your JID.</p>
+
+</blockquote>
+<h1 id="website-privacy">Website Privacy</h1>
+<p>A user’s IP address will be logged in the HTTP server logs.
+All server logs are purged every two weeks and there isn’t any way for us to associate this information with any particular individual.
+Our websites do not use or need any cookies. And of course it doesn&rsquo;t use any third party/external (JS-CSS-Font) dependencies.</p>
 ]]></content:encoded></item><item><title>Insights Into Monal Development</title><link>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</guid><description>TLDR:
 Info: Monal will stop support for iOS 12, iOS 13 and macOS Catalina!
 We are searching for a SwiftUI developer.
@@ -2528,12 +2871,12 @@ In the future we want to try to reduce our knowledge by hiding your username fro
 <h4 id="many-thanks">Many thanks!</h4>
 <p>Of course, thank you very much to everyone who supported us in the past two years! 🙂</p>
 <p>You can follow us via <a href="https://fosstodon.org/@Monal">Mastodon</a>.</p>
-]]></content:encoded></item><item><title>Monal-IM. Privacy like it's 1999</title><link>https://monal-im.github.io/monal-im.org/home/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/home/</guid><description>Monal is a XMPP instant messaging client for MacOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android. XMPP in general is an open and standardized protocol for real time communication. Anyone can host their own server and communicate freely with each other, just like with email and just like email the used addresses are of the form &amp;ldquo;user@domain.</description><content:encoded><![CDATA[<p>Monal is a XMPP instant messaging client for MacOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android.
+]]></content:encoded></item><item><title>Monal-IM. Privacy like it's 1999</title><link>https://monal-im.github.io/monal-im.org/home/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/home/</guid><description>Monal is an XMPP instant messaging client for macOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android. XMPP in general is an open and standardized protocol for real time communication. Anyone can host their own server and communicate freely with each other, just like with email and just like email the used addresses are of the form &amp;ldquo;user@domain.</description><content:encoded><![CDATA[<p>Monal is an XMPP instant messaging client for macOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android.
 XMPP in general is an open and standardized protocol for real time communication.
 Anyone can host their own server and communicate freely with each other, just like with email and just like email the used addresses are of the form &ldquo;<a href="mailto:user@domain.tld">user@domain.tld</a>&rdquo;.
 The user can use different apps and services, such as Monal, from a single but also multiple accounts.
 This serves a decentral and sovereign infrastructure and digital communication on the internet but also offers many potential for innovation.
-The chat client for iOS and MacOS involves implementing various XEP standards (XMPP extension protocols, adding modern functionality to the XMPP-core and XMPP-im RFCs, see <a href="https://xmpp.org/extensions/">XMPP Extensions</a>).</p>
+The chat client for iOS and macOS involves implementing various XEP standards (XMPP extension protocols, adding modern functionality to the XMPP-core and XMPP-im RFCs, see <a href="https://xmpp.org/extensions/">XMPP Extensions</a>).</p>
 <table>
 <thead>
 <tr>
@@ -2570,21 +2913,57 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
   
 
   
@@ -2602,7 +2981,7 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS0y_hu0c5da4ce131bbf9a09fa1f57e4a005b8_66302_375x0_resize_q50_h2_linear_3.webp 375w" style="max-width:375px;width:100%" src="https://monal-im.github.io/monal-im.org/images/aG9tZS0y.png" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_768x0_resize_q50_h2_linear_3.webp 768w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_800x0_resize_q50_h2_linear_3.webp 800w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_960x0_resize_q50_h2_linear_3.webp 960w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_1024x0_resize_q50_h2_linear_3.webp 1024w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_1080x0_resize_q50_h2_linear_3.webp 1080w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_1200x0_resize_q50_h2_linear_3.webp 1200w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_1284x0_resize_q50_h2_linear_3.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/images/screenshots/iphone/06_signin.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2633,21 +3012,57 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
   
 
   
@@ -2665,7 +3080,7 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS0z_hu3eda0feed8d1d626ceea00eb7063375c_81844_375x0_resize_q50_h2_linear_3.webp 375w" style="max-width:375px;width:100%" src="https://monal-im.github.io/monal-im.org/images/aG9tZS0z.png" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_768x0_resize_q50_h2_linear_3.webp 768w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_800x0_resize_q50_h2_linear_3.webp 800w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_960x0_resize_q50_h2_linear_3.webp 960w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_1024x0_resize_q50_h2_linear_3.webp 1024w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_1080x0_resize_q50_h2_linear_3.webp 1080w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_1200x0_resize_q50_h2_linear_3.webp 1200w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_1284x0_resize_q50_h2_linear_3.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/images/screenshots/iphone/07_register.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2696,21 +3111,57 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
   
 
   
@@ -2728,7 +3179,7 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS00_hu4967fcb1fce12d423729485e0ee07ad1_39379_375x0_resize_q50_h2_linear_3.webp 375w" style="max-width:375px;width:100%" src="https://monal-im.github.io/monal-im.org/images/aG9tZS00.png" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_768x0_resize_q50_h2_linear_3.webp 768w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_800x0_resize_q50_h2_linear_3.webp 800w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_960x0_resize_q50_h2_linear_3.webp 960w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_1024x0_resize_q50_h2_linear_3.webp 1024w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_1080x0_resize_q50_h2_linear_3.webp 1080w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_1200x0_resize_q50_h2_linear_3.webp 1200w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_1284x0_resize_q50_h2_linear_3.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/images/screenshots/iphone/02_chats.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2774,21 +3225,57 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
   
 
   
@@ -2806,7 +3293,7 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS01_hu7293a742ba6daec331aa504af0a8f729_351670_375x0_resize_q50_h2_linear_3.webp 375w" style="max-width:375px;width:100%" src="https://monal-im.github.io/monal-im.org/images/aG9tZS01.png" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_768x0_resize_q50_h2_linear_3.webp 768w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_800x0_resize_q50_h2_linear_3.webp 800w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_960x0_resize_q50_h2_linear_3.webp 960w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_1024x0_resize_q50_h2_linear_3.webp 1024w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_1080x0_resize_q50_h2_linear_3.webp 1080w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_1200x0_resize_q50_h2_linear_3.webp 1200w,https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_1284x0_resize_q50_h2_linear_3.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/images/screenshots/iphone/01_groupchats.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2855,21 +3342,57 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
   
-
+    
+    
+    
   
 
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
   
 
 
@@ -2881,7 +3404,7 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/images/aG9tZS02_hu0628e37a0fc9c002b4353c3c8d6a23bd_389169_640x0_resize_q50_h2_linear_3.webp 640w" style="max-width:640px;width:100%" src="https://monal-im.github.io/monal-im.org/images/aG9tZS02.png" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_768x0_resize_q50_h2_linear_3.webp 768w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_800x0_resize_q50_h2_linear_3.webp 800w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_960x0_resize_q50_h2_linear_3.webp 960w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_1024x0_resize_q50_h2_linear_3.webp 1024w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_1080x0_resize_q50_h2_linear_3.webp 1080w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_1200x0_resize_q50_h2_linear_3.webp 1200w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_1366x0_resize_q50_h2_linear_3.webp 1366w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_1440x0_resize_q50_h2_linear_3.webp 1440w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_1920x0_resize_q50_h2_linear_3.webp 1920w,https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_2048x0_resize_q50_h2_linear_3.webp 2048w" style="max-width:2048px;width:100%" src="https://monal-im.github.io/monal-im.org/images/screenshots/ipad/01_groupchats.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2893,76 +3416,46 @@ The chat client for iOS and MacOS involves implementing various XEP standards (X
 <p>Monal aims to being developed under a open-source license (BSD license) that severs the user, while not selling or tracking information for external parties (nor for anyone else).
 This app exists because it is key to ensure usability on all platforms and within the XMPP network with all its positives aspects when it comes to decentral communication and infrastructure.</p>
 <p><a href="https://github.com/monal-im/Monal">Find the development on GitHub!</a></p>
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-
-
-
-
-
-
-<figure>
-  <div class="img-box">
-    <center>
-    <img srcset="https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/images/aG9tZS03_hu206872d6728770f1d3c1b8c99d608f17_40791_470x0_resize_q50_h2_linear_3.webp 470w" style="max-width:470px;width:100%" src="https://monal-im.github.io/monal-im.org/images/aG9tZS03.png" fetchpriority="low" alt="" title=""/>
-    </center>
-  </div>
-  <figcaption></figcaption>
-</figure>
-
-<link rel="prefetch" href="/install/" fetchpriority="lowest">
+]]></content:encoded></item><item><title/><link>https://monal-im.github.io/monal-im.org/privacyarchive/privacyheader/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/privacyheader/</guid><description>Monal Website
+You can find our latest privacy policy for our website here: Website Privacy Policy
+Monal App
+Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<p><strong>Monal Website</strong><br>
+You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
+<p><strong>Monal App</strong><br>
+Our privacy policy may differ between app versions.
+Before reading our privacy policy for our App you first need to find out the Monal version that you are using. <br>
+<strong>How to find out your Monal version</strong></p>
+<blockquote>
+<ol>
+<li>Open Monal</li>
+<li>Open up the settings menu in the upper left corner (gearwheel)</li>
+<li>Scroll down to the last entry &ldquo;version&rdquo;</li>
+</ol>
+</blockquote>
+<p><strong>Monal App Privacy Policies</strong></p>
+<table>
+<thead>
+<tr>
+<th>Releases</th>
+<th>Privacy Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.0 and newer</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+</tr>
+<tr>
+<td>5.2.0 up to 5.4.x</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+</tr>
+<tr>
+<td>before 5.2.0</td>
+<td><a href="/monal-im.org/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+</tr>
+</tbody>
+</table>
 ]]></content:encoded></item><item><title>About</title><link>https://monal-im.github.io/monal-im.org/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/about/</guid><description>Imprint Thilo Molitor Vogelsbergstr. 18 68642 Bürstadt Germany
 eMail: info[at]monal[minus]im[dot]org
 About Monal originates in 2002 as fork of the SworIM app. Until 2019 it has been developed by Anu Pokharel. Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide. From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup. Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.</description><content:encoded><![CDATA[<h1 id="imprint">Imprint</h1>
