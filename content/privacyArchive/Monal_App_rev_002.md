@@ -84,5 +84,5 @@ This file will never be transferred to us, except if you explicitly (manually) s
 
 European GDPR allows users to request a copy of all data retained about them. Starting with Monal 5.2.0 we no longer see your JIDs (username@domain.tld) in our push servers.
 We therefore are not able to send you retained data related to your JID.
-We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided device ID.
+We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided token.
 If you have questions regarding GDPR, please send us a mail to info@monal-im.org.
