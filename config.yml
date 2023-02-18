@@ -2,6 +2,7 @@ baseURL: ""
 title: Monal
 paginate: 5
 theme: hugo-PaperMod
+timeout: "90s"
 
 imaging:
   resampleFilter: Linear
