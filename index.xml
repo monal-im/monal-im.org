@@ -2741,7 +2741,7 @@ This file will never be transferred to us, except if you explicitly (manually) s
 <h2 id="gdpr-subject-access-requests-sar">GDPR Subject Access Requests (SAR)</h2>
 <p>European GDPR allows users to request a copy of all data retained about them. Starting with Monal 5.2.0 we no longer see your JIDs (<a href="mailto:username@domain.tld">username@domain.tld</a>) in our push servers.
 We therefore are not able to send you retained data related to your JID.
-We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided device ID.
+We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided token.
 If you have questions regarding GDPR, please send us a mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
 ]]></content:encoded></item><item><title>Privacy Website</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_website/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_website/</guid><description>Monal Website
 You can find our latest privacy policy for our website here: Website Privacy Policy
