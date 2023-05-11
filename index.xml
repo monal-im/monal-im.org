@@ -516,7 +516,12 @@ In short this consists of the following tasks (in no special order).
 <h3 id="9-implement-sasl2-in-monal-including-scram-sha1-sha256-and-sha512">9. Implement SASL2 in Monal (including SCRAM SHA1, SHA256 and SHA512)</h3>
 <p>Implement the updated SASL2 XEP and the accompanying XEP-0440 (“SASL Channel-Binding Type Capability”) in Monal which serves as foundation for the implementation of XEP-0397 (“Instant Stream Resumption”).</p>
 <h3 id="10-write-new-xep-for-downgrade-protection-of-channel-binding-types-and-sasl-mechanisms-and-implement-it">10. Write new XEP for downgrade protection of channel-binding types and SASL mechanisms and implement it</h3>
-<p>A Man-In-The-Middle capable of impersonating the XMPP server on the TLS level can use SASL Mechanism Stripping and/or strip channel-binding types to downgrade the security. Adding an optional SCRAM attribute containing the hash of all server-advertised SASL mechanisms and channel-binding types as seen by the client will enable the server to check if any downgrade took place and to abort the authentication, if so. Because the SCRAM attribute will be part of the mutual authentication between client and server, a MITM will not be able to forge it as long as SCRAM is used at all.</p>
+<p>A Man-In-The-Middle capable of impersonating the XMPP server on the TLS level can use SASL Mechanism
+Stripping and/or strip channel-binding types to downgrade the security. Adding an optional SCRAM attribute
+containing the hash of all server-advertised SASL mechanisms and channel-binding types as seen by the client
+will enable the server to check if any downgrade took place and to abort the authentication, if so. Because the
+SCRAM attribute will be part of the mutual authentication between client and server, a MITM will not be able to
+forge it.</p>
 ]]></content:encoded></item><item><title>Monal IM - project moved</title><link>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</link><pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</guid><description>We recently started to migrate the App from Anu Pokharel‘s Apple account to Thilo Molitor‘s Apple account.
 As part of this transition we also deployed some new push servers to not let an old retired developer pay for the infrastructure needed for Monal.
 Coming along with this transition from the old developer team to the new one is our new clean website at https://monal-im.org/. From now on, the old blog at https://monal.</description><content:encoded><![CDATA[<p>We recently started to migrate the App from Anu Pokharel‘s Apple account to Thilo Molitor‘s Apple account.</p>
