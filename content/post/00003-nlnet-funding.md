@@ -50,4 +50,10 @@ Implement the updated SASL2 XEP and the accompanying XEP-0440 (“SASL Channel-B
 
 ### 10\. Write new XEP for downgrade protection of channel-binding types and SASL mechanisms and implement it
 
-A Man-In-The-Middle capable of impersonating the XMPP server on the TLS level can use SASL Mechanism Stripping and/or strip channel-binding types to downgrade the security. Adding an optional SCRAM attribute containing the hash of all server-advertised SASL mechanisms and channel-binding types as seen by the client will enable the server to check if any downgrade took place and to abort the authentication, if so. Because the SCRAM attribute will be part of the mutual authentication between client and server, a MITM will not be able to forge it as long as SCRAM is used at all.
+A Man-In-The-Middle capable of impersonating the XMPP server on the TLS level can use SASL Mechanism
+Stripping and/or strip channel-binding types to downgrade the security. Adding an optional SCRAM attribute
+containing the hash of all server-advertised SASL mechanisms and channel-binding types as seen by the client
+will enable the server to check if any downgrade took place and to abort the authentication, if so. Because the
+SCRAM attribute will be part of the mutual authentication between client and server, a MITM will not be able to
+forge it.
+
