@@ -27,7 +27,7 @@ Things look and work the way you expect. iOS, iPadOS or macOS, there is a versio
 | -------------- | -------------------- | -------------------- |
 {{< imgFromBaseUrl src="images/screenshots/iphone/01_groupchats.png" >}} |{{< imgFromBaseUrl src="images/screenshots/ipad/01_groupchats.png" >}} |
 
-Monal aims to being developed under a open-source license (BSD license) that severs the user, while not selling or tracking information for external parties (nor for anyone else).
+Monal is developed under an open-source BSD license that serves the user, while not selling or tracking information for external parties (nor for anyone else).
 This app exists because it is key to ensure usability on all platforms and within the XMPP network with all its positives aspects when it comes to decentral communication and infrastructure.
 
 [Find the development on GitHub!](https://github.com/monal-im/Monal)
