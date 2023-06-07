@@ -102,31 +102,33 @@ minify:
     minifyOutput: true
 
 languages:
-    en:
-        languageName: ":gb:"
-        languageAltTitle: "English"
-        showInHeader: false
-        weight: 0
-        profileMode:
-            enabled: true
-            title: "Monal IM"
-            subtitle: "iOS and macOS XMPP Chat-Client"
-            imageUrl: "favicons/logo.png"
-            imageTitle: "Monal App Icon"
-            imageWidth: 120
-            imageHeight: 120
-            buttons:
-                - name: "Get Monal iOS"
-                  url: "https://apps.apple.com/app/id317711500"
-                - name: "Get Monal macOS"
-                  url: "https://apps.apple.com/app/id1637078500"
-            indexPostContentFile: "/content/home.md"
+  en:
+    languageName: ":gb:"
+    weight: 0
+    params:
+      languageAltTitle: "English"
+      showInHeader: false
+      profileMode:
+          enabled: true
+          title: "Monal IM"
+          subtitle: "iOS and macOS XMPP Chat-Client"
+          imageUrl: "favicons/logo.png"
+          imageTitle: "Monal App Icon"
+          imageWidth: 120
+          imageHeight: 120
+          buttons:
+              - name: "Get Monal iOS"
+                url: "https://apps.apple.com/app/id317711500"
+              - name: "Get Monal macOS"
+                url: "https://apps.apple.com/app/id1637078500"
+          indexPostContentFile: "/content/home.md"
 
-    de:
-        languageName: ":de:"
+  de:
+      languageName: ":de:"
+      weight: 1
+      params:
         languageAltTitle: Deutsch
         showInHeader: false
-        weight: 1
         profileMode:
             enabled: true
             title: "Monal IM"
