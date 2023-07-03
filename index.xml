@@ -3493,22 +3493,28 @@ Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.</
 </ul>
 <h3 id="xep-publications">XEP publications</h3>
 <ul>
-<li>XEP-0353: Jingle Message Initiation<br/>
+<li><a href="https://xmpp.org/extensions/xep-0353.html">XEP-0353: Jingle Message Initiation</a><br/>
 Authors: Philipp Hancke, Peter Saint-Andre, Thilo Molitor
 <blockquote>
 <p>This specification provides a way for the initiator of a Jingle session to propose sending an invitation in an XMPP message stanza, thus taking advantage of message delivery semantics instead of sending IQ stanzas to all of the responder&rsquo;s online resources or choosing a particular online resource.</p>
 </blockquote>
 </li>
-<li>XEP-0474: SASL SCRAM Downgrade Protection<br/>
+<li><a href="https://xmpp.org/extensions/xep-0474.html">XEP-0474: SASL SCRAM Downgrade Protection</a><br/>
 Authors: Thilo Molitor
 <blockquote>
 <p>This specification provides a way to secure the SASL and SASL2 handshakes against method and channel-binding downgrades.</p>
 </blockquote>
 </li>
-<li>XEP-0388: Extensible SASL Profile<br/>
+<li><a href="https://xmpp.org/extensions/xep-0388.html">XEP-0388: Extensible SASL Profile</a><br/>
 Authors: Dave Cridland, Thilo Molitor, Matthew Wild
 <blockquote>
 <p>This document describes a replacement for the SASL profile documented in RFC 6120 which allows for greater extensibility.</p>
+</blockquote>
+</li>
+<li><a href="https://xmpp.org/extensions/xep-0480.html">XEP-0480: SASL Upgrade Tasks</a><br/>
+Authors: Thilo Molitor
+<blockquote>
+<p>This specification provides a way to upgrade to newer SASL mechanisms using SASL2 tasks.</p>
 </blockquote>
 </li>
 </ul>
