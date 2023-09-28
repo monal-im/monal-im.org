@@ -395,7 +395,7 @@ Update (2023-04-21): Since I originally wrote this blog post, I&amp;rsquo;ve had
 Most, if not all, of my issues are now addressed in a bunch of updates to existing XEPs as well as new XEPs:</p>
 <ul>
 <li>Update of XEP-0388 (SASL2): <a href="https://xmpp.org/extensions/xep-0388.html">https://xmpp.org/extensions/xep-0388.html</a></li>
-<li>SASL2 and SCRAM upgrade ProtoXEP: <a href="https://xmpp.org/extensions/inbox/xep-scram-upgrade.html">https://xmpp.org/extensions/inbox/xep-scram-upgrade.html</a></li>
+<li>New SASL2- and SCRAM-upgrade XEP: <a href="https://xmpp.org/extensions/xep-0480.html">https://xmpp.org/extensions/xep-0480.html</a></li>
 <li>New XEP for downgrade protection when using SCRAM: <a href="https://xmpp.org/extensions/xep-0474.html">https://xmpp.org/extensions/xep-0474.html</a></li>
 <li>Already existing XEP that only now gets adopted by server developers: <a href="https://xmpp.org/extensions/xep-0440.html">XEP-0440</a></li>
 </ul>
@@ -918,6 +918,30 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
             <tr>
                 <td>
+                    <a href="https://xmpp.org/extensions/xep-0167.html">
+                        XEP-0167: Jingle RTP Sessions
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0176.html">
+                        XEP-0176: Jingle ICE-UDP Transport Method
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
                     <a href="https://xmpp.org/extensions/xep-0172.html">
                         XEP-0172: User Nickname
                     </a>
@@ -1068,6 +1092,30 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
             <tr>
                 <td>
+                    <a href="https://xmpp.org/extensions/xep-0293.html">
+                        XEP-0293: Jingle RTP Feedback Negotiation
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0294.html">
+                        XEP-0294: Jingle RTP Header Extensions Negotiation
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
                     <a href="https://xmpp.org/extensions/xep-0305.html">
                         XEP-0305: XMPP Quickstart
                     </a>
@@ -1116,12 +1164,48 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
             <tr>
                 <td>
+                    <a href="https://xmpp.org/extensions/xep-0320.html">
+                        XEP-0320: Use of DTLS-SRTP in Jingle Sessions
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
                     <a href="https://xmpp.org/extensions/xep-0333.html">
                         XEP-0333: Chat Markers (received markers won&#39;t ever be implemented, use XEP-0184 instead)
                     </a>
                 </td>
                 <td>partial</td>
                 <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0338.html">
+                        XEP-0338: Jingle Grouping Framework
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0339.html">
+                        XEP-0339: Source-Specific Media Attributes in Jingle
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
             <tr>
         
     
@@ -1383,6 +1467,30 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
         
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0474.html">
+                        XEP-0474: SASL SCRAM Downgrade Protection
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0480.html">
+                        XEP-0480: SASL Upgrade Tasks
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
 </table>
 
 <h2 id="planned-xeps">Planned XEPs</h2>
@@ -1516,6 +1624,20 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0369.html">
@@ -1583,6 +1705,10 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
                 </td>
                 <td>planned</td>
             <tr>
+        
+    
+        
+    
         
     
         
@@ -1920,6 +2046,30 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
             <tr>
                 <td>
+                    <a href="https://xmpp.org/extensions/xep-0167.html">
+                        XEP-0167: Jingle RTP Sessions
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0176.html">
+                        XEP-0176: Jingle ICE-UDP Transport Method
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
                     <a href="https://xmpp.org/extensions/xep-0172.html">
                         XEP-0172: User Nickname
                     </a>
@@ -2070,6 +2220,30 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
             <tr>
                 <td>
+                    <a href="https://xmpp.org/extensions/xep-0293.html">
+                        XEP-0293: Jingle RTP Feedback Negotiation
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0294.html">
+                        XEP-0294: Jingle RTP Header Extensions Negotiation
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
                     <a href="https://xmpp.org/extensions/xep-0305.html">
                         XEP-0305: XMPP Quickstart
                     </a>
@@ -2118,12 +2292,48 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
             <tr>
                 <td>
+                    <a href="https://xmpp.org/extensions/xep-0320.html">
+                        XEP-0320: Use of DTLS-SRTP in Jingle Sessions
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
                     <a href="https://xmpp.org/extensions/xep-0333.html">
                         XEP-0333: Chat Markers (received markers won&#39;t ever be implemented, use XEP-0184 instead)
                     </a>
                 </td>
                 <td>partial</td>
                 <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0338.html">
+                        XEP-0338: Jingle Grouping Framework
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0339.html">
+                        XEP-0339: Source-Specific Media Attributes in Jingle
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
             <tr>
         
     
@@ -2385,6 +2595,30 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
         
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0474.html">
+                        XEP-0474: SASL SCRAM Downgrade Protection
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0480.html">
+                        XEP-0480: SASL Upgrade Tasks
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
 </table>
 
 <h2 id="planned-xeps">Planned XEPs</h2>
@@ -2518,6 +2752,20 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0369.html">
@@ -2585,6 +2833,10 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
                 </td>
                 <td>planned</td>
             <tr>
+        
+    
+        
+    
         
     
         

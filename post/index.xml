@@ -214,7 +214,7 @@ Update (2023-04-21): Since I originally wrote this blog post, I&amp;rsquo;ve had
 Most, if not all, of my issues are now addressed in a bunch of updates to existing XEPs as well as new XEPs:</p>
 <ul>
 <li>Update of XEP-0388 (SASL2): <a href="https://xmpp.org/extensions/xep-0388.html">https://xmpp.org/extensions/xep-0388.html</a></li>
-<li>SASL2 and SCRAM upgrade ProtoXEP: <a href="https://xmpp.org/extensions/inbox/xep-scram-upgrade.html">https://xmpp.org/extensions/inbox/xep-scram-upgrade.html</a></li>
+<li>New SASL2- and SCRAM-upgrade XEP: <a href="https://xmpp.org/extensions/xep-0480.html">https://xmpp.org/extensions/xep-0480.html</a></li>
 <li>New XEP for downgrade protection when using SCRAM: <a href="https://xmpp.org/extensions/xep-0474.html">https://xmpp.org/extensions/xep-0474.html</a></li>
 <li>Already existing XEP that only now gets adopted by server developers: <a href="https://xmpp.org/extensions/xep-0440.html">XEP-0440</a></li>
 </ul>
