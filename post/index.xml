@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Monal</title><link>https://monal-im.github.io/monal-im.org/post/</link><description>Recent content in Posts on Monal</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 12 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - Handlers framework</title><link>https://monal-im.github.io/monal-im.org/post/00007-monal-internals-handlers/</link><pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00007-monal-internals-handlers/</guid><description>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to thilo@monal-im.org
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Monal</title><link>https://monal-im.github.io/monal-im.org/post/</link><description>Recent content in Posts on Monal</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal 6.0 released</title><link>https://monal-im.github.io/monal-im.org/post/00008-monal-6.0-released/</link><pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00008-monal-6.0-released/</guid><description>After several month of hard work we just released Monal 6.0. This version comes with new artwork by Ann-Sophie Zwahlen, support for Audio-Calls funded by the EU’s NGI Assure via the NLnet Foundation and many other improvements and bugfixes. The full list of changes can be seen below:
+NEW: Audio-call support (This feature will not be available to users in China and macOS users!)
+Other changes:
+New Logo and new placeholder images by Ann-Sophie Zwahlen New &amp;ldquo;Add Contact&amp;rdquo; and &amp;ldquo;Contact Requests&amp;rdquo; UI Complete rewrite of OMEMO code Speed up app start Add support for SASL2 (XEP-0388) Implement XEP-0424: Message Retraction Add support for creating invitations (button only displayed if your server supports it, see https://docs.</description><content:encoded><![CDATA[<p>After several month of hard work we just released Monal 6.0.
+This version comes with new artwork by Ann-Sophie Zwahlen, support for Audio-Calls funded by the EU’s <a href="https://nlnet.nl/assure/">NGI Assure via the NLnet Foundation</a> and many other improvements and bugfixes.
+The full list of changes can be seen below:</p>
+<p><strong>NEW:</strong> Audio-call support (This feature will not be available to users in China and macOS users!)</p>
+<p><strong>Other changes:</strong></p>
+<ul>
+<li>New Logo and new placeholder images by Ann-Sophie Zwahlen</li>
+<li>New &ldquo;Add Contact&rdquo; and &ldquo;Contact Requests&rdquo; UI</li>
+<li>Complete rewrite of OMEMO code</li>
+<li>Speed up app start</li>
+<li>Add support for SASL2 (XEP-0388)</li>
+<li>Implement XEP-0424: Message Retraction</li>
+<li>Add support for creating invitations (button only displayed if your server supports it, see <a href="https://docs.modernxmpp.org/client/invites/">https://docs.modernxmpp.org/client/invites/</a>)</li>
+<li>Add timestamp when quoting older messages</li>
+<li>Always show a &ldquo;Notes to self“ chat</li>
+<li>Overhaul implementation of last interaction display</li>
+<li>Show scroll-down button in groupchats</li>
+<li>OMEMO keys are copyable now (double tap)</li>
+<li>Add OSS based crash reporting (KSCrash), reports can be voluntarily sent via mail</li>
+<li>Fix logfile handling</li>
+<li>Add XEP-0215 (external services) to server details ui</li>
+<li>Only show contacts in contacts panel if they are in our roster</li>
+<li>Implement invitations using qr codes in addition of xmpp: uris</li>
+<li>Implement new image viewer compatible with iOS 17</li>
+<li>Implement gif support in image viewer</li>
+</ul>
+<p><strong>Bugfixes:</strong></p>
+<ul>
+<li>Many bugfixes</li>
+<li>Fix bookmarks2 handling</li>
+<li>Fix XEP-0333 in private groups</li>
+<li>Fix url preview for sites not having oc: tags</li>
+<li>Set notifications to &ldquo;mention only&rdquo; when joining public channels</li>
+<li>Show per-resource last interaction timestamp in resource list</li>
+<li>Fix file uploading and sharing</li>
+<li>Fix timer when recording audio messages</li>
+<li>Fix muc avatar fetching</li>
+</ul>
+]]></content:encoded></item><item><title>Monal Internals - Handlers framework</title><link>https://monal-im.github.io/monal-im.org/post/00007-monal-internals-handlers/</link><pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00007-monal-internals-handlers/</guid><description>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to thilo@monal-im.org
 Handlers Handlers in Monal are something like serializable callbacks. In iOS the app can get frozen or even killed any time and the push implementation requires the complete app state to frequently transition between the Main App and the Notification Service App Extension (NSE).</description><content:encoded><![CDATA[<p>In this new series, I want to shine some light onto specific parts of Monal&rsquo;s internals. It&rsquo;s dedicated to programmers or people curious about how Monal works internally.
 If you want to give some feedback, feel free to send an email to <a href="mailto:thilo@monal-im.org">thilo@monal-im.org</a></p>
 <h1 id="handlers">Handlers</h1>
