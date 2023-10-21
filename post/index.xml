@@ -66,38 +66,38 @@ Arguments declared with $$-prefix are mandatory and can not be removed, though.
 Arguments with $_-prefix are optional and can be removed.
 Primitive datatypes like BOOL, int, NSINTEGER (aka $$INTEGER) etc. can not be
 imported as optional and are always mandatory.</p>
-<pre tabindex="0"><code>$$class_handler(myHandlerName, $_ID(xmpp*, account), $$BOOL(success))
-    // your code comes here
-    // variables defined/imported: account (optional), success (mandatory)
-$$
-</code></pre><p>Instance handlers are instance methods instead of static methods.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>class_handler(myHandlerName, <span style="color:#960050;background-color:#1e0010">$</span>_ID(xmpp<span style="color:#f92672">*</span>, account), <span style="color:#960050;background-color:#1e0010">$$</span><span style="color:#66d9ef">BOOL</span>(success))
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// your code comes here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// variables defined/imported: account (optional), success (mandatory)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span></code></pre></div><p>Instance handlers are instance methods instead of static methods.
 You need to specify on which instance these handlers should operate.
 The instance extraxtion statement (the second argument to $$instance_handler() can be everything that
 returns an objc object. For example: <code>account.omemo</code> or <code>[account getInstanceToUse]</code> or just <code>account</code>.</p>
-<pre tabindex="0"><code>$$instance_handler(myHandlerName, instanceToUse, $$ID(xmpp*, account), $$BOOL(success))
-    // your code comes here
-    // &#39;self&#39; is now the instance of the class extracted by the instanceToUse statement.
-    // instead of the class instance as it would be if $$class_handler() was used instead of $$instance_handler()
-    // variables defined/imported: account, success (both mandatory)
-$$
-</code></pre><h3 id="call-defined-handlers">Call defined handlers</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>instance_handler(myHandlerName, instanceToUse, <span style="color:#960050;background-color:#1e0010">$$</span>ID(xmpp<span style="color:#f92672">*</span>, account), <span style="color:#960050;background-color:#1e0010">$$</span><span style="color:#66d9ef">BOOL</span>(success))
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// your code comes here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// &#39;self&#39; is now the instance of the class extracted by the instanceToUse statement.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// instead of the class instance as it would be if $$class_handler() was used instead of $$instance_handler()
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// variables defined/imported: account, success (both mandatory)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span></code></pre></div><h3 id="call-defined-handlers">Call defined handlers</h3>
 <p>Calling a defined handler is simple, just create a handler object using <code>$newHandler()</code> and <code>$call()</code> it.</p>
-<pre tabindex="0"><code>MLHandler* h = $newHandler(ClassName, myHandlerName);
-$call(h);
-</code></pre><h3 id="bind-variables-when-creating-a-handler">Bind variables when creating a handler</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>MLHandler<span style="color:#f92672">*</span> h <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">$</span>newHandler(ClassName, myHandlerName);
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span>call(h);
+</span></span></code></pre></div><h3 id="bind-variables-when-creating-a-handler">Bind variables when creating a handler</h3>
 <p>You can bind variables to MLHandler objects when creating them and when
 invoking them. Variables supplied on invocation overwrite variables
 supplied when creating the handler if the names are equal.
 Variables bound to the handler when creating it have to conform to the
 NSCoding protocol to make the handler serializable.</p>
-<pre tabindex="0"><code>NSString* var1 = @&#34;value&#34;;
-MLHandler* h = $newHandler(ClassName, myHandlerName,
-        $ID(var1),
-        $BOOL(success, YES)
-}));
-xmpp* account = nil;
-$call(h, $ID(account), $ID(otherAccountVarWithSameValue, account))
-</code></pre><h3 id="usable-shortcuts-to-create-mlhandler-objects">Usable shortcuts to create MLHandler objects:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>NSString<span style="color:#f92672">*</span> var1 <span style="color:#f92672">=</span> <span style="color:#e6db74">@&#34;value&#34;</span>;
+</span></span><span style="display:flex;"><span>MLHandler<span style="color:#f92672">*</span> h <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">$</span>newHandler(ClassName, myHandlerName,
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">$</span>ID(var1),
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#66d9ef">BOOL</span>(success, YES)
+</span></span><span style="display:flex;"><span>}));
+</span></span><span style="display:flex;"><span>xmpp<span style="color:#f92672">*</span> account <span style="color:#f92672">=</span> nil;
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span>call(h, <span style="color:#960050;background-color:#1e0010">$</span>ID(account), <span style="color:#960050;background-color:#1e0010">$</span>ID(otherAccountVarWithSameValue, account))
+</span></span></code></pre></div><h3 id="usable-shortcuts-to-create-mlhandler-objects">Usable shortcuts to create MLHandler objects:</h3>
 <ul>
 <li><code>$newHandler(ClassName, handlerName, boundArgs...)</code></li>
 <li><code>$newHandlerWithInvalidation(ClassName, handlerName, invalidationHandlerName, boundArgs...)</code></li>
@@ -107,28 +107,28 @@ $call(h, $ID(account), $ID(otherAccountVarWithSameValue, account))
 MLHandler object (after invalidating a handler you can not call or
 invalidate it again!). Invalidation handlers can be instance handlers or static handlers,
 just like with &ldquo;normal&rdquo; handlers:</p>
-<pre tabindex="0"><code>// definition of normal handler method as instance_handler
-$$instance_handler(myHandlerName, [account getInstanceToUse], $_ID(xmpp*, account), $$BOOL(success))
-        // your code comes here
-        // &#39;self&#39; is now the instance of the class extracted by [account getInstanceToUse]
-        // instead of the class instance as it would be if $$class_handler() was used instead of $$instance_handler()
-$$
-
-// definition of invalidation method
-$$class_handler(myInvalidationHandlerName, $$BOOL(done), $_ID(NSString*, var1))
-        // your code comes here
-        // variables imported: var1, done
-        // variables that could have been imported according to $newHandler and $call below: var1, success, done
-$$
-
-MLHandler* h = $newHandlerWithInvalidation(ClassName, myHandlerName, myInvalidationHandlerName,
-        $ID(var1, @&#34;value&#34;),
-        $BOOL(success, YES)
-}));
-
-// call invalidation method with &#34;done&#34; argument set to YES
-$invalidate(h, $BOOL(done, YES))
-</code></pre><h3 id="available-data-types">Available data types</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#75715e">// definition of normal handler method as instance_handler
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$$</span>instance_handler(myHandlerName, [account getInstanceToUse], <span style="color:#960050;background-color:#1e0010">$</span>_ID(xmpp<span style="color:#f92672">*</span>, account), <span style="color:#960050;background-color:#1e0010">$$</span><span style="color:#66d9ef">BOOL</span>(success))
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// your code comes here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// &#39;self&#39; is now the instance of the class extracted by [account getInstanceToUse]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// instead of the class instance as it would be if $$class_handler() was used instead of $$instance_handler()
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// definition of invalidation method
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$$</span>class_handler(myInvalidationHandlerName, <span style="color:#960050;background-color:#1e0010">$$</span><span style="color:#66d9ef">BOOL</span>(done), <span style="color:#960050;background-color:#1e0010">$</span>_ID(NSString<span style="color:#f92672">*</span>, var1))
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// your code comes here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// variables imported: var1, done
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// variables that could have been imported according to $newHandler and $call below: var1, success, done
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>MLHandler<span style="color:#f92672">*</span> h <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">$</span>newHandlerWithInvalidation(ClassName, myHandlerName, myInvalidationHandlerName,
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">$</span>ID(var1, <span style="color:#e6db74">@&#34;value&#34;</span>),
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#66d9ef">BOOL</span>(success, YES)
+</span></span><span style="display:flex;"><span>}));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// call invalidation method with &#34;done&#34; argument set to YES
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$</span>invalidate(h, <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#66d9ef">BOOL</span>(done, YES))
+</span></span></code></pre></div><h3 id="available-data-types">Available data types</h3>
 <p>The following datatypes can be bound to a handler defining them using the corresponding definitions having either the <code>$$</code> or <code>$_</code> prefix.
 If the single argument binding is used, the value is bound using the same name like the var the value is coming from (in this example: name).</p>
 <ul>
@@ -142,57 +142,57 @@ If the single argument binding is used, the value is bound using the same name l
 </ul>
 <h2 id="code-examples-found-in-the-wild">Code examples found in the wild</h2>
 <h3 id="enabling-carbons">Enabling carbons</h3>
-<pre tabindex="0"><code>if([features containsObject:@&#34;urn:xmpp:carbons:2&#34;])
-{
-    DDLogInfo(@&#34;got disco result with carbons ns&#34;);
-    if(!account.connectionProperties.usingCarbons2)
-    {
-        DDLogInfo(@&#34;enabling carbons&#34;);
-        XMPPIQ* carbons = [[XMPPIQ alloc] initWithType:kiqSetType];
-        [carbons addChildNode:[[MLXMLNode alloc] initWithElement:@&#34;enable&#34; andNamespace:@&#34;urn:xmpp:carbons:2&#34;]];
-        [account sendIq:carbons withHandler:$newHandler(self, handleCarbonsEnabled)];
-    }
-}
-</code></pre><pre tabindex="0"><code>$$class_handler(handleCarbonsEnabled, $$ID(xmpp*, account), $$ID(XMPPIQ*, iqNode))
-    if([iqNode check:@&#34;/&lt;type=error&gt;&#34;])
-    {
-        DDLogWarn(@&#34;carbon enable iq returned error: %@&#34;, [iqNode findFirst:@&#34;error&#34;]);
-        [HelperTools postError:[NSString stringWithFormat:NSLocalizedString(@&#34;Failed to enable carbons for account %@&#34;, @&#34;&#34;), account.connectionProperties.identity.jid] withNode:iqNode andAccount:account andIsSevere:YES];
-        return;
-    }
-    account.connectionProperties.usingCarbons2 = YES;
-$$
-</code></pre><h3 id="fetching-omemo-bundles">Fetching OMEMO bundles</h3>
-<pre tabindex="0"><code>NSString* bundleNode = [NSString stringWithFormat:@&#34;eu.siacs.conversations.axolotl.bundles:%@&#34;, deviceid];
-[self.account.pubsub fetchNode:bundleNode from:jid withItemsList:nil andHandler:$newHandler(self, handleBundleFetchResult, $ID(rid, deviceid))];
-</code></pre><pre tabindex="0"><code>$$instance_handler(handleBundleFetchResult, account.omemo, $$ID(xmpp*, account), $$ID(NSString*, jid), $$BOOL(success), $_ID(XMPPIQ*, errorIq), $_ID(NSString*, errorReason), $_ID((NSDictionary&lt;NSString*, MLXMLNode*&gt;*), data), $$ID(NSString*, rid))
-    if(!success)
-    {
-        if(errorIq)
-            DDLogError(@&#34;Could not fetch bundle from %@: rid: %@ - %@&#34;, jid, rid, errorIq);
-        else
-            DDLogError(@&#34;Could not fetch bundle from %@: rid: %@ - %@&#34;, jid, rid, errorReason);
-    }
-    else
-    {
-        // check that a corresponding buddy exists -&gt; prevent foreign key errors
-        MLXMLNode* receivedKeys = [data objectForKey:@&#34;current&#34;];
-        if(!receivedKeys &amp;&amp; data.count == 1)
-        {
-            // some clients do not use &lt;item id=&#34;current&#34;&gt;
-            receivedKeys = [[data allValues] firstObject];
-        }
-        else if(!receivedKeys &amp;&amp; data.count &gt; 1)
-        {
-            DDLogWarn(@&#34;More than one bundle item found from %@ rid: %@&#34;, jid, rid);
-        }
-        if(receivedKeys)
-        {
-            [self processOMEMOKeys:receivedKeys forJid:jid andRid:rid];
-        }
-    }
-$$
-</code></pre>]]></content:encoded></item><item><title>XMPP Tutorials</title><link>https://monal-im.github.io/monal-im.org/post/00006-eversten-xmpp-videos/</link><pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00006-eversten-xmpp-videos/</guid><description>Axel Reimer recently created some good video tutorials about Monal and XMPP in general.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#66d9ef">if</span>([features containsObject:<span style="color:#e6db74">@&#34;urn:xmpp:carbons:2&#34;</span>])
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    DDLogInfo(<span style="color:#e6db74">@&#34;got disco result with carbons ns&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>account.connectionProperties.usingCarbons2)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        DDLogInfo(<span style="color:#e6db74">@&#34;enabling carbons&#34;</span>);
+</span></span><span style="display:flex;"><span>        XMPPIQ<span style="color:#f92672">*</span> carbons <span style="color:#f92672">=</span> [[XMPPIQ alloc] initWithType:kiqSetType];
+</span></span><span style="display:flex;"><span>        [carbons addChildNode:[[MLXMLNode alloc] initWithElement:<span style="color:#e6db74">@&#34;enable&#34;</span> andNamespace:<span style="color:#e6db74">@&#34;urn:xmpp:carbons:2&#34;</span>]];
+</span></span><span style="display:flex;"><span>        [account sendIq:carbons withHandler:<span style="color:#960050;background-color:#1e0010">$</span>newHandler(self, handleCarbonsEnabled)];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>class_handler(handleCarbonsEnabled, <span style="color:#960050;background-color:#1e0010">$$</span>ID(xmpp<span style="color:#f92672">*</span>, account), <span style="color:#960050;background-color:#1e0010">$$</span>ID(XMPPIQ<span style="color:#f92672">*</span>, iqNode))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>([iqNode check:<span style="color:#e6db74">@&#34;/&lt;type=error&gt;&#34;</span>])
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        DDLogWarn(<span style="color:#e6db74">@&#34;carbon enable iq returned error: %@&#34;</span>, [iqNode findFirst:<span style="color:#e6db74">@&#34;error&#34;</span>]);
+</span></span><span style="display:flex;"><span>        [HelperTools postError:[NSString stringWithFormat:NSLocalizedString(<span style="color:#e6db74">@&#34;Failed to enable carbons for account %@&#34;</span>, <span style="color:#e6db74">@&#34;&#34;</span>), account.connectionProperties.identity.jid] withNode:iqNode andAccount:account andIsSevere:YES];
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    account.connectionProperties.usingCarbons2 <span style="color:#f92672">=</span> YES;
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span></code></pre></div><h3 id="fetching-omemo-bundles">Fetching OMEMO bundles</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>NSString<span style="color:#f92672">*</span> bundleNode <span style="color:#f92672">=</span> [NSString stringWithFormat:<span style="color:#e6db74">@&#34;eu.siacs.conversations.axolotl.bundles:%@&#34;</span>, deviceid];
+</span></span><span style="display:flex;"><span>[self.account.pubsub fetchNode:bundleNode from:jid withItemsList:nil andHandler:<span style="color:#960050;background-color:#1e0010">$</span>newHandler(self, handleBundleFetchResult, <span style="color:#960050;background-color:#1e0010">$</span>ID(rid, deviceid))];
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>instance_handler(handleBundleFetchResult, account.omemo, <span style="color:#960050;background-color:#1e0010">$$</span>ID(xmpp<span style="color:#f92672">*</span>, account), <span style="color:#960050;background-color:#1e0010">$$</span>ID(NSString<span style="color:#f92672">*</span>, jid), <span style="color:#960050;background-color:#1e0010">$$</span><span style="color:#66d9ef">BOOL</span>(success), <span style="color:#960050;background-color:#1e0010">$</span>_ID(XMPPIQ<span style="color:#f92672">*</span>, errorIq), <span style="color:#960050;background-color:#1e0010">$</span>_ID(NSString<span style="color:#f92672">*</span>, errorReason), <span style="color:#960050;background-color:#1e0010">$</span>_ID((NSDictionary<span style="color:#f92672">&lt;</span>NSString<span style="color:#f92672">*</span>, MLXMLNode<span style="color:#f92672">*&gt;*</span>), data), <span style="color:#960050;background-color:#1e0010">$$</span>ID(NSString<span style="color:#f92672">*</span>, rid))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>success)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(errorIq)
+</span></span><span style="display:flex;"><span>            DDLogError(<span style="color:#e6db74">@&#34;Could not fetch bundle from %@: rid: %@ - %@&#34;</span>, jid, rid, errorIq);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">DDLogError</span>(<span style="color:#e6db74">@&#34;Could not fetch bundle from %@: rid: %@ - %@&#34;</span>, jid, rid, errorReason);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// check that a corresponding buddy exists -&gt; prevent foreign key errors
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        MLXMLNode<span style="color:#f92672">*</span> receivedKeys <span style="color:#f92672">=</span> [data objectForKey:<span style="color:#e6db74">@&#34;current&#34;</span>];
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>receivedKeys <span style="color:#f92672">&amp;&amp;</span> data.count <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// some clients do not use &lt;item id=&#34;current&#34;&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            receivedKeys <span style="color:#f92672">=</span> [[data allValues] firstObject];
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>receivedKeys <span style="color:#f92672">&amp;&amp;</span> data.count <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            DDLogWarn(<span style="color:#e6db74">@&#34;More than one bundle item found from %@ rid: %@&#34;</span>, jid, rid);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(receivedKeys)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            [self processOMEMOKeys:receivedKeys forJid:jid andRid:rid];
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span></code></pre></div>]]></content:encoded></item><item><title>XMPP Tutorials</title><link>https://monal-im.github.io/monal-im.org/post/00006-eversten-xmpp-videos/</link><pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00006-eversten-xmpp-videos/</guid><description>Axel Reimer recently created some good video tutorials about Monal and XMPP in general.
 These video tutorials can be found over here: https://www.eversten.net/videotutorials/.
 Currently the audio of these videos is German only.</description><content:encoded><![CDATA[<p>Axel Reimer recently created some good video tutorials about Monal and XMPP in general.</p>
 <p>These video tutorials can be found over here: <a href="https://www.eversten.net/videotutorials/">https://www.eversten.net/videotutorials/</a>.<br>
