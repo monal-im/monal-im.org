@@ -35,7 +35,7 @@ Arguments with $_-prefix are optional and can be removed.
 Primitive datatypes like BOOL, int, NSINTEGER (aka $$INTEGER) etc. can not be
 imported as optional and are always mandatory.
 
-```
+```objc
 $$class_handler(myHandlerName, $_ID(xmpp*, account), $$BOOL(success))
     // your code comes here
     // variables defined/imported: account (optional), success (mandatory)
@@ -47,7 +47,7 @@ You need to specify on which instance these handlers should operate.
 The instance extraxtion statement (the second argument to $$instance_handler() can be everything that
 returns an objc object. For example: `account.omemo` or `[account getInstanceToUse]` or just `account`.
 
-```
+```objc
 $$instance_handler(myHandlerName, instanceToUse, $$ID(xmpp*, account), $$BOOL(success))
     // your code comes here
     // 'self' is now the instance of the class extracted by the instanceToUse statement.
@@ -58,7 +58,7 @@ $$
 
 ### Call defined handlers
 Calling a defined handler is simple, just create a handler object using `$newHandler()` and `$call()` it.
-```
+```objc
 MLHandler* h = $newHandler(ClassName, myHandlerName);
 $call(h);
 ```
@@ -70,7 +70,7 @@ supplied when creating the handler if the names are equal.
 Variables bound to the handler when creating it have to conform to the
 NSCoding protocol to make the handler serializable.
 
-```
+```objc
 NSString* var1 = @"value";
 MLHandler* h = $newHandler(ClassName, myHandlerName,
         $ID(var1),
@@ -90,7 +90,7 @@ MLHandler object (after invalidating a handler you can not call or
 invalidate it again!). Invalidation handlers can be instance handlers or static handlers,
 just like with "normal" handlers:
 
-```
+```objc
 // definition of normal handler method as instance_handler
 $$instance_handler(myHandlerName, [account getInstanceToUse], $_ID(xmpp*, account), $$BOOL(success))
         // your code comes here
@@ -128,7 +128,7 @@ If the single argument binding is used, the value is bound using the same name l
 ## Code examples found in the wild
 
 ### Enabling carbons
-```
+```objc
 if([features containsObject:@"urn:xmpp:carbons:2"])
 {
     DDLogInfo(@"got disco result with carbons ns");
@@ -142,7 +142,7 @@ if([features containsObject:@"urn:xmpp:carbons:2"])
 }
 ```
 
-```
+```objc
 $$class_handler(handleCarbonsEnabled, $$ID(xmpp*, account), $$ID(XMPPIQ*, iqNode))
     if([iqNode check:@"/<type=error>"])
     {
@@ -155,12 +155,12 @@ $$
 ```
 
 ### Fetching OMEMO bundles
-```
+```objc
 NSString* bundleNode = [NSString stringWithFormat:@"eu.siacs.conversations.axolotl.bundles:%@", deviceid];
 [self.account.pubsub fetchNode:bundleNode from:jid withItemsList:nil andHandler:$newHandler(self, handleBundleFetchResult, $ID(rid, deviceid))];
 ```
 
-```
+```objc
 $$instance_handler(handleBundleFetchResult, account.omemo, $$ID(xmpp*, account), $$ID(NSString*, jid), $$BOOL(success), $_ID(XMPPIQ*, errorIq), $_ID(NSString*, errorReason), $_ID((NSDictionary<NSString*, MLXMLNode*>*), data), $$ID(NSString*, rid))
     if(!success)
     {
