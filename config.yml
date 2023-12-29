@@ -48,6 +48,20 @@ params:
     buildExpired: false
     enableEmoji: true
 
+    editPost:
+        URL: "https://github.com/monal-im/monal-im.org/tree/staging/content"
+        Text: "Suggest Changes"
+        appendFilePath: true
+
+    assets:
+        disableHLJS: true
+        disableFingerprinting: false
+
+    cover:
+        hidden: false
+        hiddenInList: false
+        hiddenInSingle: true
+
     socialIcons:
         - name: github
           url: "https://github.com/monal-im/monal"
@@ -149,20 +163,7 @@ outputs:
         - RSS
         - JSON
 
-    editPost:
-        URL: "https://github.com/monal-im/monal-im.org/tree/staging/content"
-        Text: "Suggest Changes"
-        appendFilePath: true
-
-    assets:
-        disableHLJS: true
-        disableFingerprinting: false
-
-    cover:
-        hidden: false
-        hiddenInList: false
-        hiddenInSingle: true
-
+    
 taxonomies:
     category: categories
     tag: tags
