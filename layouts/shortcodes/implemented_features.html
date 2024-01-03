@@ -9,7 +9,7 @@
         </tr>
     </thead>
     {{ range .Project.implements }}
-        {{ if and (isset .SupportedXep "note") (ne .SupportedXep.status "wontfix") (ne .SupportedXep.status "planned") }}
+        {{ if and (default .SupportedXep.note) (ne .SupportedXep.status "wontfix") (ne .SupportedXep.status "planned") }}
             <tr>
                 <td>
                     <a href="{{ index .SupportedXep.xep "-resource" }}">
