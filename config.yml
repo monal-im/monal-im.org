@@ -98,18 +98,22 @@ menu:
           name: "About"
           url: /about/
           weight: 5
+        - identifier: Publications
+          name: "Publications"
+          url: /publications/
+          weight: 6
         - identifier: FAQ
           name: "FAQ"
           url: https://github.com/monal-im/Monal/wiki/FAQ---Frequently-Asked-Questions
-          weight: 6
+          weight: 7
         #- identifier: Archive
         #  name: Archive
         #  url: /archives/
-        #  weight: 7
+        #  weight: 8
         - identifier: Search
           name: "Search \U0001f50d"
           url: /search/
-          weight: 8
+          weight: 9
 
 minify:
     disableXML: false
