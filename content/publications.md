@@ -5,9 +5,10 @@ author: "Monal"
 ---
 ## Talks and other documents
 
-* Molitor, Thilo. **Monal development recap 2019 - 2021 and open discussion** *Berlin XMPP Meetup*, 13th October 2021, [Weblink](https://xmpp-meetup.in-berlin.de/talks/monal-2021.mp4)
-* Molitor, Thilo; Altheide, Friedrich. **Modern XMPP - A story based on Monal** *Berlin XMPP Meetup*, 13th April 2022, [Weblink](https://xmpp-meetup.in-berlin.de/talks/monal-2022.mp4), [Slides](https://xmpp-meetup.in-berlin.de/talks/monal-and-push.pdf)
+* Molitor, Thilo; Altheide, Friedrich. **Modern XMPP - A story based on Monal** *Berlin XMPP Meetup*, 13th April 2022, [Recording](https://xmpp-meetup.in-berlin.de/talks/monal-2022.mp4), [Slides](https://xmpp-meetup.in-berlin.de/talks/monal-and-push.pdf)
+* Molitor, Thilo; Altheide, Friedrich. **Privacy friendly push** *Berlin XMPP Meetup*, 13th April 2022, [Recording](https://xmpp-meetup.in-berlin.de/talks/privacy-friendly-push.mp4), [Slides](https://xmpp-meetup.in-berlin.de/talks/monal-and-push.pdf#Navigation31) (starting after page 29)
 * Molitor, Thilo. [XMPP Push notifications on iOS](https://wiki.xmpp.org/web/Push_notifications#Push_notifications_on_iOS)
+* Molitor, Thilo. **Monal development recap 2019 - 2021 and open discussion** *Berlin XMPP Meetup*, 13th October 2021, [Recording](https://xmpp-meetup.in-berlin.de/talks/monal-2021.mp4)
 
 ## XEP publications
 
