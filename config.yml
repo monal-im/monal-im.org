@@ -48,6 +48,20 @@ params:
     buildExpired: false
     enableEmoji: true
 
+    editPost:
+        URL: "https://github.com/monal-im/monal-im.org/tree/staging/content"
+        Text: "Suggest Changes"
+        appendFilePath: true
+
+    assets:
+        disableHLJS: true
+        disableFingerprinting: false
+
+    cover:
+        hidden: false
+        hiddenInList: false
+        hiddenInSingle: true
+
     socialIcons:
         - name: github
           url: "https://github.com/monal-im/monal"
@@ -76,26 +90,30 @@ menu:
           name: Blog
           url: /post/
           weight: 3
+        - identifier: Publications
+          name: "Publications"
+          url: /publications/
+          weight: 4
         - identifier: Privacy
           name: "Privacy"
           url: /privacy/
-          weight: 4
+          weight: 5
         - identifier: About
           name: "About"
           url: /about/
-          weight: 5
+          weight: 6
         - identifier: FAQ
           name: "FAQ"
           url: https://github.com/monal-im/Monal/wiki/FAQ---Frequently-Asked-Questions
-          weight: 6
+          weight: 7
         #- identifier: Archive
         #  name: Archive
         #  url: /archives/
-        #  weight: 7
+        #  weight: 8
         - identifier: Search
           name: "Search \U0001f50d"
           url: /search/
-          weight: 8
+          weight: 9
 
 minify:
     disableXML: false
@@ -149,20 +167,7 @@ outputs:
         - RSS
         - JSON
 
-    editPost:
-        URL: "https://github.com/monal-im/monal-im.org/tree/staging/content"
-        Text: "Suggest Changes"
-        appendFilePath: true
-
-    assets:
-        disableHLJS: true
-        disableFingerprinting: false
-
-    cover:
-        hidden: false
-        hiddenInList: false
-        hiddenInSingle: true
-
+    
 taxonomies:
     category: categories
     tag: tags
