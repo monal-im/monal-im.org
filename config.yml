@@ -90,17 +90,17 @@ menu:
           name: Blog
           url: /post/
           weight: 3
-        - identifier: Privacy
-          name: "Privacy"
-          url: /privacy/
-          weight: 4
-        - identifier: About
-          name: "About"
-          url: /about/
-          weight: 5
         - identifier: Publications
           name: "Publications"
           url: /publications/
+          weight: 4
+        - identifier: Privacy
+          name: "Privacy"
+          url: /privacy/
+          weight: 5
+        - identifier: About
+          name: "About"
+          url: /about/
           weight: 6
         - identifier: FAQ
           name: "FAQ"
