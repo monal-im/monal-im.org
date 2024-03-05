@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/</link><description>Recent content on Monal</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 03 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Publications moved</title><link>https://monal-im.github.io/monal-im.org/post/00009-publications/</link><pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00009-publications/</guid><description>It came to light that our publications previously linked in a section under About were not that discoverable. Now we moved the whole publications list to its own top level menu entry unter Publications.
 Enjoy watching the talk recordings and reading the slides and XEPs.
 And last but not least: Happy new year!</description>
-<![CDATA[<p>It came to light that our publications previously linked in a section under <a href="/about">About</a> were not that discoverable.
-Now we moved the whole publications list to its own top level menu entry unter <a href="/publications">Publications</a>.</p>
+<![CDATA[<p>It came to light that our publications previously linked in a section under <a href="/monal-im.org/about/">About</a> were not that discoverable.
+Now we moved the whole publications list to its own top level menu entry unter <a href="/monal-im.org/publications/">Publications</a>.</p>
 <p>Enjoy watching the talk recordings and reading the slides and XEPs.</p>
 <p><strong>And last but not least: Happy new year!</strong></p>
 ]]></item><item><title>Monal 6.0 released</title><link>https://monal-im.github.io/monal-im.org/post/00008-monal-6.0-released/</link><pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00008-monal-6.0-released/</guid><description>After several month of hard work we just released Monal 6.0. This version comes with new artwork by Ann-Sophie Zwahlen, support for Audio-Calls funded by the EU’s NGI Assure via the NLnet Foundation and many other improvements and bugfixes. The full list of changes can be seen below:
@@ -63,8 +63,8 @@ is not possible because blocks are not serializable which means they could not s
 <li>&ldquo;Serializable callbacks&rdquo; to class / instance methods of ObjC classes</li>
 <li>Bind values (<em>not vars</em>) when creating a handler (e.g. to bind state to handler that can be serialized together with the handler)</li>
 <li>Bind vars when calling handler (overwriting creation-time bound values having the same name)</li>
-<li>Used in various places throughout the app like the IQ or PubSub framework (see <a href="#code-examples-found-in-the-wild">Code examples found in the wild</a>)</li>
-<li><a href="#available-data-types">Jump directly to list of supported data types</a></li>
+<li>Used in various places throughout the app like the IQ or PubSub framework (see <a href="/monal-im.org/post/00007-monal-internals-handlers/#code-examples-found-in-the-wild">Code examples found in the wild</a>)</li>
+<li><a href="/monal-im.org/post/00007-monal-internals-handlers/#available-data-types">Jump directly to list of supported data types</a></li>
 </ul>
 <h2 id="usage-description-with-examples">Usage description with examples</h2>
 <h3 id="define-handler-method">Define handler method</h3>
@@ -395,7 +395,7 @@ For convenience I&amp;rsquo;d like to summarize some parts of that wiki entry in
 UPDATE: This post describes the way Monal implements push as well as the pitfalls of implementing it in another way.</description>
 <![CDATA[<p>I recently wrote a summary about push on iOS in the xmpp.org wiki.<br>
 See <a href="https://wiki.xmpp.org/web/Push_notifications">over here</a> for all the technical details and links to the documentation.
-I also talked about that topic in my talk &ldquo;<em>Modern XMPP - A story based on Monal</em>&rdquo; linked <a href="/about">on the About page over here</a>.<br>
+I also talked about that topic in my talk &ldquo;<em>Modern XMPP - A story based on Monal</em>&rdquo; linked <a href="/monal-im.org/about/">on the About page over here</a>.<br>
 For convenience I&rsquo;d like to summarize some parts of that wiki entry in this blog-post, too.</p>
 <p><strong>UPDATE:</strong> This post describes the way Monal implements push as well as the pitfalls of implementing it in another way. I tried to make this clearer in the text now.</p>
 <h1 id="background-knowledge-push-on-ios">Background knowledge: Push on iOS</h1>
@@ -415,7 +415,7 @@ For convenience I&rsquo;d like to summarize some parts of that wiki entry in thi
 </ul>
 <p>High priority pushes in combination with the <code>com.apple.developer.usernotifications.filtering</code> entitlement are not only used by Monal, but some other popular messaging apps, too (links to the source):</p>
 <ul>
-<li><a href="https://www.reddit.com/r/TweakBounty/comments/z9oyf7/comment/iyirqor/?utm_source=reddit&amp;utm_medium=web2x&amp;context=3">WhatsApp</a></li>
+<li><a href="https://www.reddit.com/r/TweakBounty/comments/z9oyf7/comment/iyirqor/?utm_source=reddit&utm_medium=web2x&context=3">WhatsApp</a></li>
 <li><a href="https://github.com/signalapp/Signal-iOS/blob/main/SignalNSE/SignalNSE-AppStore.entitlements#L7">Signal</a></li>
 <li><a href="https://github.com/threema-ch/threema-ios/blob/main/ThreemaNotificationExtension/SupportingFiles/ThreemaForWorkRedNotificationExtension.entitlements#L7">Threema</a></li>
 <li><a href="https://github.com/TelegramMessenger/Telegram-iOS/blob/master/build-system/fake-codesigning/profiles/NotificationService.mobileprovision">Telegram</a> (binary)</li>
@@ -1837,7 +1837,7 @@ This improves the quality of the app significantly.</p>
 brew install --cask monal-beta Alpha upon request to info@monal-im.org
 Then download from our alpha download site brew tap monal-im/homebrew-monal-alpha
 brew install --cask monal-alpha Features Monal currently covers the following chat features:
-Decentralised and federated chat standard XMPP Private and group messaging Privacy-respecting push notifications Encrypted private and group chats (state-of-the-art encryption (OMEMO) Message history Free selection of your XMPP account provider Voice messaging Message archiving Upload of files, videos and images (HTTP Upload) Many settings and a design to offer privacy settings in the app to the need of the user A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our DOAP file.</description>
+Decentralised and federated chat standard XMPP Private and group messaging Privacy-respecting push notifications Encrypted private and group chats (state-of-the-art encryption (OMEMO) Message history Free selection of your XMPP account provider Voice messaging Message archiving Upload of files, videos and images (HTTP Upload) Audio and Video calls Many settings and a design to offer privacy settings in the app to the need of the user A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our DOAP file.</description>
 <![CDATA[<table>
 <thead>
 <tr>
@@ -1880,12 +1880,12 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
 <li>Voice messaging</li>
 <li>Message archiving</li>
 <li>Upload of files, videos and images (HTTP Upload)</li>
+<li>Audio and Video calls</li>
 <li>Many settings and a design to offer privacy settings in the app to the need of the user</li>
 <li>A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our <a href="https://github.com/monal-im/Monal/blob/develop/monal.doap">DOAP file</a>.</li>
 </ul>
 <h2 id="planned-features">Planned features</h2>
 <ul>
-<li>Audio and Video calls</li>
 <li>User-interface overhaul</li>
 </ul>
 <h2 id="implemented-xeps">Implemented XEPs</h2>
