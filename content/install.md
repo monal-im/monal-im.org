@@ -24,12 +24,12 @@ Monal currently covers the following chat features:
 * Voice messaging
 * Message archiving
 * Upload of files, videos and images (HTTP Upload)
+* Audio and Video calls
 * Many settings and a design to offer privacy settings in the app to the need of the user
 * A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our [DOAP file](https://github.com/monal-im/Monal/blob/develop/monal.doap).
 
 ## Planned features
 
-* Audio and Video calls
 * User-interface overhaul
 
 ## Implemented XEPs
