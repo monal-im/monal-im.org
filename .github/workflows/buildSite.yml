@@ -25,4 +25,4 @@ jobs:
           extended: true
           
       - name: Build site
-        run: hugo --minify
+        run: hugo --minify --baseURL https://monal-im.github.io/monal-im.org/
