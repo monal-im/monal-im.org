@@ -139,7 +139,7 @@ languages:
                 url: "https://apps.apple.com/app/id317711500"
               - name: "Get Monal macOS"
                 url: "https://apps.apple.com/app/id1637078500"
-          indexPostContentFile: "/content/home.md"
+          indexPostContentFile: "/home.md"
 
   de:
       languageName: ":de:"
