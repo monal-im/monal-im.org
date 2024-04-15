@@ -4,6 +4,6 @@
   <a href="{{ $pdf.RelPermalink }}">{{ $title | safeHTML }}</a>
 {{ else }}
   {{ $pdf := $.Page.Resources.GetMatch (.Get 0) }}
-  {{ $title := cond (not (.Get 0)) $pdf.Title (.Get 0) }}
+  {{ $title := cond (not (.Get 1)) $pdf.Title (.Get 1) }}
   <a href="{{ $pdf.RelPermalink }}">{{ $title | safeHTML }}</a>
 {{ end }}
