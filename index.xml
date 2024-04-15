@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/</link><description>Recent content on Monal</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/index.xml" rel="self" type="application/rss+xml"/><item><title>ROS Security Audit</title><link>https://monal-im.github.io/monal-im.org/post/00011-security-audit-1/</link><pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00011-security-audit-1/</guid><description>Radically Open Security (ROS) kindly performed a security audit of some parts of Monal.
 Specifically they audited the usage of our XML query language and the implementations of SASL2, SCRAM and SSDP.
-The results in a nutshell: no security issues found, read the full report here:
-{{ with .Resources.GetMatch &amp;ldquo;pentest_1.pdf&amp;rdquo; }} {{ .Title }}. {{ end }}</description>
+The results in a nutshell: no security issues found, read the full report here: Monal IM penetration test report 2024 1.0.</description>
 <![CDATA[<p><a href="https://www.radicallyopensecurity.com/">Radically Open Security (ROS)</a> kindly performed a security audit of some parts of Monal.<br>
 Specifically they audited the usage of our XML query language and the implementations of <a href="https://xmpp.org/extensions/xep-0388.html">SASL2</a>, <a href="https://datatracker.ietf.org/doc/html/rfc5802">SCRAM</a> and <a href="https://xmpp.org/extensions/xep-0474.html">SSDP</a>.</p>
-<p><strong>The results in a nutshell: <em>no security issues</em> found, read the full report here:</strong></p>
-<p>{{ with .Resources.GetMatch &ldquo;pentest_1.pdf&rdquo; }}
-<a href="{{ .RelPermalink }}">{{ .Title }}</a>.
-{{ end }}</p>
+<p><strong>The results in a nutshell: <em>no security issues</em> found, read the full report here: 
+
+
+<a href="/monal-im.org/post/00011-security-audit-1/pentest_1.pdf">Monal IM penetration test report 2024 1.0</a>.
+</strong></p>
 ]]></item><item><title>iOS app banned from chinese appstore</title><link>https://monal-im.github.io/monal-im.org/post/00010-ios-banned/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00010-ios-banned/</guid><description>Some may have predicted it, but now it happened: the chinese government banned Monal from the chinese appstore. Below is the complete email we got from Apple regarding this ban. We got that mail twice, once on Wed, 27 Mar 2024 15:46:18 +0100 and a second time on Thu, 28 Mar 2024 17:01:19 +0100.
 The macOS version of Monal is still available in the appstore and with homebrew, though.
 Here is the full mail, a translation of the CAC articles can be found over here for reference.</description>
