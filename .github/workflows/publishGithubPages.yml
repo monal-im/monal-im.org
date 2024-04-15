@@ -22,7 +22,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install and Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
@@ -31,7 +31,7 @@ jobs:
         run: hugo --minify --gc --baseURL https://monal-im.github.io/monal-im.org/
 
       - name: Deploy to Github Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/staging'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
