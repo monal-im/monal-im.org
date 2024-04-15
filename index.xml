@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/</link><description>Recent content on Monal</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/index.xml" rel="self" type="application/rss+xml"/><item><title>ROS Security Audit</title><link>https://monal-im.github.io/monal-im.org/post/00011-security-audit-1/</link><pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00011-security-audit-1/</guid><description>Radically Open Security (ROS) kindly performed a security audit of some parts of Monal.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/</link><description>Recent content on Monal</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/index.xml" rel="self" type="application/rss+xml"/><item><title>ROS Security Audit</title><link>https://monal-im.github.io/monal-im.org/post/00011-security-audit-1/</link><pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00011-security-audit-1/</guid><description>Radically Open Security (ROS) kindly performed a security audit of some parts of Monal.
 Specifically they audited the usage of our XML query language and the implementations of SASL2, SCRAM and SSDP.
-The results in a nutshell: no security issues found, read the full report here: pentest_1.pdf .</description>
-<![CDATA[<p><a href="https://www.radicallyopensecurity.com/">Radically Open Security (ROS)</a> kindly performed a security audit of some parts of Monal.<br>
+The results in a nutshell: no security issues found, read the full report here: pentest_1.pdf .</description><content:encoded><![CDATA[<p><a href="https://www.radicallyopensecurity.com/">Radically Open Security (ROS)</a> kindly performed a security audit of some parts of Monal.<br>
 Specifically they audited the usage of our XML query language and the implementations of <a href="https://xmpp.org/extensions/xep-0388.html">SASL2</a>, <a href="https://datatracker.ietf.org/doc/html/rfc5802">SCRAM</a> and <a href="https://xmpp.org/extensions/xep-0474.html">SSDP</a>.</p>
 <p>The results in a nutshell: <em>no security issues found</em>, read the full report here: 
   
@@ -9,10 +8,9 @@ Specifically they audited the usage of our XML query language and the implementa
   <a href="/monal-im.org/post/00011-security-audit-1/pentest_1.pdf">pentest_1.pdf</a>
 
 .</p>
-]]></item><item><title>iOS app banned from chinese appstore</title><link>https://monal-im.github.io/monal-im.org/post/00010-ios-banned/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00010-ios-banned/</guid><description>Some may have predicted it, but now it happened: the chinese government banned Monal from the chinese appstore. Below is the complete email we got from Apple regarding this ban. We got that mail twice, once on Wed, 27 Mar 2024 15:46:18 +0100 and a second time on Thu, 28 Mar 2024 17:01:19 +0100.
+]]></content:encoded></item><item><title>iOS app banned from chinese appstore</title><link>https://monal-im.github.io/monal-im.org/post/00010-ios-banned/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00010-ios-banned/</guid><description>Some may have predicted it, but now it happened: the chinese government banned Monal from the chinese appstore. Below is the complete email we got from Apple regarding this ban. We got that mail twice, once on Wed, 27 Mar 2024 15:46:18 +0100 and a second time on Thu, 28 Mar 2024 17:01:19 +0100.
 The macOS version of Monal is still available in the appstore and with homebrew, though.
-Here is the full mail, a translation of the CAC articles can be found over here for reference.</description>
-<![CDATA[<p>Some may have predicted it, but now it happened: the chinese government banned Monal from the chinese appstore.
+Here is the full mail, a translation of the CAC articles can be found over here for reference.</description><content:encoded><![CDATA[<p>Some may have predicted it, but now it happened: the chinese government banned Monal from the chinese appstore.
 Below is the complete email we got from Apple regarding this ban. We got that mail twice, once on  <em>Wed, 27 Mar 2024 15:46:18 +0100</em>
 and a second time on <em>Thu, 28 Mar 2024 17:01:19 +0100</em>.<br>
 <strong>The macOS version of Monal is still available in the appstore and with homebrew, though.</strong></p>
@@ -31,18 +29,16 @@ Apps must comply with all legal requirements in any location where you make them
 <p>While your app has been removed from the China App Store, it is still available in the App Stores for the other territories you selected in App Store Connect. The TestFlight version of this app will also be unavailable for external and internal testing in China and all public TestFlight links will no longer be functional.</p>
 <p>Best regards,</p>
 <p>App Review</p>
-]]></item><item><title>Publications moved</title><link>https://monal-im.github.io/monal-im.org/post/00009-publications/</link><pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00009-publications/</guid><description>It came to light that our publications previously linked in a section under About were not that discoverable. Now we moved the whole publications list to its own top level menu entry unter Publications.
+]]></content:encoded></item><item><title>Publications moved</title><link>https://monal-im.github.io/monal-im.org/post/00009-publications/</link><pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00009-publications/</guid><description>It came to light that our publications previously linked in a section under About were not that discoverable. Now we moved the whole publications list to its own top level menu entry unter Publications.
 Enjoy watching the talk recordings and reading the slides and XEPs.
-And last but not least: Happy new year!</description>
-<![CDATA[<p>It came to light that our publications previously linked in a section under <a href="/monal-im.org/about/">About</a> were not that discoverable.
+And last but not least: Happy new year!</description><content:encoded><![CDATA[<p>It came to light that our publications previously linked in a section under <a href="/monal-im.org/about/">About</a> were not that discoverable.
 Now we moved the whole publications list to its own top level menu entry unter <a href="/monal-im.org/publications/">Publications</a>.</p>
 <p>Enjoy watching the talk recordings and reading the slides and XEPs.</p>
 <p><strong>And last but not least: Happy new year!</strong></p>
-]]></item><item><title>Monal 6.0 released</title><link>https://monal-im.github.io/monal-im.org/post/00008-monal-6.0-released/</link><pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00008-monal-6.0-released/</guid><description>After several month of hard work we just released Monal 6.0. This version comes with new artwork by Ann-Sophie Zwahlen, support for Audio-Calls funded by the EU’s NGI Assure via the NLnet Foundation and many other improvements and bugfixes. The full list of changes can be seen below:
+]]></content:encoded></item><item><title>Monal 6.0 released</title><link>https://monal-im.github.io/monal-im.org/post/00008-monal-6.0-released/</link><pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00008-monal-6.0-released/</guid><description>After several month of hard work we just released Monal 6.0. This version comes with new artwork by Ann-Sophie Zwahlen, support for Audio-Calls funded by the EU’s NGI Assure via the NLnet Foundation and many other improvements and bugfixes. The full list of changes can be seen below:
 NEW: Audio-call support (This feature will not be available to users in China and macOS users!)
 Other changes:
-New Logo and new placeholder images by Ann-Sophie Zwahlen New &amp;ldquo;Add Contact&amp;rdquo; and &amp;ldquo;Contact Requests&amp;rdquo; UI Complete rewrite of OMEMO code Speed up app start Add support for SASL2 (XEP-0388) Implement XEP-0424: Message Retraction Add support for creating invitations (button only displayed if your server supports it, see https://docs.</description>
-<![CDATA[<p>After several month of hard work we just released Monal 6.0.
+New Logo and new placeholder images by Ann-Sophie Zwahlen New &amp;ldquo;Add Contact&amp;rdquo; and &amp;ldquo;Contact Requests&amp;rdquo; UI Complete rewrite of OMEMO code Speed up app start Add support for SASL2 (XEP-0388) Implement XEP-0424: Message Retraction Add support for creating invitations (button only displayed if your server supports it, see https://docs.</description><content:encoded><![CDATA[<p>After several month of hard work we just released Monal 6.0.
 This version comes with new artwork by Ann-Sophie Zwahlen, support for Audio-Calls funded by the EU’s <a href="https://nlnet.nl/assure/">NGI Assure via the NLnet Foundation</a> and many other improvements and bugfixes.
 The full list of changes can be seen below:</p>
 <p><strong>NEW:</strong> Audio-call support (This feature will not be available to users in China and macOS users!)</p>
@@ -80,9 +76,8 @@ The full list of changes can be seen below:</p>
 <li>Fix timer when recording audio messages</li>
 <li>Fix muc avatar fetching</li>
 </ul>
-]]></item><item><title>Monal Internals - Handlers framework</title><link>https://monal-im.github.io/monal-im.org/post/00007-monal-internals-handlers/</link><pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00007-monal-internals-handlers/</guid><description>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to thilo@monal-im.org
-Handlers Handlers in Monal are something like serializable callbacks. In iOS the app can get frozen or even killed any time and the push implementation requires the complete app state to frequently transition between the Main App and the Notification Service App Extension (NSE).</description>
-<![CDATA[<p>In this new series, I want to shine some light onto specific parts of Monal&rsquo;s internals. It&rsquo;s dedicated to programmers or people curious about how Monal works internally.
+]]></content:encoded></item><item><title>Monal Internals - Handlers framework</title><link>https://monal-im.github.io/monal-im.org/post/00007-monal-internals-handlers/</link><pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00007-monal-internals-handlers/</guid><description>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to thilo@monal-im.org
+Handlers Handlers in Monal are something like serializable callbacks. In iOS the app can get frozen or even killed any time and the push implementation requires the complete app state to frequently transition between the Main App and the Notification Service App Extension (NSE).</description><content:encoded><![CDATA[<p>In this new series, I want to shine some light onto specific parts of Monal&rsquo;s internals. It&rsquo;s dedicated to programmers or people curious about how Monal works internally.
 If you want to give some feedback, feel free to send an email to <a href="mailto:thilo@monal-im.org">thilo@monal-im.org</a></p>
 <h1 id="handlers">Handlers</h1>
 <p>Handlers in Monal are something like serializable callbacks.
@@ -234,18 +229,16 @@ If the single argument binding is used, the value is bound using the same name l
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
-</span></span></code></pre></div>]]></item><item><title>XMPP Tutorials</title><link>https://monal-im.github.io/monal-im.org/post/00006-eversten-xmpp-videos/</link><pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00006-eversten-xmpp-videos/</guid><description>Axel Reimer recently created some good video tutorials about Monal and XMPP in general.
+</span></span></code></pre></div>]]></content:encoded></item><item><title>XMPP Tutorials</title><link>https://monal-im.github.io/monal-im.org/post/00006-eversten-xmpp-videos/</link><pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00006-eversten-xmpp-videos/</guid><description>Axel Reimer recently created some good video tutorials about Monal and XMPP in general.
 These video tutorials can be found over here: https://www.eversten.net/videotutorials/.
-Currently the audio of these videos is German only.</description>
-<![CDATA[<p>Axel Reimer recently created some good video tutorials about Monal and XMPP in general.</p>
+Currently the audio of these videos is German only.</description><content:encoded><![CDATA[<p>Axel Reimer recently created some good video tutorials about Monal and XMPP in general.</p>
 <p>These video tutorials can be found over here: <a href="https://www.eversten.net/videotutorials/">https://www.eversten.net/videotutorials/</a>.<br>
 Currently the audio of these videos is German only.</p>
-]]></item><item><title>Privacy Monal App ≥ 6.0.0</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_003/</link><pubDate>Fri, 10 Feb 2023 13:00:00 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_003/</guid><description>Monal Website
+]]></content:encoded></item><item><title>Privacy Monal App ≥ 6.0.0</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_003/</link><pubDate>Fri, 10 Feb 2023 13:00:00 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_003/</guid><description>Monal Website
 You can find our latest privacy policy for our website here: Website Privacy Policy
 Monal App
 Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
-Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description>
-<![CDATA[<blockquote>
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<blockquote>
 
 <p><strong>Monal Website</strong><br>
 You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
@@ -422,11 +415,10 @@ This file will never be transferred to us, except if you explicitly (manually) s
 We therefore are not able to send you retained data related to your JID.
 We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided token.
 If you have questions regarding GDPR, please send us a mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
-]]></item><item><title>Push on iOS</title><link>https://monal-im.github.io/monal-im.org/post/00005-push-on-ios/</link><pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00005-push-on-ios/</guid><description>I recently wrote a summary about push on iOS in the xmpp.org wiki.
+]]></content:encoded></item><item><title>Push on iOS</title><link>https://monal-im.github.io/monal-im.org/post/00005-push-on-ios/</link><pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00005-push-on-ios/</guid><description>I recently wrote a summary about push on iOS in the xmpp.org wiki.
 See over here for all the technical details and links to the documentation. I also talked about that topic in my talk &amp;ldquo;Modern XMPP - A story based on Monal&amp;rdquo; linked on the About page over here.
 For convenience I&amp;rsquo;d like to summarize some parts of that wiki entry in this blog-post, too.
-UPDATE: This post describes the way Monal implements push as well as the pitfalls of implementing it in another way.</description>
-<![CDATA[<p>I recently wrote a summary about push on iOS in the xmpp.org wiki.<br>
+UPDATE: This post describes the way Monal implements push as well as the pitfalls of implementing it in another way.</description><content:encoded><![CDATA[<p>I recently wrote a summary about push on iOS in the xmpp.org wiki.<br>
 See <a href="https://wiki.xmpp.org/web/Push_notifications">over here</a> for all the technical details and links to the documentation.
 I also talked about that topic in my talk &ldquo;<em>Modern XMPP - A story based on Monal</em>&rdquo; linked <a href="/monal-im.org/about/">on the About page over here</a>.<br>
 For convenience I&rsquo;d like to summarize some parts of that wiki entry in this blog-post, too.</p>
@@ -475,9 +467,8 @@ OMEMO&rsquo;s self-healing through key-transport-elements requires the client to
 <p>NOT using the entitlement mentioned above will prevent the client from receiving push notifications for XEP-0333 read markers and remove already displayed notifications instead of posting a new one (because apps not having that entitlement are forced to show a notification for each incoming high priority push, even if the push was only for a XEP-0333 read marker).
 <strong>To be clear: without that entitlement neither message retraction nor XEP-0333 read markers can be implemented reliably!</strong><br>
 <em>And if an app has the entitlement:</em> why bother delivering some stanzas out of band and running into the ordering problem if the app could as well connect to the xmpp server in the background and retrieve all pending stanzas in the right order?</p>
-]]></item><item><title>On the state of SASL in XMPP</title><link>https://monal-im.github.io/monal-im.org/post/00004-sasl/</link><pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00004-sasl/</guid><description>SASL (Simple Authentication and Security Layer) as used in XMPP is broken. In this blog post I&amp;rsquo;ll try to explain why and propose some fixes.
-Update (2023-04-21): Since I originally wrote this blog post, I&amp;rsquo;ve had the ability to discuss several of my ideas with Dave (the original author of XEP-0388 dubbed SASL2), MattJ (one of the authors of the prosody xmpp server) and others. Most, if not all, of my issues are now addressed in a bunch of updates to existing XEPs as well as new XEPs:</description>
-<![CDATA[<p>SASL (Simple Authentication and Security Layer) <a href="https://xmpp.org/rfcs/rfc6120.html#sasl">as used in XMPP</a> is broken. In this blog post I&rsquo;ll try to explain why and propose some fixes.</p>
+]]></content:encoded></item><item><title>On the state of SASL in XMPP</title><link>https://monal-im.github.io/monal-im.org/post/00004-sasl/</link><pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00004-sasl/</guid><description>SASL (Simple Authentication and Security Layer) as used in XMPP is broken. In this blog post I&amp;rsquo;ll try to explain why and propose some fixes.
+Update (2023-04-21): Since I originally wrote this blog post, I&amp;rsquo;ve had the ability to discuss several of my ideas with Dave (the original author of XEP-0388 dubbed SASL2), MattJ (one of the authors of the prosody xmpp server) and others. Most, if not all, of my issues are now addressed in a bunch of updates to existing XEPs as well as new XEPs:</description><content:encoded><![CDATA[<p>SASL (Simple Authentication and Security Layer) <a href="https://xmpp.org/rfcs/rfc6120.html#sasl">as used in XMPP</a> is broken. In this blog post I&rsquo;ll try to explain why and propose some fixes.</p>
 <p><strong>Update (2023-04-21):</strong> Since I originally wrote this blog post, I&rsquo;ve had the ability to discuss several of my ideas with Dave (the original author of XEP-0388 dubbed SASL2), MattJ (one of the authors of the prosody xmpp server) and others.
 Most, if not all, of my issues are now addressed in a bunch of updates to existing XEPs as well as new XEPs:</p>
 <ul>
@@ -732,10 +723,9 @@ ServerSignature := HMAC(ServerKey, AuthMessage)
 <h1 id="conclusion">Conclusion</h1>
 <p>To conclude this, we now identified several improvements to regain the properties listed in the beginning. These improvements can mainly be achieved by updating the SASL2 XEP (<a href="https://xmpp.org/extensions/xep-0388.html">XEP-0388: Extensible SASL Profile</a>). The downgrade prevention (the additional SCRAM attribute <code>d</code>) should possibly be published as RFC, but a XEP could suffice, too.</p>
 <p>Feel free to comment on anything in here. I&rsquo;m always open to feedback and improvements. Just contact me at <a href="mailto:thilo@monal-im.org">thilo@monal-im.org</a>.</p>
-]]></item><item><title>NLNet Funding</title><link>https://monal-im.github.io/monal-im.org/post/00003-nlnet-funding/</link><pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00003-nlnet-funding/</guid><description>We are pleased to announce that we got funding by the EU’s NGI Assure via the NLnet Foundation to work on some important features in Monal.
+]]></content:encoded></item><item><title>NLNet Funding</title><link>https://monal-im.github.io/monal-im.org/post/00003-nlnet-funding/</link><pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00003-nlnet-funding/</guid><description>We are pleased to announce that we got funding by the EU’s NGI Assure via the NLnet Foundation to work on some important features in Monal.
 In short this consists of the following tasks (in no special order).
-1. Implement more privacy-friendly push server The current push appserver (https://github.com/tmolitor-stud-tu/mod_push_appserver) saves more data than strictly needed to perform its task, let’s change that. On top of that, a possible HA-setup and load balancing should be strived for.</description>
-<![CDATA[<p>We are pleased to announce that we got funding by the EU’s <a href="https://nlnet.nl/assure/">NGI Assure via the NLnet Foundation</a> to work on some important features in Monal.</p>
+1. Implement more privacy-friendly push server The current push appserver (https://github.com/tmolitor-stud-tu/mod_push_appserver) saves more data than strictly needed to perform its task, let’s change that. On top of that, a possible HA-setup and load balancing should be strived for.</description><content:encoded><![CDATA[<p>We are pleased to announce that we got funding by the EU’s <a href="https://nlnet.nl/assure/">NGI Assure via the NLnet Foundation</a> to work on some important features in Monal.</p>
 <p>In short this consists of the following tasks (in no special order).</p>
 <h3 id="1-implement-more-privacy-friendly-push-server">1. Implement more privacy-friendly push server</h3>
 <p>The current push appserver (<a href="https://github.com/tmolitor-stud-tu/mod_push_appserver">https://github.com/tmolitor-stud-tu/mod_push_appserver</a>) saves more data than strictly needed to perform its task, let’s change that. On top of that, a possible HA-setup and load balancing should be strived for.</p>
@@ -763,10 +753,9 @@ containing the hash of all server-advertised SASL mechanisms and channel-binding
 will enable the server to check if any downgrade took place and to abort the authentication, if so. Because the
 SCRAM attribute will be part of the mutual authentication between client and server, a MITM will not be able to
 forge it.</p>
-]]></item><item><title>Monal IM - project moved</title><link>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</link><pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</guid><description>We recently started to migrate the App from Anu Pokharel‘s Apple account to Thilo Molitor‘s Apple account.
+]]></content:encoded></item><item><title>Monal IM - project moved</title><link>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</link><pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00002-project-moved/</guid><description>We recently started to migrate the App from Anu Pokharel‘s Apple account to Thilo Molitor‘s Apple account.
 As part of this transition we also deployed some new push servers to not let an old retired developer pay for the infrastructure needed for Monal.
-Coming along with this transition from the old developer team to the new one is our new clean website at https://monal-im.org/. From now on, the old blog at https://monal.</description>
-<![CDATA[<p>We recently started to migrate the App from Anu Pokharel‘s Apple account to Thilo Molitor‘s Apple account.</p>
+Coming along with this transition from the old developer team to the new one is our new clean website at https://monal-im.org/. From now on, the old blog at https://monal.</description><content:encoded><![CDATA[<p>We recently started to migrate the App from Anu Pokharel‘s Apple account to Thilo Molitor‘s Apple account.</p>
 <p>As part of this transition we also deployed some new push servers to not let an old retired developer pay for the infrastructure needed for Monal.</p>
 <p>Coming along with this transition from the old developer team to the new one is our new clean website at <a href="https://monal-im.org/">https://monal-im.org/</a>. From now on, the old blog at <a href="https://monal.im/">https://monal.im/</a> will not be used for Monal anymore.</p>
 <p>Many thanks to all users, contributors and followers so far.</p>
@@ -774,8 +763,7 @@ Coming along with this transition from the old developer team to the new one is 
 <p>When I (Thilo) gradually took over development, I was able to build upon an app with a decent codebase rather than writing my own app from scratch. That made it possible to improve Monal further while already being used by thousands of people. I can not stress enough how thankful I was and still am for all the work Anu put into the development of Monal.
 Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and macOS!</p>
 <p>Thilo, Friedrich, Anu</p>
-]]></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/supportedxeps/</guid><description>Implemented XEPs XEP Status Since XEP-0004: Data Forms complete 4.9 XEP-0030: Service Discovery complete 4.6 XEP-0045: Multi-User Chat partial 5.0 XEP-0048: Bookmarks complete 5.0 XEP-0054: vcard-temp (implemented only for MUC profiles) complete XEP-0059: Result Set Management. Used by other XEPs. complete 4.8 XEP-0060: Publish-Subscribe partial 4.9 XEP-0066: Out of Band Data partial 4.9 XEP-0077: In-Band Registration partial XEP-0084: User Avatar complete 4.9 XEP-0085: Chat State Notifications complete 4.7 XEP-0092: Software Version complete XEP-0115: Entity Capabilities complete 4.</description>
-<![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
+]]></content:encoded></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/supportedxeps/</guid><description>Implemented XEPs XEP Status Since XEP-0004: Data Forms complete 4.9 XEP-0030: Service Discovery complete 4.6 XEP-0045: Multi-User Chat partial 5.0 XEP-0048: Bookmarks complete 5.0 XEP-0054: vcard-temp (implemented only for MUC profiles) complete XEP-0059: Result Set Management. Used by other XEPs. complete 4.8 XEP-0060: Publish-Subscribe partial 4.9 XEP-0066: Out of Band Data partial 4.9 XEP-0077: In-Band Registration partial XEP-0084: User Avatar complete 4.9 XEP-0085: Chat State Notifications complete 4.7 XEP-0092: Software Version complete XEP-0115: Entity Capabilities complete 4.</description><content:encoded><![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
 
 
 <table>
@@ -1859,8 +1847,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
 </table>
 
 
-]]></item><item><title>Support</title><link>https://monal-im.github.io/monal-im.org/support/</link><pubDate>Sat, 12 Mar 2022 10:01:54 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/support/</guid><description>Monal Support Channel (XMPP MUC): monal@chat.yax.im Github Tickets: https://github.com/monal-im/Monal/issues Email: info[at]monal[minus]im[dot]org. Donate Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:</description>
-<![CDATA[<ul>
+]]></content:encoded></item><item><title>Support</title><link>https://monal-im.github.io/monal-im.org/support/</link><pubDate>Sat, 12 Mar 2022 10:01:54 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/support/</guid><description>Monal Support Channel (XMPP MUC): monal@chat.yax.im Github Tickets: https://github.com/monal-im/Monal/issues Email: info[at]monal[minus]im[dot]org. Donate Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:</description><content:encoded><![CDATA[<ul>
 <li>Monal Support Channel (XMPP MUC): <a href="xmpp:monal@chat.yax.im?join">monal@chat.yax.im</a></li>
 <li>Github Tickets: <a href="https://github.com/monal-im/Monal/issues">https://github.com/monal-im/Monal/issues</a></li>
 <li>Email: info[at]monal[minus]im[dot]org.</li>
@@ -1894,12 +1881,11 @@ That way we can ask questions back to you.</li>
 <p>Please be reminded that this is a non-commercial software project.</p>
 <p>Thank you for considering reporting a security vulnerability.
 This improves the quality of the app significantly.</p>
-]]></item><item><title>Install</title><link>https://monal-im.github.io/monal-im.org/install/</link><pubDate>Sat, 12 Mar 2022 08:09:44 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/install/</guid><description>iOS macOS macOS (homebrew) Stable App Store App Store brew install --cask monal Beta Testflight Invitation Testflight Invitation brew tap homebrew/cask-versions
+]]></content:encoded></item><item><title>Install</title><link>https://monal-im.github.io/monal-im.org/install/</link><pubDate>Sat, 12 Mar 2022 08:09:44 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/install/</guid><description>iOS macOS macOS (homebrew) Stable App Store App Store brew install --cask monal Beta Testflight Invitation Testflight Invitation brew tap homebrew/cask-versions
 brew install --cask monal-beta Alpha upon request to info@monal-im.org
 Then download from our alpha download site brew tap monal-im/homebrew-monal-alpha
 brew install --cask monal-alpha Features Monal currently covers the following chat features:
-Decentralised and federated chat standard XMPP Private and group messaging Privacy-respecting push notifications Encrypted private and group chats (state-of-the-art encryption (OMEMO) Message history Free selection of your XMPP account provider Voice messaging Message archiving Upload of files, videos and images (HTTP Upload) Audio and Video calls Many settings and a design to offer privacy settings in the app to the need of the user A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our DOAP file.</description>
-<![CDATA[<table>
+Decentralised and federated chat standard XMPP Private and group messaging Privacy-respecting push notifications Encrypted private and group chats (state-of-the-art encryption (OMEMO) Message history Free selection of your XMPP account provider Voice messaging Message archiving Upload of files, videos and images (HTTP Upload) Audio and Video calls Many settings and a design to offer privacy settings in the app to the need of the user A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our DOAP file.</description><content:encoded><![CDATA[<table>
 <thead>
 <tr>
 <th></th>
@@ -3033,11 +3019,11 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
 </table>
 
 
-]]></item><item><title>Privacy</title><link>https://monal-im.github.io/monal-im.org/privacy/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacy/</guid><description>Monal Website
+]]></content:encoded></item><item><title>Privacy</title><link>https://monal-im.github.io/monal-im.org/privacy/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacy/</guid><description>Monal Website
 You can find our latest privacy policy for our website here: Website Privacy Policy
 Monal App
 Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
-Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><![CDATA[
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[
 <p><strong>Monal Website</strong><br>
 You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
 <p><strong>Monal App</strong><br>
@@ -3075,12 +3061,11 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </tbody>
 </table>
 
-]]></item><item><title>Privacy Monal App &lt; 5.2.0</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_001/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_001/</guid><description>Monal Website
+]]></content:encoded></item><item><title>Privacy Monal App &lt; 5.2.0</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_001/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_001/</guid><description>Monal Website
 You can find our latest privacy policy for our website here: Website Privacy Policy
 Monal App
 Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
-Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description>
-<![CDATA[<blockquote>
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<blockquote>
 
 <p><strong>Monal Website</strong><br>
 You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
@@ -3180,12 +3165,11 @@ It does contain sensitive personal data! This file will never be transferred to 
 Please send GDPR requests to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.
 As by GDPR we need to validate your JID before answering to your inquiry.
 Therefore, we will provide you a JID you must send a confirmation to, before we can answer your request and send you all retained data related to your JID.</p>
-]]></item><item><title>Privacy Monal App 5.2.0 - 5.4.x</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_002/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_002/</guid><description>Monal Website
+]]></content:encoded></item><item><title>Privacy Monal App 5.2.0 - 5.4.x</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_002/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_app_rev_002/</guid><description>Monal Website
 You can find our latest privacy policy for our website here: Website Privacy Policy
 Monal App
 Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
-Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description>
-<![CDATA[<blockquote>
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<blockquote>
 
 <p><strong>Monal Website</strong><br>
 You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
@@ -3341,12 +3325,11 @@ This file will never be transferred to us, except if you explicitly (manually) s
 We therefore are not able to send you retained data related to your JID.
 We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided token.
 If you have questions regarding GDPR, please send us a mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
-]]></item><item><title>Privacy Website</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_website/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_website/</guid><description>Monal Website
+]]></content:encoded></item><item><title>Privacy Website</title><link>https://monal-im.github.io/monal-im.org/privacyarchive/monal_website/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/monal_website/</guid><description>Monal Website
 You can find our latest privacy policy for our website here: Website Privacy Policy
 Monal App
 Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
-Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description>
-<![CDATA[<blockquote>
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<blockquote>
 
 <p><strong>Monal Website</strong><br>
 You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
@@ -3390,14 +3373,13 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <p>A user’s IP address will be logged in the HTTP server logs.
 All server logs are purged every two weeks and there isn’t any way for us to associate this information with any particular individual.
 Our websites do not use or need any cookies. And of course it doesn&rsquo;t use any third party/external (JS-CSS-Font) dependencies.</p>
-]]></item><item><title>Insights Into Monal Development</title><link>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</guid><description>TLDR:
+]]></content:encoded></item><item><title>Insights Into Monal Development</title><link>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00001-monal-development/</guid><description>TLDR:
 Info: Monal will stop support for iOS 12, iOS 13 and macOS Catalina!
 We are searching for a SwiftUI developer.
 We need a new simplified website.
 With better continuous funding, our push servers will move from the US to Europe.
 We have a new support mail: info@monal-im.org
-Two years ago we decided to rewrite the Monal app almost entirely and improve it gradually in the process, instead of creating another XMPP Client for iOS and macOS.</description>
-<![CDATA[<blockquote>
+Two years ago we decided to rewrite the Monal app almost entirely and improve it gradually in the process, instead of creating another XMPP Client for iOS and macOS.</description><content:encoded><![CDATA[<blockquote>
 <p>TLDR:</p>
 <p><em>Info: Monal will stop support for iOS 12, iOS 13 and macOS Catalina!<br>
 We are searching for a SwiftUI developer.<br>
@@ -3471,8 +3453,7 @@ In the future we want to try to reduce our knowledge by hiding your username fro
 <h4 id="many-thanks">Many thanks!</h4>
 <p>Of course, thank you very much to everyone who supported us in the past two years! 🙂</p>
 <p>You can follow us via <a href="https://fosstodon.org/@Monal">Mastodon</a>.</p>
-]]></item><item><title>Monal-IM. Privacy like it's 1999</title><link>https://monal-im.github.io/monal-im.org/home/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/home/</guid><description>Monal is an XMPP instant messaging client for macOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android. XMPP in general is an open and standardized protocol for real time communication. Anyone can host their own server and communicate freely with each other, just like with email and just like email the used addresses are of the form &amp;ldquo;user@domain.</description>
-<![CDATA[<p>Monal is an XMPP instant messaging client for macOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android.
+]]></content:encoded></item><item><title>Monal-IM. Privacy like it's 1999</title><link>https://monal-im.github.io/monal-im.org/home/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/home/</guid><description>Monal is an XMPP instant messaging client for macOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android. XMPP in general is an open and standardized protocol for real time communication. Anyone can host their own server and communicate freely with each other, just like with email and just like email the used addresses are of the form &amp;ldquo;user@domain.</description><content:encoded><![CDATA[<p>Monal is an XMPP instant messaging client for macOS and iOS which strives to be the go-to client for these platforms just like the app Conversations IM is for Android.
 XMPP in general is an open and standardized protocol for real time communication.
 Anyone can host their own server and communicate freely with each other, just like with email and just like email the used addresses are of the form &ldquo;<a href="mailto:user@domain.tld">user@domain.tld</a>&rdquo;.
 The user can use different apps and services, such as Monal, from a single but also multiple accounts.
@@ -4017,12 +3998,11 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 <p>Monal is developed under an open-source BSD license that serves the user, while not selling or tracking information for external parties (nor for anyone else).
 This app exists because it is key to ensure usability on all platforms and within the XMPP network with all its positives aspects when it comes to decentral communication and infrastructure.</p>
 <p><a href="https://github.com/monal-im/Monal">Find the development on GitHub!</a></p>
-]]></item><item><title/><link>https://monal-im.github.io/monal-im.org/privacyarchive/privacyheader/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/privacyheader/</guid><description>Monal Website
+]]></content:encoded></item><item><title/><link>https://monal-im.github.io/monal-im.org/privacyarchive/privacyheader/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/privacyarchive/privacyheader/</guid><description>Monal Website
 You can find our latest privacy policy for our website here: Website Privacy Policy
 Monal App
 Our privacy policy may differ between app versions. Before reading our privacy policy for our App you first need to find out the Monal version that you are using. How to find out your Monal version
-Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description>
-<![CDATA[<p><strong>Monal Website</strong><br>
+Open Monal Open up the settings menu in the upper left corner (gearwheel) Scroll down to the last entry &amp;ldquo;version&amp;rdquo; Monal App Privacy Policies</description><content:encoded><![CDATA[<p><strong>Monal Website</strong><br>
 You can find our latest privacy policy for our website here: <a href="/monal-im.org/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
 <p><strong>Monal App</strong><br>
 Our privacy policy may differ between app versions.
@@ -4058,10 +4038,9 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </tr>
 </tbody>
 </table>
-]]></item><item><title>About</title><link>https://monal-im.github.io/monal-im.org/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/about/</guid><description>Imprint Thilo Molitor Vogelsbergstr. 18 68642 Bürstadt Germany
+]]></content:encoded></item><item><title>About</title><link>https://monal-im.github.io/monal-im.org/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/about/</guid><description>Imprint Thilo Molitor Vogelsbergstr. 18 68642 Bürstadt Germany
 eMail: info[at]monal[minus]im[dot]org
-About Monal originates in 2002 as fork of the SworIM app. Until 2019 it has been developed by Anu Pokharel. Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide. From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup. Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.</description>
-<![CDATA[<h1 id="imprint">Imprint</h1>
+About Monal originates in 2002 as fork of the SworIM app. Until 2019 it has been developed by Anu Pokharel. Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide. From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup. Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.</description><content:encoded><![CDATA[<h1 id="imprint">Imprint</h1>
 <p>Thilo Molitor</br>
 Vogelsbergstr. 18</br>
 68642 Bürstadt</br>
@@ -4076,8 +4055,7 @@ Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.</
 <h2 id="monal-team">Monal Team</h2>
 <p><strong>Thilo Molitor</strong> - <a href="https://wiki.xmpp.org/web/User:TMolitor">About me on wiki.xmpp.org</a><br>
 <strong>Friedrich Altheide</strong></p>
-]]></item><item><title>Publications</title><link>https://monal-im.github.io/monal-im.org/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/publications/</guid><description>Talks and other documents Molitor, Thilo; Altheide, Friedrich. Modern XMPP - A story based on Monal Berlin XMPP Meetup, 13th April 2022, Recording, Slides Molitor, Thilo; Altheide, Friedrich. Privacy friendly push Berlin XMPP Meetup, 13th April 2022, Recording, Slides (starting after page 29) Molitor, Thilo. XMPP Push notifications on iOS Molitor, Thilo. Monal development recap 2019 - 2021 and open discussion Berlin XMPP Meetup, 13th October 2021, Recording XEP publications XEP-0353: Jingle Message Initiation Authors: Philipp Hancke, Peter Saint-Andre, Thilo Molitor This specification provides a way for the initiator of a Jingle session to propose sending an invitation in an XMPP message stanza, thus taking advantage of message delivery semantics instead of sending IQ stanzas to all of the responder&amp;rsquo;s online resources or choosing a particular online resource.</description>
-<![CDATA[<h2 id="talks-and-other-documents">Talks and other documents</h2>
+]]></content:encoded></item><item><title>Publications</title><link>https://monal-im.github.io/monal-im.org/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/publications/</guid><description>Talks and other documents Molitor, Thilo; Altheide, Friedrich. Modern XMPP - A story based on Monal Berlin XMPP Meetup, 13th April 2022, Recording, Slides Molitor, Thilo; Altheide, Friedrich. Privacy friendly push Berlin XMPP Meetup, 13th April 2022, Recording, Slides (starting after page 29) Molitor, Thilo. XMPP Push notifications on iOS Molitor, Thilo. Monal development recap 2019 - 2021 and open discussion Berlin XMPP Meetup, 13th October 2021, Recording XEP publications XEP-0353: Jingle Message Initiation Authors: Philipp Hancke, Peter Saint-Andre, Thilo Molitor This specification provides a way for the initiator of a Jingle session to propose sending an invitation in an XMPP message stanza, thus taking advantage of message delivery semantics instead of sending IQ stanzas to all of the responder&amp;rsquo;s online resources or choosing a particular online resource.</description><content:encoded><![CDATA[<h2 id="talks-and-other-documents">Talks and other documents</h2>
 <ul>
 <li>Molitor, Thilo; Altheide, Friedrich. <strong>Modern XMPP - A story based on Monal</strong> <em>Berlin XMPP Meetup</em>, 13th April 2022, <a href="https://xmpp-meetup.in-berlin.de/talks/monal-2022.mp4">Recording</a>, <a href="https://xmpp-meetup.in-berlin.de/talks/monal-and-push.pdf">Slides</a></li>
 <li>Molitor, Thilo; Altheide, Friedrich. <strong>Privacy friendly push</strong> <em>Berlin XMPP Meetup</em>, 13th April 2022, <a href="https://xmpp-meetup.in-berlin.de/talks/privacy-friendly-push.mp4">Recording</a>, <a href="https://xmpp-meetup.in-berlin.de/talks/monal-and-push.pdf#Navigation31">Slides</a> (starting after page 29)</li>
@@ -4111,4 +4089,4 @@ Authors: Thilo Molitor
 </blockquote>
 </li>
 </ul>
-]]></item></channel></rss>
+]]></content:encoded></item></channel></rss>

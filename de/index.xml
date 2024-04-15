@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/de/</link><description>Recent content on Monal</description><generator>Hugo -- gohugo.io</generator><language>de</language><atom:link href="https://monal-im.github.io/monal-im.org/de/index.xml" rel="self" type="application/rss+xml"/><item><title>Impressum</title><link>https://monal-im.github.io/monal-im.org/de/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/de/about/</guid><description>Thilo Molitor Vogelsbergstr. 18 68642 Bürstadt Deutschland
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/de/</link><description>Recent content on Monal</description><generator>Hugo -- gohugo.io</generator><language>de</language><atom:link href="https://monal-im.github.io/monal-im.org/de/index.xml" rel="self" type="application/rss+xml"/><item><title>Impressum</title><link>https://monal-im.github.io/monal-im.org/de/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/de/about/</guid><description>Thilo Molitor Vogelsbergstr. 18 68642 Bürstadt Deutschland
 eMail: info[at]monal[minus]im[dot]org
 Haftung für Links: Das Landesgericht Hamburg hat mit dem Urteil 312 O 85/99, vom 12. September 1999 entschieden, dass man durch Anbringung eines Links auf einer Webseite, die Inhalte der verlinkten Webseite ggf. mitzuverantworten hat. Dies kann, so das Landesgericht Hamburg, nur durch eine ausdrückliche Distanzierung von den Inhalten der verlinkten Seiten verhindert werden.
-Wir erklären hiermit ausdrücklich, dass wir keinerlei Haftung für die Inhalte der verlinkten Seiten oder Grafiken übernehmen und uns deren Inhalte keinesfalls zu eigen machen.</description>
-<![CDATA[<p>Thilo Molitor</br>
+Wir erklären hiermit ausdrücklich, dass wir keinerlei Haftung für die Inhalte der verlinkten Seiten oder Grafiken übernehmen und uns deren Inhalte keinesfalls zu eigen machen.</description><content:encoded><![CDATA[<p>Thilo Molitor</br>
 Vogelsbergstr. 18</br>
 68642 Bürstadt</br>
 Deutschland</p>
@@ -10,4 +9,4 @@ Deutschland</p>
 <h2 id="haftung-für-links">Haftung für Links:</h2>
 <p>Das Landesgericht Hamburg hat mit dem Urteil 312 O 85/99, vom 12. September 1999 entschieden, dass man durch Anbringung eines Links auf einer Webseite, die Inhalte der verlinkten Webseite ggf. mitzuverantworten hat. Dies kann, so das Landesgericht Hamburg, nur durch eine ausdrückliche Distanzierung von den Inhalten der verlinkten Seiten verhindert werden.</p>
 <p>Wir erklären hiermit ausdrücklich, dass wir keinerlei Haftung für die Inhalte der verlinkten Seiten oder Grafiken übernehmen und uns deren Inhalte keinesfalls zu eigen machen. Sämtliche Verstöße gegen geltendes Recht, Sitte oder Moral, die uns bekannt werden, haben die sofortige und vollständige Löschung des Links zur Folge.</p>
-]]></item></channel></rss>
+]]></content:encoded></item></channel></rss>
