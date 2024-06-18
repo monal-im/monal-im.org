@@ -1255,10 +1255,10 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0333.html">
-                        XEP-0333: Chat Markers (received markers won&#39;t ever be implemented, use XEP-0184 instead)
+                        XEP-0333: Displayed Markers
                     </a>
                 </td>
-                <td>partial</td>
+                <td>complete</td>
                 <td>4.8</td>
             <tr>
         
@@ -1357,8 +1357,6 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
                 <td>complete</td>
                 <td>4.6</td>
             <tr>
-        
-    
         
     
         
@@ -1594,6 +1592,20 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0158.html">
+                        XEP-0486: MUC Avatars
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0490.html">
@@ -1755,17 +1767,6 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0369.html">
-                        XEP-0369: Mediated Information eXchange (MIX)
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
                     <a href="https://xmpp.org/extensions/xep-0374.html">
                         XEP-0374: OpenPGP for XMPP Instant Messaging
                     </a>
@@ -1843,6 +1844,19 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0158.html">
+                        XEP-0484: Fast Authentication Streamlining Tokens
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
+        
+    
+        
+    
+        
     
 </table>
 
@@ -1857,7 +1871,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
 <ul>
 <li>Donate via <a href="https://github.com/sponsors/tmolitor-stud-tu">GitHub Sponsors</a></li>
 <li>Donate via <a href="https://liberapay.com/tmolitor">Libera Pay</a></li>
-<li>EU citizens can donate via SEPA, too. Just contact Thilo Molitor via mail to <a href="mailto:thilo@monal-im.org">thilo@monal-im.org</a> to get his IBAN.</li>
+<li>EU citizens can donate via SEPA, too. IBAN: DE66 5007 0371 0856 0419 01</li>
 </ul>
 <p>Here you can read about further <a href="https://github.com/monal-im/Monal/issues/363">support of the development</a>!</p>
 <p>Find general information in the <a href="https://github.com/monal-im/Monal/wiki">Monal Wiki</a>.</p>
@@ -2426,10 +2440,10 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0333.html">
-                        XEP-0333: Chat Markers (received markers won&#39;t ever be implemented, use XEP-0184 instead)
+                        XEP-0333: Displayed Markers
                     </a>
                 </td>
-                <td>partial</td>
+                <td>complete</td>
                 <td>4.8</td>
             <tr>
         
@@ -2528,8 +2542,6 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
                 <td>complete</td>
                 <td>4.6</td>
             <tr>
-        
-    
         
     
         
@@ -2765,6 +2777,20 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0158.html">
+                        XEP-0486: MUC Avatars
+                    </a>
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0490.html">
@@ -2926,17 +2952,6 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0369.html">
-                        XEP-0369: Mediated Information eXchange (MIX)
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
                     <a href="https://xmpp.org/extensions/xep-0374.html">
                         XEP-0374: OpenPGP for XMPP Instant Messaging
                     </a>
@@ -3009,6 +3024,19 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
     
         
     
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0158.html">
+                        XEP-0484: Fast Authentication Streamlining Tokens
+                    </a>
+                </td>
+                <td>planned</td>
+            <tr>
         
     
         
