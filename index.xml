@@ -769,7 +769,7 @@ Coming along with this transition from the old developer team to the new one is 
 <p>When I (Thilo) gradually took over development, I was able to build upon an app with a decent codebase rather than writing my own app from scratch. That made it possible to improve Monal further while already being used by thousands of people. I can not stress enough how thankful I was and still am for all the work Anu put into the development of Monal.
 Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and macOS!</p>
 <p>Thilo, Friedrich, Anu</p>
-]]></content:encoded></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/supportedxeps/</guid><description>Implemented XEPs XEP Status Since XEP-0004: Data Forms complete 4.9 XEP-0030: Service Discovery complete 4.6 XEP-0045: Multi-User Chat partial 5.0 XEP-0048: Bookmarks complete 5.0 XEP-0054: vcard-temp (implemented only for MUC profiles) complete XEP-0059: Result Set Management. Used by other XEPs. complete 4.8 XEP-0060: Publish-Subscribe partial 4.9 XEP-0066: Out of Band Data partial 4.9 XEP-0077: In-Band Registration partial XEP-0084: User Avatar complete 4.9 XEP-0085: Chat State Notifications complete 4.7 XEP-0092: Software Version complete XEP-0115: Entity Capabilities complete 4.</description><content:encoded><![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
+]]></content:encoded></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/supportedxeps/</guid><description>Implemented XEPs XEP Status Since Implemented only for MUC profiles complete 5.0 Used mainly for Pep partial 4.9 Used to mark XEP-0363 filetransfers only partial 4.9 Only typing notifications, use XEP-0319 to publish interactions partial 4.7 XEP-0153: vCard-Based Avatars (implemented only for MUC profiles) partial 5.0 XEP-0223: Persistent Storage of Private Data via PubSub complete 4.9 XEP-0249: Direct MUC Invitations complete 5.0 No automatic approval if server does not support subscription pre-approval; No checking of tokens, if server does not do so (XEP-0401) partial 4.</description><content:encoded><![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
 
 
 <table>
@@ -790,57 +790,15 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0004.html">
-                        XEP-0004: Data Forms
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
+    
+        
+    
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0030.html">
-                        XEP-0030: Service Discovery
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
-        
     
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0045.html">
-                        XEP-0045: Multi-User Chat
-                    </a>
-                </td>
-                <td>partial</td>
-                <td>5.0</td>
-            <tr>
-        
-    
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0048.html">
-                        XEP-0048: Bookmarks
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
         
     
         
@@ -849,33 +807,21 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0054.html">
-                        XEP-0054: vcard-temp (implemented only for MUC profiles)
+                        Implemented only for MUC profiles
                     </a>
                 </td>
                 <td>complete</td>
-                <td></td>
+                <td>5.0</td>
             <tr>
         
     
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0059.html">
-                        XEP-0059: Result Set Management. Used by other XEPs.
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
         
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0060.html">
-                        XEP-0060: Publish-Subscribe
+                        Used mainly for Pep
                     </a>
                 </td>
                 <td>partial</td>
@@ -889,7 +835,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0066.html">
-                        XEP-0066: Out of Band Data
+                        Used to mark XEP-0363 filetransfers only
                     </a>
                 </td>
                 <td>partial</td>
@@ -900,65 +846,25 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0077.html">
-                        XEP-0077: In-Band Registration
-                    </a>
-                </td>
-                <td>partial</td>
-                <td></td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0084.html">
-                        XEP-0084: User Avatar
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
         
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0085.html">
-                        XEP-0085: Chat State Notifications
+                        Only typing notifications, use XEP-0319 to publish interactions
                     </a>
                 </td>
-                <td>complete</td>
+                <td>partial</td>
                 <td>4.7</td>
             <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0092.html">
-                        XEP-0092: Software Version
-                    </a>
-                </td>
-                <td>complete</td>
-                <td></td>
-            <tr>
-        
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0115.html">
-                        XEP-0115: Entity Capabilities
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
         
     
         
@@ -968,131 +874,31 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
                         XEP-0153: vCard-Based Avatars (implemented only for MUC profiles)
                     </a>
                 </td>
-                <td>complete</td>
-                <td></td>
-            <tr>
-        
-    
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0162.html">
-                        XEP-0162: Best Practices for Roster and Subscription Management
-                    </a>
-                </td>
-                <td>complete</td>
-                <td></td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0163.html">
-                        XEP-0163: Personal Eventing Protocol
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0167.html">
-                        XEP-0167: Jingle RTP Sessions
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0176.html">
-                        XEP-0176: Jingle ICE-UDP Transport Method
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0172.html">
-                        XEP-0172: User Nickname
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0184.html">
-                        XEP-0184: Message Receipts
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0191.html">
-                        XEP-0191: Blocking Command
-                    </a>
-                </td>
-                <td>complete</td>
+                <td>partial</td>
                 <td>5.0</td>
             <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0198.html">
-                        XEP-0198: Stream Management
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0199.html">
-                        XEP-0199: XMPP Ping
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0215.html">
-                        XEP-0215: External Service Discovery
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
         
     
         
@@ -1110,27 +916,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0237.html">
-                        XEP-0237: Roster Versioning
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0245.html">
-                        XEP-0245: The /me Command
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
         
     
         
@@ -1150,219 +936,39 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0280.html">
-                        XEP-0280: Message Carbons
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.5</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0286.html">
-                        XEP-0286: Mobile Considerations on LTE Networks
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0293.html">
-                        XEP-0293: Jingle RTP Feedback Negotiation
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0294.html">
-                        XEP-0294: Jingle RTP Header Extensions Negotiation
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0305.html">
-                        XEP-0305: XMPP Quickstart
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.1.1</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0308.html">
-                        XEP-0308: Last Message Correction
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0313.html">
-                        XEP-0313: Message Archive Management
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0319.html">
-                        XEP-0319: Last User Interaction in Presence
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0320.html">
-                        XEP-0320: Use of DTLS-SRTP in Jingle Sessions
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0333.html">
-                        XEP-0333: Displayed Markers
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0338.html">
-                        XEP-0338: Jingle Grouping Framework
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0339.html">
-                        XEP-0339: Source-Specific Media Attributes in Jingle
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0352.html">
-                        XEP-0352: Client State Indication
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0353.html">
-                        XEP-0353: Jingle Message Initiation
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0357.html">
-                        XEP-0357: Push Notifications
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0359.html">
-                        XEP-0359: Unique and Stable Stanza IDs
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0363.html">
-                        XEP-0363: HTTP File Upload
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0368.html">
-                        XEP-0368: SRV records for XMPP over TLS
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
         
     
         
@@ -1373,7 +979,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0379.html">
-                        XEP-0379: Pre-Authenticated Roster Subscription
+                        No automatic approval if server does not support subscription pre-approval; No checking of tokens, if server does not do so (XEP-0401)
                     </a>
                 </td>
                 <td>partial</td>
@@ -1382,55 +988,13 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0380.html">
-                        XEP-0380: Explicit Message Encryption
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.1</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0384.html">
-                        XEP-0384: OMEMO Encryption
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0388.html">
-                        XEP-0388: Extensible SASL Profile
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
     
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0392.html">
-                        XEP-0392: Consistent Color Generation
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.1</td>
-            <tr>
         
     
         
@@ -1441,19 +1005,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0398.html">
-                        XEP-0398: User Avatar to vCard-Based Avatars Conversion
-                    </a>
-                </td>
-                <td>complete</td>
-                <td></td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0401.html">
-                        XEP-0401: Ad-hoc Account Invitation Generation
+                        Used for MUC avatars
                     </a>
                 </td>
                 <td>complete</td>
@@ -1462,29 +1014,9 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0402.html">
-                        XEP-0402: PEP Native Bookmarks
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.4</td>
-            <tr>
-        
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0410.html">
-                        XEP-0410: MUC Self-Ping (Schrödinger&#39;s Chat)
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
         
     
         
@@ -1493,7 +1025,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0423.html">
-                        XEP-0423 XMPP Compliance Suites 2020
+                        Check this XEP to see what&#39;s missing
                     </a>
                 </td>
                 <td>partial</td>
@@ -1502,46 +1034,16 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0424.html">
-                        XEP-0424: Message Retraction
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.3</td>
-            <tr>
-        
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0425.html">
-                        XEP-0425: Moderated Message Retraction
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.3</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0440.html">
-                        XEP-0440: SASL Channel-Binding Type Capability
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
         
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0441.html">
-                        XEP-0441: Message Archive Management Preferences
+                        Only to automatically turn on archiving if possible (setting: always)
                     </a>
                 </td>
                 <td>complete</td>
@@ -1550,22 +1052,12 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0445.html">
-                        XEP-0445: Pre-Authenticated In-Band Registration
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.2</td>
-            <tr>
-        
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0454.html">
-                        XEP-0454: OMEMO Media sharing
+                        No support for embedded thumbnails
                     </a>
                 </td>
                 <td>partial</td>
@@ -1574,53 +1066,13 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0474.html">
-                        XEP-0474: SASL SCRAM Downgrade Protection
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0480.html">
-                        XEP-0480: SASL Upgrade Tasks
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0158.html">
-                        XEP-0486: MUC Avatars
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0490.html">
-                        XEP-0490: Message Displayed Synchronization
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.3</td>
-            <tr>
         
     
 </table>
@@ -1690,15 +1142,6 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0158.html">
-                        XEP-0158: CAPTCHA Forms
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
-        
     
         
     
@@ -1766,19 +1209,6 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
     
         
     
-        
-    
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0374.html">
-                        XEP-0374: OpenPGP for XMPP Instant Messaging
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
         
     
         
@@ -1821,15 +1251,6 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0420.html">
-                        XEP-0420: Stanza Content Encryption
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
-        
     
         
     
@@ -1845,19 +1266,6 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
     
         
     
-        
-    
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0158.html">
-                        XEP-0484: Fast Authentication Streamlining Tokens
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
         
     
         
@@ -1884,6 +1292,8 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
 <h2 id="translations">Translations</h2>
 <p>We host and manage translations via <a href="https://hosted.weblate.org/engage/monal/">Weblate</a>.
 Feel free to translate Monal to your language!</p>
+<p><a href="https://hosted.weblate.org/engage/monal/?utm_source=widget"><img loading="lazy" src="https://hosted.weblate.org/widgets/monal/-/multi-auto.svg" alt="Detailed translation status"  />
+</a></p>
 <h2 id="reporting-a-vulnerability">Reporting a Vulnerability</h2>
 <p>It is highly appreciated reporting a vulnerability to the Monal developers.
 We ask you for disclosure until it has been fixed.
@@ -1975,57 +1385,15 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0004.html">
-                        XEP-0004: Data Forms
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
+    
+        
+    
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0030.html">
-                        XEP-0030: Service Discovery
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
-        
     
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0045.html">
-                        XEP-0045: Multi-User Chat
-                    </a>
-                </td>
-                <td>partial</td>
-                <td>5.0</td>
-            <tr>
-        
-    
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0048.html">
-                        XEP-0048: Bookmarks
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
         
     
         
@@ -2034,33 +1402,21 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0054.html">
-                        XEP-0054: vcard-temp (implemented only for MUC profiles)
+                        Implemented only for MUC profiles
                     </a>
                 </td>
                 <td>complete</td>
-                <td></td>
+                <td>5.0</td>
             <tr>
         
     
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0059.html">
-                        XEP-0059: Result Set Management. Used by other XEPs.
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
         
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0060.html">
-                        XEP-0060: Publish-Subscribe
+                        Used mainly for Pep
                     </a>
                 </td>
                 <td>partial</td>
@@ -2074,7 +1430,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0066.html">
-                        XEP-0066: Out of Band Data
+                        Used to mark XEP-0363 filetransfers only
                     </a>
                 </td>
                 <td>partial</td>
@@ -2085,65 +1441,25 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0077.html">
-                        XEP-0077: In-Band Registration
-                    </a>
-                </td>
-                <td>partial</td>
-                <td></td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0084.html">
-                        XEP-0084: User Avatar
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
         
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0085.html">
-                        XEP-0085: Chat State Notifications
+                        Only typing notifications, use XEP-0319 to publish interactions
                     </a>
                 </td>
-                <td>complete</td>
+                <td>partial</td>
                 <td>4.7</td>
             <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0092.html">
-                        XEP-0092: Software Version
-                    </a>
-                </td>
-                <td>complete</td>
-                <td></td>
-            <tr>
-        
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0115.html">
-                        XEP-0115: Entity Capabilities
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
         
     
         
@@ -2153,131 +1469,31 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
                         XEP-0153: vCard-Based Avatars (implemented only for MUC profiles)
                     </a>
                 </td>
-                <td>complete</td>
-                <td></td>
-            <tr>
-        
-    
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0162.html">
-                        XEP-0162: Best Practices for Roster and Subscription Management
-                    </a>
-                </td>
-                <td>complete</td>
-                <td></td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0163.html">
-                        XEP-0163: Personal Eventing Protocol
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0167.html">
-                        XEP-0167: Jingle RTP Sessions
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0176.html">
-                        XEP-0176: Jingle ICE-UDP Transport Method
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0172.html">
-                        XEP-0172: User Nickname
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0184.html">
-                        XEP-0184: Message Receipts
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0191.html">
-                        XEP-0191: Blocking Command
-                    </a>
-                </td>
-                <td>complete</td>
+                <td>partial</td>
                 <td>5.0</td>
             <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0198.html">
-                        XEP-0198: Stream Management
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0199.html">
-                        XEP-0199: XMPP Ping
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0215.html">
-                        XEP-0215: External Service Discovery
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
         
     
         
@@ -2295,27 +1511,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0237.html">
-                        XEP-0237: Roster Versioning
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0245.html">
-                        XEP-0245: The /me Command
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
         
     
         
@@ -2335,219 +1531,39 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0280.html">
-                        XEP-0280: Message Carbons
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.5</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0286.html">
-                        XEP-0286: Mobile Considerations on LTE Networks
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0293.html">
-                        XEP-0293: Jingle RTP Feedback Negotiation
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0294.html">
-                        XEP-0294: Jingle RTP Header Extensions Negotiation
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0305.html">
-                        XEP-0305: XMPP Quickstart
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.1.1</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0308.html">
-                        XEP-0308: Last Message Correction
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0313.html">
-                        XEP-0313: Message Archive Management
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0319.html">
-                        XEP-0319: Last User Interaction in Presence
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0320.html">
-                        XEP-0320: Use of DTLS-SRTP in Jingle Sessions
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0333.html">
-                        XEP-0333: Displayed Markers
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0338.html">
-                        XEP-0338: Jingle Grouping Framework
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0339.html">
-                        XEP-0339: Source-Specific Media Attributes in Jingle
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0352.html">
-                        XEP-0352: Client State Indication
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0353.html">
-                        XEP-0353: Jingle Message Initiation
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0357.html">
-                        XEP-0357: Push Notifications
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0359.html">
-                        XEP-0359: Unique and Stable Stanza IDs
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0363.html">
-                        XEP-0363: HTTP File Upload
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0368.html">
-                        XEP-0368: SRV records for XMPP over TLS
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
         
     
         
@@ -2558,7 +1574,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0379.html">
-                        XEP-0379: Pre-Authenticated Roster Subscription
+                        No automatic approval if server does not support subscription pre-approval; No checking of tokens, if server does not do so (XEP-0401)
                     </a>
                 </td>
                 <td>partial</td>
@@ -2567,55 +1583,13 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0380.html">
-                        XEP-0380: Explicit Message Encryption
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.1</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0384.html">
-                        XEP-0384: OMEMO Encryption
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0388.html">
-                        XEP-0388: Extensible SASL Profile
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
     
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0392.html">
-                        XEP-0392: Consistent Color Generation
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.1</td>
-            <tr>
         
     
         
@@ -2626,19 +1600,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0398.html">
-                        XEP-0398: User Avatar to vCard-Based Avatars Conversion
-                    </a>
-                </td>
-                <td>complete</td>
-                <td></td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0401.html">
-                        XEP-0401: Ad-hoc Account Invitation Generation
+                        Used for MUC avatars
                     </a>
                 </td>
                 <td>complete</td>
@@ -2647,29 +1609,9 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0402.html">
-                        XEP-0402: PEP Native Bookmarks
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.4</td>
-            <tr>
-        
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0410.html">
-                        XEP-0410: MUC Self-Ping (Schrödinger&#39;s Chat)
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
         
     
         
@@ -2678,7 +1620,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0423.html">
-                        XEP-0423 XMPP Compliance Suites 2020
+                        Check this XEP to see what&#39;s missing
                     </a>
                 </td>
                 <td>partial</td>
@@ -2687,46 +1629,16 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0424.html">
-                        XEP-0424: Message Retraction
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.3</td>
-            <tr>
-        
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0425.html">
-                        XEP-0425: Moderated Message Retraction
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.3</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0440.html">
-                        XEP-0440: SASL Channel-Binding Type Capability
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
         
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0441.html">
-                        XEP-0441: Message Archive Management Preferences
+                        Only to automatically turn on archiving if possible (setting: always)
                     </a>
                 </td>
                 <td>complete</td>
@@ -2735,22 +1647,12 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0445.html">
-                        XEP-0445: Pre-Authenticated In-Band Registration
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.2</td>
-            <tr>
-        
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0454.html">
-                        XEP-0454: OMEMO Media sharing
+                        No support for embedded thumbnails
                     </a>
                 </td>
                 <td>partial</td>
@@ -2759,53 +1661,13 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0474.html">
-                        XEP-0474: SASL SCRAM Downgrade Protection
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0480.html">
-                        XEP-0480: SASL Upgrade Tasks
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0158.html">
-                        XEP-0486: MUC Avatars
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0490.html">
-                        XEP-0490: Message Displayed Synchronization
-                    </a>
-                </td>
-                <td>complete</td>
-                <td>6.3</td>
-            <tr>
         
     
 </table>
@@ -2875,15 +1737,6 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0158.html">
-                        XEP-0158: CAPTCHA Forms
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
-        
     
         
     
@@ -2951,19 +1804,6 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
     
         
     
-        
-    
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0374.html">
-                        XEP-0374: OpenPGP for XMPP Instant Messaging
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
         
     
         
@@ -3006,15 +1846,6 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0420.html">
-                        XEP-0420: Stanza Content Encryption
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
-        
     
         
     
@@ -3030,19 +1861,6 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
     
         
     
-        
-    
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0158.html">
-                        XEP-0484: Fast Authentication Streamlining Tokens
-                    </a>
-                </td>
-                <td>planned</td>
-            <tr>
         
     
         
