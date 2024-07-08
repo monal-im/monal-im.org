@@ -27,6 +27,8 @@ Find general information in the [Monal Wiki](https://github.com/monal-im/Monal/w
 We host and manage translations via [Weblate](https://hosted.weblate.org/engage/monal/).
 Feel free to translate Monal to your language!
 
+[![Detailed translation status](https://hosted.weblate.org/widgets/monal/-/multi-auto.svg)](https://hosted.weblate.org/engage/monal/?utm_source=widget)
+
 ## Reporting a Vulnerability
 
 It is highly appreciated reporting a vulnerability to the Monal developers.
