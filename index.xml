@@ -1292,8 +1292,9 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
 <h2 id="translations">Translations</h2>
 <p>We host and manage translations via <a href="https://hosted.weblate.org/engage/monal/">Weblate</a>.
 Feel free to translate Monal to your language!</p>
-<p>{{ $image := resources.GetRemote &ldquo;<a href="https://hosted.weblate.org/widgets/monal/-/multi-auto.svg)](https://hosted.weblate.org/engage/monal/?utm_source=widget\"">https://hosted.weblate.org/widgets/monal/-/multi-auto.svg)](https://hosted.weblate.org/engage/monal/?utm_source=widget"</a> }}
-[![Detailed translation status]({{ $image.RelPermalink }})</p>
+<p>{{ with .Resources.GetMatch &ldquo;weblate.svg&rdquo; }}
+<a href="https://hosted.weblate.org/engage/monal/?utm_source=widget"><img src="{{ .RelPermalink }}"></a>
+{{ end }}</p>
 <h2 id="reporting-a-vulnerability">Reporting a Vulnerability</h2>
 <p>It is highly appreciated reporting a vulnerability to the Monal developers.
 We ask you for disclosure until it has been fixed.
