@@ -1,6 +1,10 @@
 ---
 title: "Support"
 date: 2022-03-12T10:01:54+01:00
+resources:
+- src: "https://hosted.weblate.org/widgets/monal/-/multi-auto.svg"
+  name: "weblate.svg"
+  title: "Detailed translation status"
 
 tags: []
 author: "Monal"
@@ -27,7 +31,7 @@ Find general information in the [Monal Wiki](https://github.com/monal-im/Monal/w
 We host and manage translations via [Weblate](https://hosted.weblate.org/engage/monal/).
 Feel free to translate Monal to your language!
 
-[![Detailed translation status](https://hosted.weblate.org/widgets/monal/-/multi-auto.svg)](https://hosted.weblate.org/engage/monal/?utm_source=widget)
+<a href="https://hosted.weblate.org/engage/monal/?utm_source=widget">{{< remoteImage "weblate.svg" >}}</a>
 
 ## Reporting a Vulnerability
 
