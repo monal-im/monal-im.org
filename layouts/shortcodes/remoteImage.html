@@ -1,0 +1,9 @@
+{{ if .IsNamedParams }}
+  {{ $image := $.Page.Resources.GetMatch (.Get "name") }}
+  {{ $title := cond (not (.Get "title")) $image.title (.Get "title") }}
+  <img src="{{ $image.RelPermalink }}" title="{{ $title | safeHTML }}">
+{{ else }}
+  {{ $image := $.Page.Resources.GetMatch (.Get 0) }}
+  {{ $title := cond (not (.Get 1)) $image.title (.Get 1) }}
+  <img src="{{ $image.RelPermalink }}" title="{{ $title | safeHTML }}">
+{{ end }}
