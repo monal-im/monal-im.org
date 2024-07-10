@@ -1,9 +1,14 @@
-{{ if .IsNamedParams }}
-  {{ $image := $.Page.Resources.GetMatch (.Get "name") }}
-  {{ $title := cond (not (.Get "title")) $image.title (.Get "title") }}
-  <img src="{{ $image.RelPermalink }}" title="{{ $title | safeHTML }}">
-{{ else }}
-  {{ $image := $.Page.Resources.GetMatch (.Get 0) }}
-  {{ $title := cond (not (.Get 1)) $image.title (.Get 1) }}
-  <img src="{{ $image.RelPermalink }}" title="{{ $title | safeHTML }}">
+{{ $paramName := .Get 0 }}                                                                  <!-- Get the shortcode argument -->
+{{ $paramValue := index .Site.Params $paramName }}                                          <!-- Get the parameter value from the config file -->
+
+{{ if $paramValue }}                                                                        <!-- If the parameter value exists -->
+  {{ $image := resources.GetRemote $paramValue }}                                           <!-- Fetch the image from the $Params link -->
+  {{ $alt := .Get "alt" }}                                                                  <!-- Get the alt text from the shortcode parameters -->
+  {{ $title := cond (not (.Get "title")) $alt (.Get "title") }}                             <!-- Set the title to alt text if title is not provided -->
+  <img src="{{ $image.RelPermalink | absURL | safeURL }}" title="{{ $title | safeHTML }}">  <!-- Display the image -->
+{{ else }}                                                                                  <!-- If the parameter value does not exist -->
+  {{ $image := resources.GetRemote (.Get 0) }}                                              <!-- Fetch the image from the remote source via link -->
+  {{ $alt := .Get "alt" }}                                                                  <!-- Get the alt text from the shortcode parameters -->
+  {{ $title := cond (not (.Get "title")) $alt (.Get "title") }}                             <!-- Set the title to alt text if title is not provided -->
+  <img src="{{ $image.RelPermalink | absURL | safeURL }}" title="{{ $title | safeHTML }}">  <!-- Display the image -->
 {{ end }}
