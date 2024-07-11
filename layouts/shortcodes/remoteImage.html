@@ -1,14 +1,12 @@
-{{ $paramName := .Get 0 }}                                                                  <!-- Get the shortcode argument -->
-{{ $paramValue := index .Site.Params $paramName }}                                          <!-- Get the parameter value from the config file -->
+{{ $paramValue := index .Page.Params (.Get 0) }}                                                <!-- Retrieve the parameter value -->
 
-{{ if $paramValue }}                                                                        <!-- If the parameter value exists -->
-  {{ $image := resources.GetRemote $paramValue }}                                           <!-- Fetch the image from the $Params link -->
-  {{ $alt := .Get "alt" }}                                                                  <!-- Get the alt text from the shortcode parameters -->
-  {{ $title := cond (not (.Get "title")) $alt (.Get "title") }}                             <!-- Set the title to alt text if title is not provided -->
-  <img src="{{ $image.RelPermalink | absURL | safeURL }}" title="{{ $title | safeHTML }}">  <!-- Display the image -->
-{{ else }}                                                                                  <!-- If the parameter value does not exist -->
-  {{ $image := resources.GetRemote (.Get 0) }}                                              <!-- Fetch the image from the remote source via link -->
-  {{ $alt := .Get "alt" }}                                                                  <!-- Get the alt text from the shortcode parameters -->
-  {{ $title := cond (not (.Get "title")) $alt (.Get "title") }}                             <!-- Set the title to alt text if title is not provided -->
-  <img src="{{ $image.RelPermalink | absURL | safeURL }}" title="{{ $title | safeHTML }}">  <!-- Display the image -->
+{{ if $paramValue }}
+  {{ $image := resources.GetRemote $paramValue.img_url }}                                       <!-- Get the remote image using the URL from the parameter value -->
+  {{ $imgTitle := cond (not $paramValue.img_title) (.Get "title")  $paramValue.img_title }}     <!-- Get the image title from the parameter value -->
+  <img src="{{ $image.RelPermalink | absURL | safeURL }}" title="{{ $imgTitle | safeHTML }}">   <!-- Serve the image with the title -->
+{{ else }}
+  {{ $image := resources.GetRemote (.Get 0) }}                                                  <!-- Get the remote image using the first argument passed to the shortcode -->
+  {{ $alt := .Get "alt" }}                                                                      <!-- Get the alt text from the shortcode arguments -->
+  {{ $imgTitle := cond (not ($alt)) (.Get "title")  $alt }}                                     <!-- Set the title to the argument title if it exists, otherwise use the alt text -->
+  <img src="{{ $image.RelPermalink | absURL | safeURL }}" title="{{ $imgTitle | safeHTML }}">   <!-- Output the image with the appropriate title -->
 {{ end }}

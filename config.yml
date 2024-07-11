@@ -27,7 +27,6 @@ params:
     comments: false
     hidemeta: false
     searchHidden: false
-    weblate.svg: "https://hosted.weblate.org/widgets/monal/-/multi-auto.svg"
     defaultTheme: auto
     DateFormat: "02.01.2006"
     disableThemeToggle: false
