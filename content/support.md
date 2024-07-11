@@ -1,11 +1,10 @@
 ---
 title: "Support"
 date: 2022-03-12T10:01:54+01:00
-resources:
-- src: "https://hosted.weblate.org/widgets/monal/-/multi-auto.svg"
-  name: "weblate.svg"
-  title: "Detailed translation status"
-
+params:
+  weblate.svg:
+    img_url: "https://hosted.weblate.org/widgets/monal/-/multi-auto.svg"
+    img_title: "Detailed translation status"
 tags: []
 author: "Monal"
 ---
