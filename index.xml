@@ -1292,14 +1292,12 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
 <h2 id="translations">Translations</h2>
 <p>We host and manage translations via <a href="https://hosted.weblate.org/engage/monal/">Weblate</a>.
 Feel free to translate Monal to your language!</p>
-<p><a href="https://hosted.weblate.org/engage/monal/?utm_source=widget">                                                                  
-                                          
+<p><a href="https://hosted.weblate.org/engage/monal/?utm_source=widget">                                                
 
-                                                                        
-                                             
-                                                                    
-                               
-  <img src="https://monal-im.github.io/monal-im.org/multi-auto_18094160984556133628.svg" title="">  
+
+                                         
+       
+  <img src="https://monal-im.github.io/monal-im.org/multi-auto_18094160984556133628.svg" title="Detailed translation status">   
 </a></p>
 <h2 id="reporting-a-vulnerability">Reporting a Vulnerability</h2>
 <p>It is highly appreciated reporting a vulnerability to the Monal developers.
