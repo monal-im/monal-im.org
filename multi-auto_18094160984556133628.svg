@@ -44,11 +44,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="35"
-   id="percent35">98%</text>
+   id="percent35">97%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect35"
-   width="147"
+   width="145"
    height="6"
    x="200"
    rx="2"
@@ -67,11 +67,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="50"
-   id="percent50">100%</text>
+   id="percent50">96%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect50"
-   width="150"
+   width="144"
    height="6"
    x="200"
    rx="2"
@@ -90,11 +90,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="65"
-   id="percent65">28%</text>
+   id="percent65">27%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect65"
-   width="42"
+   width="40"
    height="6"
    x="200"
    rx="2"
@@ -117,7 +117,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect80"
-   width="13"
+   width="12"
    height="6"
    x="200"
    rx="2"
@@ -136,11 +136,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="95"
-   id="percent95">41%</text>
+   id="percent95">40%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect95"
-   width="62"
+   width="60"
    height="6"
    x="200"
    rx="2"
@@ -182,11 +182,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="125"
-   id="percent125">54%</text>
+   id="percent125">52%</text>
 <rect
    style="fill:#38f;fill-opacity:1;stroke:none"
    id="rect125"
-   width="81"
+   width="78"
    height="6"
    x="200"
    rx="2"
@@ -251,11 +251,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="170"
-   id="percent170">97%</text>
+   id="percent170">93%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect170"
-   width="146"
+   width="139"
    height="6"
    x="200"
    rx="2"
@@ -297,11 +297,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="200"
-   id="percent200">20%</text>
+   id="percent200">19%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect200"
-   width="30"
+   width="28"
    height="6"
    x="200"
    rx="2"
@@ -370,7 +370,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect245"
-   width="28"
+   width="27"
    height="6"
    x="200"
    rx="2"
@@ -389,11 +389,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="260"
-   id="percent260">98%</text>
+   id="percent260">93%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect260"
-   width="147"
+   width="140"
    height="6"
    x="200"
    rx="2"
@@ -412,11 +412,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="275"
-   id="percent275">71%</text>
+   id="percent275">67%</text>
 <rect
    style="fill:#38f;fill-opacity:1;stroke:none"
    id="rect275"
-   width="106"
+   width="101"
    height="6"
    x="200"
    rx="2"
@@ -481,11 +481,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="320"
-   id="percent320">26%</text>
+   id="percent320">25%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect320"
-   width="40"
+   width="38"
    height="6"
    x="200"
    rx="2"
@@ -527,11 +527,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="350"
-   id="percent350">69%</text>
+   id="percent350">66%</text>
 <rect
    style="fill:#38f;fill-opacity:1;stroke:none"
    id="rect350"
-   width="103"
+   width="99"
    height="6"
    x="200"
    rx="2"
@@ -619,11 +619,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="410"
-   id="percent410">43%</text>
+   id="percent410">42%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect410"
-   width="65"
+   width="63"
    height="6"
    x="200"
    rx="2"
@@ -642,11 +642,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="425"
-   id="percent425">98%</text>
+   id="percent425">93%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect425"
-   width="147"
+   width="140"
    height="6"
    x="200"
    rx="2"
@@ -665,11 +665,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="440"
-   id="percent440">100%</text>
+   id="percent440">99%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect440"
-   width="150"
+   width="149"
    height="6"
    x="200"
    rx="2"
@@ -688,11 +688,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="455"
-   id="percent455">98%</text>
+   id="percent455">96%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect455"
-   width="147"
+   width="144"
    height="6"
    x="200"
    rx="2"
@@ -711,11 +711,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="470"
-   id="percent470">98%</text>
+   id="percent470">96%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect470"
-   width="147"
+   width="144"
    height="6"
    x="200"
    rx="2"
@@ -738,7 +738,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect485"
-   width="10"
+   width="9"
    height="6"
    x="200"
    rx="2"
@@ -803,11 +803,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="360"
    y="530"
-   id="percent530">70%</text>
+   id="percent530">67%</text>
 <rect
    style="fill:#38f;fill-opacity:1;stroke:none"
    id="rect530"
-   width="105"
+   width="101"
    height="6"
    x="200"
    rx="2"

@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Monal</title><link>https://monal-im.github.io/monal-im.org/post/</link><description>Recent content in Posts on Monal</description><generator>Hugo -- 0.129.0</generator><language>en</language><lastBuildDate>Tue, 18 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/post/index.xml" rel="self" type="application/rss+xml"/><item><title>New fundraising campaign</title><link>https://monal-im.github.io/monal-im.org/post/00012-funding-iphone13/</link><pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00012-funding-iphone13/</guid><description>Our current development iPhone 8, which we bought in 2020, is getting on in years, is not able to run iOS 17 and the battery is broken.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Monal</title><link>https://monal-im.github.io/monal-im.org/post/</link><description>Recent content in Posts on Monal</description><generator>Hugo -- 0.129.0</generator><language>en</language><lastBuildDate>Mon, 22 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/post/index.xml" rel="self" type="application/rss+xml"/><item><title>New NLNet Funding</title><link>https://monal-im.github.io/monal-im.org/post/00013-nlnet-funding2/</link><pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00013-nlnet-funding2/</guid><description>We are pleased to announce that we got selected in another funding round by the EU’s NGI via the NLnet Foundation NGI0 Entrust Fund to work on some important features in Monal.
+In short this consists of the following tasks (in no special order).
+Implement Dialpad: Add Dialpad to our Call-UI and backend code to be able to send DTMF tones in A/V calls. This will make Monal fully compatible with jmp.</description><content:encoded><![CDATA[<p>We are pleased to announce that we <a href="https://nlnet.nl/project/Monal-IM-UI/">got selected in another funding round</a> by the <a href="https://ngi.eu/">EU’s NGI</a> via the <a href="https://nlnet.nl/entrust">NLnet Foundation NGI0 Entrust Fund</a> to work on some important features in Monal.</p>
+<p>In short this consists of the following tasks (in no special order).</p>
+<ul>
+<li><strong>Implement Dialpad:</strong>
+Add Dialpad to our Call-UI and backend code to be able to send DTMF tones in A/V calls. This will
+make Monal fully compatible with jmp.chat, like Snikket is already.</li>
+<li><strong>Rewrite Chat UI:</strong>
+Our current chat UI is still UIKit-based and it&rsquo;s hard to improve it or fix some UI glitches. We want
+to rewrite and modernize the whole chat UI using SwiftUI. This will not only simplify maintenance a
+lot and allow us to fix these UI glitches, but also enable us to implement modern XMPP features
+like message reactions, message styling, message replies or mentions (see Appendix I for a full list
+of XEPs).</li>
+<li><strong>UI work: Implement Message Reactions, Rich Replies and Stickers:</strong>
+Implement UI and backend for message reactions (XEP-0444), rich replies (XEP-0461) and
+Stickers, once the chat UI is ported to SwiftUI</li>
+<li><strong>XSF work:</strong>
+After having successfully worked on the SASL2 XEP-suite, I want to modernize XEP-0389: Extensible In-Band Registration to also send only password hashes
+instead of cleartext passwords (similar to password upgrades specced in XEP-0480: SASL Upgrade Tasks)</li>
+<li><strong>Write documentation of Monal internals:</strong>
+After having started to publish a blog series and wiki articles about Monal&rsquo;s internals (beginning
+with the Handlers Framework), I want to publish blog and wiki articles on our XML query-language
+(intentionally based on the XPath-like syntax of Prosody&rsquo;s query language), the PubSub/PEP
+framework, Model-Classes used as data sources for our UI (MLContact, MLMessage etc.) and
+possibly more.</li>
+</ul>
+<p><strong>Thanks again to NLNet for fund this!</strong></p>
+]]></content:encoded></item><item><title>New fundraising campaign</title><link>https://monal-im.github.io/monal-im.org/post/00012-funding-iphone13/</link><pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/post/00012-funding-iphone13/</guid><description>Our current development iPhone 8, which we bought in 2020, is getting on in years, is not able to run iOS 17 and the battery is broken.
 So it&amp;rsquo;s that time again: we are launching a new fundraising campaign for 350 EUR to finance a new development iPhone capable of running iOS 17 and several upcoming iOS versions. Currently we are aiming for an iPhone 13.
 You can view our donation options over here: Donate</description><content:encoded><![CDATA[<p>Our current development iPhone 8, which we bought in 2020, is getting on in years, is not able to run iOS 17 and the battery is broken.</p>
 <p>So it&rsquo;s that time again: we are launching a new fundraising campaign for <strong>350 EUR</strong> to finance a new development iPhone capable of running iOS 17 and several upcoming iOS versions.
