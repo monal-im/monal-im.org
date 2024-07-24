@@ -12,7 +12,7 @@ For local rendering;
 4. Open the shown link
 
 Pre-rendered preview of staging branch ;
-* [https://monal-im.github.io/monal-im.org/](https://monal-im.github.io/monal-im.org/)
+* [https://monal-im.github.io/monal-im.org/site/](https://monal-im.github.io/monal-im.org/site/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

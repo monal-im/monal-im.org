@@ -1,4 +1,4 @@
-name: Test site build
+name: Build site
 
 # Controls when the workflow will run
 on:
@@ -25,4 +25,19 @@ jobs:
           extended: true
           
       - name: Build site
-        run: hugo --minify --baseURL https://monal-im.github.io/monal-im.org/
+        run: hugo --enableGitInfo --minify --gc --logLevel info --baseURL https://monal-im.org/
+      
+      - name: Publish to github pages
+        run: |
+          tar \
+            --dereference --hard-dereference \
+            --directory "public" \
+            -cvf "$RUNNER_TEMP/master_public.tar" \
+            --exclude=.git \
+            --exclude=.github \
+          git reset --hard
+          git checkout gh-pages
+          cp "$RUNNER_TEMP/master_public.tar" "master_public.tar"
+          git add -u
+          git commit -m "Add new master_public.tar"
+          git push
