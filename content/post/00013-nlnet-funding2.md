@@ -17,8 +17,7 @@ make Monal fully compatible with jmp.chat, like Snikket is already.
 Our current chat UI is still UIKit-based and it's hard to improve it or fix some UI glitches. We want
 to rewrite and modernize the whole chat UI using SwiftUI. This will not only simplify maintenance a
 lot and allow us to fix these UI glitches, but also enable us to implement modern XMPP features
-like message reactions, message styling, message replies or mentions (see Appendix I for a full list
-of XEPs).
+like message reactions, message styling, message replies or mentions.
 - **UI work: Implement Message Reactions, Rich Replies and Stickers:**
 Implement UI and backend for message reactions (XEP-0444), rich replies (XEP-0461) and
 Stickers, once the chat UI is ported to SwiftUI
