@@ -35,6 +35,7 @@ jobs:
             -cvf "$RUNNER_TEMP/master_public.tar" \
             --exclude=.git \
             --exclude=.github \
+            .
           git reset --hard
           git checkout gh-pages
           cp "$RUNNER_TEMP/master_public.tar" "master_public.tar"
