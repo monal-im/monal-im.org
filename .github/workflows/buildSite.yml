@@ -43,6 +43,6 @@ jobs:
           git reset --hard
           git checkout gh-pages
           cp "$RUNNER_TEMP/master_public.tar" "master_public.tar"
-          git add -u
+          git add master_public.tar
           git commit -m "Add new master_public.tar"
           git push
