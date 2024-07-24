@@ -27,7 +27,7 @@ jobs:
       - name: Build site
         run: hugo --enableGitInfo --minify --gc --logLevel info --baseURL https://monal-im.org/
       
-      - name: Publish to github pages
+      - name: Create tar archive
         run: |
           tar \
             --dereference --hard-dereference \
@@ -36,6 +36,10 @@ jobs:
             --exclude=.git \
             --exclude=.github \
             .
+      - name: Upload tar archive to github pages
+        run: |
+          git config --local user.email "pushBot@monal-im.org"
+          git config --local user.name "Monal-IM-Push[BOT]"
           git reset --hard
           git checkout gh-pages
           cp "$RUNNER_TEMP/master_public.tar" "master_public.tar"
