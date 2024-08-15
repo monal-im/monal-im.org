@@ -796,7 +796,7 @@ Coming along with this transition from the old developer team to the new one is 
 <p>When I (Thilo) gradually took over development, I was able to build upon an app with a decent codebase rather than writing my own app from scratch. That made it possible to improve Monal further while already being used by thousands of people. I can not stress enough how thankful I was and still am for all the work Anu put into the development of Monal.
 Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and macOS!</p>
 <p>Thilo, Friedrich, Anu</p>
-]]></content:encoded></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/site/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/supportedxeps/</guid><description>Implemented XEPs XEP Status Since . . . . xep-0004 complete 4.9 xep-0030 complete 4.6 xep-0045 partial 5.0 xep-0048 complete 5.0 xep-0054 Implemented only for MUC profiles complete 5.0 xep-0059 complete 4.8 xep-0060 Used mainly for Pep partial 4.9 xep-0066 Used to mark XEP-0363 filetransfers only partial 4.9 xep-0077 partial 4.7 xep-0084 complete 4.9 xep-0085 Only typing notifications, use XEP-0319 to publish interactions partial 4.7 xep-0092 complete 5.0 xep-0115 complete 4.</description><content:encoded><![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
+]]></content:encoded></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/site/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/supportedxeps/</guid><description>Implemented XEPs XEP Status Since xep-0004.html complete 4.9 xep-0030.html complete 4.6 xep-0045.html partial 5.0 xep-0048.html complete 5.0 xep-0054.html Implemented only for MUC profiles complete 5.0 xep-0059.html complete 4.8 xep-0060.html Used mainly for Pep partial 4.9 xep-0066.html Used to mark XEP-0363 filetransfers only partial 4.9 xep-0077.html partial 4.7 xep-0084.html complete 4.9 xep-0085.html Only typing notifications, use XEP-0319 to publish interactions partial 4.7 xep-0092.html complete 5.0 xep-0115.html complete 4.7 xep-0153.html XEP-0153: vCard-Based Avatars (implemented only for MUC profiles) partial 5.</description><content:encoded><![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
 
 
 <table>
@@ -809,62 +809,18 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
     </thead>
     
         
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
         
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0004.html">
-                        xep-0004
+                        xep-0004.html
                     </a>
                     
                 </td>
@@ -879,7 +835,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0030.html">
-                        xep-0030
+                        xep-0030.html
                     </a>
                     
                 </td>
@@ -892,7 +848,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0045.html">
-                        xep-0045
+                        xep-0045.html
                     </a>
                     
                 </td>
@@ -907,7 +863,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0048.html">
-                        xep-0048
+                        xep-0048.html
                     </a>
                     
                 </td>
@@ -922,7 +878,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0054.html">
-                        xep-0054
+                        xep-0054.html
                     </a>
                     
                         <br>Implemented only for MUC profiles
@@ -937,7 +893,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0059.html">
-                        xep-0059
+                        xep-0059.html
                     </a>
                     
                 </td>
@@ -950,7 +906,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0060.html">
-                        xep-0060
+                        xep-0060.html
                     </a>
                     
                         <br>Used mainly for Pep
@@ -967,7 +923,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0066.html">
-                        xep-0066
+                        xep-0066.html
                     </a>
                     
                         <br>Used to mark XEP-0363 filetransfers only
@@ -984,7 +940,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0077.html">
-                        xep-0077
+                        xep-0077.html
                     </a>
                     
                 </td>
@@ -997,7 +953,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0084.html">
-                        xep-0084
+                        xep-0084.html
                     </a>
                     
                 </td>
@@ -1010,7 +966,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0085.html">
-                        xep-0085
+                        xep-0085.html
                     </a>
                     
                         <br>Only typing notifications, use XEP-0319 to publish interactions
@@ -1025,7 +981,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0092.html">
-                        xep-0092
+                        xep-0092.html
                     </a>
                     
                 </td>
@@ -1040,7 +996,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0115.html">
-                        xep-0115
+                        xep-0115.html
                     </a>
                     
                 </td>
@@ -1053,7 +1009,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0153.html">
-                        xep-0153
+                        xep-0153.html
                     </a>
                     
                         <br>XEP-0153: vCard-Based Avatars (implemented only for MUC profiles)
@@ -1070,7 +1026,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0162.html">
-                        xep-0162
+                        xep-0162.html
                     </a>
                     
                 </td>
@@ -1083,7 +1039,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0163.html">
-                        xep-0163
+                        xep-0163.html
                     </a>
                     
                 </td>
@@ -1096,7 +1052,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0167.html">
-                        xep-0167
+                        xep-0167.html
                     </a>
                     
                 </td>
@@ -1109,7 +1065,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0176.html">
-                        xep-0176
+                        xep-0176.html
                     </a>
                     
                 </td>
@@ -1122,7 +1078,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0172.html">
-                        xep-0172
+                        xep-0172.html
                     </a>
                     
                 </td>
@@ -1135,7 +1091,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0184.html">
-                        xep-0184
+                        xep-0184.html
                     </a>
                     
                 </td>
@@ -1148,7 +1104,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0191.html">
-                        xep-0191
+                        xep-0191.html
                     </a>
                     
                 </td>
@@ -1161,7 +1117,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0198.html">
-                        xep-0198
+                        xep-0198.html
                     </a>
                     
                 </td>
@@ -1174,7 +1130,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0199.html">
-                        xep-0199
+                        xep-0199.html
                     </a>
                     
                 </td>
@@ -1187,7 +1143,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0215.html">
-                        xep-0215
+                        xep-0215.html
                     </a>
                     
                 </td>
@@ -1200,7 +1156,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0223.html">
-                        xep-0223
+                        xep-0223.html
                     </a>
                     
                         <br>XEP-0223: Persistent Storage of Private Data via PubSub
@@ -1217,7 +1173,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0237.html">
-                        xep-0237
+                        xep-0237.html
                     </a>
                     
                 </td>
@@ -1230,7 +1186,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0245.html">
-                        xep-0245
+                        xep-0245.html
                     </a>
                     
                 </td>
@@ -1243,7 +1199,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0249.html">
-                        xep-0249
+                        xep-0249.html
                     </a>
                     
                         <br>XEP-0249: Direct MUC Invitations
@@ -1262,7 +1218,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0280.html">
-                        xep-0280
+                        xep-0280.html
                     </a>
                     
                 </td>
@@ -1275,7 +1231,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0286.html">
-                        xep-0286
+                        xep-0286.html
                     </a>
                     
                 </td>
@@ -1288,7 +1244,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0293.html">
-                        xep-0293
+                        xep-0293.html
                     </a>
                     
                 </td>
@@ -1301,7 +1257,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0294.html">
-                        xep-0294
+                        xep-0294.html
                     </a>
                     
                 </td>
@@ -1314,7 +1270,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0305.html">
-                        xep-0305
+                        xep-0305.html
                     </a>
                     
                 </td>
@@ -1327,7 +1283,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0308.html">
-                        xep-0308
+                        xep-0308.html
                     </a>
                     
                 </td>
@@ -1340,7 +1296,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0313.html">
-                        xep-0313
+                        xep-0313.html
                     </a>
                     
                 </td>
@@ -1353,7 +1309,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0319.html">
-                        xep-0319
+                        xep-0319.html
                     </a>
                     
                 </td>
@@ -1366,7 +1322,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0320.html">
-                        xep-0320
+                        xep-0320.html
                     </a>
                     
                 </td>
@@ -1379,7 +1335,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0333.html">
-                        xep-0333
+                        xep-0333.html
                     </a>
                     
                 </td>
@@ -1392,7 +1348,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0338.html">
-                        xep-0338
+                        xep-0338.html
                     </a>
                     
                 </td>
@@ -1405,7 +1361,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0339.html">
-                        xep-0339
+                        xep-0339.html
                     </a>
                     
                 </td>
@@ -1418,7 +1374,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0352.html">
-                        xep-0352
+                        xep-0352.html
                     </a>
                     
                 </td>
@@ -1431,7 +1387,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0353.html">
-                        xep-0353
+                        xep-0353.html
                     </a>
                     
                 </td>
@@ -1444,7 +1400,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0357.html">
-                        xep-0357
+                        xep-0357.html
                     </a>
                     
                 </td>
@@ -1457,7 +1413,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0359.html">
-                        xep-0359
+                        xep-0359.html
                     </a>
                     
                 </td>
@@ -1470,7 +1426,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0363.html">
-                        xep-0363
+                        xep-0363.html
                     </a>
                     
                 </td>
@@ -1483,7 +1439,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0368.html">
-                        xep-0368
+                        xep-0368.html
                     </a>
                     
                 </td>
@@ -1500,7 +1456,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0379.html">
-                        xep-0379
+                        xep-0379.html
                     </a>
                     
                         <br>No automatic approval if server does not support subscription pre-approval; No checking of tokens, if server does not do so (XEP-0401)
@@ -1515,7 +1471,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0380.html">
-                        xep-0380
+                        xep-0380.html
                     </a>
                     
                 </td>
@@ -1528,7 +1484,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0384.html">
-                        xep-0384
+                        xep-0384.html
                     </a>
                     
                 </td>
@@ -1543,7 +1499,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0388.html">
-                        xep-0388
+                        xep-0388.html
                     </a>
                     
                 </td>
@@ -1558,7 +1514,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0392.html">
-                        xep-0392
+                        xep-0392.html
                     </a>
                     
                 </td>
@@ -1573,7 +1529,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0398.html">
-                        xep-0398
+                        xep-0398.html
                     </a>
                     
                         <br>Used for MUC avatars
@@ -1588,7 +1544,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0401.html">
-                        xep-0401
+                        xep-0401.html
                     </a>
                     
                 </td>
@@ -1601,7 +1557,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0402.html">
-                        xep-0402
+                        xep-0402.html
                     </a>
                     
                 </td>
@@ -1614,7 +1570,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0410.html">
-                        xep-0410
+                        xep-0410.html
                     </a>
                     
                 </td>
@@ -1629,7 +1585,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0423.html">
-                        xep-0423
+                        xep-0423.html
                     </a>
                     
                         <br>Check this XEP to see what&#39;s missing
@@ -1644,7 +1600,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0424.html">
-                        xep-0424
+                        xep-0424.html
                     </a>
                     
                 </td>
@@ -1657,7 +1613,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0425.html">
-                        xep-0425
+                        xep-0425.html
                     </a>
                     
                 </td>
@@ -1670,7 +1626,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0440.html">
-                        xep-0440
+                        xep-0440.html
                     </a>
                     
                 </td>
@@ -1683,7 +1639,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0441.html">
-                        xep-0441
+                        xep-0441.html
                     </a>
                     
                         <br>Only to automatically turn on archiving if possible (setting: always)
@@ -1698,7 +1654,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0445.html">
-                        xep-0445
+                        xep-0445.html
                     </a>
                     
                 </td>
@@ -1711,7 +1667,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0454.html">
-                        xep-0454
+                        xep-0454.html
                     </a>
                     
                         <br>No support for embedded thumbnails
@@ -1726,7 +1682,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0474.html">
-                        xep-0474
+                        xep-0474.html
                     </a>
                     
                 </td>
@@ -1739,7 +1695,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0480.html">
-                        xep-0480
+                        xep-0480.html
                     </a>
                     
                 </td>
@@ -1754,7 +1710,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0486.html">
-                        xep-0486
+                        xep-0486.html
                     </a>
                     
                 </td>
@@ -1767,7 +1723,7 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0490.html">
-                        xep-0490
+                        xep-0490.html
                     </a>
                     
                 </td>
@@ -2126,62 +2082,18 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
     </thead>
     
         
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
         
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0004.html">
-                        xep-0004
+                        xep-0004.html
                     </a>
                     
                 </td>
@@ -2196,7 +2108,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0030.html">
-                        xep-0030
+                        xep-0030.html
                     </a>
                     
                 </td>
@@ -2209,7 +2121,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0045.html">
-                        xep-0045
+                        xep-0045.html
                     </a>
                     
                 </td>
@@ -2224,7 +2136,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0048.html">
-                        xep-0048
+                        xep-0048.html
                     </a>
                     
                 </td>
@@ -2239,7 +2151,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0054.html">
-                        xep-0054
+                        xep-0054.html
                     </a>
                     
                         <br>Implemented only for MUC profiles
@@ -2254,7 +2166,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0059.html">
-                        xep-0059
+                        xep-0059.html
                     </a>
                     
                 </td>
@@ -2267,7 +2179,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0060.html">
-                        xep-0060
+                        xep-0060.html
                     </a>
                     
                         <br>Used mainly for Pep
@@ -2284,7 +2196,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0066.html">
-                        xep-0066
+                        xep-0066.html
                     </a>
                     
                         <br>Used to mark XEP-0363 filetransfers only
@@ -2301,7 +2213,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0077.html">
-                        xep-0077
+                        xep-0077.html
                     </a>
                     
                 </td>
@@ -2314,7 +2226,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0084.html">
-                        xep-0084
+                        xep-0084.html
                     </a>
                     
                 </td>
@@ -2327,7 +2239,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0085.html">
-                        xep-0085
+                        xep-0085.html
                     </a>
                     
                         <br>Only typing notifications, use XEP-0319 to publish interactions
@@ -2342,7 +2254,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0092.html">
-                        xep-0092
+                        xep-0092.html
                     </a>
                     
                 </td>
@@ -2357,7 +2269,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0115.html">
-                        xep-0115
+                        xep-0115.html
                     </a>
                     
                 </td>
@@ -2370,7 +2282,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0153.html">
-                        xep-0153
+                        xep-0153.html
                     </a>
                     
                         <br>XEP-0153: vCard-Based Avatars (implemented only for MUC profiles)
@@ -2387,7 +2299,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0162.html">
-                        xep-0162
+                        xep-0162.html
                     </a>
                     
                 </td>
@@ -2400,7 +2312,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0163.html">
-                        xep-0163
+                        xep-0163.html
                     </a>
                     
                 </td>
@@ -2413,7 +2325,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0167.html">
-                        xep-0167
+                        xep-0167.html
                     </a>
                     
                 </td>
@@ -2426,7 +2338,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0176.html">
-                        xep-0176
+                        xep-0176.html
                     </a>
                     
                 </td>
@@ -2439,7 +2351,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0172.html">
-                        xep-0172
+                        xep-0172.html
                     </a>
                     
                 </td>
@@ -2452,7 +2364,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0184.html">
-                        xep-0184
+                        xep-0184.html
                     </a>
                     
                 </td>
@@ -2465,7 +2377,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0191.html">
-                        xep-0191
+                        xep-0191.html
                     </a>
                     
                 </td>
@@ -2478,7 +2390,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0198.html">
-                        xep-0198
+                        xep-0198.html
                     </a>
                     
                 </td>
@@ -2491,7 +2403,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0199.html">
-                        xep-0199
+                        xep-0199.html
                     </a>
                     
                 </td>
@@ -2504,7 +2416,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0215.html">
-                        xep-0215
+                        xep-0215.html
                     </a>
                     
                 </td>
@@ -2517,7 +2429,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0223.html">
-                        xep-0223
+                        xep-0223.html
                     </a>
                     
                         <br>XEP-0223: Persistent Storage of Private Data via PubSub
@@ -2534,7 +2446,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0237.html">
-                        xep-0237
+                        xep-0237.html
                     </a>
                     
                 </td>
@@ -2547,7 +2459,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0245.html">
-                        xep-0245
+                        xep-0245.html
                     </a>
                     
                 </td>
@@ -2560,7 +2472,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0249.html">
-                        xep-0249
+                        xep-0249.html
                     </a>
                     
                         <br>XEP-0249: Direct MUC Invitations
@@ -2579,7 +2491,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0280.html">
-                        xep-0280
+                        xep-0280.html
                     </a>
                     
                 </td>
@@ -2592,7 +2504,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0286.html">
-                        xep-0286
+                        xep-0286.html
                     </a>
                     
                 </td>
@@ -2605,7 +2517,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0293.html">
-                        xep-0293
+                        xep-0293.html
                     </a>
                     
                 </td>
@@ -2618,7 +2530,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0294.html">
-                        xep-0294
+                        xep-0294.html
                     </a>
                     
                 </td>
@@ -2631,7 +2543,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0305.html">
-                        xep-0305
+                        xep-0305.html
                     </a>
                     
                 </td>
@@ -2644,7 +2556,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0308.html">
-                        xep-0308
+                        xep-0308.html
                     </a>
                     
                 </td>
@@ -2657,7 +2569,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0313.html">
-                        xep-0313
+                        xep-0313.html
                     </a>
                     
                 </td>
@@ -2670,7 +2582,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0319.html">
-                        xep-0319
+                        xep-0319.html
                     </a>
                     
                 </td>
@@ -2683,7 +2595,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0320.html">
-                        xep-0320
+                        xep-0320.html
                     </a>
                     
                 </td>
@@ -2696,7 +2608,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0333.html">
-                        xep-0333
+                        xep-0333.html
                     </a>
                     
                 </td>
@@ -2709,7 +2621,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0338.html">
-                        xep-0338
+                        xep-0338.html
                     </a>
                     
                 </td>
@@ -2722,7 +2634,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0339.html">
-                        xep-0339
+                        xep-0339.html
                     </a>
                     
                 </td>
@@ -2735,7 +2647,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0352.html">
-                        xep-0352
+                        xep-0352.html
                     </a>
                     
                 </td>
@@ -2748,7 +2660,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0353.html">
-                        xep-0353
+                        xep-0353.html
                     </a>
                     
                 </td>
@@ -2761,7 +2673,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0357.html">
-                        xep-0357
+                        xep-0357.html
                     </a>
                     
                 </td>
@@ -2774,7 +2686,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0359.html">
-                        xep-0359
+                        xep-0359.html
                     </a>
                     
                 </td>
@@ -2787,7 +2699,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0363.html">
-                        xep-0363
+                        xep-0363.html
                     </a>
                     
                 </td>
@@ -2800,7 +2712,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0368.html">
-                        xep-0368
+                        xep-0368.html
                     </a>
                     
                 </td>
@@ -2817,7 +2729,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0379.html">
-                        xep-0379
+                        xep-0379.html
                     </a>
                     
                         <br>No automatic approval if server does not support subscription pre-approval; No checking of tokens, if server does not do so (XEP-0401)
@@ -2832,7 +2744,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0380.html">
-                        xep-0380
+                        xep-0380.html
                     </a>
                     
                 </td>
@@ -2845,7 +2757,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0384.html">
-                        xep-0384
+                        xep-0384.html
                     </a>
                     
                 </td>
@@ -2860,7 +2772,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0388.html">
-                        xep-0388
+                        xep-0388.html
                     </a>
                     
                 </td>
@@ -2875,7 +2787,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0392.html">
-                        xep-0392
+                        xep-0392.html
                     </a>
                     
                 </td>
@@ -2890,7 +2802,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0398.html">
-                        xep-0398
+                        xep-0398.html
                     </a>
                     
                         <br>Used for MUC avatars
@@ -2905,7 +2817,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0401.html">
-                        xep-0401
+                        xep-0401.html
                     </a>
                     
                 </td>
@@ -2918,7 +2830,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0402.html">
-                        xep-0402
+                        xep-0402.html
                     </a>
                     
                 </td>
@@ -2931,7 +2843,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0410.html">
-                        xep-0410
+                        xep-0410.html
                     </a>
                     
                 </td>
@@ -2946,7 +2858,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0423.html">
-                        xep-0423
+                        xep-0423.html
                     </a>
                     
                         <br>Check this XEP to see what&#39;s missing
@@ -2961,7 +2873,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0424.html">
-                        xep-0424
+                        xep-0424.html
                     </a>
                     
                 </td>
@@ -2974,7 +2886,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0425.html">
-                        xep-0425
+                        xep-0425.html
                     </a>
                     
                 </td>
@@ -2987,7 +2899,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0440.html">
-                        xep-0440
+                        xep-0440.html
                     </a>
                     
                 </td>
@@ -3000,7 +2912,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0441.html">
-                        xep-0441
+                        xep-0441.html
                     </a>
                     
                         <br>Only to automatically turn on archiving if possible (setting: always)
@@ -3015,7 +2927,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0445.html">
-                        xep-0445
+                        xep-0445.html
                     </a>
                     
                 </td>
@@ -3028,7 +2940,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0454.html">
-                        xep-0454
+                        xep-0454.html
                     </a>
                     
                         <br>No support for embedded thumbnails
@@ -3043,7 +2955,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0474.html">
-                        xep-0474
+                        xep-0474.html
                     </a>
                     
                 </td>
@@ -3056,7 +2968,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0480.html">
-                        xep-0480
+                        xep-0480.html
                     </a>
                     
                 </td>
@@ -3071,7 +2983,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0486.html">
-                        xep-0486
+                        xep-0486.html
                     </a>
                     
                 </td>
@@ -3084,7 +2996,7 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0490.html">
-                        xep-0490
+                        xep-0490.html
                     </a>
                     
                 </td>
