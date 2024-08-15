@@ -34,6 +34,8 @@ Monal currently covers the following chat features:
 
 ## Implemented XEPs
 
+You can check the complete list of supported XEPs at <a href="https://xmpp.org/software/monal-im/">https://xmpp.org/software/monal-im/</a>
+
 {{< implemented_features >}}
 
 ## Planned XEPs
