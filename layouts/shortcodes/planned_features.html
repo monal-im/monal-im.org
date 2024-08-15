@@ -8,12 +8,15 @@
         </tr>
     </thead>
     {{ range .Project.implements }}
-        {{ if and (default .SupportedXep.note) (eq .SupportedXep.status "planned") }}
+        {{ if eq .SupportedXep.status "planned" }}
             <tr>
                 <td>
                     <a href="{{ index .SupportedXep.xep "-resource" }}">
-                        {{ .SupportedXep.note }}
+                        {{ strings.TrimSuffix (path.Ext (index .SupportedXep.xep "-resource") ) (index .SupportedXep.xep "-resource") }}
                     </a>
+                    {{ if (default .SupportedXep.note) }}
+                        <br>{{ .SupportedXep.note }}
+                    {{ end }}
                 </td>
                 <td>{{ .SupportedXep.status }}</td>
             <tr>
