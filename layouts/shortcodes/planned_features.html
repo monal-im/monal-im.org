@@ -12,7 +12,7 @@
             <tr>
                 <td>
                     <a href="{{ index .SupportedXep.xep "-resource" }}">
-                        {{ strings.TrimSuffix (path.Ext (index .SupportedXep.xep "-resource") ) (index .SupportedXep.xep "-resource") }}
+                        {{ path.BaseName (index .SupportedXep.xep "-resource") }}
                     </a>
                     {{ if (default .SupportedXep.note) }}
                         <br>{{ .SupportedXep.note }}
