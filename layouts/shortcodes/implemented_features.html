@@ -9,7 +9,7 @@
         </tr>
     </thead>
     {{ range .Project.implements }}
-        {{ if and (ne (index .SupportedXep.xep "-resource") "" ) (eq .SupportedXep.status "complete") (eq .SupportedXep.status "partial") }}
+        {{ if and (ne (index .SupportedXep.xep "-resource") "" ) (or (eq .SupportedXep.status "complete") (eq .SupportedXep.status "partial") ) }}
             <tr>
                 <td>
                     <a href="{{ index .SupportedXep.xep "-resource" }}">
