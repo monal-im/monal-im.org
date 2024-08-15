@@ -15,7 +15,7 @@
                     <a href="{{ index .SupportedXep.xep "-resource" }}">
                         {{ $dirFile := path.Split (index .SupportedXep.xep "-resource") }}
                         {{ with resources.GetRemote (printf "%s%s.xml" $dirFile.Dir (path.BaseName $dirFile.File)) | transform.Unmarshal }}
-                            XEP {{ .header.number }}: {{ .header.title }}
+                            XEP-{{ .header.number }}: {{ .header.title }}
                         {{ end }}
                     </a>
                     {{ if (default .SupportedXep.note) }}
