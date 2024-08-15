@@ -12,7 +12,9 @@
             <tr>
                 <td>
                     <a href="{{ index .SupportedXep.xep "-resource" }}">
-                        {{ path.BaseName (index .SupportedXep.xep "-resource") }}
+                        {{ path.BaseName (index .SupportedXep.xep "-resource") }}:
+                        {{ $dirFile := path.Split (index .SupportedXep.xep "-resource") }}
+                        {{ path.join $dirFile.Dir (printf "%s.xml" (path.BaseName $dirFile.File) ) }}
                     </a>
                     {{ if (default .SupportedXep.note) }}
                         <br>{{ .SupportedXep.note }}
