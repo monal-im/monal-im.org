@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.129.0</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>New NLNet Funding</title><link>https://monal-im.github.io/monal-im.org/site/post/00013-nlnet-funding2/</link><pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00013-nlnet-funding2/</guid><description>We are pleased to announce that we got selected in another funding round by the EU’s NGI via the NLnet Foundation NGI0 Entrust Fund to work on some important features in Monal.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.132.1</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>New NLNet Funding</title><link>https://monal-im.github.io/monal-im.org/site/post/00013-nlnet-funding2/</link><pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00013-nlnet-funding2/</guid><description>We are pleased to announce that we got selected in another funding round by the EU’s NGI via the NLnet Foundation NGI0 Entrust Fund to work on some important features in Monal.
 In short this consists of the following tasks (in no special order).
 Implement Dialpad: Add Dialpad to our Call-UI and backend code to be able to send DTMF tones in A/V calls. This will make Monal fully compatible with jmp.</description><content:encoded><![CDATA[<p>We are pleased to announce that we <a href="https://nlnet.nl/project/Monal-IM-UI/">got selected in another funding round</a> by the <a href="https://ngi.eu/">EU’s NGI</a> via the <a href="https://nlnet.nl/entrust">NLnet Foundation NGI0 Entrust Fund</a> to work on some important features in Monal.</p>
 <p>In short this consists of the following tasks (in no special order).</p>
@@ -796,7 +796,7 @@ Coming along with this transition from the old developer team to the new one is 
 <p>When I (Thilo) gradually took over development, I was able to build upon an app with a decent codebase rather than writing my own app from scratch. That made it possible to improve Monal further while already being used by thousands of people. I can not stress enough how thankful I was and still am for all the work Anu put into the development of Monal.
 Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and macOS!</p>
 <p>Thilo, Friedrich, Anu</p>
-]]></content:encoded></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/site/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/supportedxeps/</guid><description>Implemented XEPs XEP Status Since Implemented only for MUC profiles complete 5.0 Used mainly for Pep partial 4.9 Used to mark XEP-0363 filetransfers only partial 4.9 Only typing notifications, use XEP-0319 to publish interactions partial 4.7 XEP-0153: vCard-Based Avatars (implemented only for MUC profiles) partial 5.0 XEP-0223: Persistent Storage of Private Data via PubSub complete 4.9 XEP-0249: Direct MUC Invitations complete 5.0 No automatic approval if server does not support subscription pre-approval; No checking of tokens, if server does not do so (XEP-0401) partial 4.</description><content:encoded><![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
+]]></content:encoded></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/site/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/supportedxeps/</guid><description>Implemented XEPs XEP Status Since https://xmpp.org/extensions/xep-0004 complete 4.9 https://xmpp.org/extensions/xep-0030 complete 4.6 https://xmpp.org/extensions/xep-0045 partial 5.0 https://xmpp.org/extensions/xep-0048 complete 5.0 https://xmpp.org/extensions/xep-0054 Implemented only for MUC profiles complete 5.0 https://xmpp.org/extensions/xep-0059 complete 4.8 https://xmpp.org/extensions/xep-0060 Used mainly for Pep partial 4.9 https://xmpp.org/extensions/xep-0066 Used to mark XEP-0363 filetransfers only partial 4.9 https://xmpp.org/extensions/xep-0077 partial 4.7 https://xmpp.org/extensions/xep-0084 complete 4.9 https://xmpp.org/extensions/xep-0085 Only typing notifications, use XEP-0319 to publish interactions partial 4.7 https://xmpp.org/extensions/xep-0092 complete 5.0 https://xmpp.org/extensions/xep-0115 complete 4.7 https://xmpp.org/extensions/xep-0153 XEP-0153: vCard-Based Avatars (implemented only for MUC profiles) partial 5.</description><content:encoded><![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
 
 
 <table>
@@ -809,23 +809,68 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
     </thead>
     
         
-    
+            <tr>
+                <td>
+                    <a href="">
+                        
+                    </a>
+                    
+                </td>
+                <td></td>
+                <td></td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="">
+                        
+                    </a>
+                    
+                </td>
+                <td></td>
+                <td></td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="">
+                        
+                    </a>
+                    
+                </td>
+                <td></td>
+                <td></td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="">
+                        
+                    </a>
+                    
+                </td>
+                <td></td>
+                <td></td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0004.html">
+                        https://xmpp.org/extensions/xep-0004
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
         
     
         
@@ -833,9 +878,38 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0054.html">
-                        Implemented only for MUC profiles
+                    <a href="https://xmpp.org/extensions/xep-0030.html">
+                        https://xmpp.org/extensions/xep-0030
                     </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0045.html">
+                        https://xmpp.org/extensions/xep-0045
+                    </a>
+                    
+                </td>
+                <td>partial</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0048.html">
+                        https://xmpp.org/extensions/xep-0048
+                    </a>
+                    
                 </td>
                 <td>complete</td>
                 <td>5.0</td>
@@ -847,9 +921,40 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0060.html">
-                        Used mainly for Pep
+                    <a href="https://xmpp.org/extensions/xep-0054.html">
+                        https://xmpp.org/extensions/xep-0054
                     </a>
+                    
+                        <br>Implemented only for MUC profiles
+                    
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0059.html">
+                        https://xmpp.org/extensions/xep-0059
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0060.html">
+                        https://xmpp.org/extensions/xep-0060
+                    </a>
+                    
+                        <br>Used mainly for Pep
+                    
                 </td>
                 <td>partial</td>
                 <td>4.9</td>
@@ -862,8 +967,11 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0066.html">
-                        Used to mark XEP-0363 filetransfers only
+                        https://xmpp.org/extensions/xep-0066
                     </a>
+                    
+                        <br>Used to mark XEP-0363 filetransfers only
+                    
                 </td>
                 <td>partial</td>
                 <td>4.9</td>
@@ -873,15 +981,12 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-    
-        
-    
-        
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0085.html">
-                        Only typing notifications, use XEP-0319 to publish interactions
+                    <a href="https://xmpp.org/extensions/xep-0077.html">
+                        https://xmpp.org/extensions/xep-0077
                     </a>
+                    
                 </td>
                 <td>partial</td>
                 <td>4.7</td>
@@ -889,7 +994,44 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0084.html">
+                        https://xmpp.org/extensions/xep-0084
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0085.html">
+                        https://xmpp.org/extensions/xep-0085
+                    </a>
+                    
+                        <br>Only typing notifications, use XEP-0319 to publish interactions
+                    
+                </td>
+                <td>partial</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0092.html">
+                        https://xmpp.org/extensions/xep-0092
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
         
     
         
@@ -897,9 +1039,25 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0153.html">
-                        XEP-0153: vCard-Based Avatars (implemented only for MUC profiles)
+                    <a href="https://xmpp.org/extensions/xep-0115.html">
+                        https://xmpp.org/extensions/xep-0115
                     </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0153.html">
+                        https://xmpp.org/extensions/xep-0153
+                    </a>
+                    
+                        <br>XEP-0153: vCard-Based Avatars (implemented only for MUC profiles)
+                    
                 </td>
                 <td>partial</td>
                 <td>5.0</td>
@@ -909,31 +1067,144 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0162.html">
+                        https://xmpp.org/extensions/xep-0162
+                    </a>
+                    
+                </td>
+                <td>partial</td>
+                <td>5.4</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0163.html">
+                        https://xmpp.org/extensions/xep-0163
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0167.html">
+                        https://xmpp.org/extensions/xep-0167
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0176.html">
+                        https://xmpp.org/extensions/xep-0176
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0172.html">
+                        https://xmpp.org/extensions/xep-0172
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0184.html">
+                        https://xmpp.org/extensions/xep-0184
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0191.html">
+                        https://xmpp.org/extensions/xep-0191
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0198.html">
+                        https://xmpp.org/extensions/xep-0198
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0199.html">
+                        https://xmpp.org/extensions/xep-0199
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0215.html">
+                        https://xmpp.org/extensions/xep-0215
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
         
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0223.html">
-                        XEP-0223: Persistent Storage of Private Data via PubSub
+                        https://xmpp.org/extensions/xep-0223
                     </a>
+                    
+                        <br>XEP-0223: Persistent Storage of Private Data via PubSub
+                    
                 </td>
                 <td>complete</td>
                 <td>4.9</td>
@@ -943,15 +1214,40 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0237.html">
+                        https://xmpp.org/extensions/xep-0237
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0245.html">
+                        https://xmpp.org/extensions/xep-0245
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
         
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0249.html">
-                        XEP-0249: Direct MUC Invitations
+                        https://xmpp.org/extensions/xep-0249
                     </a>
+                    
+                        <br>XEP-0249: Direct MUC Invitations
+                    
                 </td>
                 <td>complete</td>
                 <td>5.0</td>
@@ -963,39 +1259,237 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0280.html">
+                        https://xmpp.org/extensions/xep-0280
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.5</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0286.html">
+                        https://xmpp.org/extensions/xep-0286
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0293.html">
+                        https://xmpp.org/extensions/xep-0293
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0294.html">
+                        https://xmpp.org/extensions/xep-0294
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0305.html">
+                        https://xmpp.org/extensions/xep-0305
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.1.1</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0308.html">
+                        https://xmpp.org/extensions/xep-0308
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0313.html">
+                        https://xmpp.org/extensions/xep-0313
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0319.html">
+                        https://xmpp.org/extensions/xep-0319
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0320.html">
+                        https://xmpp.org/extensions/xep-0320
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0333.html">
+                        https://xmpp.org/extensions/xep-0333
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0338.html">
+                        https://xmpp.org/extensions/xep-0338
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0339.html">
+                        https://xmpp.org/extensions/xep-0339
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0352.html">
+                        https://xmpp.org/extensions/xep-0352
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0353.html">
+                        https://xmpp.org/extensions/xep-0353
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0357.html">
+                        https://xmpp.org/extensions/xep-0357
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0359.html">
+                        https://xmpp.org/extensions/xep-0359
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0363.html">
+                        https://xmpp.org/extensions/xep-0363
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0368.html">
+                        https://xmpp.org/extensions/xep-0368
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
         
     
         
@@ -1006,8 +1500,11 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0379.html">
-                        No automatic approval if server does not support subscription pre-approval; No checking of tokens, if server does not do so (XEP-0401)
+                        https://xmpp.org/extensions/xep-0379
                     </a>
+                    
+                        <br>No automatic approval if server does not support subscription pre-approval; No checking of tokens, if server does not do so (XEP-0401)
+                    
                 </td>
                 <td>partial</td>
                 <td>4.9</td>
@@ -1015,63 +1512,25 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0398.html">
-                        Used for MUC avatars
+                    <a href="https://xmpp.org/extensions/xep-0380.html">
+                        https://xmpp.org/extensions/xep-0380
                     </a>
+                    
                 </td>
                 <td>complete</td>
-                <td>6.0</td>
+                <td>5.1</td>
             <tr>
-        
-    
-        
-    
-        
-    
-        
-    
         
     
         
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0423.html">
-                        Check this XEP to see what&#39;s missing
+                    <a href="https://xmpp.org/extensions/xep-0384.html">
+                        https://xmpp.org/extensions/xep-0384
                     </a>
-                </td>
-                <td>partial</td>
-                <td></td>
-            <tr>
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0441.html">
-                        Only to automatically turn on archiving if possible (setting: always)
-                    </a>
+                    
                 </td>
                 <td>complete</td>
                 <td>4.8</td>
@@ -1083,11 +1542,83 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0454.html">
-                        No support for embedded thumbnails
+                    <a href="https://xmpp.org/extensions/xep-0388.html">
+                        https://xmpp.org/extensions/xep-0388
                     </a>
+                    
                 </td>
-                <td>partial</td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0392.html">
+                        https://xmpp.org/extensions/xep-0392
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.1</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0398.html">
+                        https://xmpp.org/extensions/xep-0398
+                    </a>
+                    
+                        <br>Used for MUC avatars
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0401.html">
+                        https://xmpp.org/extensions/xep-0401
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0402.html">
+                        https://xmpp.org/extensions/xep-0402
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.4</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0410.html">
+                        https://xmpp.org/extensions/xep-0410
+                    </a>
+                    
+                </td>
+                <td>complete</td>
                 <td>5.0</td>
             <tr>
         
@@ -1095,11 +1626,154 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0423.html">
+                        https://xmpp.org/extensions/xep-0423
+                    </a>
+                    
+                        <br>Check this XEP to see what&#39;s missing
+                    
+                </td>
+                <td>partial</td>
+                <td></td>
+            <tr>
+        
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0424.html">
+                        https://xmpp.org/extensions/xep-0424
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.3</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0425.html">
+                        https://xmpp.org/extensions/xep-0425
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.3</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0440.html">
+                        https://xmpp.org/extensions/xep-0440
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0441.html">
+                        https://xmpp.org/extensions/xep-0441
+                    </a>
+                    
+                        <br>Only to automatically turn on archiving if possible (setting: always)
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0445.html">
+                        https://xmpp.org/extensions/xep-0445
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.2</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0454.html">
+                        https://xmpp.org/extensions/xep-0454
+                    </a>
+                    
+                        <br>No support for embedded thumbnails
+                    
+                </td>
+                <td>partial</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0474.html">
+                        https://xmpp.org/extensions/xep-0474
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0480.html">
+                        https://xmpp.org/extensions/xep-0480
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
         
     
         
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0486.html">
+                        https://xmpp.org/extensions/xep-0486
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0490.html">
+                        https://xmpp.org/extensions/xep-0490
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.3</td>
+            <tr>
         
     
 </table>
@@ -1324,7 +1998,7 @@ Feel free to translate Monal to your language!</p>
 
                                          
        
-  <img src="https://monal-im.github.io/monal-im.org/site/multi-auto_18094160984556133628.svg" title="Detailed translation status">   
+  <img src="https://monal-im.github.io/monal-im.org/site/multi-auto_4983799081706151337.svg" title="Detailed translation status">   
 </a></p>
 <h2 id="reporting-a-vulnerability">Reporting a Vulnerability</h2>
 <p>It is highly appreciated reporting a vulnerability to the Monal developers.
@@ -1409,23 +2083,68 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
     </thead>
     
         
-    
+            <tr>
+                <td>
+                    <a href="">
+                        
+                    </a>
+                    
+                </td>
+                <td></td>
+                <td></td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="">
+                        
+                    </a>
+                    
+                </td>
+                <td></td>
+                <td></td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="">
+                        
+                    </a>
+                    
+                </td>
+                <td></td>
+                <td></td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="">
+                        
+                    </a>
+                    
+                </td>
+                <td></td>
+                <td></td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0004.html">
+                        https://xmpp.org/extensions/xep-0004
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
         
     
         
@@ -1433,9 +2152,38 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0054.html">
-                        Implemented only for MUC profiles
+                    <a href="https://xmpp.org/extensions/xep-0030.html">
+                        https://xmpp.org/extensions/xep-0030
                     </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0045.html">
+                        https://xmpp.org/extensions/xep-0045
+                    </a>
+                    
+                </td>
+                <td>partial</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0048.html">
+                        https://xmpp.org/extensions/xep-0048
+                    </a>
+                    
                 </td>
                 <td>complete</td>
                 <td>5.0</td>
@@ -1447,9 +2195,40 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0060.html">
-                        Used mainly for Pep
+                    <a href="https://xmpp.org/extensions/xep-0054.html">
+                        https://xmpp.org/extensions/xep-0054
                     </a>
+                    
+                        <br>Implemented only for MUC profiles
+                    
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0059.html">
+                        https://xmpp.org/extensions/xep-0059
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0060.html">
+                        https://xmpp.org/extensions/xep-0060
+                    </a>
+                    
+                        <br>Used mainly for Pep
+                    
                 </td>
                 <td>partial</td>
                 <td>4.9</td>
@@ -1462,8 +2241,11 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0066.html">
-                        Used to mark XEP-0363 filetransfers only
+                        https://xmpp.org/extensions/xep-0066
                     </a>
+                    
+                        <br>Used to mark XEP-0363 filetransfers only
+                    
                 </td>
                 <td>partial</td>
                 <td>4.9</td>
@@ -1473,15 +2255,12 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-    
-        
-    
-        
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0085.html">
-                        Only typing notifications, use XEP-0319 to publish interactions
+                    <a href="https://xmpp.org/extensions/xep-0077.html">
+                        https://xmpp.org/extensions/xep-0077
                     </a>
+                    
                 </td>
                 <td>partial</td>
                 <td>4.7</td>
@@ -1489,7 +2268,44 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0084.html">
+                        https://xmpp.org/extensions/xep-0084
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0085.html">
+                        https://xmpp.org/extensions/xep-0085
+                    </a>
+                    
+                        <br>Only typing notifications, use XEP-0319 to publish interactions
+                    
+                </td>
+                <td>partial</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0092.html">
+                        https://xmpp.org/extensions/xep-0092
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
         
     
         
@@ -1497,9 +2313,25 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0153.html">
-                        XEP-0153: vCard-Based Avatars (implemented only for MUC profiles)
+                    <a href="https://xmpp.org/extensions/xep-0115.html">
+                        https://xmpp.org/extensions/xep-0115
                     </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0153.html">
+                        https://xmpp.org/extensions/xep-0153
+                    </a>
+                    
+                        <br>XEP-0153: vCard-Based Avatars (implemented only for MUC profiles)
+                    
                 </td>
                 <td>partial</td>
                 <td>5.0</td>
@@ -1509,31 +2341,144 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0162.html">
+                        https://xmpp.org/extensions/xep-0162
+                    </a>
+                    
+                </td>
+                <td>partial</td>
+                <td>5.4</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0163.html">
+                        https://xmpp.org/extensions/xep-0163
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0167.html">
+                        https://xmpp.org/extensions/xep-0167
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0176.html">
+                        https://xmpp.org/extensions/xep-0176
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0172.html">
+                        https://xmpp.org/extensions/xep-0172
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0184.html">
+                        https://xmpp.org/extensions/xep-0184
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0191.html">
+                        https://xmpp.org/extensions/xep-0191
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0198.html">
+                        https://xmpp.org/extensions/xep-0198
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0199.html">
+                        https://xmpp.org/extensions/xep-0199
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0215.html">
+                        https://xmpp.org/extensions/xep-0215
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
         
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0223.html">
-                        XEP-0223: Persistent Storage of Private Data via PubSub
+                        https://xmpp.org/extensions/xep-0223
                     </a>
+                    
+                        <br>XEP-0223: Persistent Storage of Private Data via PubSub
+                    
                 </td>
                 <td>complete</td>
                 <td>4.9</td>
@@ -1543,15 +2488,40 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0237.html">
+                        https://xmpp.org/extensions/xep-0237
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
+        
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0245.html">
+                        https://xmpp.org/extensions/xep-0245
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
         
     
         
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0249.html">
-                        XEP-0249: Direct MUC Invitations
+                        https://xmpp.org/extensions/xep-0249
                     </a>
+                    
+                        <br>XEP-0249: Direct MUC Invitations
+                    
                 </td>
                 <td>complete</td>
                 <td>5.0</td>
@@ -1563,39 +2533,237 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0280.html">
+                        https://xmpp.org/extensions/xep-0280
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.5</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0286.html">
+                        https://xmpp.org/extensions/xep-0286
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0293.html">
+                        https://xmpp.org/extensions/xep-0293
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0294.html">
+                        https://xmpp.org/extensions/xep-0294
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0305.html">
+                        https://xmpp.org/extensions/xep-0305
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.1.1</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0308.html">
+                        https://xmpp.org/extensions/xep-0308
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0313.html">
+                        https://xmpp.org/extensions/xep-0313
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
         
     
         
-    
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0319.html">
+                        https://xmpp.org/extensions/xep-0319
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0320.html">
+                        https://xmpp.org/extensions/xep-0320
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0333.html">
+                        https://xmpp.org/extensions/xep-0333
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0338.html">
+                        https://xmpp.org/extensions/xep-0338
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0339.html">
+                        https://xmpp.org/extensions/xep-0339
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0352.html">
+                        https://xmpp.org/extensions/xep-0352
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.7</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0353.html">
+                        https://xmpp.org/extensions/xep-0353
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0357.html">
+                        https://xmpp.org/extensions/xep-0357
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0359.html">
+                        https://xmpp.org/extensions/xep-0359
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0363.html">
+                        https://xmpp.org/extensions/xep-0363
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.9</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0368.html">
+                        https://xmpp.org/extensions/xep-0368
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>4.6</td>
+            <tr>
         
     
         
@@ -1606,8 +2774,11 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0379.html">
-                        No automatic approval if server does not support subscription pre-approval; No checking of tokens, if server does not do so (XEP-0401)
+                        https://xmpp.org/extensions/xep-0379
                     </a>
+                    
+                        <br>No automatic approval if server does not support subscription pre-approval; No checking of tokens, if server does not do so (XEP-0401)
+                    
                 </td>
                 <td>partial</td>
                 <td>4.9</td>
@@ -1615,63 +2786,25 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0398.html">
-                        Used for MUC avatars
+                    <a href="https://xmpp.org/extensions/xep-0380.html">
+                        https://xmpp.org/extensions/xep-0380
                     </a>
+                    
                 </td>
                 <td>complete</td>
-                <td>6.0</td>
+                <td>5.1</td>
             <tr>
-        
-    
-        
-    
-        
-    
-        
-    
         
     
         
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0423.html">
-                        Check this XEP to see what&#39;s missing
+                    <a href="https://xmpp.org/extensions/xep-0384.html">
+                        https://xmpp.org/extensions/xep-0384
                     </a>
-                </td>
-                <td>partial</td>
-                <td></td>
-            <tr>
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0441.html">
-                        Only to automatically turn on archiving if possible (setting: always)
-                    </a>
+                    
                 </td>
                 <td>complete</td>
                 <td>4.8</td>
@@ -1683,11 +2816,83 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
             <tr>
                 <td>
-                    <a href="https://xmpp.org/extensions/xep-0454.html">
-                        No support for embedded thumbnails
+                    <a href="https://xmpp.org/extensions/xep-0388.html">
+                        https://xmpp.org/extensions/xep-0388
                     </a>
+                    
                 </td>
-                <td>partial</td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0392.html">
+                        https://xmpp.org/extensions/xep-0392
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.1</td>
+            <tr>
+        
+    
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0398.html">
+                        https://xmpp.org/extensions/xep-0398
+                    </a>
+                    
+                        <br>Used for MUC avatars
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0401.html">
+                        https://xmpp.org/extensions/xep-0401
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0402.html">
+                        https://xmpp.org/extensions/xep-0402
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.4</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0410.html">
+                        https://xmpp.org/extensions/xep-0410
+                    </a>
+                    
+                </td>
+                <td>complete</td>
                 <td>5.0</td>
             <tr>
         
@@ -1695,11 +2900,154 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0423.html">
+                        https://xmpp.org/extensions/xep-0423
+                    </a>
+                    
+                        <br>Check this XEP to see what&#39;s missing
+                    
+                </td>
+                <td>partial</td>
+                <td></td>
+            <tr>
+        
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0424.html">
+                        https://xmpp.org/extensions/xep-0424
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.3</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0425.html">
+                        https://xmpp.org/extensions/xep-0425
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.3</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0440.html">
+                        https://xmpp.org/extensions/xep-0440
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0441.html">
+                        https://xmpp.org/extensions/xep-0441
+                    </a>
+                    
+                        <br>Only to automatically turn on archiving if possible (setting: always)
+                    
+                </td>
+                <td>complete</td>
+                <td>4.8</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0445.html">
+                        https://xmpp.org/extensions/xep-0445
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.2</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0454.html">
+                        https://xmpp.org/extensions/xep-0454
+                    </a>
+                    
+                        <br>No support for embedded thumbnails
+                    
+                </td>
+                <td>partial</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0474.html">
+                        https://xmpp.org/extensions/xep-0474
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0480.html">
+                        https://xmpp.org/extensions/xep-0480
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.0</td>
+            <tr>
         
     
         
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0486.html">
+                        https://xmpp.org/extensions/xep-0486
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>5.0</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0490.html">
+                        https://xmpp.org/extensions/xep-0490
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.3</td>
+            <tr>
         
     
 </table>
@@ -2446,7 +3794,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_768x0_resize_q50_h2_linear_3.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_800x0_resize_q50_h2_linear_3.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_960x0_resize_q50_h2_linear_3.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_1024x0_resize_q50_h2_linear_3.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_1080x0_resize_q50_h2_linear_3.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_1200x0_resize_q50_h2_linear_3.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu2c7283518cd0b8e9cbe0840eb3c02a26_306497_1284x0_resize_q50_h2_linear_3.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin.png" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu10169816648479669266.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu7466331394571590738.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu5972669620767599922.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu9644009418867149929.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu12286225328372907242.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu4023401105323505366.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu1555023910034729883.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu5194333845222826639.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu15794476538254409416.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu3491795784753465456.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu9813270498281502546.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu18108662497256034176.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu12148179309196948209.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2545,7 +3893,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_768x0_resize_q50_h2_linear_3.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_800x0_resize_q50_h2_linear_3.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_960x0_resize_q50_h2_linear_3.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_1024x0_resize_q50_h2_linear_3.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_1080x0_resize_q50_h2_linear_3.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_1200x0_resize_q50_h2_linear_3.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hud6ddd4f843ffcc0a7fc37486b7efb463_439180_1284x0_resize_q50_h2_linear_3.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register.png" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu5541103389510774677.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu15367686080600835428.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu2524203106028585607.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu10946445556615337181.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu5875688317939788520.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu12010375926528033819.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu15425839997454051547.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu14234139272277284074.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu1237021256857045281.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu11645552714705110653.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu254884089046967632.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu4677308586623457417.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu17869301536676685263.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2644,7 +3992,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_768x0_resize_q50_h2_linear_3.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_800x0_resize_q50_h2_linear_3.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_960x0_resize_q50_h2_linear_3.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_1024x0_resize_q50_h2_linear_3.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_1080x0_resize_q50_h2_linear_3.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_1200x0_resize_q50_h2_linear_3.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hue2ab62864ef2c8e9ad61fe6ad3b91349_518920_1284x0_resize_q50_h2_linear_3.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats.png" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu10272299128783254078.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu3550483772163418163.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu16268336979164779778.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu1706824229147583118.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu4675711539845571209.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu4045066640278393834.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu12975202308456312900.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu858028372932186831.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu9579648726872596407.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu15664512288173181969.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu14685186855553499662.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu18257564793192338934.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu4612502403212201085.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2758,7 +4106,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_768x0_resize_q50_h2_linear_3.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_800x0_resize_q50_h2_linear_3.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_960x0_resize_q50_h2_linear_3.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_1024x0_resize_q50_h2_linear_3.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_1080x0_resize_q50_h2_linear_3.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_1200x0_resize_q50_h2_linear_3.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hud3a9d05ca8ad550490de6971afb9f19e_785007_1284x0_resize_q50_h2_linear_3.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats.png" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu2839901757119885701.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu10975227209431401719.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu14220797700982460210.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu1207110067046076331.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu6013432535116363332.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu4743881748453567476.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu15164178706093644848.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu12405218449081680188.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu1521118420447732842.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu12374166210533663625.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu2372520986900531649.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu18099958273317143764.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu10716035306014685838.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
@@ -2869,7 +4217,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_240x0_resize_q50_h2_linear_3.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_300x0_resize_q50_h2_linear_3.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_360x0_resize_q50_h2_linear_3.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_420x0_resize_q50_h2_linear_3.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_480x0_resize_q50_h2_linear_3.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_600x0_resize_q50_h2_linear_3.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_768x0_resize_q50_h2_linear_3.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_800x0_resize_q50_h2_linear_3.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_960x0_resize_q50_h2_linear_3.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_1024x0_resize_q50_h2_linear_3.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_1080x0_resize_q50_h2_linear_3.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_1200x0_resize_q50_h2_linear_3.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_1366x0_resize_q50_h2_linear_3.webp 1366w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_1440x0_resize_q50_h2_linear_3.webp 1440w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_1920x0_resize_q50_h2_linear_3.webp 1920w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu60602d341b81986e77c42c1185a960ab_1506632_2048x0_resize_q50_h2_linear_3.webp 2048w" style="max-width:2048px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats.png" fetchpriority="low" alt="" title=""/>
+    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu9915985161183644239.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu9278927756684952738.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu8394809468205325051.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu4488514824276846183.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu6332059159766507777.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu11655259276687070491.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu17332637371114155676.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu6996422006089477657.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu7447497622448971264.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu1580682941632432913.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu13995223158280743712.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu8289943289561341264.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu3368451566565276781.webp 1366w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu13915350263376296597.webp 1440w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu15605045437933263235.webp 1920w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu14014701612010683513.webp 2048w" style="max-width:2048px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats.png" fetchpriority="low" alt="" title=""/>
   </div>
   <figcaption></figcaption>
 </figure>
