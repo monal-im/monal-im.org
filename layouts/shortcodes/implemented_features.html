@@ -9,11 +9,11 @@
         </tr>
     </thead>
     {{ range .Project.implements }}
-        {{ if and (ne .SupportedXep.status "wontfix") (ne .SupportedXep.status "planned") }}
+        {{ if and (default (index .SupportedXep.xep "-resource") ) (ne .SupportedXep.status "wontfix") (ne .SupportedXep.status "planned") }}
             <tr>
                 <td>
                     <a href="{{ index .SupportedXep.xep "-resource" }}">
-                        {{ path.BaseName (index .SupportedXep.xep "-resource") }}
+                        {{ path.Base (index .SupportedXep.xep "-resource") }}
                     </a>
                     {{ if (default .SupportedXep.note) }}
                         <br>{{ .SupportedXep.note }}
