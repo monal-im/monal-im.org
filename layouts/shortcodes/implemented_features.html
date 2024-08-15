@@ -13,7 +13,7 @@
             <tr>
                 <td>
                     <a href="{{ index .SupportedXep.xep "-resource" }}">
-                        {{ path.Base (index .SupportedXep.xep "-resource") }}
+                        {{ path.BaseName (index .SupportedXep.xep "-resource") }}
                     </a>
                     {{ if (default .SupportedXep.note) }}
                         <br>{{ .SupportedXep.note }}
