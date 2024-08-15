@@ -16,7 +16,7 @@
                         {{ $dirFile := path.Split (index .SupportedXep.xep "-resource") }}
                         {{ with resources.GetRemote (path.join $dirFile.Dir (printf "%s.xml" (path.BaseName $dirFile.File) )) | transform.Unmarshal }}
                             {{ .header.title }}
-                            <pre>{{ debug.Dump $data }}</pre>
+                            <pre>{{ debug.Dump (resources.GetRemote (path.join $dirFile.Dir (printf "%s.xml" (path.BaseName $dirFile.File) )) | transform.Unmarshal) }}</pre>
                         {{ end }}
                     </a>
                     {{ if (default .SupportedXep.note) }}
