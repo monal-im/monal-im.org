@@ -796,7 +796,7 @@ Coming along with this transition from the old developer team to the new one is 
 <p>When I (Thilo) gradually took over development, I was able to build upon an app with a decent codebase rather than writing my own app from scratch. That made it possible to improve Monal further while already being used by thousands of people. I can not stress enough how thankful I was and still am for all the work Anu put into the development of Monal.
 Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and macOS!</p>
 <p>Thilo, Friedrich, Anu</p>
-]]></content:encoded></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/site/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/supportedxeps/</guid><description>Implemented XEPs XEP Status Since . . . . xep-0004 complete 4.9 xep-0030 complete 4.6 xep-0045 partial 5.0 xep-0048 complete 5.0 xep-0054 Implemented only for MUC profiles complete 5.0 xep-0059 complete 4.8 xep-0060 Used mainly for Pep partial 4.9 xep-0066 Used to mark XEP-0363 filetransfers only partial 4.9 xep-0077 partial 4.7 xep-0084 complete 4.9 xep-0085 Only typing notifications, use XEP-0319 to publish interactions partial 4.7 xep-0092 complete 5.0 xep-0115 complete 4.</description><content:encoded><![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
+]]></content:encoded></item><item><title>Supported XEPs</title><link>https://monal-im.github.io/monal-im.org/site/supportedxeps/</link><pubDate>Sat, 12 Mar 2022 10:19:25 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/supportedxeps/</guid><description>Implemented XEPs XEP Status Since Planned XEPs XEP Status xep-0158 planned xep-0374 planned xep-0386 XEP-0386: Bind 2.0 planned xep-0420 planned xep-0158 planned</description><content:encoded><![CDATA[<h2 id="implemented-xeps">Implemented XEPs</h2>
 
 
 <table>
@@ -809,687 +809,113 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
     </thead>
     
         
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
-        
     
         
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0004.html">
-                        xep-0004
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
     
         
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0030.html">
-                        xep-0030
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0045.html">
-                        xep-0045
-                    </a>
-                    
-                </td>
-                <td>partial</td>
-                <td>5.0</td>
-            <tr>
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0048.html">
-                        xep-0048
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
-        
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0054.html">
-                        xep-0054
-                    </a>
-                    
-                        <br>Implemented only for MUC profiles
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
-        
-    
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0059.html">
-                        xep-0059
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0060.html">
-                        xep-0060
-                    </a>
-                    
-                        <br>Used mainly for Pep
-                    
-                </td>
-                <td>partial</td>
-                <td>4.9</td>
-            <tr>
         
     
         
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0066.html">
-                        xep-0066
-                    </a>
-                    
-                        <br>Used to mark XEP-0363 filetransfers only
-                    
-                </td>
-                <td>partial</td>
-                <td>4.9</td>
-            <tr>
-        
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0077.html">
-                        xep-0077
-                    </a>
-                    
-                </td>
-                <td>partial</td>
-                <td>4.7</td>
-            <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0084.html">
-                        xep-0084
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0085.html">
-                        xep-0085
-                    </a>
-                    
-                        <br>Only typing notifications, use XEP-0319 to publish interactions
-                    
-                </td>
-                <td>partial</td>
-                <td>4.7</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0092.html">
-                        xep-0092
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0115.html">
-                        xep-0115
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0153.html">
-                        xep-0153
-                    </a>
-                    
-                        <br>XEP-0153: vCard-Based Avatars (implemented only for MUC profiles)
-                    
-                </td>
-                <td>partial</td>
-                <td>5.0</td>
-            <tr>
-        
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0162.html">
-                        xep-0162
-                    </a>
-                    
-                </td>
-                <td>partial</td>
-                <td>5.4</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0163.html">
-                        xep-0163
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0167.html">
-                        xep-0167
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0176.html">
-                        xep-0176
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0172.html">
-                        xep-0172
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0184.html">
-                        xep-0184
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0191.html">
-                        xep-0191
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0198.html">
-                        xep-0198
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
-        
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0199.html">
-                        xep-0199
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0215.html">
-                        xep-0215
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0223.html">
-                        xep-0223
-                    </a>
-                    
-                        <br>XEP-0223: Persistent Storage of Private Data via PubSub
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
+    
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0237.html">
-                        xep-0237
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0245.html">
-                        xep-0245
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0249.html">
-                        xep-0249
-                    </a>
-                    
-                        <br>XEP-0249: Direct MUC Invitations
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
+    
         
     
         
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0280.html">
-                        xep-0280
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.5</td>
-            <tr>
         
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0286.html">
-                        xep-0286
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0293.html">
-                        xep-0293
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0294.html">
-                        xep-0294
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0305.html">
-                        xep-0305
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.1.1</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0308.html">
-                        xep-0308
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0313.html">
-                        xep-0313
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0319.html">
-                        xep-0319
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0320.html">
-                        xep-0320
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0333.html">
-                        xep-0333
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0338.html">
-                        xep-0338
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0339.html">
-                        xep-0339
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0352.html">
-                        xep-0352
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0353.html">
-                        xep-0353
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0357.html">
-                        xep-0357
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0359.html">
-                        xep-0359
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0363.html">
-                        xep-0363
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0368.html">
-                        xep-0368
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
+    
         
     
         
@@ -1497,283 +923,63 @@ Thank you, Anu, for your wonderful work towards a modern XMPP client for iOS and
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0379.html">
-                        xep-0379
-                    </a>
-                    
-                        <br>No automatic approval if server does not support subscription pre-approval; No checking of tokens, if server does not do so (XEP-0401)
-                    
-                </td>
-                <td>partial</td>
-                <td>4.9</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0380.html">
-                        xep-0380
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.1</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0384.html">
-                        xep-0384
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
+    
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0388.html">
-                        xep-0388
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0392.html">
-                        xep-0392
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.1</td>
-            <tr>
+    
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0398.html">
-                        xep-0398
-                    </a>
-                    
-                        <br>Used for MUC avatars
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0401.html">
-                        xep-0401
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0402.html">
-                        xep-0402
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.4</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0410.html">
-                        xep-0410
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
+    
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0423.html">
-                        xep-0423
-                    </a>
-                    
-                        <br>Check this XEP to see what&#39;s missing
-                    
-                </td>
-                <td>partial</td>
-                <td></td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0424.html">
-                        xep-0424
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.3</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0425.html">
-                        xep-0425
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.3</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0440.html">
-                        xep-0440
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0441.html">
-                        xep-0441
-                    </a>
-                    
-                        <br>Only to automatically turn on archiving if possible (setting: always)
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0445.html">
-                        xep-0445
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.2</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0454.html">
-                        xep-0454
-                    </a>
-                    
-                        <br>No support for embedded thumbnails
-                    
-                </td>
-                <td>partial</td>
-                <td>5.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0474.html">
-                        xep-0474
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0480.html">
-                        xep-0480
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0486.html">
-                        xep-0486
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0490.html">
-                        xep-0490
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.3</td>
-            <tr>
+    
         
     
 </table>
@@ -2126,687 +1332,113 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
     </thead>
     
         
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
-        
     
         
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="">
-                        .
-                    </a>
-                    
-                </td>
-                <td></td>
-                <td></td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0004.html">
-                        xep-0004
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
     
         
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0030.html">
-                        xep-0030
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0045.html">
-                        xep-0045
-                    </a>
-                    
-                </td>
-                <td>partial</td>
-                <td>5.0</td>
-            <tr>
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0048.html">
-                        xep-0048
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
-        
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0054.html">
-                        xep-0054
-                    </a>
-                    
-                        <br>Implemented only for MUC profiles
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
-        
-    
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0059.html">
-                        xep-0059
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0060.html">
-                        xep-0060
-                    </a>
-                    
-                        <br>Used mainly for Pep
-                    
-                </td>
-                <td>partial</td>
-                <td>4.9</td>
-            <tr>
         
     
         
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0066.html">
-                        xep-0066
-                    </a>
-                    
-                        <br>Used to mark XEP-0363 filetransfers only
-                    
-                </td>
-                <td>partial</td>
-                <td>4.9</td>
-            <tr>
-        
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0077.html">
-                        xep-0077
-                    </a>
-                    
-                </td>
-                <td>partial</td>
-                <td>4.7</td>
-            <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0084.html">
-                        xep-0084
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0085.html">
-                        xep-0085
-                    </a>
-                    
-                        <br>Only typing notifications, use XEP-0319 to publish interactions
-                    
-                </td>
-                <td>partial</td>
-                <td>4.7</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0092.html">
-                        xep-0092
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0115.html">
-                        xep-0115
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0153.html">
-                        xep-0153
-                    </a>
-                    
-                        <br>XEP-0153: vCard-Based Avatars (implemented only for MUC profiles)
-                    
-                </td>
-                <td>partial</td>
-                <td>5.0</td>
-            <tr>
-        
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0162.html">
-                        xep-0162
-                    </a>
-                    
-                </td>
-                <td>partial</td>
-                <td>5.4</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0163.html">
-                        xep-0163
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0167.html">
-                        xep-0167
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0176.html">
-                        xep-0176
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0172.html">
-                        xep-0172
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
-        
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0184.html">
-                        xep-0184
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0191.html">
-                        xep-0191
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0198.html">
-                        xep-0198
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
-        
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0199.html">
-                        xep-0199
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0215.html">
-                        xep-0215
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0223.html">
-                        xep-0223
-                    </a>
-                    
-                        <br>XEP-0223: Persistent Storage of Private Data via PubSub
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
+    
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0237.html">
-                        xep-0237
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0245.html">
-                        xep-0245
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0249.html">
-                        xep-0249
-                    </a>
-                    
-                        <br>XEP-0249: Direct MUC Invitations
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
+    
         
     
         
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0280.html">
-                        xep-0280
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.5</td>
-            <tr>
         
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0286.html">
-                        xep-0286
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0293.html">
-                        xep-0293
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0294.html">
-                        xep-0294
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0305.html">
-                        xep-0305
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.1.1</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0308.html">
-                        xep-0308
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0313.html">
-                        xep-0313
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0319.html">
-                        xep-0319
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0320.html">
-                        xep-0320
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0333.html">
-                        xep-0333
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0338.html">
-                        xep-0338
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0339.html">
-                        xep-0339
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0352.html">
-                        xep-0352
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.7</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0353.html">
-                        xep-0353
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0357.html">
-                        xep-0357
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0359.html">
-                        xep-0359
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0363.html">
-                        xep-0363
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.9</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0368.html">
-                        xep-0368
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.6</td>
-            <tr>
+    
         
     
         
@@ -2814,283 +1446,63 @@ Decentralised and federated chat standard XMPP Private and group messaging Priva
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0379.html">
-                        xep-0379
-                    </a>
-                    
-                        <br>No automatic approval if server does not support subscription pre-approval; No checking of tokens, if server does not do so (XEP-0401)
-                    
-                </td>
-                <td>partial</td>
-                <td>4.9</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0380.html">
-                        xep-0380
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.1</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0384.html">
-                        xep-0384
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
+    
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0388.html">
-                        xep-0388
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0392.html">
-                        xep-0392
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.1</td>
-            <tr>
+    
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0398.html">
-                        xep-0398
-                    </a>
-                    
-                        <br>Used for MUC avatars
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0401.html">
-                        xep-0401
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0402.html">
-                        xep-0402
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.4</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0410.html">
-                        xep-0410
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
+    
         
     
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0423.html">
-                        xep-0423
-                    </a>
-                    
-                        <br>Check this XEP to see what&#39;s missing
-                    
-                </td>
-                <td>partial</td>
-                <td></td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0424.html">
-                        xep-0424
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.3</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0425.html">
-                        xep-0425
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.3</td>
-            <tr>
+    
         
     
         
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0440.html">
-                        xep-0440
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0441.html">
-                        xep-0441
-                    </a>
-                    
-                        <br>Only to automatically turn on archiving if possible (setting: always)
-                    
-                </td>
-                <td>complete</td>
-                <td>4.8</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0445.html">
-                        xep-0445
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.2</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0454.html">
-                        xep-0454
-                    </a>
-                    
-                        <br>No support for embedded thumbnails
-                    
-                </td>
-                <td>partial</td>
-                <td>5.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0474.html">
-                        xep-0474
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0480.html">
-                        xep-0480
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.0</td>
-            <tr>
-        
-    
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0486.html">
-                        xep-0486
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
-        
-    
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0490.html">
-                        xep-0490
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>6.3</td>
-            <tr>
+    
         
     
 </table>
