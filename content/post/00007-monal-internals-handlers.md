@@ -9,6 +9,9 @@ author: "Thilo Molitor"
 In this new series, I want to shine some light onto specific parts of Monal's internals. It's dedicated to programmers or people curious about how Monal works internally.
 If you want to give some feedback, feel free to send an email to [thilo@monal-im.org](mailto:thilo@monal-im.org)
 
+**Other articles in this series:**
+- [Monal Internals - XML Query Language](00014-monal-internals-xml-query-language)
+
 # Handlers
 Handlers in Monal are something like serializable callbacks. 
 In iOS the app can get frozen or even killed any time and the push implementation requires the complete app state to frequently
