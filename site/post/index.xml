@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Monal</title><link>https://monal-im.github.io/monal-im.org/site/post/</link><description>Recent content in Posts on Monal</description><generator>Hugo -- 0.134.2</generator><language>en</language><lastBuildDate>Wed, 11 Sep 2024 05:13:12 +0200</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/site/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - XML Query Language</title><link>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</link><pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</guid><description>&lt;p>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org">thilo@monal-im.org&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Monal</title><link>https://monal-im.github.io/monal-im.org/site/post/</link><description>Recent content in Posts on Monal</description><generator>Hugo -- 0.134.2</generator><language>en</language><lastBuildDate>Wed, 11 Sep 2024 05:13:51 +0200</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/site/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - XML Query Language</title><link>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</link><pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</guid><description>&lt;p>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org">thilo@monal-im.org&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Other articles in this series:&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/post/00014-monal-internals-xml-query-language/">Monal Internals - XML Query Language&lt;/a>&lt;/li>
@@ -369,12 +369,20 @@ The full list of changes can be seen below:</p>
 </ul>
 ]]></content:encoded></item><item><title>Monal Internals - Handlers framework</title><link>https://monal-im.github.io/monal-im.org/site/post/00007-monal-internals-handlers/</link><pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00007-monal-internals-handlers/</guid><description>&lt;p>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally.
 If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org">thilo@monal-im.org&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Other articles in this series:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/post/00014-monal-internals-xml-query-language/">Monal Internals - XML Query Language&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h1 id="handlers">Handlers&lt;/h1>
 &lt;p>Handlers in Monal are something like serializable callbacks.
 In iOS the app can get frozen or even killed any time and the push implementation requires the complete app state to frequently
 transition between the Main App and the Notification Service App Extension (NSE). Using normal callbacks (called blocks in ObjC)
 is not possible because blocks are not serializable which means they could not survive an app kill or transition to / from the NSE.&lt;/p></description><content:encoded><![CDATA[<p>In this new series, I want to shine some light onto specific parts of Monal&rsquo;s internals. It&rsquo;s dedicated to programmers or people curious about how Monal works internally.
 If you want to give some feedback, feel free to send an email to <a href="mailto:thilo@monal-im.org">thilo@monal-im.org</a></p>
+<p><strong>Other articles in this series:</strong></p>
+<ul>
+<li><a href="/monal-im.org/site/post/00014-monal-internals-xml-query-language/">Monal Internals - XML Query Language</a></li>
+</ul>
 <h1 id="handlers">Handlers</h1>
 <p>Handlers in Monal are something like serializable callbacks.
 In iOS the app can get frozen or even killed any time and the push implementation requires the complete app state to frequently
