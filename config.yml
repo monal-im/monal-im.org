@@ -101,9 +101,9 @@ menu:
           name: "About"
           url: /about/
           weight: 6
-        - identifier: FAQ
-          name: "FAQ"
-          url: https://github.com/monal-im/Monal/wiki/FAQ---Frequently-Asked-Questions
+        - identifier: Wiki
+          name: "Wiki"
+          url: https://github.com/monal-im/Monal/wiki
           weight: 7
         #- identifier: Archive
         #  name: Archive
