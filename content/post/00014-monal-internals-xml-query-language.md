@@ -9,7 +9,7 @@ author: "Thilo Molitor"
 In this new series, I want to shine some light onto specific parts of Monal's internals. It's dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to thilo@monal-im.org
 
 **Other articles in this series:**
-- [Monal Internals - XML Query Language](00014-monal-internals-xml-query-language)
+- [Monal Internals - Handlers framework](00007-monal-internals-handlers)
 
 # The `MLXMLNode` methods
 All incoming and outgoing XMPP stanzas are parsed to/from an instance of nested `MLXMLNode` elements.
