@@ -116,6 +116,7 @@ To select XML nodes on the basis of their XML attributes, but using a regular ex
 ```xml
 <stream:error>
     <not-well-formed xmlns='urn:ietf:params:xml:ns:xmpp-streams'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-streams'>Some descriptive Text...</text>
 </stream:error>
 ```
 ```objc
