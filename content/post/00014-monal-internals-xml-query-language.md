@@ -229,11 +229,11 @@ The subquery can begin with something looking like a namespace and element name 
 - **Item index:**  
 This is something not present in the main query language. Between the form-type (the "element name", see above) and the "extraction command" (see below) an index in square brackets is allowed (`[0]`). An example query using an index as seen in our codebase would be `\\result[0]@expire\\` or `\\[0]@expire\\`. An index is only allowed for data-forms having multiple item elements encapsulating the form fields, see [example 8 of XEP-0004](https://xmpp.org/extensions/xep-0004.html#example-8). If the index is out of bounds (e.g. greater than or equal to the count of `<item/>` XML nodes in the form), the data-form query will return nil, which will be omitted from the resulting `NSArray` by the `MLXMLNode` implementation of `find:` (`findFirst:` will return nil, and `check:` will return NO).
 - **Extraction command:**  
-Data-Form subqueries have only two extraction commands: `@fieldName` and `%fieldName`. `@fieldName` is used to extract the value of that field, while `%fieldName` returns an `NSDictionary` describing that field, like returned with the `-(NSDictionary* _Nullable) getField:(NSString* _Nonnull) name;` method of `XMPPDataForm`. 
+Data-Form subqueries have only two extraction commands: `@fieldName` and `&fieldName`. `@fieldName` is used to extract the value of that field, while `&fieldName` returns an `NSDictionary` describing that field, like returned with the `-(NSDictionary* _Nullable) getField:(NSString* _Nonnull) name;` method of `XMPPDataForm`. 
 
 **_Note:_** The implementation in `XMPPDataForm.m` has many useful methods for creating and working with [XEP-0004](https://xmpp.org/extensions/xep-0004.html) data-forms. Make sure to check out `XMPPDataForm.h` or the implementation in `XMPPDataForm.m`.
 
-**_Note:_** An `@fieldName` extraction command can be used together with a conversion command, see _example 6_. Conversion commands are not allowed for `%fieldName` extraction commands or data-form queries not using an extraction command at all (e.g. returning the whole data-form).
+**_Note:_** An `@fieldName` extraction command can be used together with a conversion command, see _example 6_. Conversion commands are not allowed for `&fieldName` extraction commands or data-form queries not using an extraction command at all (e.g. returning the whole data-form).
 
 **Example 6:**
 ```xml
