@@ -1,6 +1,6 @@
 ---
 title: "Impressum"
-date: 2022-04-24T08:1:00+01:00
+date: 2022-04-24T08:01:00+01:00
 
 tags: []
 author: "Monal"
