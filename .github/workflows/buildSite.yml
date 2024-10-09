@@ -2,6 +2,8 @@ name: Build site
 
 # Controls when the workflow will run
 on:
+  schedule:
+    - cron: '*/5 * * * *'  # Triggered every day at 00:00 UTC
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
