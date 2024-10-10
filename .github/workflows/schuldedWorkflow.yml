@@ -1,16 +1,12 @@
-name: Build site
+name: Scheduled workflow
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ master ]
-
-  # Allows you to run this workflow manually from the Actions tab
+  schedule:
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs:
-  build:
+  rebuild_staging_5_minute:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,8 +19,33 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-          
-      - name: Build site
+
+      - name: Build site (staging)
+        run: hugo --enableGitInfo --minify --gc --logLevel info --baseURL https://monal-im.github.io/monal-im.org/site/
+
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/staging'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          destination_dir: site
+          keep_files: false
+
+  rebuild_master_5_minute:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Install and Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: Build site (master)
         run: hugo --enableGitInfo --minify --gc --logLevel info --baseURL https://monal-im.org/
       
       - name: Create tar archive
