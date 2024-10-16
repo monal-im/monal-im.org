@@ -46,6 +46,7 @@ params:
     buildFuture: false
     buildExpired: false
     enableEmoji: true
+    social: true # https://github.com/adityatelange/hugo-PaperMod/issues/1573
 
     editPost:
         URL: "https://github.com/monal-im/monal-im.org/tree/staging/content"
