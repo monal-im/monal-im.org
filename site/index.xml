@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.135.0</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - XML Query Language</title><link>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</link><pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</guid><description>&lt;p>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org">thilo@monal-im.org&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.136.0</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - XML Query Language</title><link>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</link><pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</guid><description>&lt;p>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org">thilo@monal-im.org&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Other articles in this series:&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/post/00007-monal-internals-handlers/">Monal Internals - Handlers framework&lt;/a>&lt;/li>
@@ -572,22 +572,22 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Releases</th>
-          <th style="text-align: left">Privacy Policy</th>
+          <th>Releases</th>
+          <th>Privacy Policy</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">6.0 and newer</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+          <td>6.0 and newer</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
       </tr>
       <tr>
-          <td style="text-align: left">5.2.0 up to 5.4.x</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+          <td>5.2.0 up to 5.4.x</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
       </tr>
       <tr>
-          <td style="text-align: left">before 5.2.0</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+          <td>before 5.2.0</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
       </tr>
   </tbody>
 </table>
@@ -656,16 +656,16 @@ To wake up your Monal instance your XMPP servers send us:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Region</th>
-          <th style="text-align: left">Hostname</th>
-          <th style="text-align: left">Notice</th>
+          <th>Region</th>
+          <th>Hostname</th>
+          <th>Notice</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Europe</td>
-          <td style="text-align: left">eu.prod.push.monal-im.org</td>
-          <td style="text-align: left"></td>
+          <td>Europe</td>
+          <td>eu.prod.push.monal-im.org</td>
+          <td></td>
       </tr>
   </tbody>
 </table>
@@ -673,27 +673,27 @@ To wake up your Monal instance your XMPP servers send us:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Name</th>
-          <th style="text-align: left">Region</th>
-          <th style="text-align: left">Hoster</th>
-          <th style="text-align: left">Location</th>
-          <th style="text-align: left">Notice</th>
+          <th>Name</th>
+          <th>Region</th>
+          <th>Hoster</th>
+          <th>Location</th>
+          <th>Notice</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">s1.eu.prod.push.monal-im.org</td>
-          <td style="text-align: left">Europe</td>
-          <td style="text-align: left">Hetzner</td>
-          <td style="text-align: left">Finland</td>
-          <td style="text-align: left"></td>
+          <td>s1.eu.prod.push.monal-im.org</td>
+          <td>Europe</td>
+          <td>Hetzner</td>
+          <td>Finland</td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">s2.eu.prod.push.monal-im.org</td>
-          <td style="text-align: left">Europe</td>
-          <td style="text-align: left">PHP-Friends</td>
-          <td style="text-align: left">Germany</td>
-          <td style="text-align: left"></td>
+          <td>s2.eu.prod.push.monal-im.org</td>
+          <td>Europe</td>
+          <td>PHP-Friends</td>
+          <td>Germany</td>
+          <td></td>
       </tr>
   </tbody>
 </table>
@@ -3188,30 +3188,30 @@ This improves the quality of the app significantly.</p>
 ]]></content:encoded></item><item><title>Install</title><link>https://monal-im.github.io/monal-im.org/site/install/</link><pubDate>Sat, 12 Mar 2022 08:09:44 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/install/</guid><description>&lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">&lt;/th>
-&lt;th style="text-align: left">iOS&lt;/th>
-&lt;th style="text-align: left">macOS&lt;/th>
-&lt;th style="text-align: left">macOS (homebrew)&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>iOS&lt;/th>
+&lt;th>macOS&lt;/th>
+&lt;th>macOS (homebrew)&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Stable&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://apps.apple.com/app/id317711500">App Store&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://apps.apple.com/app/id1637078500">App Store&lt;/a>&lt;/td>
-&lt;td style="text-align: left">brew install --cask monal&lt;/td>
+&lt;td>Stable&lt;/td>
+&lt;td>&lt;a href="https://apps.apple.com/app/id317711500">App Store&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://apps.apple.com/app/id1637078500">App Store&lt;/a>&lt;/td>
+&lt;td>brew install --cask monal&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Beta&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://testflight.apple.com/join/lLLlgHpB">Testflight Invitation&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://testflight.apple.com/join/tGH2m5vf">Testflight Invitation&lt;/a>&lt;/td>
-&lt;td style="text-align: left">brew install --cask monal@beta&lt;/td>
+&lt;td>Beta&lt;/td>
+&lt;td>&lt;a href="https://testflight.apple.com/join/lLLlgHpB">Testflight Invitation&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://testflight.apple.com/join/tGH2m5vf">Testflight Invitation&lt;/a>&lt;/td>
+&lt;td>brew install --cask monal@beta&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Alpha&lt;/td>
-&lt;td style="text-align: left">upon request to &lt;a href="mailto:info@monal-im.org">info@monal-im.org&lt;/a>&lt;br>Then download from our &lt;a href="https://downloads.monal-im.org/monal-im/alpha/">alpha download site&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
-&lt;td style="text-align: left">brew tap monal-im/homebrew-monal-alpha&lt;br>brew install --cask monal-alpha&lt;/td>
+&lt;td>Alpha&lt;/td>
+&lt;td>upon request to &lt;a href="mailto:info@monal-im.org">info@monal-im.org&lt;/a>&lt;br>Then download from our &lt;a href="https://downloads.monal-im.org/monal-im/alpha/">alpha download site&lt;/a>&lt;br>&lt;br>You can get updates about alpha releases by joining this channel: &lt;a href="xmpp:monal-alpha@chat.yax.im?join">monal-alpha@chat.yax.im&lt;/a>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>brew tap monal-im/homebrew-monal-alpha&lt;br>brew install --cask monal-alpha&lt;br>&lt;br>You can get updates about alpha releases by joining this channel: &lt;a href="xmpp:monal-alpha@chat.yax.im?join">monal-alpha@chat.yax.im&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -3239,30 +3239,30 @@ This improves the quality of the app significantly.</p>
 &lt;p>You can check the complete list of supported XEPs at &lt;a href="https://xmpp.org/software/monal-im/">&lt;a href="https://xmpp.org/software/monal-im/">https://xmpp.org/software/monal-im/&lt;/a>&lt;/a>&lt;/p></description><content:encoded><![CDATA[<table>
   <thead>
       <tr>
-          <th style="text-align: left"></th>
-          <th style="text-align: left">iOS</th>
-          <th style="text-align: left">macOS</th>
-          <th style="text-align: left">macOS (homebrew)</th>
+          <th></th>
+          <th>iOS</th>
+          <th>macOS</th>
+          <th>macOS (homebrew)</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Stable</td>
-          <td style="text-align: left"><a href="https://apps.apple.com/app/id317711500">App Store</a></td>
-          <td style="text-align: left"><a href="https://apps.apple.com/app/id1637078500">App Store</a></td>
-          <td style="text-align: left">brew install --cask monal</td>
+          <td>Stable</td>
+          <td><a href="https://apps.apple.com/app/id317711500">App Store</a></td>
+          <td><a href="https://apps.apple.com/app/id1637078500">App Store</a></td>
+          <td>brew install --cask monal</td>
       </tr>
       <tr>
-          <td style="text-align: left">Beta</td>
-          <td style="text-align: left"><a href="https://testflight.apple.com/join/lLLlgHpB">Testflight Invitation</a></td>
-          <td style="text-align: left"><a href="https://testflight.apple.com/join/tGH2m5vf">Testflight Invitation</a></td>
-          <td style="text-align: left">brew install --cask monal@beta</td>
+          <td>Beta</td>
+          <td><a href="https://testflight.apple.com/join/lLLlgHpB">Testflight Invitation</a></td>
+          <td><a href="https://testflight.apple.com/join/tGH2m5vf">Testflight Invitation</a></td>
+          <td>brew install --cask monal@beta</td>
       </tr>
       <tr>
-          <td style="text-align: left">Alpha</td>
-          <td style="text-align: left">upon request to <a href="mailto:info@monal-im.org">info@monal-im.org</a><br>Then download from our <a href="https://downloads.monal-im.org/monal-im/alpha/">alpha download site</a></td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left">brew tap monal-im/homebrew-monal-alpha<br>brew install --cask monal-alpha</td>
+          <td>Alpha</td>
+          <td>upon request to <a href="mailto:info@monal-im.org">info@monal-im.org</a><br>Then download from our <a href="https://downloads.monal-im.org/monal-im/alpha/">alpha download site</a><br><br>You can get updates about alpha releases by joining this channel: <a href="xmpp:monal-alpha@chat.yax.im?join">monal-alpha@chat.yax.im</a></td>
+          <td></td>
+          <td>brew tap monal-im/homebrew-monal-alpha<br>brew install --cask monal-alpha<br><br>You can get updates about alpha releases by joining this channel: <a href="xmpp:monal-alpha@chat.yax.im?join">monal-alpha@chat.yax.im</a></td>
       </tr>
   </tbody>
 </table>
@@ -4710,22 +4710,22 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Releases</th>
-          <th style="text-align: left">Privacy Policy</th>
+          <th>Releases</th>
+          <th>Privacy Policy</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">6.0 and newer</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+          <td>6.0 and newer</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
       </tr>
       <tr>
-          <td style="text-align: left">5.2.0 up to 5.4.x</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+          <td>5.2.0 up to 5.4.x</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
       </tr>
       <tr>
-          <td style="text-align: left">before 5.2.0</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+          <td>before 5.2.0</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
       </tr>
   </tbody>
 </table>
@@ -4763,22 +4763,22 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Releases</th>
-          <th style="text-align: left">Privacy Policy</th>
+          <th>Releases</th>
+          <th>Privacy Policy</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">6.0 and newer</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+          <td>6.0 and newer</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
       </tr>
       <tr>
-          <td style="text-align: left">5.2.0 up to 5.4.x</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+          <td>5.2.0 up to 5.4.x</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
       </tr>
       <tr>
-          <td style="text-align: left">before 5.2.0</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+          <td>before 5.2.0</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
       </tr>
   </tbody>
 </table>
@@ -4811,24 +4811,24 @@ In detail these information consists of:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Name</th>
-          <th style="text-align: left">Hoster</th>
-          <th style="text-align: left">Location</th>
-          <th style="text-align: left">Notice</th>
+          <th>Name</th>
+          <th>Hoster</th>
+          <th>Location</th>
+          <th>Notice</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">ios13push.monal.im</td>
-          <td style="text-align: left">AWS</td>
-          <td style="text-align: left">US</td>
-          <td style="text-align: left">Provided by Anurodh Pokharel<br>IPv4 only</td>
+          <td>ios13push.monal.im</td>
+          <td>AWS</td>
+          <td>US</td>
+          <td>Provided by Anurodh Pokharel<br>IPv4 only</td>
       </tr>
       <tr>
-          <td style="text-align: left">push.monal.im</td>
-          <td style="text-align: left">AWS</td>
-          <td style="text-align: left">US</td>
-          <td style="text-align: left">Provided by Anurodh Pokharel<br>IPv4 only<br>iOS 12 only</td>
+          <td>push.monal.im</td>
+          <td>AWS</td>
+          <td>US</td>
+          <td>Provided by Anurodh Pokharel<br>IPv4 only<br>iOS 12 only</td>
       </tr>
   </tbody>
 </table>
@@ -4877,22 +4877,22 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Releases</th>
-          <th style="text-align: left">Privacy Policy</th>
+          <th>Releases</th>
+          <th>Privacy Policy</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">6.0 and newer</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+          <td>6.0 and newer</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
       </tr>
       <tr>
-          <td style="text-align: left">5.2.0 up to 5.4.x</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+          <td>5.2.0 up to 5.4.x</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
       </tr>
       <tr>
-          <td style="text-align: left">before 5.2.0</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+          <td>before 5.2.0</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
       </tr>
   </tbody>
 </table>
@@ -4941,21 +4941,21 @@ By default, each device will choose our Europe based push region unless the devi
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Region</th>
-          <th style="text-align: left">Hostname</th>
-          <th style="text-align: left">Notice</th>
+          <th>Region</th>
+          <th>Hostname</th>
+          <th>Notice</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Europe</td>
-          <td style="text-align: left">eu.prod.push.monal-im.org</td>
-          <td style="text-align: left"></td>
+          <td>Europe</td>
+          <td>eu.prod.push.monal-im.org</td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">US</td>
-          <td style="text-align: left">us.prod.push.monal-im.org</td>
-          <td style="text-align: left"></td>
+          <td>US</td>
+          <td>us.prod.push.monal-im.org</td>
+          <td></td>
       </tr>
   </tbody>
 </table>
@@ -4963,41 +4963,41 @@ By default, each device will choose our Europe based push region unless the devi
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Name</th>
-          <th style="text-align: left">Region</th>
-          <th style="text-align: left">Hoster</th>
-          <th style="text-align: left">Location</th>
-          <th style="text-align: left">Notice</th>
+          <th>Name</th>
+          <th>Region</th>
+          <th>Hoster</th>
+          <th>Location</th>
+          <th>Notice</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">s1.eu.prod.push.monal-im.org</td>
-          <td style="text-align: left">Europe</td>
-          <td style="text-align: left">Hetzner</td>
-          <td style="text-align: left">Finland</td>
-          <td style="text-align: left"></td>
+          <td>s1.eu.prod.push.monal-im.org</td>
+          <td>Europe</td>
+          <td>Hetzner</td>
+          <td>Finland</td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">s2.eu.prod.push.monal-im.org</td>
-          <td style="text-align: left">Europe</td>
-          <td style="text-align: left">PHP-Friends</td>
-          <td style="text-align: left">Germany</td>
-          <td style="text-align: left"></td>
+          <td>s2.eu.prod.push.monal-im.org</td>
+          <td>Europe</td>
+          <td>PHP-Friends</td>
+          <td>Germany</td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">s1.us.prod.push.monal-im.org</td>
-          <td style="text-align: left">US</td>
-          <td style="text-align: left">Fosshost</td>
-          <td style="text-align: left">US</td>
-          <td style="text-align: left">IPv4 only</td>
+          <td>s1.us.prod.push.monal-im.org</td>
+          <td>US</td>
+          <td>Fosshost</td>
+          <td>US</td>
+          <td>IPv4 only</td>
       </tr>
       <tr>
-          <td style="text-align: left">s2.us.prod.push.monal-im.org</td>
-          <td style="text-align: left">US</td>
-          <td style="text-align: left">Fosshost</td>
-          <td style="text-align: left">US</td>
-          <td style="text-align: left"></td>
+          <td>s2.us.prod.push.monal-im.org</td>
+          <td>US</td>
+          <td>Fosshost</td>
+          <td>US</td>
+          <td></td>
       </tr>
   </tbody>
 </table>
@@ -5047,22 +5047,22 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Releases</th>
-          <th style="text-align: left">Privacy Policy</th>
+          <th>Releases</th>
+          <th>Privacy Policy</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">6.0 and newer</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+          <td>6.0 and newer</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
       </tr>
       <tr>
-          <td style="text-align: left">5.2.0 up to 5.4.x</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+          <td>5.2.0 up to 5.4.x</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
       </tr>
       <tr>
-          <td style="text-align: left">before 5.2.0</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+          <td>before 5.2.0</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
       </tr>
   </tbody>
 </table>
@@ -5168,14 +5168,14 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 <table>
   <thead>
       <tr>
-          <th style="text-align: left"></th>
-          <th style="text-align: left"></th>
-          <th style="text-align: left"></th>
+          <th></th>
+          <th></th>
+          <th></th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">
+          <td>
   
     
     
@@ -5274,7 +5274,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
   <figcaption></figcaption>
 </figure>
 </td>
-          <td style="text-align: left">
+          <td>
   
     
     
@@ -5373,7 +5373,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
   <figcaption></figcaption>
 </figure>
 </td>
-          <td style="text-align: left">
+          <td>
   
     
     
@@ -5480,14 +5480,14 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 <table>
   <thead>
       <tr>
-          <th style="text-align: left"></th>
-          <th style="text-align: left"></th>
-          <th style="text-align: left"></th>
+          <th></th>
+          <th></th>
+          <th></th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">
+          <td>
   
     
     
@@ -5586,7 +5586,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
   <figcaption></figcaption>
 </figure>
 </td>
-          <td style="text-align: left">
+          <td>
   
     
     
@@ -5697,7 +5697,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
   <figcaption></figcaption>
 </figure>
 </td>
-          <td style="text-align: left"></td>
+          <td></td>
       </tr>
   </tbody>
 </table>
@@ -5734,22 +5734,22 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Releases</th>
-          <th style="text-align: left">Privacy Policy</th>
+          <th>Releases</th>
+          <th>Privacy Policy</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">6.0 and newer</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+          <td>6.0 and newer</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
       </tr>
       <tr>
-          <td style="text-align: left">5.2.0 up to 5.4.x</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+          <td>5.2.0 up to 5.4.x</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
       </tr>
       <tr>
-          <td style="text-align: left">before 5.2.0</td>
-          <td style="text-align: left"><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+          <td>before 5.2.0</td>
+          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
       </tr>
   </tbody>
 </table>
