@@ -5762,7 +5762,7 @@ Germany&lt;/p>
 &lt;h1 id="about">About&lt;/h1>
 &lt;p>Monal originates in 2002 as fork of the SworIM app.
 Until 2019 it has been developed by Anu Pokharel.
-Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide.
+Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide (until 2024).
 From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup.
 Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.&lt;/p></description><content:encoded><![CDATA[<h1 id="imprint">Imprint</h1>
 <p>Thilo Molitor</br>
@@ -5773,12 +5773,11 @@ Germany</p>
 <h1 id="about">About</h1>
 <p>Monal originates in 2002 as fork of the SworIM app.
 Until 2019 it has been developed by Anu Pokharel.
-Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide.
+Since then Thilo Molitor took over the development and joined in 2020 with Friedrich Altheide (until 2024).
 From initial rewrite of code in the backend the entire app has been upgraded with a modern XMPP engine, new features and future-proof setup.
 Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.</p>
 <h2 id="monal-team">Monal Team</h2>
-<p><strong>Thilo Molitor</strong> - <a href="https://wiki.xmpp.org/web/User:TMolitor">About me on wiki.xmpp.org</a><br>
-<strong>Friedrich Altheide</strong></p>
+<p><strong>Thilo Molitor</strong> - <a href="https://wiki.xmpp.org/web/User:TMolitor">About me on wiki.xmpp.org</a></p>
 ]]></content:encoded></item><item><title>Publications</title><link>https://monal-im.github.io/monal-im.org/site/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/publications/</guid><description>&lt;h2 id="talks-and-other-documents">Talks and other documents&lt;/h2>
 &lt;ul>
 &lt;li>Molitor, Thilo; Altheide, Friedrich. &lt;strong>Modern XMPP - A story based on Monal&lt;/strong> &lt;em>Berlin XMPP Meetup&lt;/em>, 13th April 2022, &lt;a href="https://xmpp-meetup.in-berlin.de/talks/monal-2022.mp4">Recording&lt;/a>, &lt;a href="https://xmpp-meetup.in-berlin.de/talks/monal-and-push.pdf">Slides&lt;/a>&lt;/li>
