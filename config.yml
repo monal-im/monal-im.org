@@ -1,6 +1,7 @@
 baseURL: ""
 title: Monal
-paginate: 5
+pagination:
+  pagerSize: 5
 theme: hugo-PaperMod
 timeout: "90s"
 
@@ -15,109 +16,108 @@ imaging:
     #includeFields: "" (To improve performance and decrease cache size, we need to set neither excludeFields nor includeFields)
 
 params:
-    env: production
-    description: "Monal IM - https://github.com/monal-im/monal"
-    author: "Monal IM"
-    # author: ["Me", "You"] # multiple authors
+  env: production
+  description: "Monal IM - https://github.com/monal-im/monal"
+  author: "Monal IM"
+  # author: ["Me", "You"] # multiple authors
 
-    ShowFullTextinRSS: true
-    ShowRssButtonInSectionTermList: true
-    tocopen: false
-    ShowToc: false
-    comments: false
-    hidemeta: false
-    searchHidden: false
-    defaultTheme: auto
-    DateFormat: "02.01.2006"
-    disableThemeToggle: false
-    ShowShareButtons: false
-    ShowReadingTime: true
-    disableSpecial1stPost: true
-    displayFullLangName: true
-    ShowPostNavLinks: false
-    ShowBreadCrumbs: false
-    ShowCodeCopyButtons: true
-    disableScrollToTop: false
-    rss: true
-    hideSummary: false
-    enableInlineShortcodes: true
-    enableRobotsTXT: true
-    buildDrafts: false
-    buildFuture: false
-    buildExpired: false
-    enableEmoji: true
-    social: true # https://github.com/adityatelange/hugo-PaperMod/issues/1573
+  ShowFullTextinRSS: true
+  ShowRssButtonInSectionTermList: true
+  tocopen: false
+  ShowToc: false
+  comments: false
+  hidemeta: false
+  searchHidden: false
+  defaultTheme: auto
+  DateFormat: "02.01.2006"
+  disableThemeToggle: false
+  ShowShareButtons: false
+  ShowReadingTime: true
+  disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  disableScrollToTop: false
+  rss: true
+  hideSummary: false
+  enableInlineShortcodes: true
+  enableRobotsTXT: true
+  buildDrafts: false
+  buildFuture: false
+  buildExpired: false
+  enableEmoji: true
 
-    editPost:
-        URL: "https://github.com/monal-im/monal-im.org/tree/staging/content"
-        Text: "Suggest Changes"
-        appendFilePath: true
+  editPost:
+    URL: "https://github.com/monal-im/monal-im.org/tree/staging/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
 
-    assets:
-        disableHLJS: true
-        disableFingerprinting: false
+  assets:
+    disableHLJS: true
+    disableFingerprinting: false
 
-    cover:
-        hidden: false
-        hiddenInList: false
-        hiddenInSingle: true
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: true
 
-    socialIcons:
-        - name: github
-          url: "https://github.com/monal-im/monal"
-        - name: email
-          url: "mailto:info@monal-im.org"
-        - name: liberapay
-          url: "https://liberapay.com/tmolitor"
-        - name: mastodon
-          url: "https://fosstodon.org/@Monal"
-        - name: rss
-          url: "index.xml"
-        #- name: other
-        #  url: ""
+  socialIcons:
+    - name: github
+      url: "https://github.com/monal-im/monal"
+    - name: email
+      url: "mailto:info@monal-im.org"
+    - name: liberapay
+      url: "https://liberapay.com/tmolitor"
+    - name: mastodon
+      url: "https://fosstodon.org/@Monal"
+    - name: rss
+      url: "index.xml"
+    #- name: other
+    #  url: ""
 
 menu:
-    main:
-        - identifier: Install
-          name: Install
-          url: /install/
-          weight: 1
-        - identifier: Support
-          name: "Support"
-          url: /support/
-          weight: 2
-        - identifier: Blog
-          name: Blog
-          url: /post/
-          weight: 3
-        - identifier: Publications
-          name: "Publications"
-          url: /publications/
-          weight: 4
-        - identifier: Privacy
-          name: "Privacy"
-          url: /privacy/
-          weight: 5
-        - identifier: About
-          name: "About"
-          url: /about/
-          weight: 6
-        - identifier: Wiki
-          name: "Wiki"
-          url: https://github.com/monal-im/Monal/wiki
-          weight: 7
-        #- identifier: Archive
-        #  name: Archive
-        #  url: /archives/
-        #  weight: 8
-        - identifier: Search
-          name: "Search \U0001f50d"
-          url: /search/
-          weight: 9
+  main:
+    - identifier: Install
+      name: Install
+      url: /install/
+      weight: 1
+    - identifier: Support
+      name: "Support"
+      url: /support/
+      weight: 2
+    - identifier: Blog
+      name: Blog
+      url: /post/
+      weight: 3
+    - identifier: Publications
+      name: "Publications"
+      url: /publications/
+      weight: 4
+    - identifier: Privacy
+      name: "Privacy"
+      url: /privacy/
+      weight: 5
+    - identifier: About
+      name: "About"
+      url: /about/
+      weight: 6
+    - identifier: Wiki
+      name: "Wiki"
+      url: https://github.com/monal-im/Monal/wiki
+      weight: 7
+    #- identifier: Archive
+    #  name: Archive
+    #  url: /archives/
+    #  weight: 8
+    - identifier: Search
+      name: "Search \U0001f50d"
+      url: /search/
+      weight: 9
 
 minify:
-    disableXML: false
-    minifyOutput: true
+  disableXML: false
+  minifyOutput: true
 
 languages:
   en:
@@ -127,81 +127,79 @@ languages:
       languageAltTitle: "English"
       showInHeader: false
       profileMode:
-          enabled: true
-          title: "Monal IM"
-          subtitle: "iOS and macOS XMPP Chat-Client"
-          imageUrl: "favicons/logo.png"
-          imageTitle: "Monal App Icon"
-          imageWidth: 120
-          imageHeight: 120
-          buttons:
-              - name: "Get Monal iOS"
-                url: "https://apps.apple.com/app/id317711500"
-              - name: "Get Monal macOS"
-                url: "https://apps.apple.com/app/id1637078500"
-          indexPostContentFile: "/home.md"
+        enabled: true
+        title: "Monal IM"
+        subtitle: "iOS and macOS XMPP Chat-Client"
+        imageUrl: "favicons/logo.png"
+        imageTitle: "Monal App Icon"
+        imageWidth: 120
+        imageHeight: 120
+        buttons:
+          - name: "Get Monal iOS"
+            url: "https://apps.apple.com/app/id317711500"
+          - name: "Get Monal macOS"
+            url: "https://apps.apple.com/app/id1637078500"
+        indexPostContentFile: "/home.md"
 
   de:
-      languageName: ":de:"
-      weight: 1
-      params:
-        languageAltTitle: Deutsch
-        showInHeader: false
-        profileMode:
-            enabled: true
-            title: "Monal IM"
-            subtitle: "IOS und MacOS Chatten"
-            imageUrl: "favicons/logo.png"
-            imageTitle: "Monal App Icon"
-            imageWidth: 120
-            imageHeight: 120
-            buttons:
-                - name: "Monal für iOS Herunterladen"
-                  url: "https://apps.apple.com/app/id317711500"
-                - name: "Monal für macOS Herunterladen"
-                  url: "https://apps.apple.com/app/id1637078500"
+    languageName: ":de:"
+    weight: 1
+    params:
+      languageAltTitle: Deutsch
+      showInHeader: false
+      profileMode:
+        enabled: true
+        title: "Monal IM"
+        subtitle: "IOS und MacOS Chatten"
+        imageUrl: "favicons/logo.png"
+        imageTitle: "Monal App Icon"
+        imageWidth: 120
+        imageHeight: 120
+        buttons:
+          - name: "Monal für iOS Herunterladen"
+            url: "https://apps.apple.com/app/id317711500"
+          - name: "Monal für macOS Herunterladen"
+            url: "https://apps.apple.com/app/id1637078500"
 
 outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON
+  home:
+    - HTML
+    - RSS
+    - JSON
 
-    
 taxonomies:
-    category: categories
-    tag: tags
-    series: series
+  category: categories
+  tag: tags
+  series: series
 
 markup:
-    goldmark:
-        renderer:
-            unsafe: true
+  goldmark:
+    renderer:
+      unsafe: true
 
 privacy:
-    vimeo:
-        disabled: true
-        simple: true
+  vimeo:
+    disabled: true
+    simple: true
 
-    twitter:
-        disabled: true
-        enableDNT: true
-        simple: true
+  twitter:
+    disabled: true
+    enableDNT: true
+    simple: true
 
-    instagram:
-        disabled: true
-        simple: true
+  instagram:
+    disabled: true
+    simple: true
 
-    youtube:
-        disabled: true
-        privacyEnhanced: true
+  youtube:
+    disabled: true
+    privacyEnhanced: true
 
 services:
-    instagram:
-        disableInlineCSS: true
-    twitter:
-        disableInlineCSS: true
-
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
 
 caches:
   getresource:
