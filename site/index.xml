@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.139.3</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - XML Query Language</title><link>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</link><pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</guid><description>&lt;p>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org">thilo@monal-im.org&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.139.4</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - XML Query Language</title><link>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</link><pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</guid><description>&lt;p>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org">thilo@monal-im.org&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Other articles in this series:&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/post/00007-monal-internals-handlers/">Monal Internals - Handlers framework&lt;/a>&lt;/li>
@@ -756,7 +756,7 @@ For convenience I&rsquo;d like to summarize some parts of that wiki entry in thi
 </ul>
 <p>High priority pushes in combination with the <code>com.apple.developer.usernotifications.filtering</code> entitlement are not only used by Monal, but some other popular messaging apps, too (links to the source):</p>
 <ul>
-<li><a href="https://www.reddit.com/r/TweakBounty/comments/z9oyf7/comment/iyirqor/?utm_source=reddit&utm_medium=web2x&context=3">WhatsApp</a></li>
+<li><a href="https://www.reddit.com/r/TweakBounty/comments/z9oyf7/comment/iyirqor/?utm_source=reddit&amp;utm_medium=web2x&amp;context=3">WhatsApp</a></li>
 <li><a href="https://github.com/signalapp/Signal-iOS/blob/main/SignalNSE/SignalNSE-AppStore.entitlements#L7">Signal</a></li>
 <li><a href="https://github.com/threema-ch/threema-ios/blob/main/ThreemaNotificationExtension/SupportingFiles/ThreemaForWorkRedNotificationExtension.entitlements#L7">Threema</a></li>
 <li><a href="https://github.com/TelegramMessenger/Telegram-iOS/blob/master/build-system/fake-codesigning/profiles/NotificationService.mobileprovision">Telegram</a> (binary)</li>
@@ -3139,13 +3139,13 @@ XEP-0158: CAPTCHA Forms
 
 
 ]]></content:encoded></item><item><title>Support</title><link>https://monal-im.github.io/monal-im.org/site/support/</link><pubDate>Sat, 12 Mar 2022 10:01:54 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/support/</guid><description>&lt;ul>
-&lt;li>Monal Support Channel (XMPP MUC): &lt;a href="xmpp:monal@chat.yax.im?join">monal@chat.yax.im&lt;/a>&lt;/li>
+&lt;li>Monal Support Channel (XMPP MUC): &lt;a href="#ZgotmplZ">monal@chat.yax.im&lt;/a>&lt;/li>
 &lt;li>Github Tickets: &lt;a href="https://github.com/monal-im/Monal/issues">https://github.com/monal-im/Monal/issues&lt;/a>&lt;/li>
 &lt;li>Email: info[at]monal[minus]im[dot]org.&lt;/li>
 &lt;/ul>
 &lt;h2 id="donate">Donate&lt;/h2>
 &lt;p>Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:&lt;/p></description><content:encoded><![CDATA[<ul>
-<li>Monal Support Channel (XMPP MUC): <a href="xmpp:monal@chat.yax.im?join">monal@chat.yax.im</a></li>
+<li>Monal Support Channel (XMPP MUC): <a href="#ZgotmplZ">monal@chat.yax.im</a></li>
 <li>Github Tickets: <a href="https://github.com/monal-im/Monal/issues">https://github.com/monal-im/Monal/issues</a></li>
 <li>Email: info[at]monal[minus]im[dot]org.</li>
 </ul>
@@ -3209,9 +3209,9 @@ This improves the quality of the app significantly.</p>
 &lt;/tr>
 &lt;tr>
 &lt;td>Alpha&lt;/td>
-&lt;td>upon request to &lt;a href="mailto:info@monal-im.org">info@monal-im.org&lt;/a>&lt;br>Then download from our &lt;a href="https://downloads.monal-im.org/monal-im/alpha/">alpha download site&lt;/a>&lt;br>&lt;br>You can get updates about alpha releases by joining this channel: &lt;a href="xmpp:monal-alpha@chat.yax.im?join">monal-alpha@chat.yax.im&lt;/a>&lt;/td>
+&lt;td>upon request to &lt;a href="mailto:info@monal-im.org">info@monal-im.org&lt;/a>&lt;br>Then download from our &lt;a href="https://downloads.monal-im.org/monal-im/alpha/">alpha download site&lt;/a>&lt;br>&lt;br>You can get updates about alpha releases by joining this channel: &lt;a href="#ZgotmplZ">monal-alpha@chat.yax.im&lt;/a>&lt;/td>
 &lt;td>&lt;/td>
-&lt;td>brew tap monal-im/homebrew-monal-alpha&lt;br>brew install --cask monal-alpha&lt;br>&lt;br>You can get updates about alpha releases by joining this channel: &lt;a href="xmpp:monal-alpha@chat.yax.im?join">monal-alpha@chat.yax.im&lt;/a>&lt;/td>
+&lt;td>brew tap monal-im/homebrew-monal-alpha&lt;br>brew install --cask monal-alpha&lt;br>&lt;br>You can get updates about alpha releases by joining this channel: &lt;a href="#ZgotmplZ">monal-alpha@chat.yax.im&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -3260,9 +3260,9 @@ This improves the quality of the app significantly.</p>
       </tr>
       <tr>
           <td>Alpha</td>
-          <td>upon request to <a href="mailto:info@monal-im.org">info@monal-im.org</a><br>Then download from our <a href="https://downloads.monal-im.org/monal-im/alpha/">alpha download site</a><br><br>You can get updates about alpha releases by joining this channel: <a href="xmpp:monal-alpha@chat.yax.im?join">monal-alpha@chat.yax.im</a></td>
+          <td>upon request to <a href="mailto:info@monal-im.org">info@monal-im.org</a><br>Then download from our <a href="https://downloads.monal-im.org/monal-im/alpha/">alpha download site</a><br><br>You can get updates about alpha releases by joining this channel: <a href="#ZgotmplZ">monal-alpha@chat.yax.im</a></td>
           <td></td>
-          <td>brew tap monal-im/homebrew-monal-alpha<br>brew install --cask monal-alpha<br><br>You can get updates about alpha releases by joining this channel: <a href="xmpp:monal-alpha@chat.yax.im?join">monal-alpha@chat.yax.im</a></td>
+          <td>brew tap monal-im/homebrew-monal-alpha<br>brew install --cask monal-alpha<br><br>You can get updates about alpha releases by joining this channel: <a href="#ZgotmplZ">monal-alpha@chat.yax.im</a></td>
       </tr>
   </tbody>
 </table>
