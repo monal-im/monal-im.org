@@ -27,7 +27,11 @@ Find general information in the [Monal Wiki](https://github.com/monal-im/Monal/w
 
 ## Translations
 
-We host and manage translations via [Weblate](https://hosted.weblate.org/engage/monal/).
+Appstore metadata can be translated:
+- [Instructions for Monal](https://github.com/monal-im/Monal/tree/develop/appstore_metadata)
+- [Instructions for Quicksy](https://github.com/monal-im/Monal/tree/develop/appstore_quicksy_metadata).
+
+Translations of the app itself are hosted and managed via [Weblate](https://hosted.weblate.org/engage/monal/).  
 Feel free to translate Monal to your language!
 
 <a href="https://hosted.weblate.org/engage/monal/?utm_source=widget">{{< remoteImage "weblate.svg" >}}</a>
