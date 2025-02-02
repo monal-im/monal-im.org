@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>PrivacyArchives on Monal</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/</link><description>Recent content in PrivacyArchives on Monal</description><generator>Hugo -- 0.142.0</generator><language>en</language><lastBuildDate>Sat, 18 Feb 2023 13:38:10 +0100</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/site/privacyarchive/index.xml" rel="self" type="application/rss+xml"/><item><title>Privacy Monal App ≥ 6.0.0</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</link><pubDate>Fri, 10 Feb 2023 13:00:00 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>PrivacyArchives on Monal</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/</link><description>Recent content in PrivacyArchives on Monal</description><generator>Hugo -- 0.143.0</generator><language>en</language><lastBuildDate>Sat, 18 Feb 2023 13:38:10 +0100</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/site/privacyarchive/index.xml" rel="self" type="application/rss+xml"/><item><title>Privacy Monal App ≥ 6.0.0</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</link><pubDate>Fri, 10 Feb 2023 13:00:00 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</guid><description>&lt;blockquote>
 &lt;p>&lt;strong>Monal Website&lt;/strong>&lt;br>
 You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Monal App&lt;/strong>&lt;br>
@@ -10,8 +10,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
 &lt;li>Open Monal&lt;/li>
 &lt;li>Open up the settings menu in the upper left corner (gearwheel)&lt;/li>
 &lt;li>Scroll down to the last entry &amp;ldquo;version&amp;rdquo;&lt;/li>
-&lt;/ol>
-&lt;/blockquote>
+&lt;/ol>&lt;/blockquote>
 &lt;p>&lt;strong>Monal App Privacy Policies&lt;/strong>&lt;/p></description><content:encoded><![CDATA[<blockquote>
 
 <p><strong>Monal Website</strong><br>
@@ -25,8 +24,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <li>Open Monal</li>
 <li>Open up the settings menu in the upper left corner (gearwheel)</li>
 <li>Scroll down to the last entry &ldquo;version&rdquo;</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
   <thead>
@@ -50,7 +48,6 @@ Before reading our privacy policy for our App you first need to find out the Mon
       </tr>
   </tbody>
 </table>
-
 </blockquote>
 <h1 id="privacy-monal-app--600">Privacy Monal App ≥ 6.0.0</h1>
 <h2 id="tldr">TLDR</h2>
@@ -108,8 +105,7 @@ To wake up your Monal instance your XMPP servers send us:</p>
 <li>Open the Notifications menu</li>
 <li>Scroll down</li>
 <li>Select a region</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <h4 id="push-server-regions">Push server regions</h4>
 <p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
 <table>
@@ -201,8 +197,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
 &lt;li>Open Monal&lt;/li>
 &lt;li>Open up the settings menu in the upper left corner (gearwheel)&lt;/li>
 &lt;li>Scroll down to the last entry &amp;ldquo;version&amp;rdquo;&lt;/li>
-&lt;/ol>
-&lt;/blockquote>
+&lt;/ol>&lt;/blockquote>
 &lt;p>&lt;strong>Monal App Privacy Policies&lt;/strong>&lt;/p></description><content:encoded><![CDATA[<blockquote>
 
 <p><strong>Monal Website</strong><br>
@@ -216,8 +211,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <li>Open Monal</li>
 <li>Open up the settings menu in the upper left corner (gearwheel)</li>
 <li>Scroll down to the last entry &ldquo;version&rdquo;</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
   <thead>
@@ -241,7 +235,6 @@ Before reading our privacy policy for our App you first need to find out the Mon
       </tr>
   </tbody>
 </table>
-
 </blockquote>
 <h1 id="privacy-monal-app--520">Privacy Monal App &lt; 5.2.0</h1>
 <p>Monal for iOS and macOS will register for APNS push notifications via a server to server (s2s) connection from your XMPP server to our push server.
@@ -315,8 +308,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
 &lt;li>Open Monal&lt;/li>
 &lt;li>Open up the settings menu in the upper left corner (gearwheel)&lt;/li>
 &lt;li>Scroll down to the last entry &amp;ldquo;version&amp;rdquo;&lt;/li>
-&lt;/ol>
-&lt;/blockquote>
+&lt;/ol>&lt;/blockquote>
 &lt;p>&lt;strong>Monal App Privacy Policies&lt;/strong>&lt;/p></description><content:encoded><![CDATA[<blockquote>
 
 <p><strong>Monal Website</strong><br>
@@ -330,8 +322,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <li>Open Monal</li>
 <li>Open up the settings menu in the upper left corner (gearwheel)</li>
 <li>Scroll down to the last entry &ldquo;version&rdquo;</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
   <thead>
@@ -355,7 +346,6 @@ Before reading our privacy policy for our App you first need to find out the Mon
       </tr>
   </tbody>
 </table>
-
 </blockquote>
 <h1 id="privacy-monal-app-520---54x">Privacy Monal App 5.2.0 - 5.4.x</h1>
 <p>App Resources are very limited on iOS and macOS.
@@ -393,8 +383,7 @@ By default, each device will choose our Europe based push region unless the devi
 <li>Open the Notifications menu</li>
 <li>Scroll down</li>
 <li>Select a region</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <h3 id="push-server-regions">Push server regions</h3>
 <p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
 <table>
@@ -485,8 +474,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
 &lt;li>Open Monal&lt;/li>
 &lt;li>Open up the settings menu in the upper left corner (gearwheel)&lt;/li>
 &lt;li>Scroll down to the last entry &amp;ldquo;version&amp;rdquo;&lt;/li>
-&lt;/ol>
-&lt;/blockquote>
+&lt;/ol>&lt;/blockquote>
 &lt;p>&lt;strong>Monal App Privacy Policies&lt;/strong>&lt;/p></description><content:encoded><![CDATA[<blockquote>
 
 <p><strong>Monal Website</strong><br>
@@ -500,8 +488,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <li>Open Monal</li>
 <li>Open up the settings menu in the upper left corner (gearwheel)</li>
 <li>Scroll down to the last entry &ldquo;version&rdquo;</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
   <thead>
@@ -525,7 +512,6 @@ Before reading our privacy policy for our App you first need to find out the Mon
       </tr>
   </tbody>
 </table>
-
 </blockquote>
 <h1 id="website-privacy">Website Privacy</h1>
 <p>A user’s IP address will be logged in the HTTP server logs.
@@ -542,8 +528,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
 &lt;li>Open Monal&lt;/li>
 &lt;li>Open up the settings menu in the upper left corner (gearwheel)&lt;/li>
 &lt;li>Scroll down to the last entry &amp;ldquo;version&amp;rdquo;&lt;/li>
-&lt;/ol>
-&lt;/blockquote>
+&lt;/ol>&lt;/blockquote>
 &lt;p>&lt;strong>Monal App Privacy Policies&lt;/strong>&lt;/p></description><content:encoded><![CDATA[<p><strong>Monal Website</strong><br>
 You can find our latest privacy policy for our website here: <a href="/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
 <p><strong>Monal App</strong><br>
@@ -555,8 +540,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <li>Open Monal</li>
 <li>Open up the settings menu in the upper left corner (gearwheel)</li>
 <li>Scroll down to the last entry &ldquo;version&rdquo;</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
   <thead>
