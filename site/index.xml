@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.143.0</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - XML Query Language</title><link>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</link><pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</guid><description>&lt;p>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org">thilo@monal-im.org&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.143.1</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - XML Query Language</title><link>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</link><pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</guid><description>&lt;p>In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org">thilo@monal-im.org&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Other articles in this series:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/post/00007-monal-internals-handlers/">Monal Internals - Handlers framework&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://monal-im.github.io/monal-im.org/site/post/00007-monal-internals-handlers/">Monal Internals - Handlers framework&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h1 id="the-mlxmlnode-methods">The &lt;code>MLXMLNode&lt;/code> methods&lt;/h1>
 &lt;p>All incoming and outgoing XMPP stanzas are parsed to/from an instance of nested &lt;code>MLXMLNode&lt;/code> elements.
@@ -263,7 +263,7 @@ Currently we are aiming for an <strong>iPhone 13</strong>.</p>
 ]]></content:encoded></item><item><title>ROS Security Audit</title><link>https://monal-im.github.io/monal-im.org/site/post/00011-security-audit-1/</link><pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00011-security-audit-1/</guid><description>&lt;p>&lt;a href="https://www.radicallyopensecurity.com/">Radically Open Security (ROS)&lt;/a> kindly performed a security audit of some parts of Monal.&lt;br>
 Specifically they audited the usage of our XML query language and the implementations of &lt;a href="https://xmpp.org/extensions/xep-0388.html">SASL2&lt;/a>, &lt;a href="https://datatracker.ietf.org/doc/html/rfc5802">SCRAM&lt;/a> and &lt;a href="https://xmpp.org/extensions/xep-0474.html">SSDP&lt;/a>.&lt;/p>
 &lt;p>The results in a nutshell: &lt;em>no security issues found&lt;/em>, read the full report here:
-&lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/post/00011-security-audit-1/pentest_1.pdf">Monal IM penetration test report 2024 1.0&lt;/a>
+&lt;a href="https://monal-im.github.io/monal-im.org/site/post/00011-security-audit-1/pentest_1.pdf">Monal IM penetration test report 2024 1.0&lt;/a>
 .&lt;/p></description><content:encoded><![CDATA[<p><a href="https://www.radicallyopensecurity.com/">Radically Open Security (ROS)</a> kindly performed a security audit of some parts of Monal.<br>
 Specifically they audited the usage of our XML query language and the implementations of <a href="https://xmpp.org/extensions/xep-0388.html">SASL2</a>, <a href="https://datatracker.ietf.org/doc/html/rfc5802">SCRAM</a> and <a href="https://xmpp.org/extensions/xep-0474.html">SSDP</a>.</p>
 <p>The results in a nutshell: <em>no security issues found</em>, read the full report here: 
@@ -297,8 +297,8 @@ Apps must comply with all legal requirements in any location where you make them
 <p>While your app has been removed from the China App Store, it is still available in the App Stores for the other territories you selected in App Store Connect. The TestFlight version of this app will also be unavailable for external and internal testing in China and all public TestFlight links will no longer be functional.</p>
 <p>Best regards,</p>
 <p>App Review</p>
-]]></content:encoded></item><item><title>Publications moved</title><link>https://monal-im.github.io/monal-im.org/site/post/00009-publications/</link><pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00009-publications/</guid><description>&lt;p>It came to light that our publications previously linked in a section under &lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/about/">About&lt;/a> were not that discoverable.
-Now we moved the whole publications list to its own top level menu entry unter &lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/publications/">Publications&lt;/a>.&lt;/p>
+]]></content:encoded></item><item><title>Publications moved</title><link>https://monal-im.github.io/monal-im.org/site/post/00009-publications/</link><pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00009-publications/</guid><description>&lt;p>It came to light that our publications previously linked in a section under &lt;a href="https://monal-im.github.io/monal-im.org/site/about/">About&lt;/a> were not that discoverable.
+Now we moved the whole publications list to its own top level menu entry unter &lt;a href="https://monal-im.github.io/monal-im.org/site/publications/">Publications&lt;/a>.&lt;/p>
 &lt;p>Enjoy watching the talk recordings and reading the slides and XEPs.&lt;/p>
 &lt;p>&lt;strong>And last but not least: Happy new year!&lt;/strong>&lt;/p></description><content:encoded><![CDATA[<p>It came to light that our publications previously linked in a section under <a href="/monal-im.org/site/about/">About</a> were not that discoverable.
 Now we moved the whole publications list to its own top level menu entry unter <a href="/monal-im.org/site/publications/">Publications</a>.</p>
@@ -372,7 +372,7 @@ The full list of changes can be seen below:</p>
 If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org">thilo@monal-im.org&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Other articles in this series:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/post/00014-monal-internals-xml-query-language/">Monal Internals - XML Query Language&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/">Monal Internals - XML Query Language&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h1 id="handlers">Handlers&lt;/h1>
 &lt;p>Handlers in Monal are something like serializable callbacks.
@@ -541,7 +541,7 @@ Currently the audio of these videos is German only.&lt;/p></description><content
 Currently the audio of these videos is German only.</p>
 ]]></content:encoded></item><item><title>Privacy Monal App ≥ 6.0.0</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</link><pubDate>Fri, 10 Feb 2023 13:00:00 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</guid><description>&lt;blockquote>
 &lt;p>&lt;strong>Monal Website&lt;/strong>&lt;br>
-You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
+You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Monal App&lt;/strong>&lt;br>
 Our privacy policy may differ between app versions.
 Before reading our privacy policy for our App you first need to find out the Monal version that you are using. &lt;br>&lt;/p>
@@ -728,7 +728,7 @@ We furthermore are unable to provide your retained data related to your unique p
 If you have questions regarding GDPR, please send us a mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
 ]]></content:encoded></item><item><title>Push on iOS</title><link>https://monal-im.github.io/monal-im.org/site/post/00005-push-on-ios/</link><pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00005-push-on-ios/</guid><description>&lt;p>I recently wrote a summary about push on iOS in the xmpp.org wiki.&lt;br>
 See &lt;a href="https://wiki.xmpp.org/web/Push_notifications">over here&lt;/a> for all the technical details and links to the documentation.
-I also talked about that topic in my talk &amp;ldquo;&lt;em>Modern XMPP - A story based on Monal&lt;/em>&amp;rdquo; linked &lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/about/">on the About page over here&lt;/a>.&lt;br>
+I also talked about that topic in my talk &amp;ldquo;&lt;em>Modern XMPP - A story based on Monal&lt;/em>&amp;rdquo; linked &lt;a href="https://monal-im.github.io/monal-im.org/site/about/">on the About page over here&lt;/a>.&lt;br>
 For convenience I&amp;rsquo;d like to summarize some parts of that wiki entry in this blog-post, too.&lt;/p>
 &lt;p>&lt;strong>UPDATE:&lt;/strong> This post describes the way Monal implements push as well as the pitfalls of implementing it in another way. I tried to make this clearer in the text now.&lt;/p></description><content:encoded><![CDATA[<p>I recently wrote a summary about push on iOS in the xmpp.org wiki.<br>
 See <a href="https://wiki.xmpp.org/web/Push_notifications">over here</a> for all the technical details and links to the documentation.
@@ -4679,7 +4679,7 @@ This improves the quality of the app significantly.</p>
 
 
 ]]></content:encoded></item><item><title>Privacy</title><link>https://monal-im.github.io/monal-im.org/site/privacy/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacy/</guid><description>&lt;p>&lt;strong>Monal Website&lt;/strong>&lt;br>
-You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
+You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Monal App&lt;/strong>&lt;br>
 Our privacy policy may differ between app versions.
 Before reading our privacy policy for our App you first need to find out the Monal version that you are using. &lt;br>&lt;/p>
@@ -4729,7 +4729,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
 
 ]]></content:encoded></item><item><title>Privacy Monal App &lt; 5.2.0</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_001/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_001/</guid><description>&lt;blockquote>
 &lt;p>&lt;strong>Monal Website&lt;/strong>&lt;br>
-You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
+You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Monal App&lt;/strong>&lt;br>
 Our privacy policy may differ between app versions.
 Before reading our privacy policy for our App you first need to find out the Monal version that you are using. &lt;br>&lt;/p>
@@ -4840,7 +4840,7 @@ As by GDPR we need to validate your JID before answering to your inquiry.
 Therefore, we will provide you a JID you must send a confirmation to, before we can answer your request and send you all retained data related to your JID.</p>
 ]]></content:encoded></item><item><title>Privacy Monal App 5.2.0 - 5.4.x</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_002/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_002/</guid><description>&lt;blockquote>
 &lt;p>&lt;strong>Monal Website&lt;/strong>&lt;br>
-You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
+You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Monal App&lt;/strong>&lt;br>
 Our privacy policy may differ between app versions.
 Before reading our privacy policy for our App you first need to find out the Monal version that you are using. &lt;br>&lt;/p>
@@ -5006,7 +5006,7 @@ We furthermore are unable to provide your retained data related to your unique p
 If you have questions regarding GDPR, please send us a mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
 ]]></content:encoded></item><item><title>Privacy Website</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_website/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_website/</guid><description>&lt;blockquote>
 &lt;p>&lt;strong>Monal Website&lt;/strong>&lt;br>
-You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
+You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Monal App&lt;/strong>&lt;br>
 Our privacy policy may differ between app versions.
 Before reading our privacy policy for our App you first need to find out the Monal version that you are using. &lt;br>&lt;/p>
@@ -5690,7 +5690,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 This app exists because it is key to ensure usability on all platforms and within the XMPP network with all its positives aspects when it comes to decentral communication and infrastructure.</p>
 <p><a href="https://github.com/monal-im/Monal">Find the development on GitHub!</a></p>
 ]]></content:encoded></item><item><title/><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/privacyheader/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacyarchive/privacyheader/</guid><description>&lt;p>&lt;strong>Monal Website&lt;/strong>&lt;br>
-You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
+You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Monal App&lt;/strong>&lt;br>
 Our privacy policy may differ between app versions.
 Before reading our privacy policy for our App you first need to find out the Monal version that you are using. &lt;br>&lt;/p>
