@@ -39,7 +39,7 @@ Feel free to translate Monal to your language!
 ## Reporting a Vulnerability
 
 It is highly appreciated reporting a vulnerability to the Monal developers.
-We ask you for disclosure until it has been fixed.
+We ask you to not disclose it to the public until the vulnerability has been fixed.
 This prevents abuse and exploitation in the current published releases.
 Please report issues directly to info[at]monal[minus]im[dot]org.
 
