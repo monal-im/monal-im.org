@@ -182,7 +182,7 @@ privacy:
     disabled: true
     simple: true
 
-  twitter:
+  x:
     disabled: true
     enableDNT: true
     simple: true
@@ -198,7 +198,7 @@ privacy:
 services:
   instagram:
     disableInlineCSS: true
-  twitter:
+  x:
     disableInlineCSS: true
 
 caches:
