@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="448" height="555" xml:lang="en">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="448" height="570" xml:lang="en">
 <defs>
 
 <style type="text/css">@import url(https://hosted.weblate.org/static/styles/vendor/fonts/fonts.css);</style>
@@ -766,27 +766,50 @@
    y="494" />
 </a>
 
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/tr/" xlink:title="Turkish">
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/te/" xlink:title="Telugu">
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
    y="515"
-   id="text515">Turkish</text>
+   id="text515">Telugu</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="515"
-   id="percent515">100%</text>
+   id="percent515">0%</text>
 <rect
-   style="fill:#2eccaa;fill-opacity:1;stroke:none"
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect515"
-   width="150"
+   width="0"
    height="6"
    x="248"
    rx="2"
    y="509" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/tr/" xlink:title="Turkish">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="530"
+   id="text530">Turkish</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="530"
+   id="percent530">100%</text>
+<rect
+   style="fill:#2eccaa;fill-opacity:1;stroke:none"
+   id="rect530"
+   width="150"
+   height="6"
+   x="248"
+   rx="2"
+   y="524" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/uk/" xlink:title="Ukrainian">
@@ -794,22 +817,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="530"
-   id="text530">Ukrainian</text>
+   y="545"
+   id="text545">Ukrainian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="530"
-   id="percent530">53%</text>
+   y="545"
+   id="percent545">53%</text>
 <rect
    style="fill:#38f;fill-opacity:1;stroke:none"
-   id="rect530"
+   id="rect545"
    width="80"
    height="6"
    x="248"
    rx="2"
-   y="524" />
+   y="539" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/vi/" xlink:title="Vietnamese">
@@ -817,22 +840,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="545"
-   id="text545">Vietnamese</text>
+   y="560"
+   id="text560">Vietnamese</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="545"
-   id="percent545">1%</text>
+   y="560"
+   id="percent560">1%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect545"
+   id="rect560"
    width="2"
    height="6"
    x="248"
    rx="2"
-   y="539" />
+   y="554" />
 </a>
 
 
