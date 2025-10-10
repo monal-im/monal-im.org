@@ -253,7 +253,7 @@
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect170"
-   width="149"
+   width="148"
    height="6"
    x="248"
    rx="2"
@@ -387,11 +387,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="260"
-   id="percent260">100%</text>
+   id="percent260">99%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect260"
-   width="150"
+   width="149"
    height="6"
    x="248"
    rx="2"
@@ -548,11 +548,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="365"
-   id="percent365">100%</text>
+   id="percent365">99%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect365"
-   width="150"
+   width="149"
    height="6"
    x="248"
    rx="2"
@@ -640,11 +640,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="425"
-   id="percent425">100%</text>
+   id="percent425">99%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect425"
-   width="150"
+   width="149"
    height="6"
    x="248"
    rx="2"
@@ -686,11 +686,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="455"
-   id="percent455">100%</text>
+   id="percent455">99%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect455"
-   width="150"
+   width="149"
    height="6"
    x="248"
    rx="2"
@@ -709,11 +709,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="470"
-   id="percent470">100%</text>
+   id="percent470">99%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect470"
-   width="150"
+   width="149"
    height="6"
    x="248"
    rx="2"
@@ -778,11 +778,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="515"
-   id="percent515">0%</text>
+   id="percent515">95%</text>
 <rect
-   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect515"
-   width="0"
+   width="143"
    height="6"
    x="248"
    rx="2"
