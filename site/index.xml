@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.151.0</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - XML Query Language</title><link>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</link><pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</guid><description>&lt;p&gt;In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org"&gt;thilo@monal-im.org&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.151.2</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - XML Query Language</title><link>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</link><pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</guid><description>&lt;p&gt;In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org"&gt;thilo@monal-im.org&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Other articles in this series:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://monal-im.github.io/monal-im.org/site/post/00007-monal-internals-handlers/"&gt;Monal Internals - Handlers framework&lt;/a&gt;&lt;/li&gt;
@@ -551,7 +551,8 @@ Before reading our privacy policy for our App you first need to find out the Mon
 &lt;li&gt;Open Monal&lt;/li&gt;
 &lt;li&gt;Open up the settings menu in the upper left corner (gearwheel)&lt;/li&gt;
 &lt;li&gt;Scroll down to the last entry &amp;ldquo;version&amp;rdquo;&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Monal App Privacy Policies&lt;/strong&gt;&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
 
 <p><strong>Monal Website</strong><br>
@@ -565,7 +566,8 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <li>Open Monal</li>
 <li>Open up the settings menu in the upper left corner (gearwheel)</li>
 <li>Scroll down to the last entry &ldquo;version&rdquo;</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
   <thead>
@@ -589,6 +591,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
       </tr>
   </tbody>
 </table>
+
 </blockquote>
 <h1 id="privacy-monal-app--600">Privacy Monal App ≥ 6.0.0</h1>
 <h2 id="tldr">TLDR</h2>
@@ -646,7 +649,8 @@ To wake up your Monal instance your XMPP servers send us:</p>
 <li>Open the Notifications menu</li>
 <li>Scroll down</li>
 <li>Select a region</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <h4 id="push-server-regions">Push server regions</h4>
 <p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
 <table>
@@ -744,7 +748,8 @@ For convenience I&rsquo;d like to summarize some parts of that wiki entry in thi
 <ul>
 <li><strong>But:</strong> Since iOS 13.3, apps having the <code>com.apple.developer.usernotifications.filtering</code> entitlement are allowed to suppress the user-visible notification. To cite Apple:
 <blockquote>
-<p>This entitlement is intended for certain types of apps — such as messaging apps or location sharing apps — that use notification service extensions to receive push notifications without delivering notifications to the user.</p></blockquote>
+<p>This entitlement is intended for certain types of apps — such as messaging apps or location sharing apps — that use notification service extensions to receive push notifications without delivering notifications to the user.</p>
+</blockquote>
 </li>
 </ul>
 </li>
@@ -804,7 +809,8 @@ Most, if not all, of my issues are now addressed in a bunch of updates to existi
 <h3 id="property-1">Property 1</h3>
 <p>SASL <a href="https://xmpp.org/rfcs/rfc6120.html#sasl">as defined for XMPP</a> allows the server to present a list of authentication methods. The client then picks the one having the highest perceived strength (<a href="https://xmpp.org/rfcs/rfc6120.html#sasl-rules-preferences">see XMPP-Core 6.3.3</a>) among the ones it implements. <a href="https://xmpp.org/extensions/xep-0438.html#required">XEP-0438: Best practices for password hashing and storage</a> lists some common authentication methods and how they should be ordered. Currently, the methods PLAIN (plaintext password), EXTERNAL (using client certificates to authenticate the user) and <a href="https://www.rfc-editor.org/rfc/rfc5802">SCRAM</a> (Salted Challenge Response Authentication Mechanism) are common.</p>
 <blockquote>
-<p>(I will not talk about SASL EXTERNAL in this blog post, because it does not use passwords and seems to be super uncommon in the XMPP world.)</p></blockquote>
+<p>(I will not talk about SASL EXTERNAL in this blog post, because it does not use passwords and seems to be super uncommon in the XMPP world.)</p>
+</blockquote>
 <p>This generally allows adding new mechanisms in the future, protocol agility seems to be fulfilled, right?</p>
 <h3 id="property-3">Property 3</h3>
 <p>Current <a href="https://xmpp.org/rfcs/rfc6120.html#security-mti">mandatory SASL methods</a> include SCRAM-SHA-1 and SCRAM-SHA-1-PLUS (if possible). <a href="https://www.rfc-editor.org/rfc/rfc5802">SCRAM</a> generally allows the server to store a salted hash instead of plaintext passwords.</p>
@@ -4689,7 +4695,8 @@ Before reading our privacy policy for our App you first need to find out the Mon
 &lt;li&gt;Open Monal&lt;/li&gt;
 &lt;li&gt;Open up the settings menu in the upper left corner (gearwheel)&lt;/li&gt;
 &lt;li&gt;Scroll down to the last entry &amp;ldquo;version&amp;rdquo;&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Monal App Privacy Policies&lt;/strong&gt;&lt;/p&gt;</description><content:encoded><![CDATA[
 <p><strong>Monal Website</strong><br>
 You can find our latest privacy policy for our website here: <a href="/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
@@ -4702,7 +4709,8 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <li>Open Monal</li>
 <li>Open up the settings menu in the upper left corner (gearwheel)</li>
 <li>Scroll down to the last entry &ldquo;version&rdquo;</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
   <thead>
@@ -4739,7 +4747,8 @@ Before reading our privacy policy for our App you first need to find out the Mon
 &lt;li&gt;Open Monal&lt;/li&gt;
 &lt;li&gt;Open up the settings menu in the upper left corner (gearwheel)&lt;/li&gt;
 &lt;li&gt;Scroll down to the last entry &amp;ldquo;version&amp;rdquo;&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Monal App Privacy Policies&lt;/strong&gt;&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
 
 <p><strong>Monal Website</strong><br>
@@ -4753,7 +4762,8 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <li>Open Monal</li>
 <li>Open up the settings menu in the upper left corner (gearwheel)</li>
 <li>Scroll down to the last entry &ldquo;version&rdquo;</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
   <thead>
@@ -4777,6 +4787,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
       </tr>
   </tbody>
 </table>
+
 </blockquote>
 <h1 id="privacy-monal-app--520">Privacy Monal App &lt; 5.2.0</h1>
 <p>Monal for iOS and macOS will register for APNS push notifications via a server to server (s2s) connection from your XMPP server to our push server.
@@ -4850,7 +4861,8 @@ Before reading our privacy policy for our App you first need to find out the Mon
 &lt;li&gt;Open Monal&lt;/li&gt;
 &lt;li&gt;Open up the settings menu in the upper left corner (gearwheel)&lt;/li&gt;
 &lt;li&gt;Scroll down to the last entry &amp;ldquo;version&amp;rdquo;&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Monal App Privacy Policies&lt;/strong&gt;&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
 
 <p><strong>Monal Website</strong><br>
@@ -4864,7 +4876,8 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <li>Open Monal</li>
 <li>Open up the settings menu in the upper left corner (gearwheel)</li>
 <li>Scroll down to the last entry &ldquo;version&rdquo;</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
   <thead>
@@ -4888,6 +4901,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
       </tr>
   </tbody>
 </table>
+
 </blockquote>
 <h1 id="privacy-monal-app-520---54x">Privacy Monal App 5.2.0 - 5.4.x</h1>
 <p>App Resources are very limited on iOS and macOS.
@@ -4925,7 +4939,8 @@ By default, each device will choose our Europe based push region unless the devi
 <li>Open the Notifications menu</li>
 <li>Scroll down</li>
 <li>Select a region</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <h3 id="push-server-regions">Push server regions</h3>
 <p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
 <table>
@@ -5016,7 +5031,8 @@ Before reading our privacy policy for our App you first need to find out the Mon
 &lt;li&gt;Open Monal&lt;/li&gt;
 &lt;li&gt;Open up the settings menu in the upper left corner (gearwheel)&lt;/li&gt;
 &lt;li&gt;Scroll down to the last entry &amp;ldquo;version&amp;rdquo;&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Monal App Privacy Policies&lt;/strong&gt;&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
 
 <p><strong>Monal Website</strong><br>
@@ -5030,7 +5046,8 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <li>Open Monal</li>
 <li>Open up the settings menu in the upper left corner (gearwheel)</li>
 <li>Scroll down to the last entry &ldquo;version&rdquo;</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
   <thead>
@@ -5054,6 +5071,7 @@ Before reading our privacy policy for our App you first need to find out the Mon
       </tr>
   </tbody>
 </table>
+
 </blockquote>
 <h1 id="website-privacy">Website Privacy</h1>
 <p>A user’s IP address will be logged in the HTTP server logs.
@@ -5065,14 +5083,16 @@ Our websites do not use or need any cookies. And of course it doesn&rsquo;t use 
 We are searching for a SwiftUI developer.&lt;br&gt;
 We need a new simplified website.&lt;br&gt;
 With better continuous funding, our push servers will move from the US to Europe.&lt;br&gt;
-We have a new support mail: info@monal-im.org&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+We have a new support mail: info@monal-im.org&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Two years ago we decided to rewrite the Monal app almost entirely and improve it gradually in the process, instead of creating another XMPP Client for iOS and macOS. We successfully managed to transform Monal from an app that had flaws and issues with many functions to a level that promotes a user-friendly experience with working features such as push notification, group chat, and partially end-to-end encryption support (OMEMO). If you are selecting an XMPP client for Apple systems we think that Monal is a great choice nowadays. We have been investing more than a thousand hours and worked hard to overcome all the flaws, the legacy app had. We invite you to give the recent beta a try!&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
 <p>TLDR:</p>
 <p><em>Info: Monal will stop support for iOS 12, iOS 13 and macOS Catalina!<br>
 We are searching for a SwiftUI developer.<br>
 We need a new simplified website.<br>
 With better continuous funding, our push servers will move from the US to Europe.<br>
-We have a new support mail: info@monal-im.org</em></p></blockquote>
+We have a new support mail: info@monal-im.org</em></p>
+</blockquote>
 <p>Two years ago we decided to rewrite the Monal app almost entirely and improve it gradually in the process, instead of creating another XMPP Client for iOS and macOS. We successfully managed to transform Monal from an app that had flaws and issues with many functions to a level that promotes a user-friendly experience with working features such as push notification, group chat, and partially end-to-end encryption support (OMEMO). If you are selecting an XMPP client for Apple systems we think that Monal is a great choice nowadays. We have been investing more than a thousand hours and worked hard to overcome all the flaws, the legacy app had. We invite you to give the recent beta a try!</p>
 <p>The development of Monal has not yet finished though, and many more features are hopefully to come. But due to our time constraints, it sometimes takes a bit longer than we and the community would like. We are at most two developers at the moment using our spare time to maintain Monal and develop new features. As we are developing Monal in our spare time without decent funding, it is sometimes hard to prioritize specific features. Please give this circumstance some credits.</p>
 <h3 id="what-should-monal-look-like-in-the-future">What should Monal look like in the future?</h3>
@@ -5700,7 +5720,8 @@ Before reading our privacy policy for our App you first need to find out the Mon
 &lt;li&gt;Open Monal&lt;/li&gt;
 &lt;li&gt;Open up the settings menu in the upper left corner (gearwheel)&lt;/li&gt;
 &lt;li&gt;Scroll down to the last entry &amp;ldquo;version&amp;rdquo;&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Monal App Privacy Policies&lt;/strong&gt;&lt;/p&gt;</description><content:encoded><![CDATA[<p><strong>Monal Website</strong><br>
 You can find our latest privacy policy for our website here: <a href="/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy">Website Privacy Policy</a></p>
 <p><strong>Monal App</strong><br>
@@ -5712,7 +5733,8 @@ Before reading our privacy policy for our App you first need to find out the Mon
 <li>Open Monal</li>
 <li>Open up the settings menu in the upper left corner (gearwheel)</li>
 <li>Scroll down to the last entry &ldquo;version&rdquo;</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
   <thead>
@@ -5785,22 +5807,26 @@ Authors: Philipp Hancke, Peter Saint-Andre, Thilo Molitor
 <li><a href="https://xmpp.org/extensions/xep-0353.html">XEP-0353: Jingle Message Initiation</a><br/>
 Authors: Philipp Hancke, Peter Saint-Andre, Thilo Molitor
 <blockquote>
-<p>This specification provides a way for the initiator of a Jingle session to propose sending an invitation in an XMPP message stanza, thus taking advantage of message delivery semantics instead of sending IQ stanzas to all of the responder&rsquo;s online resources or choosing a particular online resource.</p></blockquote>
+<p>This specification provides a way for the initiator of a Jingle session to propose sending an invitation in an XMPP message stanza, thus taking advantage of message delivery semantics instead of sending IQ stanzas to all of the responder&rsquo;s online resources or choosing a particular online resource.</p>
+</blockquote>
 </li>
 <li><a href="https://xmpp.org/extensions/xep-0474.html">XEP-0474: SASL SCRAM Downgrade Protection</a><br/>
 Authors: Thilo Molitor
 <blockquote>
-<p>This specification provides a way to secure the SASL and SASL2 handshakes against method and channel-binding downgrades.</p></blockquote>
+<p>This specification provides a way to secure the SASL and SASL2 handshakes against method and channel-binding downgrades.</p>
+</blockquote>
 </li>
 <li><a href="https://xmpp.org/extensions/xep-0388.html">XEP-0388: Extensible SASL Profile</a><br/>
 Authors: Dave Cridland, Thilo Molitor, Matthew Wild
 <blockquote>
-<p>This document describes a replacement for the SASL profile documented in RFC 6120 which allows for greater extensibility.</p></blockquote>
+<p>This document describes a replacement for the SASL profile documented in RFC 6120 which allows for greater extensibility.</p>
+</blockquote>
 </li>
 <li><a href="https://xmpp.org/extensions/xep-0480.html">XEP-0480: SASL Upgrade Tasks</a><br/>
 Authors: Thilo Molitor
 <blockquote>
-<p>This specification provides a way to upgrade to newer SASL mechanisms using SASL2 tasks.</p></blockquote>
+<p>This specification provides a way to upgrade to newer SASL mechanisms using SASL2 tasks.</p>
+</blockquote>
 </li>
 </ul>
 ]]></content:encoded></item></channel></rss>
