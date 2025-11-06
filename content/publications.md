@@ -24,3 +24,9 @@ author: "Monal"
 * [XEP-0480: SASL Upgrade Tasks](https://xmpp.org/extensions/xep-0480.html)<br/>
   Authors: Thilo Molitor
   > This specification provides a way to upgrade to newer SASL mechanisms using SASL2 tasks.
+* [XEP-0440: SASL Channel-Binding Type Capability](https://xmpp.org/extensions/xep-0440.html)<br/>
+  Authors: Florian Schmaus, Thilo Molitor
+  > This specification allows servers to annouce their supported SASL channel-binding types to clients.
+* [XEP-0492: Chat notification settings](https://xmpp.org/extensions/xep-0492.html)<br/>
+  Authors: Nicolas Cedilnik, Thilo Molitor
+  > This document defines an XMPP protocol extension to synchronise per-chat notification settings across different clients.
