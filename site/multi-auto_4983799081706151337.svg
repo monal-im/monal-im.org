@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="448" height="570" xml:lang="en">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="448" height="750" xml:lang="en">
 <defs>
 
 <style type="text/css">@import url(https://hosted.weblate.org/static/styles/vendor/fonts/fonts.css);</style>
@@ -30,27 +30,73 @@
    y="14" />
 </a>
 
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/eu/" xlink:title="Basque">
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/ar_SA/" xlink:title="Arabic (Saudi Arabia)">
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
    y="35"
-   id="text35">Basque</text>
+   id="text35">Arabic (Saudi Arabia)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="35"
-   id="percent35">99%</text>
+   id="percent35">55%</text>
 <rect
-   style="fill:#2eccaa;fill-opacity:1;stroke:none"
+   style="fill:#38f;fill-opacity:1;stroke:none"
    id="rect35"
-   width="149"
+   width="83"
    height="6"
    x="248"
    rx="2"
    y="29" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/eu/" xlink:title="Basque">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="50"
+   id="text50">Basque</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="50"
+   id="percent50">99%</text>
+<rect
+   style="fill:#2eccaa;fill-opacity:1;stroke:none"
+   id="rect50"
+   width="149"
+   height="6"
+   x="248"
+   rx="2"
+   y="44" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/ca/" xlink:title="Catalan">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="65"
+   id="text65">Catalan</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="65"
+   id="percent65">3%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect65"
+   width="5"
+   height="6"
+   x="248"
+   rx="2"
+   y="59" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/zh_Hans/" xlink:title="Chinese (Simplified Han script)">
@@ -58,22 +104,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="50"
-   id="text50">Chinese (Simplified Han script)</text>
+   y="80"
+   id="text80">Chinese (Simplified Han script)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="50"
-   id="percent50">100%</text>
+   y="80"
+   id="percent80">100%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect50"
+   id="rect80"
    width="150"
    height="6"
    x="248"
    rx="2"
-   y="44" />
+   y="74" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/zh_Hant/" xlink:title="Chinese (Traditional Han script)">
@@ -81,22 +127,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="65"
-   id="text65">Chinese (Traditional Han script)</text>
+   y="95"
+   id="text95">Chinese (Traditional Han script)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="65"
-   id="percent65">99%</text>
+   y="95"
+   id="percent95">97%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect65"
-   width="149"
+   id="rect95"
+   width="146"
    height="6"
    x="248"
    rx="2"
-   y="59" />
+   y="89" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/zh_Hant_HK/" xlink:title="Chinese (Traditional Han script, Hong Kong)">
@@ -104,22 +150,45 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="80"
-   id="text80">Chinese (Traditional Han script, Hong Kong)</text>
+   y="110"
+   id="text110">Chinese (Traditional Han script, Hong Kong)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="80"
-   id="percent80">7%</text>
+   y="110"
+   id="percent110">7%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect80"
+   id="rect110"
    width="10"
    height="6"
    x="248"
    rx="2"
-   y="74" />
+   y="104" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/hr/" xlink:title="Croatian">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="125"
+   id="text125">Croatian</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="125"
+   id="percent125">3%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect125"
+   width="5"
+   height="6"
+   x="248"
+   rx="2"
+   y="119" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/cs/" xlink:title="Czech">
@@ -127,22 +196,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="95"
-   id="text95">Czech</text>
+   y="140"
+   id="text140">Czech</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="95"
-   id="percent95">39%</text>
+   y="140"
+   id="percent140">40%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect95"
-   width="59"
+   id="rect140"
+   width="60"
    height="6"
    x="248"
    rx="2"
-   y="89" />
+   y="134" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/da/" xlink:title="Danish">
@@ -150,22 +219,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="110"
-   id="text110">Danish</text>
+   y="155"
+   id="text155">Danish</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="110"
-   id="percent110">6%</text>
+   y="155"
+   id="percent155">6%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect110"
+   id="rect155"
    width="9"
    height="6"
    x="248"
    rx="2"
-   y="104" />
+   y="149" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/nl/" xlink:title="Dutch">
@@ -173,22 +242,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="125"
-   id="text125">Dutch</text>
+   y="170"
+   id="text170">Dutch</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="125"
-   id="percent125">46%</text>
+   y="170"
+   id="percent170">45%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect125"
-   width="69"
+   id="rect170"
+   width="67"
    height="6"
    x="248"
    rx="2"
-   y="119" />
+   y="164" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/en/" xlink:title="English">
@@ -196,77 +265,8 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="140"
-   id="text140">English</text>
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
-   y="140"
-   id="percent140">100%</text>
-<rect
-   style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect140"
-   width="150"
-   height="6"
-   x="248"
-   rx="2"
-   y="134" />
-</a>
-
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/fi/" xlink:title="Finnish">
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
-   y="155"
-   id="text155">Finnish</text>
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
-   y="155"
-   id="percent155">3%</text>
-<rect
-   style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect155"
-   width="5"
-   height="6"
-   x="248"
-   rx="2"
-   y="149" />
-</a>
-
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/fr/" xlink:title="French">
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
-   y="170"
-   id="text170">French</text>
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
-   y="170"
-   id="percent170">99%</text>
-<rect
-   style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect170"
-   width="149"
-   height="6"
-   x="248"
-   rx="2"
-   y="164" />
-</a>
-
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/de/" xlink:title="German">
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
    y="185"
-   id="text185">German</text>
+   id="text185">English</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
@@ -283,27 +283,188 @@
    y="179" />
 </a>
 
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/el/" xlink:title="Greek">
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/en_AU/" xlink:title="English (Australia)">
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
    y="200"
-   id="text200">Greek</text>
+   id="text200">English (Australia)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="200"
-   id="percent200">15%</text>
+   id="percent200">3%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect200"
-   width="23"
+   width="5"
    height="6"
    x="248"
    rx="2"
    y="194" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/en_CA/" xlink:title="English (Canada)">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="215"
+   id="text215">English (Canada)</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="215"
+   id="percent215">3%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect215"
+   width="5"
+   height="6"
+   x="248"
+   rx="2"
+   y="209" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/en_GB/" xlink:title="English (United Kingdom)">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="230"
+   id="text230">English (United Kingdom)</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="230"
+   id="percent230">3%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect230"
+   width="5"
+   height="6"
+   x="248"
+   rx="2"
+   y="224" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/fi/" xlink:title="Finnish">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="245"
+   id="text245">Finnish</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="245"
+   id="percent245">3%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect245"
+   width="5"
+   height="6"
+   x="248"
+   rx="2"
+   y="239" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/fr/" xlink:title="French">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="260"
+   id="text260">French</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="260"
+   id="percent260">99%</text>
+<rect
+   style="fill:#2eccaa;fill-opacity:1;stroke:none"
+   id="rect260"
+   width="148"
+   height="6"
+   x="248"
+   rx="2"
+   y="254" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/fr_CA/" xlink:title="French (Canada)">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="275"
+   id="text275">French (Canada)</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="275"
+   id="percent275">3%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect275"
+   width="5"
+   height="6"
+   x="248"
+   rx="2"
+   y="269" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/de/" xlink:title="German">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="290"
+   id="text290">German</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="290"
+   id="percent290">100%</text>
+<rect
+   style="fill:#2eccaa;fill-opacity:1;stroke:none"
+   id="rect290"
+   width="150"
+   height="6"
+   x="248"
+   rx="2"
+   y="284" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/el/" xlink:title="Greek">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="305"
+   id="text305">Greek</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="305"
+   id="percent305">15%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect305"
+   width="22"
+   height="6"
+   x="248"
+   rx="2"
+   y="299" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/he/" xlink:title="Hebrew">
@@ -311,22 +472,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="215"
-   id="text215">Hebrew</text>
+   y="320"
+   id="text320">Hebrew</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="215"
-   id="percent215">1%</text>
+   y="320"
+   id="percent320">1%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect215"
+   id="rect320"
    width="2"
    height="6"
    x="248"
    rx="2"
-   y="209" />
+   y="314" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/hi/" xlink:title="Hindi">
@@ -334,169 +495,8 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="230"
-   id="text230">Hindi</text>
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
-   y="230"
-   id="percent230">1%</text>
-<rect
-   style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect230"
-   width="2"
-   height="6"
-   x="248"
-   rx="2"
-   y="224" />
-</a>
-
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/id/" xlink:title="Indonesian">
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
-   y="245"
-   id="text245">Indonesian</text>
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
-   y="245"
-   id="percent245">14%</text>
-<rect
-   style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect245"
-   width="22"
-   height="6"
-   x="248"
-   rx="2"
-   y="239" />
-</a>
-
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/it/" xlink:title="Italian">
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
-   y="260"
-   id="text260">Italian</text>
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
-   y="260"
-   id="percent260">100%</text>
-<rect
-   style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect260"
-   width="150"
-   height="6"
-   x="248"
-   rx="2"
-   y="254" />
-</a>
-
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/ja/" xlink:title="Japanese">
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
-   y="275"
-   id="text275">Japanese</text>
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
-   y="275"
-   id="percent275">86%</text>
-<rect
-   style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect275"
-   width="129"
-   height="6"
-   x="248"
-   rx="2"
-   y="269" />
-</a>
-
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/ko/" xlink:title="Korean">
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
-   y="290"
-   id="text290">Korean</text>
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
-   y="290"
-   id="percent290">6%</text>
-<rect
-   style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect290"
-   width="9"
-   height="6"
-   x="248"
-   rx="2"
-   y="284" />
-</a>
-
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/ne/" xlink:title="Nepali">
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
-   y="305"
-   id="text305">Nepali</text>
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
-   y="305"
-   id="percent305">1%</text>
-<rect
-   style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect305"
-   width="2"
-   height="6"
-   x="248"
-   rx="2"
-   y="299" />
-</a>
-
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/nb_NO/" xlink:title="Norwegian Bokmål">
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
-   y="320"
-   id="text320">Norwegian Bokmål</text>
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
-   y="320"
-   id="percent320">20%</text>
-<rect
-   style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect320"
-   width="31"
-   height="6"
-   x="248"
-   rx="2"
-   y="314" />
-</a>
-
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/fa/" xlink:title="Persian">
-<text
-   xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
    y="335"
-   id="text335">Persian</text>
+   id="text335">Hindi</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
@@ -513,59 +513,59 @@
    y="329" />
 </a>
 
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/pl/" xlink:title="Polish">
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/hu/" xlink:title="Hungarian">
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
    y="350"
-   id="text350">Polish</text>
+   id="text350">Hungarian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="350"
-   id="percent350">76%</text>
+   id="percent350">3%</text>
 <rect
-   style="fill:#38f;fill-opacity:1;stroke:none"
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect350"
-   width="114"
+   width="5"
    height="6"
    x="248"
    rx="2"
    y="344" />
 </a>
 
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/pt_BR/" xlink:title="Portuguese (Brazil)">
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/id/" xlink:title="Indonesian">
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
    y="365"
-   id="text365">Portuguese (Brazil)</text>
+   id="text365">Indonesian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="365"
-   id="percent365">99%</text>
+   id="percent365">14%</text>
 <rect
-   style="fill:#2eccaa;fill-opacity:1;stroke:none"
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect365"
-   width="149"
+   width="21"
    height="6"
    x="248"
    rx="2"
    y="359" />
 </a>
 
-<a xlink:href="https://hosted.weblate.org/projects/monal/-/pt_PT/" xlink:title="Portuguese (Portugal)">
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/it/" xlink:title="Italian">
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
    y="380"
-   id="text380">Portuguese (Portugal)</text>
+   id="text380">Italian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
@@ -575,11 +575,218 @@
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect380"
-   width="148"
+   width="147"
    height="6"
    x="248"
    rx="2"
    y="374" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/ja/" xlink:title="Japanese">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="395"
+   id="text395">Japanese</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="395"
+   id="percent395">84%</text>
+<rect
+   style="fill:#38f;fill-opacity:1;stroke:none"
+   id="rect395"
+   width="126"
+   height="6"
+   x="248"
+   rx="2"
+   y="389" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/ko/" xlink:title="Korean">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="410"
+   id="text410">Korean</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="410"
+   id="percent410">6%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect410"
+   width="9"
+   height="6"
+   x="248"
+   rx="2"
+   y="404" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/ms/" xlink:title="Malay">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="425"
+   id="text425">Malay</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="425"
+   id="percent425">3%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect425"
+   width="5"
+   height="6"
+   x="248"
+   rx="2"
+   y="419" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/ne/" xlink:title="Nepali">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="440"
+   id="text440">Nepali</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="440"
+   id="percent440">1%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect440"
+   width="2"
+   height="6"
+   x="248"
+   rx="2"
+   y="434" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/nb_NO/" xlink:title="Norwegian Bokmål">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="455"
+   id="text455">Norwegian Bokmål</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="455"
+   id="percent455">20%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect455"
+   width="30"
+   height="6"
+   x="248"
+   rx="2"
+   y="449" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/fa/" xlink:title="Persian">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="470"
+   id="text470">Persian</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="470"
+   id="percent470">1%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect470"
+   width="2"
+   height="6"
+   x="248"
+   rx="2"
+   y="464" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/pl/" xlink:title="Polish">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="485"
+   id="text485">Polish</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="485"
+   id="percent485">74%</text>
+<rect
+   style="fill:#38f;fill-opacity:1;stroke:none"
+   id="rect485"
+   width="112"
+   height="6"
+   x="248"
+   rx="2"
+   y="479" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/pt_BR/" xlink:title="Portuguese (Brazil)">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="500"
+   id="text500">Portuguese (Brazil)</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="500"
+   id="percent500">97%</text>
+<rect
+   style="fill:#2eccaa;fill-opacity:1;stroke:none"
+   id="rect500"
+   width="146"
+   height="6"
+   x="248"
+   rx="2"
+   y="494" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/pt_PT/" xlink:title="Portuguese (Portugal)">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="515"
+   id="text515">Portuguese (Portugal)</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="515"
+   id="percent515">97%</text>
+<rect
+   style="fill:#2eccaa;fill-opacity:1;stroke:none"
+   id="rect515"
+   width="145"
+   height="6"
+   x="248"
+   rx="2"
+   y="509" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/pa/" xlink:title="Punjabi">
@@ -587,22 +794,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="395"
-   id="text395">Punjabi</text>
+   y="530"
+   id="text530">Punjabi</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="395"
-   id="percent395">2%</text>
+   y="530"
+   id="percent530">2%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect395"
+   id="rect530"
    width="3"
    height="6"
    x="248"
    rx="2"
-   y="389" />
+   y="524" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/ro/" xlink:title="Romanian">
@@ -610,22 +817,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="410"
-   id="text410">Romanian</text>
+   y="545"
+   id="text545">Romanian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="410"
-   id="percent410">33%</text>
+   y="545"
+   id="percent545">34%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect410"
-   width="50"
+   id="rect545"
+   width="51"
    height="6"
    x="248"
    rx="2"
-   y="404" />
+   y="539" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/ru/" xlink:title="Russian">
@@ -633,22 +840,45 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="425"
-   id="text425">Russian</text>
+   y="560"
+   id="text560">Russian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="425"
-   id="percent425">99%</text>
+   y="560"
+   id="percent560">97%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect425"
-   width="149"
+   id="rect560"
+   width="146"
    height="6"
    x="248"
    rx="2"
-   y="419" />
+   y="554" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/sk/" xlink:title="Slovak">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="575"
+   id="text575">Slovak</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="575"
+   id="percent575">3%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect575"
+   width="5"
+   height="6"
+   x="248"
+   rx="2"
+   y="569" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/es/" xlink:title="Spanish">
@@ -656,22 +886,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="440"
-   id="text440">Spanish</text>
+   y="590"
+   id="text590">Spanish</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="440"
-   id="percent440">99%</text>
+   y="590"
+   id="percent590">98%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect440"
-   width="149"
+   id="rect590"
+   width="148"
    height="6"
    x="248"
    rx="2"
-   y="434" />
+   y="584" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/es_AR/" xlink:title="Spanish (Argentina)">
@@ -679,22 +909,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="455"
-   id="text455">Spanish (Argentina)</text>
+   y="605"
+   id="text605">Spanish (Argentina)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="455"
-   id="percent455">99%</text>
+   y="605"
+   id="percent605">99%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect455"
+   id="rect605"
    width="149"
    height="6"
    x="248"
    rx="2"
-   y="449" />
+   y="599" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/es_419/" xlink:title="Spanish (Latin America)">
@@ -702,22 +932,45 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="470"
-   id="text470">Spanish (Latin America)</text>
+   y="620"
+   id="text620">Spanish (Latin America)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="470"
-   id="percent470">100%</text>
+   y="620"
+   id="percent620">100%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect470"
+   id="rect620"
    width="150"
    height="6"
    x="248"
    rx="2"
-   y="464" />
+   y="614" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/es_MX/" xlink:title="Spanish (Mexico)">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="635"
+   id="text635">Spanish (Mexico)</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="635"
+   id="percent635">3%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect635"
+   width="5"
+   height="6"
+   x="248"
+   rx="2"
+   y="629" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/sv/" xlink:title="Swedish">
@@ -725,22 +978,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="485"
-   id="text485">Swedish</text>
+   y="650"
+   id="text650">Swedish</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="485"
-   id="percent485">5%</text>
+   y="650"
+   id="percent650">5%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect485"
+   id="rect650"
    width="7"
    height="6"
    x="248"
    rx="2"
-   y="479" />
+   y="644" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/ta/" xlink:title="Tamil">
@@ -748,22 +1001,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="500"
-   id="text500">Tamil</text>
+   y="665"
+   id="text665">Tamil</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="500"
-   id="percent500">99%</text>
+   y="665"
+   id="percent665">99%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect500"
+   id="rect665"
    width="148"
    height="6"
    x="248"
    rx="2"
-   y="494" />
+   y="659" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/te/" xlink:title="Telugu">
@@ -771,22 +1024,45 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="515"
-   id="text515">Telugu</text>
+   y="680"
+   id="text680">Telugu</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="515"
-   id="percent515">95%</text>
+   y="680"
+   id="percent680">95%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect515"
+   id="rect680"
    width="142"
    height="6"
    x="248"
    rx="2"
-   y="509" />
+   y="674" />
+</a>
+
+<a xlink:href="https://hosted.weblate.org/projects/monal/-/th/" xlink:title="Thai">
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
+   x="238"
+   y="695"
+   id="text695">Thai</text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
+   x="408"
+   y="695"
+   id="percent695">3%</text>
+<rect
+   style="fill:#f6664c;fill-opacity:1;stroke:none"
+   id="rect695"
+   width="5"
+   height="6"
+   x="248"
+   rx="2"
+   y="689" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/tr/" xlink:title="Turkish">
@@ -794,22 +1070,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="530"
-   id="text530">Turkish</text>
+   y="710"
+   id="text710">Turkish</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="530"
-   id="percent530">100%</text>
+   y="710"
+   id="percent710">100%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
-   id="rect530"
+   id="rect710"
    width="150"
    height="6"
    x="248"
    rx="2"
-   y="524" />
+   y="704" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/uk/" xlink:title="Ukrainian">
@@ -817,22 +1093,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="545"
-   id="text545">Ukrainian</text>
+   y="725"
+   id="text725">Ukrainian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="545"
-   id="percent545">53%</text>
+   y="725"
+   id="percent725">52%</text>
 <rect
    style="fill:#38f;fill-opacity:1;stroke:none"
-   id="rect545"
-   width="80"
+   id="rect725"
+   width="78"
    height="6"
    x="248"
    rx="2"
-   y="539" />
+   y="719" />
 </a>
 
 <a xlink:href="https://hosted.weblate.org/projects/monal/-/vi/" xlink:title="Vietnamese">
@@ -840,22 +1116,22 @@
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
    x="238"
-   y="560"
-   id="text560">Vietnamese</text>
+   y="740"
+   id="text740">Vietnamese</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
-   y="560"
-   id="percent560">1%</text>
+   y="740"
+   id="percent740">1%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
-   id="rect560"
+   id="rect740"
    width="2"
    height="6"
    x="248"
    rx="2"
-   y="554" />
+   y="734" />
 </a>
 
 
