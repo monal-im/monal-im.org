@@ -35,8 +35,8 @@ The serializable promise framework is a new framework in Monal, which exactly fi
 Without the promise framework, the app would have continued to show the loading screen indefinitely, requiring you to fully close and open the app.</li>
 </ol>
 <p>However, with the promise framework, when you switch back to the app, the loading screen disappears and correctly shows the error returned by the server:</p>
-<video preload="metadata" controls>
-    style=" max-height:32em;>> "
+<video preload="metadata" controlsstyle=" max-height:32em;>> "
+    >
     <source
       src="/monal-im.org/site/post/00015-monal-internals-promise-framework/remove_avatar.mp4"
       type="video/mp4"
