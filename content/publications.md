@@ -12,6 +12,9 @@ author: "Monal"
 
 ## XEP publications
 
+* [XEP-0198: Stream Management](https://xmpp.org/extensions/xep-0198.html)<br/>
+  Authors: Justin Karneges, Peter Saint-Andre, Joe Hildebrand, Fabio Forno, Dave Cridland, Matthew Wild, Thilo Molitor
+  > This specification defines an XMPP protocol extension for active management of an XML stream between two XMPP entities, including features for stanza acknowledgements and stream resumption.
 * [XEP-0353: Jingle Message Initiation](https://xmpp.org/extensions/xep-0353.html)<br/>
   Authors: Philipp Hancke, Peter Saint-Andre, Thilo Molitor
   > This specification provides a way for the initiator of a Jingle session to propose sending an invitation in an XMPP message stanza, thus taking advantage of message delivery semantics instead of sending IQ stanzas to all of the responder's online resources or choosing a particular online resource.
