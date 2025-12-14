@@ -5792,10 +5792,10 @@ Monal challenges to be the go-to XMPP chat-app for the iOS and macOS platform.</
 &lt;/ul&gt;
 &lt;h2 id="xep-publications"&gt;XEP publications&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://xmpp.org/extensions/xep-0353.html"&gt;XEP-0353: Jingle Message Initiation&lt;/a&gt;&lt;br/&gt;
-Authors: Philipp Hancke, Peter Saint-Andre, Thilo Molitor
+&lt;li&gt;&lt;a href="https://xmpp.org/extensions/xep-0198.html"&gt;XEP-0198: Stream Management&lt;/a&gt;&lt;br/&gt;
+Authors: Justin Karneges, Peter Saint-Andre, Joe Hildebrand, Fabio Forno, Dave Cridland, Matthew Wild, Thilo Molitor
 &lt;blockquote&gt;
-&lt;p&gt;This specification provides a way for the initiator of a Jingle session to propose sending an invitation in an XMPP message stanza, thus taking advantage of message delivery semantics instead of sending IQ stanzas to all of the responder&amp;rsquo;s online resources or choosing a particular online resource.&lt;/p&gt;</description><content:encoded><![CDATA[<h2 id="talks-and-other-documents">Talks and other documents</h2>
+&lt;p&gt;This specification defines an XMPP protocol extension for active management of an XML stream between two XMPP entities, including features for stanza acknowledgements and stream resumption.&lt;/p&gt;</description><content:encoded><![CDATA[<h2 id="talks-and-other-documents">Talks and other documents</h2>
 <ul>
 <li>Molitor, Thilo; Altheide, Friedrich. <strong>Modern XMPP - A story based on Monal</strong> <em>Berlin XMPP Meetup</em>, 13th April 2022, <a href="https://xmpp-meetup.in-berlin.de/talks/monal-2022.mp4">Recording</a>, <a href="https://xmpp-meetup.in-berlin.de/talks/monal-and-push.pdf">Slides</a></li>
 <li>Molitor, Thilo; Altheide, Friedrich. <strong>Privacy friendly push</strong> <em>Berlin XMPP Meetup</em>, 13th April 2022, <a href="https://xmpp-meetup.in-berlin.de/talks/privacy-friendly-push.mp4">Recording</a>, <a href="https://xmpp-meetup.in-berlin.de/talks/monal-and-push.pdf#Navigation31">Slides</a> (starting after page 29)</li>
@@ -5804,6 +5804,12 @@ Authors: Philipp Hancke, Peter Saint-Andre, Thilo Molitor
 </ul>
 <h2 id="xep-publications">XEP publications</h2>
 <ul>
+<li><a href="https://xmpp.org/extensions/xep-0198.html">XEP-0198: Stream Management</a><br/>
+Authors: Justin Karneges, Peter Saint-Andre, Joe Hildebrand, Fabio Forno, Dave Cridland, Matthew Wild, Thilo Molitor
+<blockquote>
+<p>This specification defines an XMPP protocol extension for active management of an XML stream between two XMPP entities, including features for stanza acknowledgements and stream resumption.</p>
+</blockquote>
+</li>
 <li><a href="https://xmpp.org/extensions/xep-0353.html">XEP-0353: Jingle Message Initiation</a><br/>
 Authors: Philipp Hancke, Peter Saint-Andre, Thilo Molitor
 <blockquote>
