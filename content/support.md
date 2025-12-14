@@ -15,7 +15,10 @@ author: "Monal"
 
 ## Donate
 
-Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:
+Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid,
+and the developers ask for donations to keep up service costs and development in the future!
+Please consider giving a little back for the hard work which has been conducted.
+Currently, there are three ways for financial support of the Monal development:
 
 * Donate via [GitHub Sponsors](https://github.com/sponsors/tmolitor-stud-tu)
 * Donate via [Libera Pay](https://liberapay.com/tmolitor)
@@ -27,11 +30,8 @@ Find general information in the [Monal Wiki](https://github.com/monal-im/Monal/w
 
 ## Translations
 
-Appstore metadata can be translated:
-- [Instructions for Monal](https://github.com/monal-im/Monal/tree/develop/appstore_metadata)
-- [Instructions for Quicksy](https://github.com/monal-im/Monal/tree/develop/appstore_quicksy_metadata).
-
-Translations of the app itself are hosted and managed via [Weblate](https://hosted.weblate.org/engage/monal/).  
+Translations of the app itself as well as the appstore description and even the changelog displayed
+inside the appstore are hosted and managed via [Weblate](https://hosted.weblate.org/engage/monal/).  
 Feel free to translate Monal to your language!
 
 <a href="https://hosted.weblate.org/engage/monal/?utm_source=widget">{{< remoteImage "weblate.svg" >}}</a>
@@ -52,7 +52,9 @@ Please try to report
 
 You are also invited to make a recommendation on how to fix a potential security vulnerability.
 
-Once a vulnerability has been announced and indicated we try our very best to provide a fix as soon as possible, at its best within days. However, dependent on the potential issue it can take longer if many code sections need to be changed.
+Once a vulnerability has been announced and indicated we try our very best to provide a fix as soon as possible,
+at its best within days. However, dependent on the potential issue it can take longer
+if many code sections need to be changed.
 
 Please be reminded that this is a non-commercial software project.
 
