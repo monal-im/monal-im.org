@@ -3377,13 +3377,8 @@ XEP-0158: CAPTCHA Forms
 <p>Here you can read about further <a href="https://github.com/monal-im/Monal/issues/363">support of the development</a>!</p>
 <p>Find general information in the <a href="https://github.com/monal-im/Monal/wiki">Monal Wiki</a>.</p>
 <h2 id="translations">Translations</h2>
-<p>Appstore metadata can be translated:</p>
-<ul>
-<li><a href="https://github.com/monal-im/Monal/tree/develop/appstore_metadata">Instructions for Monal</a></li>
-<li><a href="https://github.com/monal-im/Monal/tree/develop/appstore_quicksy_metadata">Instructions for Quicksy</a>.</li>
-</ul>
-<p>Translations of the app itself are hosted and managed via <a href="https://hosted.weblate.org/engage/monal/">Weblate</a>.<br>
-Feel free to translate Monal to your language!</p>
+<p>Translations of the app itself as well as the appstore description and even the changelog displayed
+inside the appstore are hosted and managed via <a href="https://hosted.weblate.org/engage/monal/">Weblate</a>.</p>
 <p><a href="https://hosted.weblate.org/engage/monal/?utm_source=widget">                                                
 
 
