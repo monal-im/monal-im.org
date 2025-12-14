@@ -41,11 +41,11 @@ Without the promise framework, the app would have continued to show the loading 
 <p>We will briefly describe the important parts below. But these links provide more detailed context and are recommended reading:</p>
 <ul>
 <li>The <a href="https://xmpp-meetup.in-berlin.de/talks/monal-and-push.pdf#Navigation6">app decomposition slides</a> explain the split between the main app and app extension.</li>
-<li>The <a href="https://github.com/monal-im/Monal/wiki/Handler-Framework">handler framework article</a> explores some of the consequences of this split.</li>
+<li>The <a href="https://monal-im.github.io/monal-im.org/site/post/00007-monal-internals-handlers/#handlers">handler framework blog post</a> explores some of the consequences of this split.</li>
 </ul>
 <h3 id="main-app-and-app-extension">Main app and app extension</h3>
 <p>In Monal there are two separate processes: the “main app” (<code>MonalAppDelegate</code>) and “app extension” (<code>NotificationService</code>), which is sometimes abbreviated to “appex”.</p>
-<p>Since they do not share memory, they hand over to each other via the <a href="https://github.com/monal-im/Monal/wiki/Handler-Framework">handler framework</a>.</p>
+<p>Since they do not share memory, they hand over to each other via the <a href="https://monal-im.github.io/monal-im.org/site/post/00007-monal-internals-handlers/#handlers">handler framework</a>.</p>
 <p>An xmpp stanza can be processed by either, depending on whether the app is running or not:</p>
 <p><img alt="Diagram showing that, if the app is active or in the background, stanzas get processed by the main app, otherwise they get processed by the appex, triggered by Apple&rsquo;s push servers if it is not already running" loading="lazy" src="/monal-im.org/site/post/00015-monal-internals-promise-framework/stanza_processing.png"></p>
 <h3 id="app-states">App states</h3>
