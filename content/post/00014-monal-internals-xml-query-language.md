@@ -10,6 +10,7 @@ In this new series, I want to shine some light onto specific parts of Monal's in
 
 **Other articles in this series:**
 - [Monal Internals - Handlers framework](00007-monal-internals-handlers)
+- [Monal Internals - Serializable Promise framework](00015-monal-internals-promise-framework)
 
 # The `MLXMLNode` methods
 All incoming and outgoing XMPP stanzas are parsed to/from an instance of nested `MLXMLNode` elements.
