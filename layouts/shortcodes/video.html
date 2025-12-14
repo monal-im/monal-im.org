@@ -23,13 +23,12 @@
 {{- if $caption -}}
 <figure>
 {{- end -}}
-  <video preload="{{ $preload }}"
+  <video preload="{{ $preload }}" style="{{- with $height }} max-height:{{ . }};{{ end -}}> {{- with $width }} max-width:{{ . }};{{ end -}}> "
     {{- if $controls }} controls{{ end -}}
     {{- if $muted }} muted{{ end -}}
     {{- if $loop }} loop{{ end -}}
     {{- if $autoplay }} autoplay{{ end -}}
     {{- with $poster }} poster="{{ . }}"{{ end -}}
-    style="{{- with $height }} max-height:{{ . }};{{ end -}}> {{- with $width }} max-width:{{ . }};{{ end -}}> "
     >
     <source
       src="{{ with $video }}{{ .RelPermalink }}{{ else }}{{ $source }}{{ end }}"
