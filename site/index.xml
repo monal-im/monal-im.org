@@ -3362,13 +3362,19 @@ XEP-0158: CAPTCHA Forms
 &lt;li&gt;Email: info[at]monal[minus]im[dot]org.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="donate"&gt;Donate&lt;/h2&gt;
-&lt;p&gt;Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:&lt;/p&gt;</description><content:encoded><![CDATA[<ul>
+&lt;p&gt;Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid,
+and the developers ask for donations to keep up service costs and development in the future!
+Please consider giving a little back for the hard work which has been conducted.
+Currently, there are three ways for financial support of the Monal development:&lt;/p&gt;</description><content:encoded><![CDATA[<ul>
 <li>Monal Support Channel (XMPP MUC): <a href="#ZgotmplZ">monal@chat.yax.im</a></li>
 <li>Github Tickets: <a href="https://github.com/monal-im/Monal/issues">https://github.com/monal-im/Monal/issues</a></li>
 <li>Email: info[at]monal[minus]im[dot]org.</li>
 </ul>
 <h2 id="donate">Donate</h2>
-<p>Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid, and the developers ask for donations to keep up service costs and development in the future! Please consider giving a little back for the hard work which has been conducted. Currently, there are three ways for financial support of the Monal development:</p>
+<p>Monal is developed by volunteers and community collaboration. The work which has been done is usually not paid,
+and the developers ask for donations to keep up service costs and development in the future!
+Please consider giving a little back for the hard work which has been conducted.
+Currently, there are three ways for financial support of the Monal development:</p>
 <ul>
 <li>Donate via <a href="https://github.com/sponsors/tmolitor-stud-tu">GitHub Sponsors</a></li>
 <li>Donate via <a href="https://liberapay.com/tmolitor">Libera Pay</a></li>
@@ -3378,7 +3384,8 @@ XEP-0158: CAPTCHA Forms
 <p>Find general information in the <a href="https://github.com/monal-im/Monal/wiki">Monal Wiki</a>.</p>
 <h2 id="translations">Translations</h2>
 <p>Translations of the app itself as well as the appstore description and even the changelog displayed
-inside the appstore are hosted and managed via <a href="https://hosted.weblate.org/engage/monal/">Weblate</a>.</p>
+inside the appstore are hosted and managed via <a href="https://hosted.weblate.org/engage/monal/">Weblate</a>.<br>
+Feel free to translate Monal to your language!</p>
 <p><a href="https://hosted.weblate.org/engage/monal/?utm_source=widget">                                                
 
 
@@ -3399,7 +3406,9 @@ Please report issues directly to info[at]monal[minus]im[dot]org.</p>
 That way we can ask questions back to you.</li>
 </ul>
 <p>You are also invited to make a recommendation on how to fix a potential security vulnerability.</p>
-<p>Once a vulnerability has been announced and indicated we try our very best to provide a fix as soon as possible, at its best within days. However, dependent on the potential issue it can take longer if many code sections need to be changed.</p>
+<p>Once a vulnerability has been announced and indicated we try our very best to provide a fix as soon as possible,
+at its best within days. However, dependent on the potential issue it can take longer
+if many code sections need to be changed.</p>
 <p>Please be reminded that this is a non-commercial software project.</p>
 <p>Thank you for considering reporting a security vulnerability.
 This improves the quality of the app significantly.</p>
