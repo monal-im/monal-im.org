@@ -11,6 +11,7 @@ If you want to give some feedback, feel free to send an email to [thilo@monal-im
 
 **Other articles in this series:**
 - [Monal Internals - XML Query Language](00014-monal-internals-xml-query-language)
+- [Monal Internals - Serializable Promise framework](00015-monal-internals-promise-framework)
 
 # Handlers
 Handlers in Monal are something like serializable callbacks. 
