@@ -1,0 +1,26 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Contact: mailto:info@monal-im.org
+Expires: 2029-12-31T23:00:00.000Z
+Encryption: https://openpgpkey.monal-im.org/.well-known/openpgpkey/monal-im.org/hu/mg6owx9w8c3ejg3tu31f4tha5n17d4rj
+Preferred-Languages: en, de
+Canonical: https://monal-im.org/.well-known/security.txt
+Policy: https://github.com/monal-im/Monal/security/policy 
+-----BEGIN PGP SIGNATURE-----
+
+iQJGBAEBCgAwFiEE3X8zFdJAizf1NYVdYlLpkmbD9R0FAmk+4kMSHGluZm9AbW9u
+YWwtaW0ub3JnAAoJEGJS6ZJmw/UdOlkP/2m6cAFqrZDids+d92Ptm1WarSfCZdKq
+7OpuBOyRi9xrxBQdu1kyLKU+6t3DoiV0/LrKXROla1QNYvvj/LX1kLBu9RIyzh84
+Bv6oRQ4KPWTr9fcjXQtQIFnKNnowBo9yZoZdSq1EoMU/VRWWWw/km1/4Z20SVWM+
+AWhruBvLYFHHrkYCXf8kEIrJkmQV4pT4xQc7FQbf2vygeT/R90V0BRB2Aj0xyrle
+K8patFzHrK90bx8iMsa6Bmin+GQQIFUkTAmFr398xblGX1etWcuwTNTMDLVunhea
+MarcPluj0VD25cTH8vgdvsqYcO1mnndbhIq1ySoDSfoZ1vYoADQYN0F+u0SamTw0
+zzLtua//o3lYR5vNIdxmibFd7WfS3gk4vYKm8U6JRn6G4Np3LCVGb6P/BJbcEpEP
+uaYZBrKQ1XbeB0JZjUIrnPZVMIrMb28KRxkPJIIGZIgkUDXahb2PFZhPDqgqd7qj
+xlhogPX8Q7sEdpg2lmSA+jJTGtoRU3jpyID7gbZeSCH7jpV7XLJWnWtvCEkQCEG5
+kPpACePiGUImQlH6E9txK842rom2+TrzRlfvnzcfXNsFI0ZHvACqi3klOIDXQL7W
+7KgLaWGhvTgdkvlW2RS4b5XhJLVjQbdNN/jshpyE+f5syKYiyeHGbz6Wk5l8f0zm
+t2i4G7z16ZSX
+=KCz6
+-----END PGP SIGNATURE-----
