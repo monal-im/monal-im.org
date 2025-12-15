@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="448" height="750" xml:lang="en">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="459" height="750" xml:lang="en">
 <defs>
 
 <style type="text/css">@import url(https://hosted.weblate.org/static/styles/vendor/fonts/fonts.css);</style>
@@ -11,13 +11,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="20"
    id="text20">Arabic</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="20"
    id="percent20">37%</text>
 <rect
@@ -25,7 +25,7 @@
    id="rect20"
    width="56"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="14" />
 </a>
@@ -34,13 +34,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="35"
    id="text35">Arabic (Saudi Arabia)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="35"
    id="percent35">40%</text>
 <rect
@@ -48,7 +48,7 @@
    id="rect35"
    width="60"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="29" />
 </a>
@@ -57,13 +57,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="50"
    id="text50">Basque</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="50"
    id="percent50">99%</text>
 <rect
@@ -71,7 +71,7 @@
    id="rect50"
    width="148"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="44" />
 </a>
@@ -80,13 +80,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="65"
    id="text65">Catalan</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="65"
    id="percent65">2%</text>
 <rect
@@ -94,7 +94,7 @@
    id="rect65"
    width="4"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="59" />
 </a>
@@ -103,13 +103,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="80"
    id="text80">Chinese (Simplified Han script)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="80"
    id="percent80">100%</text>
 <rect
@@ -117,7 +117,7 @@
    id="rect80"
    width="150"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="74" />
 </a>
@@ -126,13 +126,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="95"
    id="text95">Chinese (Traditional Han script)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="95"
    id="percent95">96%</text>
 <rect
@@ -140,7 +140,7 @@
    id="rect95"
    width="145"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="89" />
 </a>
@@ -149,13 +149,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="110"
    id="text110">Chinese (Traditional Han script, Hong Kong)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="110"
    id="percent110">7%</text>
 <rect
@@ -163,7 +163,7 @@
    id="rect110"
    width="10"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="104" />
 </a>
@@ -172,13 +172,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="125"
    id="text125">Croatian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="125"
    id="percent125">2%</text>
 <rect
@@ -186,7 +186,7 @@
    id="rect125"
    width="4"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="119" />
 </a>
@@ -195,13 +195,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="140"
    id="text140">Czech</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="140"
    id="percent140">40%</text>
 <rect
@@ -209,7 +209,7 @@
    id="rect140"
    width="60"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="134" />
 </a>
@@ -218,13 +218,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="155"
    id="text155">Danish</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="155"
    id="percent155">6%</text>
 <rect
@@ -232,7 +232,7 @@
    id="rect155"
    width="9"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="149" />
 </a>
@@ -241,13 +241,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="170"
    id="text170">Dutch</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="170"
    id="percent170">44%</text>
 <rect
@@ -255,7 +255,7 @@
    id="rect170"
    width="67"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="164" />
 </a>
@@ -264,13 +264,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="185"
    id="text185">English</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="185"
    id="percent185">100%</text>
 <rect
@@ -278,7 +278,7 @@
    id="rect185"
    width="150"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="179" />
 </a>
@@ -287,13 +287,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="200"
    id="text200">English (Australia)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="200"
    id="percent200">2%</text>
 <rect
@@ -301,7 +301,7 @@
    id="rect200"
    width="4"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="194" />
 </a>
@@ -310,13 +310,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="215"
    id="text215">English (Canada)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="215"
    id="percent215">2%</text>
 <rect
@@ -324,7 +324,7 @@
    id="rect215"
    width="4"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="209" />
 </a>
@@ -333,13 +333,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="230"
    id="text230">English (United Kingdom)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="230"
    id="percent230">2%</text>
 <rect
@@ -347,7 +347,7 @@
    id="rect230"
    width="4"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="224" />
 </a>
@@ -356,13 +356,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="245"
    id="text245">Finnish</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="245"
    id="percent245">3%</text>
 <rect
@@ -370,7 +370,7 @@
    id="rect245"
    width="5"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="239" />
 </a>
@@ -379,13 +379,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="260"
    id="text260">French</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="260"
    id="percent260">99%</text>
 <rect
@@ -393,7 +393,7 @@
    id="rect260"
    width="148"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="254" />
 </a>
@@ -402,13 +402,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="275"
    id="text275">French (Canada)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="275"
    id="percent275">2%</text>
 <rect
@@ -416,7 +416,7 @@
    id="rect275"
    width="4"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="269" />
 </a>
@@ -425,13 +425,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="290"
    id="text290">German</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="290"
    id="percent290">100%</text>
 <rect
@@ -439,7 +439,7 @@
    id="rect290"
    width="150"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="284" />
 </a>
@@ -448,13 +448,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="305"
    id="text305">Greek</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="305"
    id="percent305">15%</text>
 <rect
@@ -462,7 +462,7 @@
    id="rect305"
    width="22"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="299" />
 </a>
@@ -471,13 +471,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="320"
    id="text320">Hebrew</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="320"
    id="percent320">1%</text>
 <rect
@@ -485,7 +485,7 @@
    id="rect320"
    width="2"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="314" />
 </a>
@@ -494,13 +494,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="335"
    id="text335">Hindi</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="335"
    id="percent335">1%</text>
 <rect
@@ -508,7 +508,7 @@
    id="rect335"
    width="2"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="329" />
 </a>
@@ -517,13 +517,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="350"
    id="text350">Hungarian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="350"
    id="percent350">2%</text>
 <rect
@@ -531,7 +531,7 @@
    id="rect350"
    width="4"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="344" />
 </a>
@@ -540,13 +540,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="365"
    id="text365">Indonesian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="365"
    id="percent365">14%</text>
 <rect
@@ -554,7 +554,7 @@
    id="rect365"
    width="21"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="359" />
 </a>
@@ -563,13 +563,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="380"
    id="text380">Italian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="380"
    id="percent380">98%</text>
 <rect
@@ -577,7 +577,7 @@
    id="rect380"
    width="148"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="374" />
 </a>
@@ -586,13 +586,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="395"
    id="text395">Japanese</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="395"
    id="percent395">83%</text>
 <rect
@@ -600,7 +600,7 @@
    id="rect395"
    width="125"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="389" />
 </a>
@@ -609,13 +609,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="410"
    id="text410">Korean</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="410"
    id="percent410">6%</text>
 <rect
@@ -623,7 +623,7 @@
    id="rect410"
    width="9"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="404" />
 </a>
@@ -632,13 +632,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="425"
    id="text425">Malay</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="425"
    id="percent425">2%</text>
 <rect
@@ -646,7 +646,7 @@
    id="rect425"
    width="4"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="419" />
 </a>
@@ -655,13 +655,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="440"
    id="text440">Nepali</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="440"
    id="percent440">1%</text>
 <rect
@@ -669,7 +669,7 @@
    id="rect440"
    width="2"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="434" />
 </a>
@@ -678,13 +678,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="455"
    id="text455">Norwegian Bokmål</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="455"
    id="percent455">20%</text>
 <rect
@@ -692,7 +692,7 @@
    id="rect455"
    width="30"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="449" />
 </a>
@@ -701,13 +701,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="470"
    id="text470">Persian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="470"
    id="percent470">1%</text>
 <rect
@@ -715,7 +715,7 @@
    id="rect470"
    width="2"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="464" />
 </a>
@@ -724,13 +724,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="485"
    id="text485">Polish</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="485"
    id="percent485">73%</text>
 <rect
@@ -738,7 +738,7 @@
    id="rect485"
    width="110"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="479" />
 </a>
@@ -747,13 +747,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="500"
    id="text500">Portuguese (Brazil)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="500"
    id="percent500">96%</text>
 <rect
@@ -761,7 +761,7 @@
    id="rect500"
    width="144"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="494" />
 </a>
@@ -770,13 +770,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="515"
    id="text515">Portuguese (Portugal)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="515"
    id="percent515">95%</text>
 <rect
@@ -784,7 +784,7 @@
    id="rect515"
    width="143"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="509" />
 </a>
@@ -793,13 +793,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="530"
    id="text530">Punjabi</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="530"
    id="percent530">2%</text>
 <rect
@@ -807,7 +807,7 @@
    id="rect530"
    width="3"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="524" />
 </a>
@@ -816,13 +816,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="545"
    id="text545">Romanian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="545"
    id="percent545">33%</text>
 <rect
@@ -830,7 +830,7 @@
    id="rect545"
    width="50"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="539" />
 </a>
@@ -839,13 +839,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="560"
    id="text560">Russian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="560"
    id="percent560">99%</text>
 <rect
@@ -853,7 +853,7 @@
    id="rect560"
    width="148"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="554" />
 </a>
@@ -862,13 +862,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="575"
    id="text575">Slovak</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="575"
    id="percent575">2%</text>
 <rect
@@ -876,7 +876,7 @@
    id="rect575"
    width="4"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="569" />
 </a>
@@ -885,13 +885,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="590"
    id="text590">Spanish</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="590"
    id="percent590">97%</text>
 <rect
@@ -899,7 +899,7 @@
    id="rect590"
    width="146"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="584" />
 </a>
@@ -908,13 +908,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="605"
    id="text605">Spanish (Argentina)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="605"
    id="percent605">99%</text>
 <rect
@@ -922,7 +922,7 @@
    id="rect605"
    width="148"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="599" />
 </a>
@@ -931,13 +931,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="620"
    id="text620">Spanish (Latin America)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="620"
    id="percent620">99%</text>
 <rect
@@ -945,7 +945,7 @@
    id="rect620"
    width="149"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="614" />
 </a>
@@ -954,13 +954,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="635"
    id="text635">Spanish (Mexico)</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="635"
    id="percent635">2%</text>
 <rect
@@ -968,7 +968,7 @@
    id="rect635"
    width="4"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="629" />
 </a>
@@ -977,13 +977,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="650"
    id="text650">Swedish</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="650"
    id="percent650">5%</text>
 <rect
@@ -991,7 +991,7 @@
    id="rect650"
    width="7"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="644" />
 </a>
@@ -1000,13 +1000,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="665"
    id="text665">Tamil</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="665"
    id="percent665">98%</text>
 <rect
@@ -1014,7 +1014,7 @@
    id="rect665"
    width="148"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="659" />
 </a>
@@ -1023,13 +1023,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="680"
    id="text680">Telugu</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="680"
    id="percent680">94%</text>
 <rect
@@ -1037,7 +1037,7 @@
    id="rect680"
    width="142"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="674" />
 </a>
@@ -1046,13 +1046,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="695"
    id="text695">Thai</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="695"
    id="percent695">2%</text>
 <rect
@@ -1060,7 +1060,7 @@
    id="rect695"
    width="4"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="689" />
 </a>
@@ -1069,13 +1069,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="710"
    id="text710">Turkish</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="710"
    id="percent710">100%</text>
 <rect
@@ -1083,7 +1083,7 @@
    id="rect710"
    width="150"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="704" />
 </a>
@@ -1092,13 +1092,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="725"
    id="text725">Ukrainian</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="725"
    id="percent725">51%</text>
 <rect
@@ -1106,7 +1106,7 @@
    id="rect725"
    width="77"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="719" />
 </a>
@@ -1115,13 +1115,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080;text-anchor:end;"
-   x="238"
+   x="249"
    y="740"
    id="text740">Vietnamese</text>
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
-   x="408"
+   x="419"
    y="740"
    id="percent740">1%</text>
 <rect
@@ -1129,7 +1129,7 @@
    id="rect740"
    width="2"
    height="6"
-   x="248"
+   x="259"
    rx="2"
    y="734" />
 </a>
