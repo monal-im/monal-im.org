@@ -44,6 +44,7 @@ For instance, imagine you want to remove the avatar of a group chat in Monal, wh
 1. The server fails to remove the avatar and sends an error to Monal
 1. The response is handled by Monal’s app extension in the background (0:51)
 1. You switch apps back to Monal (0:57)
+
 Without the promise framework, the app would have continued to show the loading screen indefinitely, requiring you to fully close and open the app.
 
 However, with the promise framework, when you switch back to the app, the loading screen disappears and correctly shows the error returned by the server:
