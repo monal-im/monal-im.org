@@ -31,9 +31,9 @@ The serializable promise framework is a new framework in Monal, which exactly fi
 <li>After 30s in the background, Monal gets suspended (0:36)</li>
 <li>The server fails to remove the avatar and sends an error to Monal</li>
 <li>The response is handled by Monal’s app extension in the background (0:51)</li>
-<li>You switch apps back to Monal (0:57)
-Without the promise framework, the app would have continued to show the loading screen indefinitely, requiring you to fully close and open the app.</li>
+<li>You switch apps back to Monal (0:57)</li>
 </ol>
+<p>Without the promise framework, the app would have continued to show the loading screen indefinitely, requiring you to fully close and open the app.</p>
 <p>However, with the promise framework, when you switch back to the app, the loading screen disappears and correctly shows the error returned by the server:</p>
 <video preload="metadata" style=" max-height:32em ; " controls>
     <source
