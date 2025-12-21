@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Monal</title><link>https://monal-im.github.io/monal-im.org/site/post/</link><description>Recent content in Posts on Monal</description><generator>Hugo -- 0.152.2</generator><language>en</language><lastBuildDate>Tue, 16 Dec 2025 11:35:18 +0100</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/site/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - Serializable Promise framework</title><link>https://monal-im.github.io/monal-im.org/site/post/00015-monal-internals-promise-framework/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00015-monal-internals-promise-framework/</guid><description>&lt;p&gt;In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Monal</title><link>https://monal-im.github.io/monal-im.org/site/post/</link><description>Recent content in Posts on Monal</description><generator>Hugo -- 0.153.1</generator><language>en</language><lastBuildDate>Tue, 16 Dec 2025 11:35:18 +0100</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/site/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Monal Internals - Serializable Promise framework</title><link>https://monal-im.github.io/monal-im.org/site/post/00015-monal-internals-promise-framework/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00015-monal-internals-promise-framework/</guid><description>&lt;p&gt;In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally.
 If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org"&gt;thilo@monal-im.org&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Other articles in this series:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -171,11 +171,11 @@ The serializable promise framework is a new framework in Monal, which exactly fi
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>([iqNode check:<span style="color:#e6db74">@&#34;/&lt;type=error&gt;&#34;</span>])
 </span></span><span style="display:flex;"><span>    {
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        [promise reject:error];
+</span></span></span><span style="display:flex;"><span>        [promise reject:error];
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    [promise fulfill:nil];
+</span></span></span><span style="display:flex;"><span>    [promise fulfill:nil];
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
 </span></span></code></pre></div><h4 id="8-promise-waits-until-app-is-open"><a href="https://github.com/monal-im/Monal/blob/c20c9f9968109f0652bf640804b852f143bd5000/Monal/Classes/MLPromise.m#L42">(8) Promise waits until app is open</a></h4>
 <p>If the promise had been resolved from the app, it could have been consumed immediately. However, since it was resolved from the appex, the <code>AnyPromise</code> was not available to call at that time.</p>
@@ -184,9 +184,9 @@ The serializable promise framework is a new framework in Monal, which exactly fi
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>-(<span style="color:#66d9ef">instancetype</span>) <span style="color:#a6e22e">init</span>
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    [[NSNotificationCenter defaultCenter] addObserver:self selector:<span style="color:#66d9ef">@selector</span>(deserialize) name:kMonalUnfrozen object:nil];
+</span></span></span><span style="display:flex;"><span>    [[NSNotificationCenter defaultCenter] addObserver:self selector:<span style="color:#66d9ef">@selector</span>(deserialize) name:kMonalUnfrozen object:nil];
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p><code>deserialize</code> calls <code>attemptConsume</code> on each run. <code>attemptConsume</code> checks if we are inside the appex (in which case we do not consume the promise), and only if we are inside the app does it consume the promise:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>-(<span style="color:#66d9ef">void</span>) <span style="color:#a6e22e">attemptConsume</span>
 </span></span><span style="display:flex;"><span>{
@@ -199,18 +199,18 @@ The serializable promise framework is a new framework in Monal, which exactly fi
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Note that both <code>reject</code> and <code>fulfill</code> also call <code>attemptConsume</code> after resolving the promise. This would let the promise be consumed immediately if we are inside the app instead of the appex.</p>
 <h4 id="9-promise-consumes-ui-promise"><a href="https://github.com/monal-im/Monal/blob/c20c9f9968109f0652bf640804b852f143bd5000/Monal/Classes/MLPromise.m#L154">(9) Promise consumes UI promise</a></h4>
 <p>Once we progress past the checks in <code>attemptConsume</code>, we finally consume the promise by calling the <code>resolve</code> callback tied to the PromiseKit <code>AnyPromise</code> returned earlier. This in turn prompts the UI to hide the loading overlay.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>-(<span style="color:#66d9ef">void</span>) <span style="color:#a6e22e">attemptConsume</span>
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    PMKResolver resolve <span style="color:#f92672">=</span> _resolvers[self.uuid];
+</span></span></span><span style="display:flex;"><span>    PMKResolver resolve <span style="color:#f92672">=</span> _resolvers[self.uuid];
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    resolve(self.resolvedArgument);
+</span></span></span><span style="display:flex;"><span>    resolve(self.resolvedArgument);
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div>]]></content:encoded></item><item><title>Monal Internals - XML Query Language</title><link>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</link><pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00014-monal-internals-xml-query-language/</guid><description>&lt;p&gt;In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally. If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org"&gt;thilo@monal-im.org&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Other articles in this series:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -627,18 +627,18 @@ Primitive datatypes like BOOL, int, NSINTEGER (aka $$INTEGER) etc. can not be
 imported as optional and are always mandatory.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>class_handler(myHandlerName, <span style="color:#960050;background-color:#1e0010">$</span>_ID(xmpp<span style="color:#f92672">*</span>, account), <span style="color:#960050;background-color:#1e0010">$$</span><span style="color:#66d9ef">BOOL</span>(success))
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// your code comes here
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// variables defined/imported: account (optional), success (mandatory)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span></span><span style="display:flex;"><span>    <span style="color:#75715e">// variables defined/imported: account (optional), success (mandatory)
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
 </span></span></code></pre></div><p>Instance handlers are instance methods instead of static methods.
 You need to specify on which instance these handlers should operate.
 The instance extraxtion statement (the second argument to $$instance_handler() can be everything that
 returns an objc object. For example: <code>account.omemo</code> or <code>[account getInstanceToUse]</code> or just <code>account</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>instance_handler(myHandlerName, instanceToUse, <span style="color:#960050;background-color:#1e0010">$$</span>ID(xmpp<span style="color:#f92672">*</span>, account), <span style="color:#960050;background-color:#1e0010">$$</span><span style="color:#66d9ef">BOOL</span>(success))
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// your code comes here
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// &#39;self&#39; is now the instance of the class extracted by the instanceToUse statement.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// instead of the class instance as it would be if $$class_handler() was used instead of $$instance_handler()
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// variables defined/imported: account, success (both mandatory)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span></span><span style="display:flex;"><span>    <span style="color:#75715e">// &#39;self&#39; is now the instance of the class extracted by the instanceToUse statement.
+</span></span></span><span style="display:flex;"><span>    <span style="color:#75715e">// instead of the class instance as it would be if $$class_handler() was used instead of $$instance_handler()
+</span></span></span><span style="display:flex;"><span>    <span style="color:#75715e">// variables defined/imported: account, success (both mandatory)
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
 </span></span></code></pre></div><h3 id="call-defined-handlers">Call defined handlers</h3>
 <p>Calling a defined handler is simple, just create a handler object using <code>$newHandler()</code> and <code>$call()</code> it.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>MLHandler<span style="color:#f92672">*</span> h <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">$</span>newHandler(ClassName, myHandlerName);
@@ -667,18 +667,18 @@ MLHandler object (after invalidating a handler you can not call or
 invalidate it again!). Invalidation handlers can be instance handlers or static handlers,
 just like with &ldquo;normal&rdquo; handlers:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#75715e">// definition of normal handler method as instance_handler
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$$</span>instance_handler(myHandlerName, [account getInstanceToUse], <span style="color:#960050;background-color:#1e0010">$</span>_ID(xmpp<span style="color:#f92672">*</span>, account), <span style="color:#960050;background-color:#1e0010">$$</span><span style="color:#66d9ef">BOOL</span>(success))
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>instance_handler(myHandlerName, [account getInstanceToUse], <span style="color:#960050;background-color:#1e0010">$</span>_ID(xmpp<span style="color:#f92672">*</span>, account), <span style="color:#960050;background-color:#1e0010">$$</span><span style="color:#66d9ef">BOOL</span>(success))
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// your code comes here
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// &#39;self&#39; is now the instance of the class extracted by [account getInstanceToUse]
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// instead of the class instance as it would be if $$class_handler() was used instead of $$instance_handler()
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span></span><span style="display:flex;"><span>        <span style="color:#75715e">// &#39;self&#39; is now the instance of the class extracted by [account getInstanceToUse]
+</span></span></span><span style="display:flex;"><span>        <span style="color:#75715e">// instead of the class instance as it would be if $$class_handler() was used instead of $$instance_handler()
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// definition of invalidation method
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$$</span>class_handler(myInvalidationHandlerName, <span style="color:#960050;background-color:#1e0010">$$</span><span style="color:#66d9ef">BOOL</span>(done), <span style="color:#960050;background-color:#1e0010">$</span>_ID(NSString<span style="color:#f92672">*</span>, var1))
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>class_handler(myInvalidationHandlerName, <span style="color:#960050;background-color:#1e0010">$$</span><span style="color:#66d9ef">BOOL</span>(done), <span style="color:#960050;background-color:#1e0010">$</span>_ID(NSString<span style="color:#f92672">*</span>, var1))
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// your code comes here
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// variables imported: var1, done
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// variables that could have been imported according to $newHandler and $call below: var1, success, done
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span></span><span style="display:flex;"><span>        <span style="color:#75715e">// variables imported: var1, done
+</span></span></span><span style="display:flex;"><span>        <span style="color:#75715e">// variables that could have been imported according to $newHandler and $call below: var1, success, done
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$$</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>MLHandler<span style="color:#f92672">*</span> h <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">$</span>newHandlerWithInvalidation(ClassName, myHandlerName, myInvalidationHandlerName,
 </span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">$</span>ID(var1, <span style="color:#e6db74">@&#34;value&#34;</span>),
@@ -686,7 +686,7 @@ just like with &ldquo;normal&rdquo; handlers:</p>
 </span></span><span style="display:flex;"><span>}));
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// call invalidation method with &#34;done&#34; argument set to YES
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$</span>invalidate(h, <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#66d9ef">BOOL</span>(done, YES))
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span>invalidate(h, <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#66d9ef">BOOL</span>(done, YES))
 </span></span></code></pre></div><h3 id="available-data-types">Available data types</h3>
 <p>The following datatypes can be bound to a handler defining them using the corresponding definitions having either the <code>$$</code> or <code>$_</code> prefix.
 If the single argument binding is used, the value is bound using the same name like the var the value is coming from (in this example: name).</p>
@@ -735,11 +735,11 @@ If the single argument binding is used, the value is bound using the same name l
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>
 </span></span><span style="display:flex;"><span>    {
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// check that a corresponding buddy exists -&gt; prevent foreign key errors
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        MLXMLNode<span style="color:#f92672">*</span> receivedKeys <span style="color:#f92672">=</span> [data objectForKey:<span style="color:#e6db74">@&#34;current&#34;</span>];
+</span></span></span><span style="display:flex;"><span>        MLXMLNode<span style="color:#f92672">*</span> receivedKeys <span style="color:#f92672">=</span> [data objectForKey:<span style="color:#e6db74">@&#34;current&#34;</span>];
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>receivedKeys <span style="color:#f92672">&amp;&amp;</span> data.count <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>)
 </span></span><span style="display:flex;"><span>        {
 </span></span><span style="display:flex;"><span>            <span style="color:#75715e">// some clients do not use &lt;item id=&#34;current&#34;&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            receivedKeys <span style="color:#f92672">=</span> [[data allValues] firstObject];
+</span></span></span><span style="display:flex;"><span>            receivedKeys <span style="color:#f92672">=</span> [[data allValues] firstObject];
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>receivedKeys <span style="color:#f92672">&amp;&amp;</span> data.count <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>)
 </span></span><span style="display:flex;"><span>        {
