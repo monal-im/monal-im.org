@@ -1813,6 +1813,15 @@ XEP-0410: MUC Self-Ping (Schrödinger&amp;#39;s Chat)
 &lt;tr&gt;
 &lt;tr&gt;
 &lt;td&gt;
+&lt;a href="https://xmpp.org/extensions/xep-0421.html"&gt;
+XEP-0421: Occupant identifiers for semi-anonymous MUCs
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;complete&lt;/td&gt;
+&lt;td&gt;6.4.1&lt;/td&gt;
+&lt;tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
 &lt;a href="https://xmpp.org/extensions/xep-0423.html"&gt;
 XEP-0423: XMPP Compliance Suites 2020
 &lt;/a&gt;
@@ -1897,15 +1906,6 @@ XEP-0480: SASL Upgrade Tasks
 &lt;tr&gt;
 &lt;tr&gt;
 &lt;td&gt;
-&lt;a href="https://xmpp.org/extensions/xep-0486.html"&gt;
-XEP-0486: MUC Avatars
-&lt;/a&gt;
-&lt;/td&gt;
-&lt;td&gt;complete&lt;/td&gt;
-&lt;td&gt;5.0&lt;/td&gt;
-&lt;tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
 &lt;a href="https://xmpp.org/extensions/xep-0490.html"&gt;
 XEP-0490: Message Displayed Synchronization
 &lt;/a&gt;
@@ -1959,6 +1959,14 @@ XEP-0420: Stanza Content Encryption
 &lt;td&gt;
 &lt;a href="https://xmpp.org/extensions/xep-0158.html"&gt;
 XEP-0158: CAPTCHA Forms
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;planned&lt;/td&gt;
+&lt;tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;a href="https://xmpp.org/extensions/xep-0486.html"&gt;
+XEP-0486: MUC Avatars
 &lt;/a&gt;
 &lt;/td&gt;
 &lt;td&gt;planned&lt;/td&gt;
@@ -2916,6 +2924,22 @@ XEP-0158: CAPTCHA Forms
         
             <tr>
                 <td>
+                    <a href="https://xmpp.org/extensions/xep-0421.html">
+                        
+                        
+                            XEP-0421: Occupant identifiers for semi-anonymous MUCs
+                        
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.4.1</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
                     <a href="https://xmpp.org/extensions/xep-0423.html">
                         
                         
@@ -3065,20 +3089,6 @@ XEP-0158: CAPTCHA Forms
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0486.html">
-                        
-                        
-                            XEP-0486: MUC Avatars
-                        
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
         
     
         
@@ -3334,6 +3344,8 @@ XEP-0158: CAPTCHA Forms
         
     
         
+    
+        
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0158.html">
@@ -3348,6 +3360,19 @@ XEP-0158: CAPTCHA Forms
             <tr>
         
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0486.html">
+                        
+                        
+                            XEP-0486: MUC Avatars
+                        
+                    </a>
+                    
+                </td>
+                <td>planned</td>
+            <tr>
         
     
         
@@ -4466,6 +4491,22 @@ This improves the quality of the app significantly.</p>
         
             <tr>
                 <td>
+                    <a href="https://xmpp.org/extensions/xep-0421.html">
+                        
+                        
+                            XEP-0421: Occupant identifiers for semi-anonymous MUCs
+                        
+                    </a>
+                    
+                </td>
+                <td>complete</td>
+                <td>6.4.1</td>
+            <tr>
+        
+    
+        
+            <tr>
+                <td>
                     <a href="https://xmpp.org/extensions/xep-0423.html">
                         
                         
@@ -4615,20 +4656,6 @@ This improves the quality of the app significantly.</p>
     
         
     
-        
-            <tr>
-                <td>
-                    <a href="https://xmpp.org/extensions/xep-0486.html">
-                        
-                        
-                            XEP-0486: MUC Avatars
-                        
-                    </a>
-                    
-                </td>
-                <td>complete</td>
-                <td>5.0</td>
-            <tr>
         
     
         
@@ -4884,6 +4911,8 @@ This improves the quality of the app significantly.</p>
         
     
         
+    
+        
             <tr>
                 <td>
                     <a href="https://xmpp.org/extensions/xep-0158.html">
@@ -4898,6 +4927,19 @@ This improves the quality of the app significantly.</p>
             <tr>
         
     
+        
+            <tr>
+                <td>
+                    <a href="https://xmpp.org/extensions/xep-0486.html">
+                        
+                        
+                            XEP-0486: MUC Avatars
+                        
+                    </a>
+                    
+                </td>
+                <td>planned</td>
+            <tr>
         
     
         
