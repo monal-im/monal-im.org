@@ -948,7 +948,7 @@ If a user decides not to send any data to developers, no crash logs are sent to 
 Monal therefore also tracks crashes using its own on-device system (no data will <strong>ever</strong> reach a third party provider like Crashlytics etc.).</p>
 <p>After a crash, the user will be prompted to send a crash report directly to Monal developers.
 If you decline to submit such a report, no information will be transmitted from your device.
-If you agree to send such a report to us, that crash report will be sent via email to <a href="crash@monal-im.org">mailto:crash@monal-im.org</a>
+If you agree to send such a report to us, that crash report will be sent via email to <a href="mailto:crash@monal-im.org">crash@monal-im.org</a>
 using your normal email app. If you want to send the report to somebody else, just change the receiver of that email before finally sending it.</p>
 <p>These crash-reports contain privacy sensitive data and usually contain:</p>
 <ul>
