@@ -129,15 +129,42 @@ Monal does track crashes and usage data anonymously using the tools provided by 
 This is opt-in only and controlled by iOS and macOS global settings.
 If a user decides not to send any data to developers, no crash logs are sent to Monal developers.
 
+Unfortunately, most bugs and crashes can't be tracked down using only the Apple-tools mentioned above.
+Monal therefore also tracks crashes using its own on-device system (no data will **ever** reach a third party provider like Crashlytics etc.).
+
+After a crash, the user will be prompted to send a crash report directly to Monal developers.
+If you decline to submit such a report, no information will be transmitted from your device.
+If you agree to send such a report to us, that crash report will be sent via email to [crash@monal-im.org](mailto:crash@monal-im.org)
+using your normal email app. If you want to send the report to somebody else, just change the receiver of that email before finally sending it.
+
+These crash-reports contain privacy sensitive data usually consisting of:
+
+* The iOS and Monal versions that experienced the crash
+* The iOS and Monal versions that reported the crash (usually the same as above)
+* The concrete hardware model of your device and its processor architecture (e.g. your iPhone model)
+* The name of the storage location of Monal's data on your device (usually the same for all crash reports)
+* The backtraces of all threads and the exact crash error message (if any)
+* The contents of some in-memory variables at the time of the crash
+* The full log file recorded on your device for the last 48 hours or less, see below for a list of contents
+
+You can read the whole contents of a crash report after sending it to yourself by using our graphical Crash-Analyzer located at [our DebugTools repository](https://github.com/monal-im/DebugTools).
+An up-to-date explanation on how to use the Crash-Analyzer can always be found [in the Crash-Analyzer article in our wiki](https://github.com/monal-im/Monal/wiki/Crash-Analyzer).
+
 ## Logs
 
-Your local device will contain a log file with all sent and received raw XMPP messages as well as debug logs.
-It does contain sensitive personal data!
-This file will never be transferred to us, except if you explicitly (manually) send it to us (e.g., via mail).
+Your local device will contain a log file. This contains sensitive personal data(!) like all sent and received raw XMPP stanzas, decrypted message contents, app usage times (opening and closing the app is logged) as well as many more debug information.
+
+It will be rotated every 48 hours or less (if reaching 128 MiB in size) and a maximum of up to 4 log files are stored on your device.
+These files will never be transferred to us, except if you explicitly (manually) send them to us (e.g., via email).
+
+You can read the whole contents of a logfile after exporting it using the debug menu in Monal or from a crash report you sent to yourself by
+using our graphical Log-Viewer from [our DebugTools repository](https://github.com/monal-im/DebugTools).
+An up-to-date explanation on how to export and read a logfile can always be found [in the Logging article in our wiki](https://github.com/monal-im/Monal/wiki/Introduction-to-Monal-Logging).
+
 
 ## GDPR Subject Access Requests (SAR)
 
 European GDPR allows users to request a copy of all data retained about them. Starting with Monal 5.2.0 we no longer see your JIDs (username@domain.tld) in our push servers.
 We therefore are not able to send you retained data related to your JID.
 We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided token.
-If you have questions regarding GDPR, please send us a mail to info@monal-im.org.
+If you have questions regarding GDPR, please send us a mail to [mailto:info@monal-im.org](info@monal-im.org).
