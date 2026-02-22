@@ -944,15 +944,35 @@ Please note, that we may disable our fallback STUN and TURN servers at any time,
 <p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
 This is opt-in only and controlled by iOS and macOS global settings.
 If a user decides not to send any data to developers, no crash logs are sent to Monal developers.</p>
+<p>Unfortunately, most bugs and crashes can&rsquo;t be tracked down using only the Apple-tools mentioned above.
+Monal therefore also tracks crashes using its own on-device system (no data will <strong>ever</strong> reach a third party provider like Crashlytics etc.).</p>
+<p>After a crash, the user will be prompted to send a crash report directly to Monal developers.
+If you decline to submit such a report, no information will be transmitted from your device.
+If you agree to send such a report to us, that crash report will be sent via email to <a href="crash@monal-im.org">mailto:crash@monal-im.org</a>
+using your normal email app. If you want to send the report to somebody else, just change the receiver of that email before finally sending it.</p>
+<p>These crash-reports contain privacy sensitive data and usually contain:</p>
+<ul>
+<li>The iOS and Monal versions that experienced the crash</li>
+<li>The iOS and Monal versions that reported the crash (usually the same as above)</li>
+<li>The concrete hardware model of your device and its processor architecture (e.g. your iPhone model)</li>
+<li>The name of the storage location of Monal&rsquo;s data on your device (usually the same for all crash reports)</li>
+<li>The contents of some in-memory variables at the time of the crash</li>
+<li>The full log file recorded on your device for the last 48 hours or less, see below for a list of contents</li>
+</ul>
+<p>You can read the whole contents of a crash report after sending it to yourself by using our graphical Crash-Analyzer located at <a href="https://github.com/monal-im/DebugTools">our DebugTools repository</a>.
+An up-to-date explanation on how to use the Crash-Analyzer can always be found <a href="https://github.com/monal-im/Monal/wiki/Crash-Analyzer">in the Crash-Analyzer article in our wiki</a>.</p>
 <h2 id="logs">Logs</h2>
-<p>Your local device will contain a log file with all sent and received raw XMPP messages as well as debug logs.
-It does contain sensitive personal data!
-This file will never be transferred to us, except if you explicitly (manually) send it to us (e.g., via mail).</p>
+<p>Your local device will contain a log file. This contains sensitive personal data(!) like all sent and received raw XMPP stanzas, decrypted message contents, app usage times (opening and closing the app is logged) as well as many more debug information.</p>
+<p>It will be rotated every 48 hours or less (if reaching 128 MiB in size) and a maximum of up to 4 log files are stored on your device.
+These files will never be transferred to us, except if you explicitly (manually) send them to us (e.g., via email).</p>
+<p>You can read the whole contents of a logfile after exporting it using the debug menu in Monal or from a crash report you sent to yourself by
+using our graphical Log-Viewer from <a href="https://github.com/monal-im/DebugTools">our DebugTools repository</a>.
+An up-to-date explanation on how to export and read a logfile can always be found <a href="https://github.com/monal-im/Monal/wiki/Introduction-to-Monal-Logging">in the Logging article in our wiki</a>.</p>
 <h2 id="gdpr-subject-access-requests-sar">GDPR Subject Access Requests (SAR)</h2>
 <p>European GDPR allows users to request a copy of all data retained about them. Starting with Monal 5.2.0 we no longer see your JIDs (<a href="mailto:username@domain.tld">username@domain.tld</a>) in our push servers.
 We therefore are not able to send you retained data related to your JID.
 We furthermore are unable to provide your retained data related to your unique push token because we have no way to verify that Apple issued you a provided token.
-If you have questions regarding GDPR, please send us a mail to <a href="mailto:info@monal-im.org">info@monal-im.org</a>.</p>
+If you have questions regarding GDPR, please send us a mail to <a href="info@monal-im.org">mailto:info@monal-im.org</a>.</p>
 ]]></content:encoded></item><item><title>Push on iOS</title><link>https://monal-im.github.io/monal-im.org/site/post/00005-push-on-ios/</link><pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00005-push-on-ios/</guid><description>&lt;p&gt;I recently wrote a summary about push on iOS in the xmpp.org wiki.&lt;br&gt;
 See &lt;a href="https://wiki.xmpp.org/web/Push_notifications"&gt;over here&lt;/a&gt; for all the technical details and links to the documentation.
 I also talked about that topic in my talk &amp;ldquo;&lt;em&gt;Modern XMPP - A story based on Monal&lt;/em&gt;&amp;rdquo; linked &lt;a href="https://monal-im.github.io/monal-im.org/site/about/"&gt;on the About page over here&lt;/a&gt;.&lt;br&gt;
