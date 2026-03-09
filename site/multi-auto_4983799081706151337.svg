@@ -42,11 +42,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="35"
-   id="percent35">38%</text>
+   id="percent35">35%</text>
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect35"
-   width="58"
+   width="53"
    height="6"
    x="248"
    rx="2"
@@ -92,7 +92,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect65"
-   width="4"
+   width="3"
    height="6"
    x="248"
    rx="2"
@@ -184,7 +184,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect125"
-   width="4"
+   width="3"
    height="6"
    x="248"
    rx="2"
@@ -299,7 +299,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect200"
-   width="4"
+   width="3"
    height="6"
    x="248"
    rx="2"
@@ -322,7 +322,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect215"
-   width="4"
+   width="3"
    height="6"
    x="248"
    rx="2"
@@ -345,7 +345,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect230"
-   width="4"
+   width="3"
    height="6"
    x="248"
    rx="2"
@@ -410,11 +410,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="275"
-   id="percent275">100%</text>
+   id="percent275">99%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect275"
-   width="150"
+   width="149"
    height="6"
    x="248"
    rx="2"
@@ -437,7 +437,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect290"
-   width="4"
+   width="3"
    height="6"
    x="248"
    rx="2"
@@ -456,11 +456,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="305"
-   id="percent305">100%</text>
+   id="percent305">99%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect305"
-   width="150"
+   width="149"
    height="6"
    x="248"
    rx="2"
@@ -552,7 +552,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect365"
-   width="4"
+   width="3"
    height="6"
    x="248"
    rx="2"
@@ -667,7 +667,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect440"
-   width="4"
+   width="3"
    height="6"
    x="248"
    rx="2"
@@ -759,7 +759,7 @@
 <rect
    style="fill:#38f;fill-opacity:1;stroke:none"
    id="rect500"
-   width="109"
+   width="108"
    height="6"
    x="248"
    rx="2"
@@ -870,11 +870,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="575"
-   id="percent575">96%</text>
+   id="percent575">95%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect575"
-   width="144"
+   width="143"
    height="6"
    x="248"
    rx="2"
@@ -897,7 +897,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect590"
-   width="4"
+   width="3"
    height="6"
    x="248"
    rx="2"
@@ -916,11 +916,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="605"
-   id="percent605">100%</text>
+   id="percent605">99%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect605"
-   width="150"
+   width="149"
    height="6"
    x="248"
    rx="2"
@@ -989,7 +989,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect650"
-   width="4"
+   width="3"
    height="6"
    x="248"
    rx="2"
@@ -1081,7 +1081,7 @@
 <rect
    style="fill:#f6664c;fill-opacity:1;stroke:none"
    id="rect710"
-   width="4"
+   width="3"
    height="6"
    x="248"
    rx="2"
@@ -1100,11 +1100,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="408"
    y="725"
-   id="percent725">100%</text>
+   id="percent725">99%</text>
 <rect
    style="fill:#2eccaa;fill-opacity:1;stroke:none"
    id="rect725"
-   width="150"
+   width="149"
    height="6"
    x="248"
    rx="2"
