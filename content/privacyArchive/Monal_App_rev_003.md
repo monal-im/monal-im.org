@@ -139,13 +139,13 @@ using your normal email app. If you want to send the report to somebody else, ju
 
 These crash-reports contain privacy sensitive data usually consisting of:
 
+* The full log file recorded on your device for the last 48 hours or less, see below for a list of contents
 * The iOS and Monal versions that experienced the crash
 * The iOS and Monal versions that reported the crash (usually the same as above)
 * The concrete hardware model of your device and its processor architecture (e.g. your iPhone model)
 * The name of the storage location of Monal's data on your device (usually the same for all crash reports)
 * The backtraces of all threads and the exact crash error message (if any)
 * The contents of some in-memory variables at the time of the crash
-* The full log file recorded on your device for the last 48 hours or less, see below for a list of contents
 
 You can read the whole contents of a crash report after sending it to yourself by using our graphical Crash-Analyzer located at [our DebugTools repository](https://github.com/monal-im/DebugTools).
 An up-to-date explanation on how to use the Crash-Analyzer can always be found [in the Crash-Analyzer article in our wiki](https://github.com/monal-im/Monal/wiki/Crash-Analyzer).
