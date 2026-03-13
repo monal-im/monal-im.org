@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>PrivacyArchives on Monal</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/</link><description>Recent content in PrivacyArchives on Monal</description><generator>Hugo -- 0.157.0</generator><language>en</language><lastBuildDate>Sun, 22 Feb 2026 22:14:06 +0100</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/site/privacyarchive/index.xml" rel="self" type="application/rss+xml"/><item><title>Privacy Monal App ≥ 6.0.0</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</link><pubDate>Fri, 10 Feb 2023 13:00:00 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</guid><description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>PrivacyArchives on Monal</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/</link><description>Recent content in PrivacyArchives on Monal</description><generator>Hugo -- 0.157.0</generator><language>en</language><lastBuildDate>Fri, 13 Mar 2026 15:49:20 +0100</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/site/privacyarchive/index.xml" rel="self" type="application/rss+xml"/><item><title>Privacy Monal App ≥ 6.0.0</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</link><pubDate>Fri, 10 Feb 2023 13:00:00 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Monal Website&lt;/strong&gt;&lt;br&gt;
 You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy"&gt;Website Privacy Policy&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Monal App&lt;/strong&gt;&lt;br&gt;
@@ -194,13 +194,13 @@ If you agree to send such a report to us, that crash report will be sent via ema
 using your normal email app. If you want to send the report to somebody else, just change the receiver of that email before finally sending it.</p>
 <p>These crash-reports contain privacy sensitive data usually consisting of:</p>
 <ul>
+<li>The full log file recorded on your device for the last 48 hours or less, see below for a list of contents</li>
 <li>The iOS and Monal versions that experienced the crash</li>
 <li>The iOS and Monal versions that reported the crash (usually the same as above)</li>
 <li>The concrete hardware model of your device and its processor architecture (e.g. your iPhone model)</li>
 <li>The name of the storage location of Monal&rsquo;s data on your device (usually the same for all crash reports)</li>
 <li>The backtraces of all threads and the exact crash error message (if any)</li>
 <li>The contents of some in-memory variables at the time of the crash</li>
-<li>The full log file recorded on your device for the last 48 hours or less, see below for a list of contents</li>
 </ul>
 <p>You can read the whole contents of a crash report after sending it to yourself by using our graphical Crash-Analyzer located at <a href="https://github.com/monal-im/DebugTools">our DebugTools repository</a>.
 An up-to-date explanation on how to use the Crash-Analyzer can always be found <a href="https://github.com/monal-im/Monal/wiki/Crash-Analyzer">in the Crash-Analyzer article in our wiki</a>.</p>

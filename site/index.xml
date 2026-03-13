@@ -995,13 +995,13 @@ If you agree to send such a report to us, that crash report will be sent via ema
 using your normal email app. If you want to send the report to somebody else, just change the receiver of that email before finally sending it.</p>
 <p>These crash-reports contain privacy sensitive data usually consisting of:</p>
 <ul>
+<li>The full log file recorded on your device for the last 48 hours or less, see below for a list of contents</li>
 <li>The iOS and Monal versions that experienced the crash</li>
 <li>The iOS and Monal versions that reported the crash (usually the same as above)</li>
 <li>The concrete hardware model of your device and its processor architecture (e.g. your iPhone model)</li>
 <li>The name of the storage location of Monal&rsquo;s data on your device (usually the same for all crash reports)</li>
 <li>The backtraces of all threads and the exact crash error message (if any)</li>
 <li>The contents of some in-memory variables at the time of the crash</li>
-<li>The full log file recorded on your device for the last 48 hours or less, see below for a list of contents</li>
 </ul>
 <p>You can read the whole contents of a crash report after sending it to yourself by using our graphical Crash-Analyzer located at <a href="https://github.com/monal-im/DebugTools">our DebugTools repository</a>.
 An up-to-date explanation on how to use the Crash-Analyzer can always be found <a href="https://github.com/monal-im/Monal/wiki/Crash-Analyzer">in the Crash-Analyzer article in our wiki</a>.</p>
