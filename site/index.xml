@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.159.2</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Upgrade ejabberd on Debian NOW</title><link>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</link><pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</guid><description>&lt;p&gt;Chances might be that you are running a Debian based ejabberd server.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.159.2</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Upgrade ejabberd on Debian NOW</title><link>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</guid><description>&lt;p&gt;Chances might be that you are running a Debian based ejabberd server.
 Unfortunately push for all your Monal users on that server will break in less than 2 month.
 And chances are that some of your S2S connections are already failing today.&lt;/p&gt;
 &lt;h1 id="some-background"&gt;Some background&lt;/h1&gt;
@@ -21,17 +21,13 @@ to do exactly this: ignore the EKU when validating the certificate.
 But unfortunately it was too late to go into Debian Trixie, the current stable Debian version.</p>
 <h1 id="debian">Debian</h1>
 <p>This is where the real problem starts. Many server operators use Debian because it is so extremely stable and well maintained.
-Of course Debian provides frequent point releases to upgrade packages if they have some severe bug
-(like not being able to properly participate in S2S connections).</p>
-<p>Seeing that the next point release does indeed contain an ejabberd update, I was disappointed to learn that this only fixes an AppArmor bug,
-but not the severe S2S bug. The Debian repository of that package does even have the S2S fix <a href="https://salsa.debian.org/ejabberd-packaging-team/ejabberd/-/commits/trixie?ref_type=heads">already committed</a>,
-on Feb 23, 2026, just not tagged for release. And neither trixie-backports nor Debian testing or unstable provide a fixed package either.
-Given that I expect many users with a broken push support once Monal&rsquo;s push servers get a new certificate without the client EKU,
-I <a href="https://fosstodon.org/@Monal/116212921118572613">kindly asked the new maintainer Nik on Mastodon</a> whats blocking the fix and got a really unpleasant answer
-ranging from &ldquo;fix it yourself&rdquo; (which I can&rsquo;t since I&rsquo;m not a Debian developer) to &ldquo;I&rsquo;m muting you now, because I&rsquo;m not your employee and you don&rsquo;t like Matrix&rdquo;.</p>
+Of course Debian provides point releases to upgrade packages if they have some severe bug
+(like not being able to properly participate in S2S connections).
+The next point release will contain a fix for the problem, but that will still take more than a month to reach servers.</p>
 <h2 id="how-to-fix-the-situation">How to fix the situation</h2>
 <p><strong>I urge all ejabberd server operators to take one of the following steps as soon as possible:</strong></p>
 <ul>
+<li>Add <code>trixie-proposed-updates</code> to your sources.list file and update ejabberd to version 24.12-3+deb13u2.</li>
 <li>Install these two packages kindly built by Holger (an ejabberd developer): <a href="https://ejabberd.messaging.one/download/s2s-fix/">https://ejabberd.messaging.one/download/s2s-fix/</a></li>
 <li>Install the official packages by ProcessOne from here: <a href="https://repo.process-one.net/">https://repo.process-one.net/</a> (caution: these packages use <code>/opt/ejabberd</code>, so you&rsquo;ll need to copy your config from <code>/etc/ejabberd</code> over!)</li>
 <li>Switch to Prosody (Prosody&rsquo;s fix for the S2S client EKU problem made it into Debian trixie)</li>
@@ -39,8 +35,7 @@ ranging from &ldquo;fix it yourself&rdquo; (which I can&rsquo;t since I&rsquo;m 
 <li><strong>If you absolutely don&rsquo;t want to take any action</strong>, please enable at least dialback by adding <code>mod_s2s_dialback: {}</code> to the modules section of your ejabberd config. But be aware: while this will fix the S2S connection to Monal&rsquo;s push servers, other servers might not have turned it on (both parts must turn it on to be effective). The security of the connection will also be degraded when using dialback rather than properly verifying certificates.</li>
 </ul>
 <h1 id="last-words">Last words</h1>
-<p>While Nik&rsquo;s response in this Mastodon thread was not exactly what I expected, most, if not all Debian developer are usually super kind
-and helpful and I had only pleasant encounters so far!</p>
+<p>Many thanks to Holger Weiß and Philipp Huebner for fixing this bug in Debian!</p>
 ]]></content:encoded></item><item><title>Monal Internals - Serializable Promise framework</title><link>https://monal-im.github.io/monal-im.org/site/post/00015-monal-internals-promise-framework/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00015-monal-internals-promise-framework/</guid><description>&lt;p&gt;In this new series, I want to shine some light onto specific parts of Monal&amp;rsquo;s internals. It&amp;rsquo;s dedicated to programmers or people curious about how Monal works internally.
 If you want to give some feedback, feel free to send an email to &lt;a href="mailto:thilo@monal-im.org"&gt;thilo@monal-im.org&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Other articles in this series:&lt;/strong&gt;&lt;/p&gt;
