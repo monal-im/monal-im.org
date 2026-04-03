@@ -35,10 +35,10 @@ The next point release will contain a fix for the problem, but that will still t
 
 ## How to fix the situation
 **I urge all ejabberd server operators to take one of the following steps as soon as possible:**
-- Add `trixie-proposed-updates` to your sources.list file and update ejabberd to version 24.12-3+deb13u2.
+- Add `trixie-proposed-updates` to your `sources.list` file and update ejabberd to version `24.12-3+deb13u2`
 - Install these two packages kindly built by Holger (an ejabberd developer): [https://ejabberd.messaging.one/download/s2s-fix/](https://ejabberd.messaging.one/download/s2s-fix/)
 - Install the official packages by ProcessOne from here: [https://repo.process-one.net/](https://repo.process-one.net/) (caution: these packages use `/opt/ejabberd`, so you'll need to copy your config from `/etc/ejabberd` over!)
-- Switch to Prosody (Prosody's fix for the S2S client EKU problem made it into Debian trixie)
+- Switch to Prosody (Prosody's fix for the S2S client EKU problem made it into Debian Trixie)
 - Switch to some other distribution
 - **If you absolutely don't want to take any action**, please enable at least dialback by adding `mod_s2s_dialback: {}` to the modules section of your ejabberd config. But be aware: while this will fix the S2S connection to Monal's push servers, other servers might not have turned it on (both parts must turn it on to be effective). The security of the connection will also be degraded when using dialback rather than properly verifying certificates.
 
