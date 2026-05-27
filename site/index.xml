@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.161.1</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Upgrade ejabberd on Debian NOW</title><link>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</guid><description>&lt;p&gt;Chances might be that you are running a Debian based ejabberd server.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.162.0</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Upgrade ejabberd on Debian NOW</title><link>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</guid><description>&lt;p&gt;Chances might be that you are running a Debian based ejabberd server.
 Unfortunately push for all your Monal users on that server will break in less than 2 month.
 And chances are that some of your S2S connections are already failing today.&lt;/p&gt;
 &lt;h1 id="some-background"&gt;Some background&lt;/h1&gt;
@@ -96,30 +96,30 @@ The serializable promise framework is a new framework in Monal, which exactly fi
 <p>Below is a slightly simplified diagram of the app’s lifecycle. A more detailed lifecycle from Apple’s perspective is <a href="https://developer.apple.com/documentation/uikit/managing-your-app-s-life-cycle">available here</a>.</p>
 <p><img alt="Diagram showing the different states the app can be in. It is a visual depiction of the description below" loading="lazy" src="/monal-im.org/site/post/00015-monal-internals-promise-framework/app_states.png"></p>
 <table>
-  <thead>
-      <tr>
-          <th>State</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>App not running</td>
-          <td>App is not running, and when it is opened, it will start afresh</td>
-      </tr>
-      <tr>
-          <td>App active</td>
-          <td>App is open and in the foreground</td>
-      </tr>
-      <tr>
-          <td>App in background</td>
-          <td>App is running, but in the background</td>
-      </tr>
-      <tr>
-          <td>App suspended</td>
-          <td>App is not running, but its state is saved for when the app is reopened</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>State</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>App not running</td>
+					<td>App is not running, and when it is opened, it will start afresh</td>
+			</tr>
+			<tr>
+					<td>App active</td>
+					<td>App is open and in the foreground</td>
+			</tr>
+			<tr>
+					<td>App in background</td>
+					<td>App is running, but in the background</td>
+			</tr>
+			<tr>
+					<td>App suspended</td>
+					<td>App is not running, but its state is saved for when the app is reopened</td>
+			</tr>
+	</tbody>
 </table>
 <ul>
 <li>The app moves from &ldquo;active&rdquo; to &ldquo;in background&rdquo; when it is swiped away without being closed
@@ -155,25 +155,25 @@ The serializable promise framework is a new framework in Monal, which exactly fi
 <p>Note that <a href="https://github.com/monal-im/Monal/blob/c20c9f9968109f0652bf640804b852f143bd5000/Monal/Classes/MLPromise.m#L168-L173">this persisted version of the <code>MLPromise</code> is not complete</a> - while the resolved argument can be persisted, the UI promise is not persisted at any stage.</p>
 <p>This means that, while the resolved argument can be passed betwen the app and appex, the UI promise itself cannot. The consequence of this is that a promise cannot be consumed in the appex - it can only be resolved there, leaving consumption for when the app becomes active again:</p>
 <table>
-  <thead>
-      <tr>
-          <th>Process</th>
-          <th>Can resolve?</th>
-          <th>Can consume?</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>App</td>
-          <td>Yes</td>
-          <td>Yes</td>
-      </tr>
-      <tr>
-          <td>Appex</td>
-          <td>Yes</td>
-          <td>No</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Process</th>
+					<th>Can resolve?</th>
+					<th>Can consume?</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>App</td>
+					<td>Yes</td>
+					<td>Yes</td>
+			</tr>
+			<tr>
+					<td>Appex</td>
+					<td>Yes</td>
+					<td>No</td>
+			</tr>
+	</tbody>
 </table>
 <p>This makes some sense, as the whole purpose of the <code>AnyPromise</code> is to update the UI as a result of some backend action. It only makes sense to update the UI from the process which manages the UI - the app itself.</p>
 <p>As a result, whenever the app becomes active again, all outstanding <code>MLPromise</code>s check the version retrieved from the DB if they have been resolved in the meantime, <a href="https://github.com/monal-im/Monal/blob/c20c9f9968109f0652bf640804b852f143bd5000/Monal/Classes/MLPromise.m#L77">and if so, consume themselves</a>. This is how the loading overlay gets removed in the above example.</p>
@@ -825,26 +825,26 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
-  <thead>
-      <tr>
-          <th>Releases</th>
-          <th>Privacy Policy</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>6.0 and newer</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
-      </tr>
-      <tr>
-          <td>5.2.0 up to 5.4.x</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
-      </tr>
-      <tr>
-          <td>before 5.2.0</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Releases</th>
+					<th>Privacy Policy</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>6.0 and newer</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+			</tr>
+			<tr>
+					<td>5.2.0 up to 5.4.x</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+			</tr>
+			<tr>
+					<td>before 5.2.0</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+			</tr>
+	</tbody>
 </table>
 
 </blockquote>
@@ -915,48 +915,48 @@ but it also reveals your XMPP ID (JID) to our push servers (but not your Monal-s
 <h4 id="push-server-regions">Push server regions</h4>
 <p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
 <table>
-  <thead>
-      <tr>
-          <th>Region</th>
-          <th>Hostname</th>
-          <th>Notice</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Europe</td>
-          <td>eu.prod.push.monal-im.org</td>
-          <td></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Region</th>
+					<th>Hostname</th>
+					<th>Notice</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Europe</td>
+					<td>eu.prod.push.monal-im.org</td>
+					<td></td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="push-server-locations">Push server locations</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Name</th>
-          <th>Region</th>
-          <th>Hoster</th>
-          <th>Location</th>
-          <th>Notice</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>s1.eu.prod.push.monal-im.org</td>
-          <td>Europe</td>
-          <td>Hetzner</td>
-          <td>Finland</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>s2.eu.prod.push.monal-im.org</td>
-          <td>Europe</td>
-          <td>PHP-Friends</td>
-          <td>Germany</td>
-          <td></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Name</th>
+					<th>Region</th>
+					<th>Hoster</th>
+					<th>Location</th>
+					<th>Notice</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>s1.eu.prod.push.monal-im.org</td>
+					<td>Europe</td>
+					<td>Hetzner</td>
+					<td>Finland</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>s2.eu.prod.push.monal-im.org</td>
+					<td>Europe</td>
+					<td>PHP-Friends</td>
+					<td>Germany</td>
+					<td></td>
+			</tr>
+	</tbody>
 </table>
 <h2 id="voip-stun--turn">VoIP (STUN / TURN)</h2>
 <p>With Monal 6.0 we introduced VoIP support.
@@ -3530,34 +3530,34 @@ This improves the quality of the app significantly.</p>
 &lt;/ul&gt;
 &lt;h2 id="implemented-xeps"&gt;Implemented XEPs&lt;/h2&gt;
 &lt;p&gt;You can check the complete list of supported XEPs at &lt;a href="https://xmpp.org/software/monal-im/"&gt;&lt;a href="https://xmpp.org/software/monal-im/"&gt;https://xmpp.org/software/monal-im/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</description><content:encoded><![CDATA[<table>
-  <thead>
-      <tr>
-          <th></th>
-          <th>iOS</th>
-          <th>macOS</th>
-          <th>macOS (homebrew)</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Stable</td>
-          <td><a href="https://apps.apple.com/app/id317711500">App Store</a></td>
-          <td><a href="https://apps.apple.com/app/id1637078500">App Store</a></td>
-          <td>brew install --cask monal</td>
-      </tr>
-      <tr>
-          <td>Beta</td>
-          <td><a href="https://testflight.apple.com/join/lLLlgHpB">Testflight Invitation</a></td>
-          <td><a href="https://testflight.apple.com/join/tGH2m5vf">Testflight Invitation</a></td>
-          <td>brew install --cask monal@beta</td>
-      </tr>
-      <tr>
-          <td>Alpha</td>
-          <td>upon request to <a href="mailto:info@monal-im.org">info@monal-im.org</a><br>Then download from our <a href="https://downloads.monal-im.org/monal-im/alpha/">alpha download site</a><br><br>You can get updates about alpha releases by joining this channel: <a href="#ZgotmplZ">monal-alpha@chat.yax.im</a></td>
-          <td></td>
-          <td>brew tap monal-im/homebrew-monal-alpha<br>brew install --cask monal-alpha<br><br>You can get updates about alpha releases by joining this channel: <a href="#ZgotmplZ">monal-alpha@chat.yax.im</a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th></th>
+					<th>iOS</th>
+					<th>macOS</th>
+					<th>macOS (homebrew)</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Stable</td>
+					<td><a href="https://apps.apple.com/app/id317711500">App Store</a></td>
+					<td><a href="https://apps.apple.com/app/id1637078500">App Store</a></td>
+					<td>brew install --cask monal</td>
+			</tr>
+			<tr>
+					<td>Beta</td>
+					<td><a href="https://testflight.apple.com/join/lLLlgHpB">Testflight Invitation</a></td>
+					<td><a href="https://testflight.apple.com/join/tGH2m5vf">Testflight Invitation</a></td>
+					<td>brew install --cask monal@beta</td>
+			</tr>
+			<tr>
+					<td>Alpha</td>
+					<td>upon request to <a href="mailto:info@monal-im.org">info@monal-im.org</a><br>Then download from our <a href="https://downloads.monal-im.org/monal-im/alpha/">alpha download site</a><br><br>You can get updates about alpha releases by joining this channel: <a href="#ZgotmplZ">monal-alpha@chat.yax.im</a></td>
+					<td></td>
+					<td>brew tap monal-im/homebrew-monal-alpha<br>brew install --cask monal-alpha<br><br>You can get updates about alpha releases by joining this channel: <a href="#ZgotmplZ">monal-alpha@chat.yax.im</a></td>
+			</tr>
+	</tbody>
 </table>
 <h1 id="features">Features</h1>
 <p>Monal currently covers the following chat features:</p>
@@ -5004,26 +5004,26 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
-  <thead>
-      <tr>
-          <th>Releases</th>
-          <th>Privacy Policy</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>6.0 and newer</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
-      </tr>
-      <tr>
-          <td>5.2.0 up to 5.4.x</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
-      </tr>
-      <tr>
-          <td>before 5.2.0</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Releases</th>
+					<th>Privacy Policy</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>6.0 and newer</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+			</tr>
+			<tr>
+					<td>5.2.0 up to 5.4.x</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+			</tr>
+			<tr>
+					<td>before 5.2.0</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+			</tr>
+	</tbody>
 </table>
 
 ]]></content:encoded></item><item><title>Privacy Monal App &lt; 5.2.0</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_001/</link><pubDate>Sat, 12 Mar 2022 08:08:57 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_001/</guid><description>&lt;blockquote&gt;
@@ -5057,26 +5057,26 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
-  <thead>
-      <tr>
-          <th>Releases</th>
-          <th>Privacy Policy</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>6.0 and newer</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
-      </tr>
-      <tr>
-          <td>5.2.0 up to 5.4.x</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
-      </tr>
-      <tr>
-          <td>before 5.2.0</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Releases</th>
+					<th>Privacy Policy</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>6.0 and newer</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+			</tr>
+			<tr>
+					<td>5.2.0 up to 5.4.x</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+			</tr>
+			<tr>
+					<td>before 5.2.0</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+			</tr>
+	</tbody>
 </table>
 
 </blockquote>
@@ -5105,28 +5105,28 @@ In detail these information consists of:</p>
 </ul>
 <h4 id="push-server-locations">Push server locations</h4>
 <table>
-  <thead>
-      <tr>
-          <th>Name</th>
-          <th>Hoster</th>
-          <th>Location</th>
-          <th>Notice</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>ios13push.monal.im</td>
-          <td>AWS</td>
-          <td>US</td>
-          <td>Provided by Anurodh Pokharel<br>IPv4 only</td>
-      </tr>
-      <tr>
-          <td>push.monal.im</td>
-          <td>AWS</td>
-          <td>US</td>
-          <td>Provided by Anurodh Pokharel<br>IPv4 only<br>iOS 12 only</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Name</th>
+					<th>Hoster</th>
+					<th>Location</th>
+					<th>Notice</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>ios13push.monal.im</td>
+					<td>AWS</td>
+					<td>US</td>
+					<td>Provided by Anurodh Pokharel<br>IPv4 only</td>
+			</tr>
+			<tr>
+					<td>push.monal.im</td>
+					<td>AWS</td>
+					<td>US</td>
+					<td>Provided by Anurodh Pokharel<br>IPv4 only<br>iOS 12 only</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="crash-reports-and-app-usage">Crash reports and app usage</h3>
 <p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
@@ -5171,26 +5171,26 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
-  <thead>
-      <tr>
-          <th>Releases</th>
-          <th>Privacy Policy</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>6.0 and newer</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
-      </tr>
-      <tr>
-          <td>5.2.0 up to 5.4.x</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
-      </tr>
-      <tr>
-          <td>before 5.2.0</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Releases</th>
+					<th>Privacy Policy</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>6.0 and newer</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+			</tr>
+			<tr>
+					<td>5.2.0 up to 5.4.x</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+			</tr>
+			<tr>
+					<td>before 5.2.0</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+			</tr>
+	</tbody>
 </table>
 
 </blockquote>
@@ -5235,67 +5235,67 @@ By default, each device will choose our Europe based push region unless the devi
 <h3 id="push-server-regions">Push server regions</h3>
 <p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
 <table>
-  <thead>
-      <tr>
-          <th>Region</th>
-          <th>Hostname</th>
-          <th>Notice</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Europe</td>
-          <td>eu.prod.push.monal-im.org</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>US</td>
-          <td>us.prod.push.monal-im.org</td>
-          <td></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Region</th>
+					<th>Hostname</th>
+					<th>Notice</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Europe</td>
+					<td>eu.prod.push.monal-im.org</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>US</td>
+					<td>us.prod.push.monal-im.org</td>
+					<td></td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="push-server-locations">Push server locations</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Name</th>
-          <th>Region</th>
-          <th>Hoster</th>
-          <th>Location</th>
-          <th>Notice</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>s1.eu.prod.push.monal-im.org</td>
-          <td>Europe</td>
-          <td>Hetzner</td>
-          <td>Finland</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>s2.eu.prod.push.monal-im.org</td>
-          <td>Europe</td>
-          <td>PHP-Friends</td>
-          <td>Germany</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>s1.us.prod.push.monal-im.org</td>
-          <td>US</td>
-          <td>Fosshost</td>
-          <td>US</td>
-          <td>IPv4 only</td>
-      </tr>
-      <tr>
-          <td>s2.us.prod.push.monal-im.org</td>
-          <td>US</td>
-          <td>Fosshost</td>
-          <td>US</td>
-          <td></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Name</th>
+					<th>Region</th>
+					<th>Hoster</th>
+					<th>Location</th>
+					<th>Notice</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>s1.eu.prod.push.monal-im.org</td>
+					<td>Europe</td>
+					<td>Hetzner</td>
+					<td>Finland</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>s2.eu.prod.push.monal-im.org</td>
+					<td>Europe</td>
+					<td>PHP-Friends</td>
+					<td>Germany</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>s1.us.prod.push.monal-im.org</td>
+					<td>US</td>
+					<td>Fosshost</td>
+					<td>US</td>
+					<td>IPv4 only</td>
+			</tr>
+			<tr>
+					<td>s2.us.prod.push.monal-im.org</td>
+					<td>US</td>
+					<td>Fosshost</td>
+					<td>US</td>
+					<td></td>
+			</tr>
+	</tbody>
 </table>
 <h2 id="crash-reports-and-app-usage">Crash reports and app usage</h2>
 <p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
@@ -5341,26 +5341,26 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
-  <thead>
-      <tr>
-          <th>Releases</th>
-          <th>Privacy Policy</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>6.0 and newer</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
-      </tr>
-      <tr>
-          <td>5.2.0 up to 5.4.x</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
-      </tr>
-      <tr>
-          <td>before 5.2.0</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Releases</th>
+					<th>Privacy Policy</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>6.0 and newer</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+			</tr>
+			<tr>
+					<td>5.2.0 up to 5.4.x</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+			</tr>
+			<tr>
+					<td>before 5.2.0</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+			</tr>
+	</tbody>
 </table>
 
 </blockquote>
@@ -5462,16 +5462,16 @@ The user can use different apps and services, such as Monal, from a single but a
 This serves a decentral and sovereign infrastructure and digital communication on the internet but also offers many potential for innovation.
 The chat client for iOS and macOS involves implementing various XEP standards (XMPP extension protocols, adding modern functionality to the XMPP-core and XMPP-im RFCs, see <a href="https://xmpp.org/extensions/">XMPP Extensions</a>).</p>
 <table>
-  <thead>
-      <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>
+	<thead>
+			<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>
   
     
     
@@ -5570,7 +5570,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
   <figcaption></figcaption>
 </figure>
 </td>
-          <td>
+					<td>
   
     
     
@@ -5669,7 +5669,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
   <figcaption></figcaption>
 </figure>
 </td>
-          <td>
+					<td>
   
     
     
@@ -5768,22 +5768,22 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
   <figcaption></figcaption>
 </figure>
 </td>
-      </tr>
-  </tbody>
+			</tr>
+	</tbody>
 </table>
 <h2 id="designed-for-ios-and-mac">Designed for iOS and Mac</h2>
 <p>Things look and work the way you expect. iOS, iPadOS or macOS, there is a version of Monal for you.</p>
 <table>
-  <thead>
-      <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>
+	<thead>
+			<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>
   
     
     
@@ -5882,7 +5882,7 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
   <figcaption></figcaption>
 </figure>
 </td>
-          <td>
+					<td>
   
     
     
@@ -5993,9 +5993,9 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
   <figcaption></figcaption>
 </figure>
 </td>
-          <td></td>
-      </tr>
-  </tbody>
+					<td></td>
+			</tr>
+	</tbody>
 </table>
 <p>Monal is developed under an open-source BSD license that serves the user, while not selling or tracking information for external parties (nor for anyone else).
 This app exists because it is key to ensure usability on all platforms and within the XMPP network with all its positives aspects when it comes to decentral communication and infrastructure.</p>
@@ -6028,26 +6028,26 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
-  <thead>
-      <tr>
-          <th>Releases</th>
-          <th>Privacy Policy</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>6.0 and newer</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
-      </tr>
-      <tr>
-          <td>5.2.0 up to 5.4.x</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
-      </tr>
-      <tr>
-          <td>before 5.2.0</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Releases</th>
+					<th>Privacy Policy</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>6.0 and newer</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+			</tr>
+			<tr>
+					<td>5.2.0 up to 5.4.x</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+			</tr>
+			<tr>
+					<td>before 5.2.0</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+			</tr>
+	</tbody>
 </table>
 ]]></content:encoded></item><item><title>About</title><link>https://monal-im.github.io/monal-im.org/site/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/about/</guid><description>&lt;h1 id="imprint"&gt;Imprint&lt;/h1&gt;
 &lt;p&gt;Thilo Molitor&lt;/br&gt;

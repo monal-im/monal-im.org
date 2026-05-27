@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>PrivacyArchives on Monal</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/</link><description>Recent content in PrivacyArchives on Monal</description><generator>Hugo -- 0.161.1</generator><language>en</language><lastBuildDate>Fri, 13 Mar 2026 15:49:20 +0100</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/site/privacyarchive/index.xml" rel="self" type="application/rss+xml"/><item><title>Privacy Monal App ≥ 6.0.0</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</link><pubDate>Fri, 10 Feb 2023 13:00:00 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</guid><description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>PrivacyArchives on Monal</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/</link><description>Recent content in PrivacyArchives on Monal</description><generator>Hugo -- 0.162.0</generator><language>en</language><lastBuildDate>Fri, 13 Mar 2026 15:49:20 +0100</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/site/privacyarchive/index.xml" rel="self" type="application/rss+xml"/><item><title>Privacy Monal App ≥ 6.0.0</title><link>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</link><pubDate>Fri, 10 Feb 2023 13:00:00 +0100</pubDate><guid>https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_app_rev_003/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Monal Website&lt;/strong&gt;&lt;br&gt;
 You can find our latest privacy policy for our website here: &lt;a href="https://monal-im.github.io/monal-im.org/site/privacyarchive/monal_website/" title="Website Privacy Policy"&gt;Website Privacy Policy&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Monal App&lt;/strong&gt;&lt;br&gt;
@@ -29,26 +29,26 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
-  <thead>
-      <tr>
-          <th>Releases</th>
-          <th>Privacy Policy</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>6.0 and newer</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
-      </tr>
-      <tr>
-          <td>5.2.0 up to 5.4.x</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
-      </tr>
-      <tr>
-          <td>before 5.2.0</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Releases</th>
+					<th>Privacy Policy</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>6.0 and newer</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+			</tr>
+			<tr>
+					<td>5.2.0 up to 5.4.x</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+			</tr>
+			<tr>
+					<td>before 5.2.0</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+			</tr>
+	</tbody>
 </table>
 
 </blockquote>
@@ -119,48 +119,48 @@ but it also reveals your XMPP ID (JID) to our push servers (but not your Monal-s
 <h4 id="push-server-regions">Push server regions</h4>
 <p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
 <table>
-  <thead>
-      <tr>
-          <th>Region</th>
-          <th>Hostname</th>
-          <th>Notice</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Europe</td>
-          <td>eu.prod.push.monal-im.org</td>
-          <td></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Region</th>
+					<th>Hostname</th>
+					<th>Notice</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Europe</td>
+					<td>eu.prod.push.monal-im.org</td>
+					<td></td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="push-server-locations">Push server locations</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Name</th>
-          <th>Region</th>
-          <th>Hoster</th>
-          <th>Location</th>
-          <th>Notice</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>s1.eu.prod.push.monal-im.org</td>
-          <td>Europe</td>
-          <td>Hetzner</td>
-          <td>Finland</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>s2.eu.prod.push.monal-im.org</td>
-          <td>Europe</td>
-          <td>PHP-Friends</td>
-          <td>Germany</td>
-          <td></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Name</th>
+					<th>Region</th>
+					<th>Hoster</th>
+					<th>Location</th>
+					<th>Notice</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>s1.eu.prod.push.monal-im.org</td>
+					<td>Europe</td>
+					<td>Hetzner</td>
+					<td>Finland</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>s2.eu.prod.push.monal-im.org</td>
+					<td>Europe</td>
+					<td>PHP-Friends</td>
+					<td>Germany</td>
+					<td></td>
+			</tr>
+	</tbody>
 </table>
 <h2 id="voip-stun--turn">VoIP (STUN / TURN)</h2>
 <p>With Monal 6.0 we introduced VoIP support.
@@ -247,26 +247,26 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
-  <thead>
-      <tr>
-          <th>Releases</th>
-          <th>Privacy Policy</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>6.0 and newer</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
-      </tr>
-      <tr>
-          <td>5.2.0 up to 5.4.x</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
-      </tr>
-      <tr>
-          <td>before 5.2.0</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Releases</th>
+					<th>Privacy Policy</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>6.0 and newer</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+			</tr>
+			<tr>
+					<td>5.2.0 up to 5.4.x</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+			</tr>
+			<tr>
+					<td>before 5.2.0</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+			</tr>
+	</tbody>
 </table>
 
 </blockquote>
@@ -295,28 +295,28 @@ In detail these information consists of:</p>
 </ul>
 <h4 id="push-server-locations">Push server locations</h4>
 <table>
-  <thead>
-      <tr>
-          <th>Name</th>
-          <th>Hoster</th>
-          <th>Location</th>
-          <th>Notice</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>ios13push.monal.im</td>
-          <td>AWS</td>
-          <td>US</td>
-          <td>Provided by Anurodh Pokharel<br>IPv4 only</td>
-      </tr>
-      <tr>
-          <td>push.monal.im</td>
-          <td>AWS</td>
-          <td>US</td>
-          <td>Provided by Anurodh Pokharel<br>IPv4 only<br>iOS 12 only</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Name</th>
+					<th>Hoster</th>
+					<th>Location</th>
+					<th>Notice</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>ios13push.monal.im</td>
+					<td>AWS</td>
+					<td>US</td>
+					<td>Provided by Anurodh Pokharel<br>IPv4 only</td>
+			</tr>
+			<tr>
+					<td>push.monal.im</td>
+					<td>AWS</td>
+					<td>US</td>
+					<td>Provided by Anurodh Pokharel<br>IPv4 only<br>iOS 12 only</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="crash-reports-and-app-usage">Crash reports and app usage</h3>
 <p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
@@ -361,26 +361,26 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
-  <thead>
-      <tr>
-          <th>Releases</th>
-          <th>Privacy Policy</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>6.0 and newer</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
-      </tr>
-      <tr>
-          <td>5.2.0 up to 5.4.x</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
-      </tr>
-      <tr>
-          <td>before 5.2.0</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Releases</th>
+					<th>Privacy Policy</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>6.0 and newer</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+			</tr>
+			<tr>
+					<td>5.2.0 up to 5.4.x</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+			</tr>
+			<tr>
+					<td>before 5.2.0</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+			</tr>
+	</tbody>
 </table>
 
 </blockquote>
@@ -425,67 +425,67 @@ By default, each device will choose our Europe based push region unless the devi
 <h3 id="push-server-regions">Push server regions</h3>
 <p>If you are an XMPP server administrator, and you restricted s2s connections, please allow s2s to all our regions.</p>
 <table>
-  <thead>
-      <tr>
-          <th>Region</th>
-          <th>Hostname</th>
-          <th>Notice</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Europe</td>
-          <td>eu.prod.push.monal-im.org</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>US</td>
-          <td>us.prod.push.monal-im.org</td>
-          <td></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Region</th>
+					<th>Hostname</th>
+					<th>Notice</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Europe</td>
+					<td>eu.prod.push.monal-im.org</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>US</td>
+					<td>us.prod.push.monal-im.org</td>
+					<td></td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="push-server-locations">Push server locations</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Name</th>
-          <th>Region</th>
-          <th>Hoster</th>
-          <th>Location</th>
-          <th>Notice</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>s1.eu.prod.push.monal-im.org</td>
-          <td>Europe</td>
-          <td>Hetzner</td>
-          <td>Finland</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>s2.eu.prod.push.monal-im.org</td>
-          <td>Europe</td>
-          <td>PHP-Friends</td>
-          <td>Germany</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>s1.us.prod.push.monal-im.org</td>
-          <td>US</td>
-          <td>Fosshost</td>
-          <td>US</td>
-          <td>IPv4 only</td>
-      </tr>
-      <tr>
-          <td>s2.us.prod.push.monal-im.org</td>
-          <td>US</td>
-          <td>Fosshost</td>
-          <td>US</td>
-          <td></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Name</th>
+					<th>Region</th>
+					<th>Hoster</th>
+					<th>Location</th>
+					<th>Notice</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>s1.eu.prod.push.monal-im.org</td>
+					<td>Europe</td>
+					<td>Hetzner</td>
+					<td>Finland</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>s2.eu.prod.push.monal-im.org</td>
+					<td>Europe</td>
+					<td>PHP-Friends</td>
+					<td>Germany</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>s1.us.prod.push.monal-im.org</td>
+					<td>US</td>
+					<td>Fosshost</td>
+					<td>US</td>
+					<td>IPv4 only</td>
+			</tr>
+			<tr>
+					<td>s2.us.prod.push.monal-im.org</td>
+					<td>US</td>
+					<td>Fosshost</td>
+					<td>US</td>
+					<td></td>
+			</tr>
+	</tbody>
 </table>
 <h2 id="crash-reports-and-app-usage">Crash reports and app usage</h2>
 <p>Monal does track crashes and usage data anonymously using the tools provided by Apple.
@@ -531,26 +531,26 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
-  <thead>
-      <tr>
-          <th>Releases</th>
-          <th>Privacy Policy</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>6.0 and newer</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
-      </tr>
-      <tr>
-          <td>5.2.0 up to 5.4.x</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
-      </tr>
-      <tr>
-          <td>before 5.2.0</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Releases</th>
+					<th>Privacy Policy</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>6.0 and newer</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+			</tr>
+			<tr>
+					<td>5.2.0 up to 5.4.x</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+			</tr>
+			<tr>
+					<td>before 5.2.0</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+			</tr>
+	</tbody>
 </table>
 
 </blockquote>
@@ -586,25 +586,25 @@ Before reading our privacy policy for our App you first need to find out the Mon
 </blockquote>
 <p><strong>Monal App Privacy Policies</strong></p>
 <table>
-  <thead>
-      <tr>
-          <th>Releases</th>
-          <th>Privacy Policy</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>6.0 and newer</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
-      </tr>
-      <tr>
-          <td>5.2.0 up to 5.4.x</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
-      </tr>
-      <tr>
-          <td>before 5.2.0</td>
-          <td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Releases</th>
+					<th>Privacy Policy</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>6.0 and newer</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_003/" title="Privacy Policy Rev 003">Privacy Policy Rev 003</a></td>
+			</tr>
+			<tr>
+					<td>5.2.0 up to 5.4.x</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_002/" title="Privacy Policy Rev 002">Privacy Policy Rev 002</a></td>
+			</tr>
+			<tr>
+					<td>before 5.2.0</td>
+					<td><a href="/monal-im.org/site/privacyarchive/monal_app_rev_001/" title="Privacy Policy Rev 001">Privacy Policy Rev 001</a></td>
+			</tr>
+	</tbody>
 </table>
 ]]></content:encoded></item></channel></rss>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Monal</title><link>https://monal-im.github.io/monal-im.org/site/post/</link><description>Recent content in Posts on Monal</description><generator>Hugo -- 0.161.1</generator><language>en</language><lastBuildDate>Fri, 03 Apr 2026 02:47:33 +0200</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/site/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Upgrade ejabberd on Debian NOW</title><link>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</guid><description>&lt;p&gt;Chances might be that you are running a Debian based ejabberd server.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Monal</title><link>https://monal-im.github.io/monal-im.org/site/post/</link><description>Recent content in Posts on Monal</description><generator>Hugo -- 0.162.0</generator><language>en</language><lastBuildDate>Fri, 03 Apr 2026 02:47:33 +0200</lastBuildDate><atom:link href="https://monal-im.github.io/monal-im.org/site/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Upgrade ejabberd on Debian NOW</title><link>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</guid><description>&lt;p&gt;Chances might be that you are running a Debian based ejabberd server.
 Unfortunately push for all your Monal users on that server will break in less than 2 month.
 And chances are that some of your S2S connections are already failing today.&lt;/p&gt;
 &lt;h1 id="some-background"&gt;Some background&lt;/h1&gt;
@@ -96,30 +96,30 @@ The serializable promise framework is a new framework in Monal, which exactly fi
 <p>Below is a slightly simplified diagram of the app’s lifecycle. A more detailed lifecycle from Apple’s perspective is <a href="https://developer.apple.com/documentation/uikit/managing-your-app-s-life-cycle">available here</a>.</p>
 <p><img alt="Diagram showing the different states the app can be in. It is a visual depiction of the description below" loading="lazy" src="/monal-im.org/site/post/00015-monal-internals-promise-framework/app_states.png"></p>
 <table>
-  <thead>
-      <tr>
-          <th>State</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>App not running</td>
-          <td>App is not running, and when it is opened, it will start afresh</td>
-      </tr>
-      <tr>
-          <td>App active</td>
-          <td>App is open and in the foreground</td>
-      </tr>
-      <tr>
-          <td>App in background</td>
-          <td>App is running, but in the background</td>
-      </tr>
-      <tr>
-          <td>App suspended</td>
-          <td>App is not running, but its state is saved for when the app is reopened</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>State</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>App not running</td>
+					<td>App is not running, and when it is opened, it will start afresh</td>
+			</tr>
+			<tr>
+					<td>App active</td>
+					<td>App is open and in the foreground</td>
+			</tr>
+			<tr>
+					<td>App in background</td>
+					<td>App is running, but in the background</td>
+			</tr>
+			<tr>
+					<td>App suspended</td>
+					<td>App is not running, but its state is saved for when the app is reopened</td>
+			</tr>
+	</tbody>
 </table>
 <ul>
 <li>The app moves from &ldquo;active&rdquo; to &ldquo;in background&rdquo; when it is swiped away without being closed
@@ -155,25 +155,25 @@ The serializable promise framework is a new framework in Monal, which exactly fi
 <p>Note that <a href="https://github.com/monal-im/Monal/blob/c20c9f9968109f0652bf640804b852f143bd5000/Monal/Classes/MLPromise.m#L168-L173">this persisted version of the <code>MLPromise</code> is not complete</a> - while the resolved argument can be persisted, the UI promise is not persisted at any stage.</p>
 <p>This means that, while the resolved argument can be passed betwen the app and appex, the UI promise itself cannot. The consequence of this is that a promise cannot be consumed in the appex - it can only be resolved there, leaving consumption for when the app becomes active again:</p>
 <table>
-  <thead>
-      <tr>
-          <th>Process</th>
-          <th>Can resolve?</th>
-          <th>Can consume?</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>App</td>
-          <td>Yes</td>
-          <td>Yes</td>
-      </tr>
-      <tr>
-          <td>Appex</td>
-          <td>Yes</td>
-          <td>No</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Process</th>
+					<th>Can resolve?</th>
+					<th>Can consume?</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>App</td>
+					<td>Yes</td>
+					<td>Yes</td>
+			</tr>
+			<tr>
+					<td>Appex</td>
+					<td>Yes</td>
+					<td>No</td>
+			</tr>
+	</tbody>
 </table>
 <p>This makes some sense, as the whole purpose of the <code>AnyPromise</code> is to update the UI as a result of some backend action. It only makes sense to update the UI from the process which manages the UI - the app itself.</p>
 <p>As a result, whenever the app becomes active again, all outstanding <code>MLPromise</code>s check the version retrieved from the DB if they have been resolved in the meantime, <a href="https://github.com/monal-im/Monal/blob/c20c9f9968109f0652bf640804b852f143bd5000/Monal/Classes/MLPromise.m#L77">and if so, consume themselves</a>. This is how the loading overlay gets removed in the above example.</p>
