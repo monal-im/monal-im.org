@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo -- 0.162.0</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Upgrade ejabberd on Debian NOW</title><link>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</guid><description>&lt;p&gt;Chances might be that you are running a Debian based ejabberd server.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monal</title><link>https://monal-im.github.io/monal-im.org/site/</link><description>Recent content on Monal</description><generator>Hugo</generator><language>en</language><atom:link href="https://monal-im.github.io/monal-im.org/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Upgrade ejabberd on Debian NOW</title><link>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><guid>https://monal-im.github.io/monal-im.org/site/post/00016-upgrade-ejabberd-on-debian/</guid><description>&lt;p&gt;Chances might be that you are running a Debian based ejabberd server.
 Unfortunately push for all your Monal users on that server will break in less than 2 month.
 And chances are that some of your S2S connections are already failing today.&lt;/p&gt;
 &lt;h1 id="some-background"&gt;Some background&lt;/h1&gt;
@@ -5473,91 +5473,140 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 			<tr>
 					<td>
   
-    
-    
-    
-  
 
-  
     
     
-    
-  
 
-  
     
     
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
 
   
 
   
 
+    
+    
+
+    
+    
+
   
 
+  
 
+    
+    
 
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -5565,98 +5614,176 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_e079135aac17121e.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_dee6286f4cb51411.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_dca1367ff79dcf51.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_6ea06041f717eb6.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_7df07310d0bd8ea2.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_8262b0636dc93e88.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_81561864a5eb3da.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_ee398a0f4ea7603a.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_a9d6894f0c61a252.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_eb65b6c7942c2a83.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_562310dc9b3987a3.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_1731105f47da4e17.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin_hu_70ebec2f0bf115c9.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/06_signin.png" fetchpriority="low" alt="" title=""/>
+
+    <picture>
+
+      
+      <source
+        type="image/avif"
+        srcset="/monal-im.org/site/images/screenshots/iphone/06_signin_hu_cf9daa1b85c65336.avif 240w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_872d13bf20e73dde.avif 300w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_274a8a0de00a44e3.avif 360w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_979759c47bcf1439.avif 420w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_3969077871be3102.avif 480w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_26945f7fd9badcc9.avif 600w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_d232bf09f4583452.avif 768w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_86e663da1256d350.avif 800w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_d1c03281f72ef625.avif 960w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_664496c76ddbd2c1.avif 1024w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_95e3be2b2ab7f170.avif 1080w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_2f573def0c87a8a5.avif 1200w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_6b1495729c6d967b.avif 1284w"
+        sizes="(max-width: 1284px) 100vw, 1284px"
+      >
+
+      
+      <source
+        type="image/webp"
+        srcset="/monal-im.org/site/images/screenshots/iphone/06_signin_hu_5deef7310a5506ee.webp 240w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_857f9d8a0e79f3bc.webp 300w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_a8527bbc791b2381.webp 360w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_31c3aa049b06619d.webp 420w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_bfc08c8d8b30d5d2.webp 480w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_aa172ec925f59937.webp 600w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_295cfe0683788ff1.webp 768w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_1679960a401d8d8b.webp 800w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_bf1dbf7f7e4521b9.webp 960w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_ef4222659fde8da3.webp 1024w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_2eebfc9850cdd843.webp 1080w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_abf68b3c1899f775.webp 1200w, /monal-im.org/site/images/screenshots/iphone/06_signin_hu_507113fc58d72a.webp 1284w"
+        sizes="(max-width: 1284px) 100vw, 1284px"
+      >
+
+      
+      <img
+        src="/monal-im.org/site/images/screenshots/iphone/06_signin_hu_86d5a0af48def4c5.jpg"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        alt=""
+        title=""
+        style="max-width:1284px;width:100%"
+      />
+
+    </picture>
+
   </div>
+
   <figcaption></figcaption>
-</figure>
-</td>
+</figure></td>
 					<td>
   
-    
-    
-    
-  
 
-  
     
     
-    
-  
 
-  
     
     
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
 
   
 
   
 
+    
+    
+
+    
+    
+
   
 
+  
 
+    
+    
 
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -5664,98 +5791,176 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_476eaa7b57517d4f.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_501f702ef773fa2e.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_6abb5cd10d388dfc.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_d5de8554fa419286.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_e6a789cf43659f33.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_f76c93cd2d3e2708.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_999ae6b3b7f61a9b.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_58ec11df758139f1.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_c1fdbe4ff3a7dcf2.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_b1e20f37ba4c5eeb.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_f6d35ff221b1e4b7.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_e5e107a6a5c50f26.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register_hu_b8e95e1807f78e24.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/07_register.png" fetchpriority="low" alt="" title=""/>
+
+    <picture>
+
+      
+      <source
+        type="image/avif"
+        srcset="/monal-im.org/site/images/screenshots/iphone/07_register_hu_d74f9abf17cc12d6.avif 240w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_a717232f5cc74c8c.avif 300w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_823773095ddc340c.avif 360w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_5ab0d9f7215d9530.avif 420w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_c7099b648abb91e0.avif 480w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_bf50f134b1b6be89.avif 600w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_b52892030695ad48.avif 768w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_527fab9389c590a.avif 800w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_5ea16ee5c3c07946.avif 960w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_18fec4bfc51357e5.avif 1024w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_64a9277426da5102.avif 1080w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_86ab9c16ec65e3e.avif 1200w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_d779441a69c67da4.avif 1284w"
+        sizes="(max-width: 1284px) 100vw, 1284px"
+      >
+
+      
+      <source
+        type="image/webp"
+        srcset="/monal-im.org/site/images/screenshots/iphone/07_register_hu_dffc4f4b3d972bc5.webp 240w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_923c88ece4b19d3b.webp 300w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_eed47a5fcbb21649.webp 360w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_db35298055f71a78.webp 420w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_287da9011f410ab9.webp 480w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_27c72db19a68a17e.webp 600w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_6bcd0158f8b3cf96.webp 768w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_c4915b8f6adca1dc.webp 800w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_4d8c51aed2ed7759.webp 960w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_a21d4bbf4fbb25a4.webp 1024w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_4ec4a0acf6f1e82c.webp 1080w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_c4d5ca1654245db3.webp 1200w, /monal-im.org/site/images/screenshots/iphone/07_register_hu_5b2cba60fa20b525.webp 1284w"
+        sizes="(max-width: 1284px) 100vw, 1284px"
+      >
+
+      
+      <img
+        src="/monal-im.org/site/images/screenshots/iphone/07_register_hu_5dc8a9ebb5dac33a.jpg"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        alt=""
+        title=""
+        style="max-width:1284px;width:100%"
+      />
+
+    </picture>
+
   </div>
+
   <figcaption></figcaption>
-</figure>
-</td>
+</figure></td>
 					<td>
   
-    
-    
-    
-  
 
-  
     
     
-    
-  
 
-  
     
     
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
 
   
 
   
 
+    
+    
+
+    
+    
+
   
 
+  
 
+    
+    
 
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -5763,11 +5968,40 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_c6b5bf07c420ea06.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_76552e936b43c86d.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_2be90e899735534e.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_f978299d95546448.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_21f9e1e901ecb9f.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_7ad68229144d4e04.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_9b14d135cf87c2cd.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_f8e6968750d9ea20.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_761fd290935bbba1.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_cf70216b62d60c82.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_cb1390a2d531fdfa.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_37167a7d75cf9f0c.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats_hu_9f655aceac8f518.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/02_chats.png" fetchpriority="low" alt="" title=""/>
+
+    <picture>
+
+      
+      <source
+        type="image/avif"
+        srcset="/monal-im.org/site/images/screenshots/iphone/02_chats_hu_54484509d7352e4c.avif 240w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_e1dfcded01debc41.avif 300w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_fac2cd5c4031ae46.avif 360w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_4ffc7c2a4f3b0d54.avif 420w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_b2ed497033b8ab8e.avif 480w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_11fa090e60654dc8.avif 600w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_f2a0f50232e7f880.avif 768w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_3e92eb381a5bccba.avif 800w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_44cf8711a9413702.avif 960w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_e85bcef5877ab79b.avif 1024w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_6da02abbbf56cebd.avif 1080w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_a88ba839e4e668bb.avif 1200w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_1c2e755630740047.avif 1284w"
+        sizes="(max-width: 1284px) 100vw, 1284px"
+      >
+
+      
+      <source
+        type="image/webp"
+        srcset="/monal-im.org/site/images/screenshots/iphone/02_chats_hu_43eaa158525b8730.webp 240w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_6ab47d985e016c5f.webp 300w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_24357131da5c60ad.webp 360w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_568bf08a519b2467.webp 420w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_c5e87c4814e097a5.webp 480w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_67e03498d54743ae.webp 600w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_fc21356484e61cb9.webp 768w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_8fd47f96e1231477.webp 800w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_224873ecb4ae8294.webp 960w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_e440b8127311b73.webp 1024w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_2e7822ac94ba98b.webp 1080w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_b4d513321dfaa32c.webp 1200w, /monal-im.org/site/images/screenshots/iphone/02_chats_hu_8b08ffa1ab92b8f4.webp 1284w"
+        sizes="(max-width: 1284px) 100vw, 1284px"
+      >
+
+      
+      <img
+        src="/monal-im.org/site/images/screenshots/iphone/02_chats_hu_1a351a064d7a0e75.jpg"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        alt=""
+        title=""
+        style="max-width:1284px;width:100%"
+      />
+
+    </picture>
+
   </div>
+
   <figcaption></figcaption>
-</figure>
-</td>
+</figure></td>
 			</tr>
 	</tbody>
 </table>
@@ -5785,91 +6019,140 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 			<tr>
 					<td>
   
-    
-    
-    
-  
 
-  
     
     
-    
-  
 
-  
     
     
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
 
   
 
   
 
+    
+    
+
+    
+    
+
   
 
+  
 
+    
+    
 
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+    
+    
+
+    
+    
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -5877,110 +6160,200 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_c06c558b5867608.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_701c74daae2942f1.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_d48f39ffc1633d23.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_5ac1cc31702674c8.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_8e8b9739ef5afd03.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_f4aa2a5a2dc47a31.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_7b5e0ed3f16fd5cd.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_451a20386098abea.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_c7394a27dc942f4e.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_bf3a986df8b9bbf1.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_7488892522a72a6c.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_ee23c43049087c97.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_c1690c23a9e439b0.webp 1284w" style="max-width:1284px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/iphone/01_groupchats.png" fetchpriority="low" alt="" title=""/>
+
+    <picture>
+
+      
+      <source
+        type="image/avif"
+        srcset="/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_4efc225d11db70e1.avif 240w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_3e51623f76b8d0ea.avif 300w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_e2535e6ea7366bc6.avif 360w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_28eddbf0a79fbf4e.avif 420w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_6e103ae2278401ce.avif 480w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_dc61a9075aa3645a.avif 600w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_1ad4ccec3b23856a.avif 768w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_c44b8dacac30b4ce.avif 800w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_bc739e5c90017da8.avif 960w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_7938d9c5b5a95b20.avif 1024w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_36fb3081acaf3955.avif 1080w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_3b93f5ec538d3fe.avif 1200w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_87a4fbdfc49dddcc.avif 1284w"
+        sizes="(max-width: 1284px) 100vw, 1284px"
+      >
+
+      
+      <source
+        type="image/webp"
+        srcset="/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_f713d41d0bab0bdf.webp 240w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_23a089041cb09708.webp 300w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_10602cffbda1ddf9.webp 360w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_3d1f686c38d2fee0.webp 420w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_9e5dd044b975f06f.webp 480w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_279a9d980434eacc.webp 600w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_e2c9b56510bf8948.webp 768w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_49a03d59610f30d2.webp 800w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_6ee786b1a8bd6f1d.webp 960w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_7733aa7123b72817.webp 1024w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_6b1c8fce2687d911.webp 1080w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_5e52c63b63c0cbe4.webp 1200w, /monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_1e50d8cdd61beac.webp 1284w"
+        sizes="(max-width: 1284px) 100vw, 1284px"
+      >
+
+      
+      <img
+        src="/monal-im.org/site/images/screenshots/iphone/01_groupchats_hu_23f431e84587d337.jpg"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        alt=""
+        title=""
+        style="max-width:1284px;width:100%"
+      />
+
+    </picture>
+
   </div>
+
   <figcaption></figcaption>
-</figure>
-</td>
+</figure></td>
 					<td>
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
+    
+
   
 
   
+
     
     
+
     
-  
+    
 
   
-    
-    
-    
+
   
 
+    
+    
 
+    
+    
 
+  
 
 
 
@@ -5988,11 +6361,40 @@ The chat client for iOS and macOS involves implementing various XEP standards (X
 
 <figure>
   <div class="img-box">
-    <img srcset="https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_2cac2f9728af78c4.webp 240w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_fc9d8dde4a8eb2a9.webp 300w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_e118fe9e824ed72.webp 360w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_7e794ea408bda94.webp 420w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_2aad19036f5424e5.webp 480w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_32623b64324b345b.webp 600w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_2e77cadd961acfc1.webp 768w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_28830df62e35936b.webp 800w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_61076fd658d4bd4.webp 960w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_1da8d1898163fb69.webp 1024w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_99b25c389e759044.webp 1080w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_327c088d1e5d73e1.webp 1200w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_e1a1e4669a9216c.webp 1366w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_550c77441ac8b699.webp 1440w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_ba0d3c78ec84d511.webp 1920w,https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_4a0adc1cf53db72a.webp 2048w" style="max-width:2048px;width:100%" src="https://monal-im.github.io/monal-im.org/site/images/screenshots/ipad/01_groupchats.png" fetchpriority="low" alt="" title=""/>
+
+    <picture>
+
+      
+      <source
+        type="image/avif"
+        srcset="/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_6638c80defdf07ec.avif 240w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_6ff1008c01797e08.avif 300w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_1bb26cc02d49582.avif 360w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_b945ac8f0f3eca3.avif 420w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_a5a61fb22f659c69.avif 480w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_948191814d1f4885.avif 600w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_a0a1a787f15142b.avif 768w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_d3102b6249071db0.avif 800w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_70d70e94e664beac.avif 960w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_95c4f6df4fb57034.avif 1024w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_a71223876ea76eda.avif 1080w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_b51049259895ae5a.avif 1200w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_2fd7b372f82f9ad8.avif 1366w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_95dc0214c8817dde.avif 1440w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_3e794eb9543da4ca.avif 1920w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_a67a24e2fcb6885.avif 2048w"
+        sizes="(max-width: 2048px) 100vw, 2048px"
+      >
+
+      
+      <source
+        type="image/webp"
+        srcset="/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_8a19b467eac38a62.webp 240w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_ef87a0efd2380fa9.webp 300w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_9d0e557640c8f935.webp 360w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_fe90535c075203e9.webp 420w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_7c3bb5755a01ab61.webp 480w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_e711b78682a55b69.webp 600w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_a82f242aea74e39e.webp 768w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_2147cb8dbd994ebf.webp 800w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_cce260f5e0c131ce.webp 960w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_35632420cb26d54e.webp 1024w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_18f2407171a957ba.webp 1080w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_6d0796c59be74983.webp 1200w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_f61f70c5a621f751.webp 1366w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_f6c211d227adedb8.webp 1440w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_c88a50e6529182c9.webp 1920w, /monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_3d8b365094fc3f6c.webp 2048w"
+        sizes="(max-width: 2048px) 100vw, 2048px"
+      >
+
+      
+      <img
+        src="/monal-im.org/site/images/screenshots/ipad/01_groupchats_hu_167f3d58596210fb.jpg"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        alt=""
+        title=""
+        style="max-width:2048px;width:100%"
+      />
+
+    </picture>
+
   </div>
+
   <figcaption></figcaption>
-</figure>
-</td>
+</figure></td>
 					<td></td>
 			</tr>
 	</tbody>
