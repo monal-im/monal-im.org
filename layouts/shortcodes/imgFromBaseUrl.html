@@ -1,25 +1,59 @@
 {{ $img := resources.GetMatch (.Get "src") }}
 
-{{- $ws := uniq (slice 240 300 360 420 480 600 768 800 960 1024 1080 1200 1366 1440 1920 $img.Width) -}}
+{{- $widths := slice 240 300 360 420 480 600 768 800 960 1024 1080 1200 1366 1440 1920 $img.Width -}}
+{{- $widths = uniq $widths -}}
 
-{{- $srcset := slice -}}
-{{ range sort $ws }}
-  {{ if (le . $img.Width) }}
-    {{ $w := printf "%dx webp q50" . }}
-    {{ $url := printf "%s %dw" (($img.Resize $w).RelPermalink | absURL | safeURL) . }}
-    {{ $srcset = $srcset | append $url }}
+{{- $webpSrcset := slice -}}
+{{- $avifSrcset := slice -}}
+
+{{ range sort $widths }}
+  {{ if le . $img.Width }}
+
+    {{ $webp := $img.Resize (printf "%dx webp q75" .) }}
+    {{ $avif := $img.Resize (printf "%dx avif q75" .) }}
+
+    {{ $webpSrcset = $webpSrcset | append (printf "%s %dw" $webp.RelPermalink .) }}
+    {{ $avifSrcset = $avifSrcset | append (printf "%s %dw" $avif.RelPermalink .) }}
+
   {{ end }}
 {{ end }}
-
-{{ $set := delimit $srcset "," }}
-
 
 {{ $alt := .Get "alt" }}
 {{ $title := cond (not (.Get "title")) $alt (.Get "title") }}
 
 <figure>
   <div class="img-box">
-    <img srcset="{{ $set }}" style="max-width:{{$img.Width}}px;width:100%" src="{{ $img.RelPermalink | absURL | safeURL }}" fetchpriority="low" alt="{{ $alt | safeHTML }}" title="{{ $title | safeHTML }}"/>
+
+    <picture>
+
+      <!-- AVIF (best compression) -->
+      <source
+        type="image/avif"
+        srcset="{{ delimit $avifSrcset ", " }}"
+        sizes="(max-width: {{ $img.Width }}px) 100vw, {{ $img.Width }}px"
+      >
+
+      <!-- WebP fallback -->
+      <source
+        type="image/webp"
+        srcset="{{ delimit $webpSrcset ", " }}"
+        sizes="(max-width: {{ $img.Width }}px) 100vw, {{ $img.Width }}px"
+      >
+
+      <!-- Final fallback -->
+      <img
+        src="{{ ($img.Resize (printf "%dx jpg q80" $img.Width)).RelPermalink }}"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        alt="{{ $alt | plainify }}"
+        title="{{ $title | plainify }}"
+        style="max-width:{{ $img.Width }}px;width:100%"
+      />
+
+    </picture>
+
   </div>
-  <figcaption>{{$alt | safeHTML }}</figcaption>
+
+  <figcaption>{{ $alt | plainify }}</figcaption>
 </figure>
