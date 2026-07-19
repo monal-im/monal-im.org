@@ -295,11 +295,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="200"
-   id="percent200">3%</text>
+   id="percent200">10%</text>
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect200"
-   width="5"
+   width="15"
    height="6"
    x="260"
    rx="2"
@@ -318,11 +318,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="215"
-   id="percent215">3%</text>
+   id="percent215">10%</text>
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect215"
-   width="5"
+   width="15"
    height="6"
    x="260"
    rx="2"
@@ -341,11 +341,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="230"
-   id="percent230">3%</text>
+   id="percent230">51%</text>
 <rect
-   style="fill:#cc3d20;fill-opacity:1;stroke:none"
+   style="fill:#1565c0;fill-opacity:1;stroke:none"
    id="rect230"
-   width="5"
+   width="77"
    height="6"
    x="260"
    rx="2"
@@ -502,11 +502,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="335"
-   id="percent335">1%</text>
+   id="percent335">2%</text>
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect335"
-   width="2"
+   width="3"
    height="6"
    x="260"
    rx="2"
@@ -916,11 +916,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="605"
-   id="percent605">99%</text>
+   id="percent605">100%</text>
 <rect
    style="fill:#158068;fill-opacity:1;stroke:none"
    id="rect605"
-   width="149"
+   width="150"
    height="6"
    x="260"
    rx="2"
@@ -939,11 +939,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="620"
-   id="percent620">96%</text>
+   id="percent620">100%</text>
 <rect
    style="fill:#158068;fill-opacity:1;stroke:none"
    id="rect620"
-   width="144"
+   width="150"
    height="6"
    x="260"
    rx="2"
@@ -985,11 +985,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="650"
-   id="percent650">3%</text>
+   id="percent650">100%</text>
 <rect
-   style="fill:#cc3d20;fill-opacity:1;stroke:none"
+   style="fill:#158068;fill-opacity:1;stroke:none"
    id="rect650"
-   width="5"
+   width="150"
    height="6"
    x="260"
    rx="2"
