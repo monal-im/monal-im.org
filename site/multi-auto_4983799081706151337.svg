@@ -88,11 +88,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="65"
-   id="percent65">51%</text>
+   id="percent65">100%</text>
 <rect
-   style="fill:#1565c0;fill-opacity:1;stroke:none"
+   style="fill:#158068;fill-opacity:1;stroke:none"
    id="rect65"
-   width="77"
+   width="150"
    height="6"
    x="260"
    rx="2"
@@ -134,11 +134,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="95"
-   id="percent95">98%</text>
+   id="percent95">100%</text>
 <rect
    style="fill:#158068;fill-opacity:1;stroke:none"
    id="rect95"
-   width="147"
+   width="150"
    height="6"
    x="260"
    rx="2"
@@ -157,7 +157,7 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="110"
-   id="percent110">6%</text>
+   id="percent110">7%</text>
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect110"
@@ -180,11 +180,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="125"
-   id="percent125">10%</text>
+   id="percent125">13%</text>
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect125"
-   width="15"
+   width="20"
    height="6"
    x="260"
    rx="2"
@@ -230,7 +230,7 @@
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect155"
-   width="10"
+   width="11"
    height="6"
    x="260"
    rx="2"
@@ -502,7 +502,7 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="335"
-   id="percent335">2%</text>
+   id="percent335">3%</text>
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect335"
@@ -525,11 +525,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="350"
-   id="percent350">1%</text>
+   id="percent350">2%</text>
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect350"
-   width="2"
+   width="3"
    height="6"
    x="260"
    rx="2"
@@ -571,7 +571,7 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="380"
-   id="percent380">14%</text>
+   id="percent380">15%</text>
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect380"
@@ -594,11 +594,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="395"
-   id="percent395">99%</text>
+   id="percent395">100%</text>
 <rect
    style="fill:#158068;fill-opacity:1;stroke:none"
    id="rect395"
-   width="149"
+   width="150"
    height="6"
    x="260"
    rx="2"
@@ -644,7 +644,7 @@
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect425"
-   width="60"
+   width="61"
    height="6"
    x="260"
    rx="2"
@@ -801,11 +801,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="530"
-   id="percent530">95%</text>
+   id="percent530">100%</text>
 <rect
    style="fill:#158068;fill-opacity:1;stroke:none"
    id="rect530"
-   width="143"
+   width="150"
    height="6"
    x="260"
    rx="2"
@@ -870,11 +870,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="575"
-   id="percent575">97%</text>
+   id="percent575">100%</text>
 <rect
    style="fill:#158068;fill-opacity:1;stroke:none"
    id="rect575"
-   width="146"
+   width="150"
    height="6"
    x="260"
    rx="2"
@@ -1077,11 +1077,11 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="710"
-   id="percent710">10%</text>
+   id="percent710">13%</text>
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect710"
-   width="15"
+   width="20"
    height="6"
    x="260"
    rx="2"
