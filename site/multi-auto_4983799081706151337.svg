@@ -713,7 +713,7 @@
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect470"
-   width="30"
+   width="31"
    height="6"
    x="260"
    rx="2"
@@ -824,7 +824,7 @@
    style="font-style:normal;font-weight:normal;font-size:11px;font-family:'Source Sans 3',sans-serif;fill:#808080"
    x="420"
    y="545"
-   id="percent545">2%</text>
+   id="percent545">3%</text>
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect545"
@@ -851,7 +851,7 @@
 <rect
    style="fill:#cc3d20;fill-opacity:1;stroke:none"
    id="rect560"
-   width="49"
+   width="50"
    height="6"
    x="260"
    rx="2"
