@@ -3504,32 +3504,12 @@ This improves the quality of the app significantly.</p>
 &lt;td&gt;Alpha&lt;/td&gt;
 &lt;td&gt;upon request to &lt;a href="mailto:info@monal-im.org"&gt;info@monal-im.org&lt;/a&gt;&lt;br&gt;Then download from our &lt;a href="https://downloads.monal-im.org/monal-im/alpha/"&gt;alpha download site&lt;/a&gt;&lt;br&gt;&lt;br&gt;You can get updates about alpha releases by joining this channel: &lt;a href="#ZgotmplZ"&gt;monal-alpha@chat.yax.im&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;brew tap monal-im/homebrew-monal-alpha&lt;br&gt;brew install --cask monal-alpha&lt;br&gt;&lt;br&gt;You can get updates about alpha releases by joining this channel: &lt;a href="#ZgotmplZ"&gt;monal-alpha@chat.yax.im&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;brew tap monal-im/homebrew-monal-alpha&lt;br&gt;brew trust --cask monal-im/monal-alpha/monal-alpha&lt;br&gt;brew install --cask monal-alpha&lt;br&gt;&lt;br&gt;You can get updates about alpha releases by joining this channel: &lt;a href="#ZgotmplZ"&gt;monal-alpha@chat.yax.im&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h1 id="features"&gt;Features&lt;/h1&gt;
-&lt;p&gt;Monal currently covers the following chat features:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Decentralised and federated chat standard &lt;a href="https://xmpp.org/"&gt;XMPP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Private and group messaging&lt;/li&gt;
-&lt;li&gt;Privacy-respecting push notifications&lt;/li&gt;
-&lt;li&gt;Encrypted private and group chats (state-of-the-art encryption (&lt;a href="https://conversations.im/omemo/"&gt;OMEMO&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Message history&lt;/li&gt;
-&lt;li&gt;Free selection of your XMPP account provider&lt;/li&gt;
-&lt;li&gt;Voice messaging&lt;/li&gt;
-&lt;li&gt;Message archiving&lt;/li&gt;
-&lt;li&gt;Upload of files, videos and images (HTTP Upload)&lt;/li&gt;
-&lt;li&gt;Audio and Video calls&lt;/li&gt;
-&lt;li&gt;Many settings and a design to offer privacy settings in the app to the need of the user&lt;/li&gt;
-&lt;li&gt;A detailed and technical listing of your supported features (so called XMPP Extensions) can be found in our &lt;a href="https://github.com/monal-im/Monal/blob/develop/monal.doap"&gt;DOAP file&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="planned-features"&gt;Planned features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;User-interface overhaul&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="implemented-xeps"&gt;Implemented XEPs&lt;/h2&gt;
-&lt;p&gt;You can check the complete list of supported XEPs at &lt;a href="https://xmpp.org/software/monal-im/"&gt;&lt;a href="https://xmpp.org/software/monal-im/"&gt;https://xmpp.org/software/monal-im/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</description><content:encoded><![CDATA[<table>
+&lt;p&gt;Monal currently covers the following chat features:&lt;/p&gt;</description><content:encoded><![CDATA[<table>
 	<thead>
 			<tr>
 					<th></th>
@@ -3555,7 +3535,7 @@ This improves the quality of the app significantly.</p>
 					<td>Alpha</td>
 					<td>upon request to <a href="mailto:info@monal-im.org">info@monal-im.org</a><br>Then download from our <a href="https://downloads.monal-im.org/monal-im/alpha/">alpha download site</a><br><br>You can get updates about alpha releases by joining this channel: <a href="#ZgotmplZ">monal-alpha@chat.yax.im</a></td>
 					<td></td>
-					<td>brew tap monal-im/homebrew-monal-alpha<br>brew install --cask monal-alpha<br><br>You can get updates about alpha releases by joining this channel: <a href="#ZgotmplZ">monal-alpha@chat.yax.im</a></td>
+					<td>brew tap monal-im/homebrew-monal-alpha<br>brew trust --cask monal-im/monal-alpha/monal-alpha<br>brew install --cask monal-alpha<br><br>You can get updates about alpha releases by joining this channel: <a href="#ZgotmplZ">monal-alpha@chat.yax.im</a></td>
 			</tr>
 	</tbody>
 </table>
