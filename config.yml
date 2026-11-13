@@ -8,7 +8,10 @@ timeout: "90s"
 imaging:
   resampleFilter: Linear
   #resampleFilter: MitchellNetravali (Cubic filter for alternative)
-  hint: picture
+  webp:
+    hint: picture
+  avif:
+    hint: picture
   exif:
     disableDate: true
     disableLatLong: true
@@ -192,7 +195,7 @@ privacy:
     disabled: true
     simple: true
 
-  youtube:
+  youTube:
     disabled: true
     privacyEnhanced: true
 
